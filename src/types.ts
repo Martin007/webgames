@@ -33,6 +33,7 @@ export interface SavedGame {
   version: 1;
   dayKey: string;
   challengeNumber: number;
+  questionsPerDay: number;
   questionIndex: number;
   totalScore: number;
   foundByQuestion: Record<string, number[]>;

@@ -63,6 +63,7 @@ const loadSavedGame = (dayKey: string): SavedGame | null => {
     if (
       saved.version !== 1 ||
       saved.dayKey !== dayKey ||
+      saved.questionsPerDay !== QUESTIONS_PER_DAY ||
       !Array.isArray(saved.rounds)
     ) {
       return null;
@@ -246,7 +247,7 @@ const HowToPlay = ({onClose}: {onClose: () => void}) => (
         <span>3</span>
         <div>
           <strong>Mind your strikes</strong>
-          <p>Three misses end a round. There are eight rounds each day.</p>
+          <p>Three misses end a round. There are six rounds each day.</p>
         </div>
       </li>
     </ol>
@@ -305,7 +306,7 @@ const IntroScreen = ({
         Daily challenge
       </div>
       <h1>
-        Eight questions.
+        Six questions.
         <br />
         <em>How well do you know us?</em>
       </h1>
@@ -670,7 +671,7 @@ const ResultScreen = ({
         <span className="eyebrow eyebrow--center">Challenge complete</span>
         <h1>{rank}</h1>
         <p className="result-card__subhead">
-          You finished today’s eight questions.
+          You finished today’s six questions.
         </p>
 
         <div className="final-score">

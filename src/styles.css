@@ -1034,7 +1034,7 @@ input:focus-visible {
   padding: 15px 18px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 7px;
 }
 

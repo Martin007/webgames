@@ -60,11 +60,11 @@ describe('daily challenge', () => {
     answers: [answer(['ANSWER'])],
   }));
 
-  it('selects eight deterministic, unique questions', () => {
+  it('selects six deterministic, unique questions', () => {
     const first = getDailyQuestions(questions, '2026-07-28');
     const again = getDailyQuestions(questions, '2026-07-28');
-    expect(first).toHaveLength(8);
-    expect(new Set(first.map(({id}) => id))).toHaveLength(8);
+    expect(first).toHaveLength(6);
+    expect(new Set(first.map(({id}) => id))).toHaveLength(6);
     expect(first.map(({id}) => id)).toEqual(again.map(({id}) => id));
   });
 
