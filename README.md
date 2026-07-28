@@ -25,6 +25,18 @@ npm run build
 The build includes the root `questions.json` as a runtime asset rather than
 bundling its contents into the application JavaScript.
 
+### GitHub Pages
+
+Pushes to `master` run `.github/workflows/deploy-pages.yml`, which builds the
+Vite application and publishes the generated `dist` directory. In the
+repository's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+The production site is configured for:
+
+```text
+https://martin007.github.io/webgames/
+```
+
 ## Family Feud questions
 
 `questions.json` is the runtime data interface for the game. The game should read

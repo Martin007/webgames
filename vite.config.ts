@@ -15,6 +15,6 @@ const questionsAsset = (): Plugin => ({
 });
 
 export default defineConfig({
-  base: './',
+  base: '/webgames/',
   plugins: [react(), questionsAsset()],
 });
