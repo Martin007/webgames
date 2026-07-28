@@ -53,7 +53,7 @@ interface LifetimeStats {
   best: number;
 }
 
-const STORAGE_PREFIX = 'quizle:game:';
+const STORAGE_PREFIX = 'feudle:game:';
 
 const loadSavedGame = (dayKey: string): SavedGame | null => {
   try {
@@ -142,7 +142,7 @@ const formatCountdown = (milliseconds: number) => {
 };
 
 const Logo = () => (
-  <div className="logo" aria-label="Quizle">
+  <div className="logo" aria-label="Feudle">
     <span className="logo__tile">Q</span>
     <span className="logo__word">uizle</span>
   </div>
@@ -284,7 +284,7 @@ const StatsModal = ({onClose}: {onClose: () => void}) => {
         Your scores are stored only in this browser.
       </p>
       <button className="button button--primary button--full" onClick={onClose}>
-        Back to Quizle
+        Back to Feudle
       </button>
     </Modal>
   );
@@ -308,7 +308,7 @@ const IntroScreen = ({
       <h1>
         Six questions.
         <br />
-        <em>How well do you know us?</em>
+        <em>How well do you know people?</em>
       </h1>
       <p className="intro-card__copy">
         Guess the answers people gave, collect the points, and see how your
@@ -333,7 +333,7 @@ const IntroScreen = ({
         className="button button--primary button--start"
         onClick={onStart}
       >
-        Play today’s Quizle
+        Play today’s Feudle
         <ArrowIcon />
       </button>
       <p className="intro-card__hint">
@@ -726,8 +726,8 @@ const ResultScreen = ({
           {copied ? 'Copied!' : 'Copy my result'}
         </button>
 
-        <div className="next-quizle">
-          <span>Next Quizle in</span>
+        <div className="next-feudle">
+          <span>Next Feudle in</span>
           <strong>{formatCountdown(countdown)}</strong>
         </div>
       </section>
@@ -954,7 +954,7 @@ export const App = () => {
 
       {phase === 'loading' && (
         <main className="screen screen--status">
-          <div className="loader" aria-label="Loading today’s Quizle">
+          <div className="loader" aria-label="Loading today’s Feudle">
             <span />
             <span />
             <span />
@@ -965,7 +965,7 @@ export const App = () => {
       {phase === 'error' && (
         <main className="screen screen--status">
           <div className="status-icon">!</div>
-          <h1>Quizle hit a snag</h1>
+          <h1>Feudle hit a snag</h1>
           <p>{error}</p>
           <button
             className="button button--primary"
@@ -1002,7 +1002,7 @@ export const App = () => {
         {toast}
       </div>
       <footer>
-        <span>Quizle</span>
+        <span>Feudle</span>
         <i />
         <span>Come back tomorrow</span>
       </footer>

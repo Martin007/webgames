@@ -4,7 +4,7 @@ import {defineConfig, type Plugin} from 'vite';
 import react from '@vitejs/plugin-react';
 
 const questionsAsset = (): Plugin => ({
-  name: 'quizle-questions-asset',
+  name: 'feudle-questions-asset',
   generateBundle() {
     this.emitFile({
       type: 'asset',

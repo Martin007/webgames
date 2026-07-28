@@ -150,7 +150,7 @@ export const getDailyQuestions = (
   }
 
   const shuffled = [...questions];
-  const random = mulberry32(hashString(`quizle:${dayKey}`));
+  const random = mulberry32(hashString(`feudle:${dayKey}`));
 
   for (let index = shuffled.length - 1; index > 0; index -= 1) {
     const swapIndex = Math.floor(random() * (index + 1));
@@ -194,7 +194,7 @@ export const getShareText = (
   const possible = rounds.reduce((sum, round) => sum + round.possible, 0);
   const tiles = rounds.map(scoreEmoji).join('');
   return [
-    `Quizle #${challengeNumber}  ${totalScore}/${possible}`,
+    `Feudle #${challengeNumber}  ${totalScore}/${possible}`,
     '',
     tiles,
     '',

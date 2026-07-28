@@ -110,7 +110,7 @@ describe('data validation and sharing', () => {
       ],
       130,
     );
-    expect(text).toContain('Quizle #123  130/300');
+    expect(text).toContain('Feudle #123  130/300');
     expect(text).toContain('🟩🟨⬛');
     expect(text).not.toContain('q1');
   });
