@@ -1,6 +1,30 @@
 # webgames
 Collection of word web games.
 
+## Quizle
+
+Quizle is a static, eight-question daily challenge built with React, Vite, and
+Remotion. Players type survey-board answers, collect each answer's point value,
+and get three misses per round. A deterministic UTC-day seed gives everyone the
+same questions, progress is saved in the browser, and the final spoiler-free
+score grid can be copied and shared.
+
+Run it locally with:
+
+```sh
+npm install
+npm run dev
+```
+
+Create the static production build with:
+
+```sh
+npm run build
+```
+
+The build includes the root `questions.json` as a runtime asset rather than
+bundling its contents into the application JavaScript.
+
 ## Family Feud questions
 
 `questions.json` is the runtime data interface for the game. The game should read
