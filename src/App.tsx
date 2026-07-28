@@ -143,8 +143,8 @@ const formatCountdown = (milliseconds: number) => {
 
 const Logo = () => (
   <div className="logo" aria-label="Feudle">
-    <span className="logo__tile">Q</span>
-    <span className="logo__word">uizle</span>
+    <span className="logo__tile">F</span>
+    <span className="logo__word">eudle</span>
   </div>
 );
 
