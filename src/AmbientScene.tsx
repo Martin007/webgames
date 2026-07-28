@@ -2,10 +2,11 @@ import type {CSSProperties} from 'react';
 import {
   AbsoluteFill,
   interpolate,
-  spring,
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+
+export const AMBIENT_DURATION_IN_FRAMES = 1800;
 
 export interface AmbientSceneProps {
   celebrate: boolean;
@@ -22,61 +23,68 @@ const dotPositions = [
   [56, 88],
 ];
 
+export const getLoopPhase = (frame: number, durationInFrames: number) =>
+  (frame / durationInFrames) * Math.PI * 2;
+
+export const getEdgeFade = (
+  frame: number,
+  durationInFrames: number,
+  fps: number,
+  delay: number,
+) =>
+  interpolate(
+    frame,
+    [delay, delay + fps * 2, durationInFrames - fps * 5, durationInFrames - 1],
+    [0, 1, 1, 0],
+    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'},
+  );
+
 export const AmbientScene = ({celebrate}: AmbientSceneProps) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const entrance = spring({
-    frame,
-    fps,
-    config: {damping: 18, mass: 0.8, stiffness: 80},
-  });
-  const pulse = interpolate(Math.sin((frame / 600) * Math.PI * 2), [-1, 1], [
-    0.92, 1.08,
-  ]);
+  const {durationInFrames, fps} = useVideoConfig();
+  const phase = getLoopPhase(frame, durationInFrames);
+  const pulse = 1 + Math.sin(phase) * 0.08;
 
   return (
     <AbsoluteFill className="ambient-scene" aria-hidden="true">
       <div
         className="ambient-blob ambient-blob--yellow"
         style={{
-          transform: `translate3d(${Math.sin(frame / 55) * 18}px, ${
-            Math.cos(frame / 70) * 12
+          transform: `translate3d(${Math.sin(phase) * 18}px, ${
+            Math.cos(phase) * 12
           }px, 0) scale(${pulse})`,
-          opacity: entrance,
         }}
       />
       <div
         className="ambient-blob ambient-blob--coral"
         style={{
-          transform: `translate3d(${Math.cos(frame / 62) * 16}px, ${
-            Math.sin(frame / 82) * 18
+          transform: `translate3d(${Math.cos(phase) * 16}px, ${
+            Math.sin(phase) * 18
           }px, 0) scale(${2 - pulse})`,
-          opacity: entrance,
         }}
       />
       <div
         className="ambient-blob ambient-blob--teal"
         style={{
-          transform: `translate3d(${Math.sin(frame / 75) * 12}px, ${
-            Math.cos(frame / 48) * 16
+          transform: `translate3d(${Math.sin(phase * 2) * 12}px, ${
+            Math.cos(phase * 2) * 16
           }px, 0)`,
-          opacity: entrance * 0.85,
         }}
       />
       {celebrate &&
         dotPositions.map(([left, top], index) => {
           const delay = index * 3;
-          const pop = spring({
-            frame: frame - delay,
-            fps,
-            config: {damping: 12, stiffness: 120},
-          });
-          const rotation = frame * (index % 2 === 0 ? 0.5 : -0.35);
+          const fade = getEdgeFade(frame, durationInFrames, fps, delay);
+          const rotation =
+            Math.sin(phase + index) * (index % 2 === 0 ? 18 : -14);
+          const drift = Math.sin(phase * 2 + index) * 8;
           const style: CSSProperties = {
             left: `${left}%`,
             top: `${top}%`,
-            opacity: pop,
-            transform: `scale(${pop}) rotate(${rotation}deg)`,
+            opacity: fade,
+            transform: `translateY(${drift}px) scale(${
+              0.75 + fade * 0.25
+            }) rotate(${rotation}deg)`,
             background:
               index % 3 === 0
                 ? '#ff6b55'

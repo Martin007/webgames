@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react';
 import {Player} from '@remotion/player';
-import {AmbientScene} from './AmbientScene';
+import {AMBIENT_DURATION_IN_FRAMES, AmbientScene} from './AmbientScene';
 import {
   MAX_STRIKES,
   QUESTIONS_PER_DAY,
@@ -935,7 +935,7 @@ export const App = () => {
         <Player
           component={AmbientScene}
           inputProps={{celebrate: phase === 'result'}}
-          durationInFrames={600}
+          durationInFrames={AMBIENT_DURATION_IN_FRAMES}
           compositionWidth={1440}
           compositionHeight={900}
           fps={30}
