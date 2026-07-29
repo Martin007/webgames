@@ -29594,51 +29594,51 @@
       "answers": [
         {
           "points": 31,
-          "display": "GEORGE BUSH",
-          "patterns": [
-            "george BUSH"
-          ]
-        },
-        {
-          "points": 16,
-          "display": "RONALD REAGAN",
-          "patterns": [
-            "ronald REAGAN"
-          ]
-        },
-        {
-          "points": 14,
-          "display": "MIKHAIL GORBACHEV",
-          "patterns": [
-            "mikhail GORBACHeV"
-          ]
-        },
-        {
-          "points": 8,
-          "display": "POPE JOHN PAUL II",
-          "patterns": [
-            "POPE john paul ii"
-          ]
-        },
-        {
-          "points": 5,
-          "display": "BOB HOPE",
-          "patterns": [
-            "bob HOPE"
-          ]
-        },
-        {
-          "points": 4,
           "display": "DONALD TRUMP",
           "patterns": [
             "donald TRUMP"
           ]
         },
         {
-          "points": 4,
-          "display": "MICHAEL JACKSON",
+          "points": 16,
+          "display": "ELON MUSK",
           "patterns": [
-            "michael JACKSON"
+            "elon MUSK"
+          ]
+        },
+        {
+          "points": 14,
+          "display": "VLADIMIR PUTIN",
+          "patterns": [
+            "vladimir PUTIN"
+          ]
+        },
+        {
+          "points": 8,
+          "display": "LIONEL MESSI",
+          "patterns": [
+            "lionel MESSI"
+          ]
+        },
+        {
+          "points": 5,
+          "display": "TAYLOR SWIFT",
+          "patterns": [
+            "taylor SWIFT"
+          ]
+        },
+        {
+          "points": 4,
+          "display": "JOE ROGAN",
+          "patterns": [
+            "joe ROGAN"
+          ]
+        },
+        {
+          "points": 4,
+          "display": "CRISTIANO RONALDO",
+          "patterns": [
+            "cristiano RONALDO"
           ]
         },
         {
@@ -29650,9 +29650,9 @@
         },
         {
           "points": 3,
-          "display": "PRINCESS DIANA",
+          "display": "JUSTIN BIEBER",
           "patterns": [
-            "PRINCESS DIana"
+            "justin BIEBER"
           ]
         },
         {
@@ -29664,9 +29664,9 @@
         },
         {
           "points": 0,
-          "display": "MOTHER TERRESA",
+          "display": "LEONARDO DICAPRIO",
           "patterns": [
-            "MOTHER TERRESA"
+            "LEOnardo DICAPrio"
           ]
         }
       ]
@@ -81076,7 +81076,7 @@
           "display": "INSECTS",
           "patterns": [
             "INSECTs",
-            "BUG"
+            "BUGs"
           ]
         },
         {
