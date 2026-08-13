@@ -52,6 +52,23 @@ describe('question matching', () => {
     };
     expect(findAnswerIndex('potato', question)).toBe(0);
   });
+
+  it('matches common multi-word answer alternatives exactly', () => {
+    const question: Question = {
+      id: 'q1',
+      question: 'Protection?',
+      answers: [
+        {
+          points: 9,
+          display: 'BURGLAR ALARM',
+          patterns: ['BURGLAR ALARM', 'SECURITY SYSTEM'],
+        },
+      ],
+    };
+
+    expect(findAnswerIndex('security system', question)).toBe(0);
+    expect(findAnswerIndex('security', question)).toBe(-1);
+  });
 });
 
 describe('daily challenge', () => {

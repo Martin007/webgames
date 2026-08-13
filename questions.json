@@ -8124,7 +8124,8 @@
           "display": "NEWSPAPER",
           "patterns": [
             "newsPAPER",
-            "CLIPPINGS"
+            "CLIPPINGS",
+            "NEWSPAPER CLIPPINGs"
           ]
         },
         {
@@ -8139,7 +8140,9 @@
           "display": "LETTERS",
           "patterns": [
             "LETTERs",
-            "CARD"
+            "CARD",
+            "GREETING CARD",
+            "GREETING CARDs"
           ]
         },
         {
@@ -8148,7 +8151,8 @@
           "patterns": [
             "TICKET",
             "STUB",
-            "RECEIPTS"
+            "RECEIPTS",
+            "TICKET STUB"
           ]
         },
         {
@@ -8163,7 +8167,9 @@
           "points": 5,
           "display": "AWARD",
           "patterns": [
-            "AWARD"
+            "AWARD",
+            "CERTIFICATE",
+            "CERTIFICATEs"
           ]
         },
         {
@@ -8198,14 +8204,18 @@
           "display": "RAFT",
           "patterns": [
             "RAFT",
-            "FLOAT"
+            "FLOAT",
+            "POOL FLOAT",
+            "INFLATABLE"
           ]
         },
         {
           "points": 19,
           "display": "PATIO FURNITURE",
           "patterns": [
-            "PATIO furniture"
+            "PATIO furniture",
+            "LAWN FURNITURE",
+            "POOL FURNITURE"
           ]
         },
         {
@@ -8213,7 +8223,8 @@
           "display": "BATHING SUIT",
           "patterns": [
             "BATHING SUIT",
-            "swimSUIT"
+            "swimSUIT",
+            "SWIMWEAR"
           ]
         },
         {
@@ -8262,7 +8273,8 @@
           "points": 0,
           "display": "SUN TAN",
           "patterns": [
-            "SUN TAN"
+            "SUN TAN",
+            "TAN"
           ]
         }
       ]
@@ -8358,21 +8370,26 @@
           "points": 62,
           "display": "BABE RUTH",
           "patterns": [
-            "babe RUTH"
+            "babe RUTH",
+            "BABE"
           ]
         },
         {
           "points": 20,
           "display": "HANK AARON",
           "patterns": [
-            "hank AARON"
+            "hank AARON",
+            "HAMMERIN HANK",
+            "HENRY AARON"
           ]
         },
         {
           "points": 4,
           "display": "MICKEY MANTLE",
           "patterns": [
-            "mickey MANTLE"
+            "mickey MANTLE",
+            "THE MICK",
+            "MICKEY"
           ]
         },
         {
@@ -48047,7 +48064,9 @@
           "points": 27,
           "display": "BURGLAR ALARM",
           "patterns": [
-            "BURGLAR ALARM"
+            "BURGLAR ALARM",
+            "SECURITY SYSTEM",
+            "HOME ALARM"
           ]
         },
         {
@@ -48062,7 +48081,8 @@
           "points": 18,
           "display": "LOCKS",
           "patterns": [
-            "LOCKs"
+            "LOCKs",
+            "DEADBOLT"
           ]
         },
         {
@@ -48076,7 +48096,9 @@
           "points": 9,
           "display": "SMOKE ALARM",
           "patterns": [
-            "SMOKE ALARM"
+            "SMOKE ALARM",
+            "SMOKE DETECTOR",
+            "FIRE ALARM"
           ]
         }
       ]
@@ -48225,14 +48247,16 @@
           "points": 30,
           "display": "NOTRE DAME",
           "patterns": [
-            "NOTRE DAME"
+            "NOTRE DAME",
+            "ND"
           ]
         },
         {
           "points": 13,
           "display": "UCLA",
           "patterns": [
-            "UCLA"
+            "UCLA",
+            "UNIVERSITY OF CALIFORNIA LOS ANGELES"
           ]
         },
         {
@@ -48246,21 +48270,24 @@
           "points": 8,
           "display": "USC",
           "patterns": [
-            "USC"
+            "USC",
+            "UNIVERSITY OF SOUTHERN CALIFORNIA"
           ]
         },
         {
           "points": 7,
           "display": "ALABAMA",
           "patterns": [
-            "ALABAMA"
+            "ALABAMA",
+            "UNIVERSITY OF ALABAMA"
           ]
         },
         {
           "points": 7,
           "display": "OKLAHOMA",
           "patterns": [
-            "OKLAHOMA"
+            "OKLAHOMA",
+            "UNIVERSITY OF OKLAHOMA"
           ]
         }
       ]
@@ -48280,14 +48307,16 @@
           "points": 16,
           "display": "WINE",
           "patterns": [
-            "WINE"
+            "WINE",
+            "RED WINE"
           ]
         },
         {
           "points": 8,
           "display": "HAM",
           "patterns": [
-            "HAM"
+            "HAM",
+            "PROSCIUTTO"
           ]
         },
         {
@@ -48304,7 +48333,8 @@
           "patterns": [
             "PASTA",
             "MACARONI",
-            "SPAGhETTI"
+            "SPAGhETTI",
+            "MAC AND CHEESE"
           ]
         }
       ]
@@ -48317,21 +48347,24 @@
           "points": 35,
           "display": "CALIFORNIA",
           "patterns": [
-            "CALiFornia"
+            "CALiFornia",
+            "CA"
           ]
         },
         {
           "points": 27,
           "display": "FLORIDA",
           "patterns": [
-            "FLORida"
+            "FLORida",
+            "FL"
           ]
         },
         {
           "points": 7,
           "display": "HAWAII",
           "patterns": [
-            "HAWaii"
+            "HAWaii",
+            "HI"
           ]
         },
         {
@@ -48359,7 +48392,8 @@
           "display": "CAR",
           "patterns": [
             "CAR",
-            "AUTO"
+            "AUTO",
+            "RENTAL CAR"
           ]
         },
         {
@@ -48368,14 +48402,17 @@
           "patterns": [
             "CABIN",
             "HOUSE",
-            "HOME"
+            "HOME",
+            "VACATION HOME"
           ]
         },
         {
           "points": 16,
           "display": "HOTEL ROOM",
           "patterns": [
-            "hOTEL ROOM"
+            "hOTEL ROOM",
+            "HOTEL",
+            "ROOM"
           ]
         },
         {
@@ -48383,7 +48420,8 @@
           "display": "BOAT",
           "patterns": [
             "BOAT",
-            "YACHT"
+            "YACHT",
+            "RENTAL BOAT"
           ]
         },
         {
@@ -48392,7 +48430,8 @@
           "patterns": [
             "MOTOR HOME",
             "RV",
-            "CAMPER"
+            "CAMPER",
+            "MOTORHOME"
           ]
         }
       ]
@@ -50711,14 +50750,18 @@
           "display": "WALKING",
           "patterns": [
             "WALKING",
-            "STEP"
+            "STEP",
+            "FIRST STEPS",
+            "LEARNING TO WALK"
           ]
         },
         {
           "points": 14,
           "display": "TAKING A BATH",
           "patterns": [
-            "taking a BATH"
+            "taking a BATH",
+            "BATHING",
+            "BATH TIME"
           ]
         },
         {
@@ -50746,7 +50789,8 @@
           "points": 2,
           "display": "BIRTHDAY",
           "patterns": [
-            "BIRTHDAY"
+            "BIRTHDAY",
+            "BIRTHDAY PARTY"
           ]
         }
       ]
@@ -50777,7 +50821,9 @@
           "patterns": [
             "CLERGYMAN",
             "MINISTER",
-            "PRIEST"
+            "PRIEST",
+            "CLERGY",
+            "PASTOR"
           ]
         },
         {
@@ -50792,7 +50838,8 @@
           "display": "MOTHER",
           "patterns": [
             "MOTHER",
-            "PARENT"
+            "PARENT",
+            "MOM"
           ]
         },
         {
@@ -50801,7 +50848,9 @@
           "patterns": [
             "POLICE",
             "OFFICER",
-            "COP"
+            "COP",
+            "POLICE OFFICER",
+            "LAW ENFORCEMENT"
           ]
         }
       ]
@@ -50814,7 +50863,9 @@
           "points": 64,
           "display": "UNDERWEAR",
           "patterns": [
-            "UNDERWEAR"
+            "UNDERWEAR",
+            "UNDERWEAR ADS",
+            "UNDERPANTS"
           ]
         },
         {
@@ -50823,7 +50874,8 @@
           "patterns": [
             "SWIM suits",
             "BATHING",
-            "TRUNKS"
+            "TRUNKS",
+            "SWIMWEAR"
           ]
         },
         {
@@ -50831,7 +50883,9 @@
           "display": "COLOGNE",
           "patterns": [
             "COLOgNE",
-            "AFTER SHAVE"
+            "AFTER SHAVE",
+            "MEN’S COLOGNE",
+            "MEN'S COLOGNE"
           ]
         },
         {
@@ -50846,7 +50900,8 @@
           "points": 3,
           "display": "SHAVING CREAM",
           "patterns": [
-            "SHAVing CREaM"
+            "SHAVing CREaM",
+            "SHAVE CREAM"
           ]
         }
       ]
@@ -79821,6 +79876,7 @@
           "points": 31,
           "display": "MUSCLES",
           "patterns": [
+            "MUSCLEs",
             "MUSCLEs"
           ]
         },
@@ -79828,7 +79884,8 @@
           "points": 17,
           "display": "CLOTHES",
           "patterns": [
-            "CLOTHes"
+            "CLOTHes",
+            "CLOTHING"
           ]
         },
         {
@@ -79843,7 +79900,9 @@
           "display": "WOMEN",
           "patterns": [
             "WOMEN",
-            "GIRLFRiENDS"
+            "GIRLFRiENDS",
+            "WOMAN",
+            "GIRLS"
           ]
         },
         {
@@ -79857,7 +79916,8 @@
           "points": 7,
           "display": "CHEST HAIR",
           "patterns": [
-            "chest HAIR"
+            "chest HAIR",
+            "HAIRY CHEST"
           ]
         }
       ]
@@ -79871,7 +79931,8 @@
           "display": "SHOES",
           "patterns": [
             "SHOEs",
-            "BOOT"
+            "BOOT",
+            "FIT"
           ]
         },
         {
@@ -79879,7 +79940,8 @@
           "display": "CAR",
           "patterns": [
             "CAR",
-            "AUTO"
+            "AUTO",
+            "TEST DRIVE"
           ]
         },
         {
@@ -79887,7 +79949,8 @@
           "display": "HOUSE",
           "patterns": [
             "HOUSE",
-            "HOME"
+            "HOME",
+            "BUYING A HOUSE"
           ]
         },
         {
@@ -79901,7 +79964,8 @@
           "points": 7,
           "display": "BRA",
           "patterns": [
-            "BRA"
+            "BRA",
+            "BRASSIERE"
           ]
         },
         {
@@ -86420,7 +86484,8 @@
           "points": 13,
           "display": "BASS",
           "patterns": [
-            "BASS"
+            "BASS",
+            "LARGEMOUTH BASS"
           ]
         },
         {
@@ -86462,14 +86527,16 @@
           "points": 4,
           "display": "CATFISH",
           "patterns": [
-            "CATFISH"
+            "CATFISH",
+            "CAT FISH"
           ]
         },
         {
           "points": 2,
           "display": "SHARK",
           "patterns": [
-            "SHARK"
+            "SHARK",
+            "SHARKS"
           ]
         }
       ]
@@ -86482,7 +86549,8 @@
           "points": 56,
           "display": "ARM",
           "patterns": [
-            "ARM"
+            "ARM",
+            "ARMS"
           ]
         },
         {
@@ -86510,14 +86578,16 @@
           "points": 2,
           "display": "NOSE",
           "patterns": [
-            "NOSE"
+            "NOSE",
+            "BROKEN NOSE"
           ]
         },
         {
           "points": 2,
           "display": "ANKLE",
           "patterns": [
-            "ANKLE"
+            "ANKLE",
+            "ANKLES"
           ]
         }
       ]
@@ -86530,28 +86600,32 @@
           "points": 45,
           "display": "POPCORN",
           "patterns": [
-            "POPCORN"
+            "POPCORN",
+            "POP CORN"
           ]
         },
         {
           "points": 44,
           "display": "NUTS",
           "patterns": [
-            "NUTs"
+            "NUTs",
+            "PEANUTS"
           ]
         },
         {
           "points": 7,
           "display": "CHIPS",
           "patterns": [
-            "CHIPs"
+            "CHIPs",
+            "POTATO CHIPS"
           ]
         },
         {
           "points": 3,
           "display": "GRAPES",
           "patterns": [
-            "GRAPES"
+            "GRAPES",
+            "GRAPE"
           ]
         }
       ]
@@ -86578,7 +86652,9 @@
           "points": 25,
           "display": "AMOUNT",
           "patterns": [
-            "AMOUNT"
+            "AMOUNT",
+            "DOLLAR AMOUNT",
+            "AMOUNT IN WORDS"
           ]
         },
         {
@@ -86586,7 +86662,9 @@
           "display": "SIGNATURE",
           "patterns": [
             "SIGNATURE",
-            "NAME"
+            "NAME",
+            "SIGN",
+            "SIGNATURE LINE"
           ]
         }
       ]
@@ -87972,21 +88050,27 @@
           "points": 28,
           "display": "BOOKS",
           "patterns": [
-            "BOOKs"
+            "BOOKs",
+            "TEXTBOOKS",
+            "SCHOOLBOOKS"
           ]
         },
         {
           "points": 11,
           "display": "LUNCH",
           "patterns": [
-            "LUNCH"
+            "LUNCH",
+            "LUNCHBOX",
+            "LUNCH BOX"
           ]
         },
         {
           "points": 6,
           "display": "PAPER",
           "patterns": [
-            "PAPER"
+            "PAPER",
+            "WORKSHEETS",
+            "SCHOOL PAPER"
           ]
         },
         {
@@ -88007,7 +88091,9 @@
           "points": 2,
           "display": "NOTEBOOK",
           "patterns": [
-            "NOTEBOOK"
+            "NOTEBOOK",
+            "BINDER",
+            "EXERCISE BOOK"
           ]
         }
       ]
@@ -88124,7 +88210,9 @@
           "display": "CAR",
           "patterns": [
             "CAR",
-            "AUTO"
+            "AUTO",
+            "PARENTS CAR",
+            "PARENTS' CAR"
           ]
         },
         {
@@ -88132,7 +88220,8 @@
           "display": "MONEY",
           "patterns": [
             "MONEY",
-            "CASH"
+            "CASH",
+            "ALLOWANCE"
           ]
         }
       ]
@@ -88146,7 +88235,9 @@
           "display": "OCEAN",
           "patterns": [
             "OCEAN",
-            "SEA"
+            "SEA",
+            "SALT WATER",
+            "SEAWATER"
           ]
         },
         {
@@ -88160,7 +88251,8 @@
           "points": 9,
           "display": "NUTS",
           "patterns": [
-            "NUTs"
+            "NUTs",
+            "SALTED NUTS"
           ]
         },
         {
@@ -88174,7 +88266,8 @@
           "points": 5,
           "display": "FISH",
           "patterns": [
-            "FISH"
+            "FISH",
+            "SALTED FISH"
           ]
         },
         {
@@ -88203,14 +88296,16 @@
           "points": 3,
           "display": "CRACKERS",
           "patterns": [
-            "CRACKERs"
+            "CRACKERs",
+            "SALTINEs"
           ]
         },
         {
           "points": 3,
           "display": "CHIPS",
           "patterns": [
-            "CHIPs"
+            "CHIPs",
+            "POTATO CHIPS"
           ]
         },
         {
@@ -88237,42 +88332,48 @@
           "points": 47,
           "display": "5",
           "patterns": [
-            "5"
+            "5",
+            "FIVE"
           ]
         },
         {
           "points": 22,
           "display": "0",
           "patterns": [
-            "0"
+            "0",
+            "ZERO"
           ]
         },
         {
           "points": 13,
           "display": "10",
           "patterns": [
-            "10"
+            "10",
+            "TEN"
           ]
         },
         {
           "points": 9,
           "display": "15",
           "patterns": [
-            "15"
+            "15",
+            "FIFTEEN"
           ]
         },
         {
           "points": 5,
           "display": "2",
           "patterns": [
-            "2"
+            "2",
+            "TWO"
           ]
         },
         {
           "points": 3,
           "display": "3",
           "patterns": [
-            "3"
+            "3",
+            "THREE"
           ]
         }
       ]
@@ -88292,7 +88393,8 @@
           "points": 23,
           "display": "CATFISH",
           "patterns": [
-            "CATFISH"
+            "CATFISH",
+            "CAT FISH"
           ]
         },
         {
@@ -88334,7 +88436,8 @@
           "points": 2,
           "display": "BLUEGILL",
           "patterns": [
-            "BLUEGILL"
+            "BLUEGILL",
+            "BLUE GILL"
           ]
         },
         {
@@ -88505,21 +88608,24 @@
           "points": 52,
           "display": "TEXAS",
           "patterns": [
-            "TEXAS"
+            "TEXAS",
+            "TX"
           ]
         },
         {
           "points": 30,
           "display": "CALIFORNIA",
           "patterns": [
-            "CALIFORNIA"
+            "CALIFORNIA",
+            "CA"
           ]
         },
         {
           "points": 15,
           "display": "ALASKA",
           "patterns": [
-            "ALASKA"
+            "ALASKA",
+            "AK"
           ]
         }
       ]
@@ -88616,14 +88722,18 @@
           "patterns": [
             "COLOR",
             "BLEACH",
-            "DYE"
+            "DYE",
+            "HAIR COLOR",
+            "DYE THEIR HAIR"
           ]
         },
         {
           "points": 43,
           "display": "CUT",
           "patterns": [
-            "CUT"
+            "CUT",
+            "HAIRCUT",
+            "CUT THEIR HAIR"
           ]
         },
         {
@@ -88643,35 +88753,40 @@
           "points": 45,
           "display": "2",
           "patterns": [
-            "2"
+            "2",
+            "TWO"
           ]
         },
         {
           "points": 38,
           "display": "3",
           "patterns": [
-            "3"
+            "3",
+            "THREE"
           ]
         },
         {
           "points": 8,
           "display": "4",
           "patterns": [
-            "4"
+            "4",
+            "FOUR"
           ]
         },
         {
           "points": 7,
           "display": "1",
           "patterns": [
-            "1"
+            "1",
+            "ONE"
           ]
         },
         {
           "points": 2,
           "display": "5",
           "patterns": [
-            "5"
+            "5",
+            "FIVE"
           ]
         }
       ]
@@ -88684,14 +88799,16 @@
           "points": 39,
           "display": "SPEAR",
           "patterns": [
-            "SPEAR"
+            "SPEAR",
+            "THROWING SPEAR"
           ]
         },
         {
           "points": 23,
           "display": "KNIFE",
           "patterns": [
-            "KNIFE"
+            "KNIFE",
+            "THROWING KNIFE"
           ]
         },
         {
@@ -88707,14 +88824,16 @@
           "display": "ROCK",
           "patterns": [
             "ROCK",
-            "STONE"
+            "STONE",
+            "THROW A ROCK"
           ]
         },
         {
           "points": 6,
           "display": "ARROW",
           "patterns": [
-            "ARROW"
+            "ARROW",
+            "BOW AND ARROW"
           ]
         },
         {
@@ -88783,7 +88902,8 @@
           "points": 4,
           "display": "GIRAFFE",
           "patterns": [
-            "GIRAFFE"
+            "GIRAFFE",
+            "GIRAFFES"
           ]
         },
         {
@@ -88798,7 +88918,9 @@
           "display": "APE",
           "patterns": [
             "APE",
-            "GORILLA"
+            "GORILLA",
+            "CHIMP",
+            "CHIMPANZEE"
           ]
         },
         {
