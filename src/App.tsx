@@ -306,7 +306,7 @@ const IntroScreen = ({
         Daily challenge
       </div>
       <h1>
-        Six questions.
+        Four questions.
         <br />
         <em>How well do you know people?</em>
       </h1>
@@ -671,7 +671,7 @@ const ResultScreen = ({
         <span className="eyebrow eyebrow--center">Challenge complete</span>
         <h1>{rank}</h1>
         <p className="result-card__subhead">
-          You finished today’s six questions.
+          You finished today’s four questions.
         </p>
 
         <div className="final-score">

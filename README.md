@@ -3,7 +3,7 @@ Collection of word web games.
 
 ## Feudle
 
-Feudle is a static, six-question daily challenge built with React, Vite, and
+Feudle is a static, four-question daily challenge built with React, Vite, and
 Remotion. Players type survey-board answers, collect each answer's point value,
 and get three misses per round. A deterministic UTC-day seed gives everyone the
 same questions, progress is saved in the browser, and the final spoiler-free

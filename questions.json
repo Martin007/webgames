@@ -420,7 +420,9 @@
           "points": 16,
           "display": "GAS",
           "patterns": [
-            "GAS"
+            "GAS",
+            "GASOLINE",
+            "PETROL"
           ]
         },
         {
@@ -434,7 +436,8 @@
           "points": 10,
           "display": "TOILET PAPER",
           "patterns": [
-            "TOILET PAPER"
+            "TOILET PAPER",
+            "TP"
           ]
         },
         {
@@ -482,7 +485,8 @@
           "points": 11,
           "display": "POSSUM",
           "patterns": [
-            "POSSUM"
+            "POSSUM",
+            "OPOSSUM"
           ]
         },
         {
@@ -3823,7 +3827,8 @@
           "display": "MAKEUP",
           "patterns": [
             "MAKEUP",
-            "COSMETICS"
+            "COSMETICS",
+            "MAKE UP"
           ]
         },
         {
@@ -3853,14 +3858,16 @@
           "display": "POISON IVY",
           "patterns": [
             "POISON IVY",
-            "OAK"
+            "OAK",
+            "POISON OAK"
           ]
         },
         {
           "points": 0,
           "display": "CREAMS",
           "patterns": [
-            "CREAMS"
+            "CREAMS",
+            "LOTION"
           ]
         },
         {
@@ -4680,7 +4687,9 @@
           "display": "DOODLE",
           "patterns": [
             "DOODLE",
-            "DRAW"
+            "DRAW",
+            "DRAWING",
+            "SKETCH"
           ]
         },
         {
@@ -4696,7 +4705,8 @@
           "points": 15,
           "display": "DAYDREAM",
           "patterns": [
-            "DAYDREAM"
+            "DAYDREAM",
+            "SPACE OUT"
           ]
         },
         {
@@ -4719,21 +4729,26 @@
           "points": 4,
           "display": "LOOK OUT WINDOW",
           "patterns": [
-            "LOOK out WINDOW"
+            "LOOK out WINDOW",
+            "LOOK OUTSIDE",
+            "STARE OUT WINDOW"
           ]
         },
         {
           "points": 3,
           "display": "SHOOT SPITBALLS",
           "patterns": [
-            "shoot SPITBALLs"
+            "shoot SPITBALLs",
+            "THROW SPITBALLS"
           ]
         },
         {
           "points": 0,
           "display": "GO TO TOILET",
           "patterns": [
-            "go to TOILET"
+            "go to TOILET",
+            "GO TO BATHROOM",
+            "GO TO RESTROOM"
           ]
         },
         {
@@ -4747,7 +4762,8 @@
           "points": 0,
           "display": "MAKE NOISE",
           "patterns": [
-            "MAKE NOISE"
+            "MAKE NOISE",
+            "DISRUPT CLASS"
           ]
         }
       ]
@@ -4916,21 +4932,25 @@
           "display": "LETTER SWEATER",
           "patterns": [
             "LETTER SWEATER",
-            "JACKET"
+            "JACKET",
+            "LETTERMAN JACKET",
+            "VARSITY JACKET"
           ]
         },
         {
           "points": 11,
           "display": "TASSEL",
           "patterns": [
-            "TASSEL"
+            "TASSEL",
+            "GRADUATION TASSEL"
           ]
         },
         {
           "points": 10,
           "display": "CLASS RING",
           "patterns": [
-            "class RING"
+            "class RING",
+            "GRADUATION RING"
           ]
         },
         {
@@ -7160,7 +7180,8 @@
           "patterns": [
             "GROCERY",
             "STORE",
-            "MARKET"
+            "MARKET",
+            "SUPERMARKET"
           ]
         },
         {
@@ -7168,7 +7189,8 @@
           "display": "MOVIE",
           "patterns": [
             "MOVIE",
-            "THEATer"
+            "THEATer",
+            "CINEMA"
           ]
         },
         {
@@ -7189,7 +7211,8 @@
           "points": 5,
           "display": "RESTAURANT",
           "patterns": [
-            "RESTAURANT"
+            "RESTAURANT",
+            "DINER"
           ]
         },
         {
@@ -7203,7 +7226,8 @@
           "points": 3,
           "display": "SPORTS GAME",
           "patterns": [
-            "sports GAME"
+            "sports GAME",
+            "SPORTING EVENT"
           ]
         },
         {
@@ -17609,14 +17633,16 @@
           "points": 30,
           "display": "PINK SLIP",
           "patterns": [
-            "PINK slip"
+            "PINK slip",
+            "TERMINATION NOTICE"
           ]
         },
         {
           "points": 10,
           "display": "BOAT SLIP",
           "patterns": [
-            "BOAT slip"
+            "BOAT slip",
+            "DOCK"
           ]
         },
         {
@@ -17630,7 +17656,8 @@
           "points": 6,
           "display": "SALES SLIP",
           "patterns": [
-            "SALES slip"
+            "SALES slip",
+            "RECEIPT"
           ]
         },
         {
@@ -17644,7 +17671,8 @@
           "points": 2,
           "display": "DEPOSIT SLIP",
           "patterns": [
-            "DEPOSIT slip"
+            "DEPOSIT slip",
+            "BANK SLIP"
           ]
         }
       ]
@@ -25851,7 +25879,8 @@
           "points": 8,
           "display": "ST LOUIS CARDINALS",
           "patterns": [
-            "st louis CARDINALS"
+            "st louis CARDINALS",
+            "ST. LOUIS CARDINALS"
           ]
         },
         {
@@ -33088,14 +33117,16 @@
           "points": 7,
           "display": "DUDLEY DORIGHT",
           "patterns": [
-            "DUDLEY DORIGHT"
+            "DUDLEY DORIGHT",
+            "DUDLEY DO RIGHT"
           ]
         },
         {
           "points": 5,
           "display": "DOCTOR DOLITTLE",
           "patterns": [
-            "DOCTOR DOLITTLE"
+            "DOCTOR DOLITTLE",
+            "DR DOLITTLE"
           ]
         },
         {
@@ -33123,7 +33154,8 @@
           "points": 3,
           "display": "DANNY DEVITO",
           "patterns": [
-            "DANNY DEVITO"
+            "DANNY DEVITO",
+            "DANNY DE VITO"
           ]
         }
       ]
@@ -35967,7 +35999,8 @@
           "display": "JELLY",
           "patterns": [
             "JELLY",
-            "JAM"
+            "JAM",
+            "PRESERVES"
           ]
         },
         {
@@ -38316,7 +38349,9 @@
           "points": 56,
           "display": "JEWELRY",
           "patterns": [
-            "JEWELRY"
+            "JEWELRY",
+            "FAKE JEWELRY",
+            "COSTUME JEWELRY"
           ]
         },
         {
@@ -38333,14 +38368,16 @@
           "display": "TEETH",
           "patterns": [
             "TEETH",
-            "DENTURES"
+            "DENTURES",
+            "FAKE TEETH"
           ]
         },
         {
           "points": 5,
           "display": "WATCH",
           "patterns": [
-            "WATCH"
+            "WATCH",
+            "FAKE WATCH"
           ]
         },
         {
@@ -38355,7 +38392,8 @@
           "points": 4,
           "display": "PAINTING",
           "patterns": [
-            "PAINTING"
+            "PAINTING",
+            "FAKE PAINTING"
           ]
         }
       ]
@@ -41934,7 +41972,8 @@
           "display": "MAKEUP",
           "patterns": [
             "MAKEUP",
-            "COSMETICS"
+            "COSMETICS",
+            "MAKE UP"
           ]
         },
         {
@@ -41948,21 +41987,24 @@
           "points": 3,
           "display": "SHORT SHORTS",
           "patterns": [
-            "short SHORTS"
+            "short SHORTS",
+            "DAISY DUKES"
           ]
         },
         {
           "points": 3,
           "display": "TACKY JEWELRY",
           "patterns": [
-            "tacky JEWELRY"
+            "tacky JEWELRY",
+            "CHEAP JEWELRY"
           ]
         },
         {
           "points": 3,
           "display": "TIGHT CLOTHES",
           "patterns": [
-            "TIGHT CLOTHes"
+            "TIGHT CLOTHes",
+            "SKIN TIGHT CLOTHING"
           ]
         }
       ]
@@ -45344,7 +45386,9 @@
           "points": 8,
           "display": "OVEREAT",
           "patterns": [
-            "overEAT"
+            "overEAT",
+            "EAT TOO MUCH",
+            "BINGE"
           ]
         },
         {
@@ -45358,14 +45402,17 @@
           "points": 4,
           "display": "EAT SWEETS",
           "patterns": [
-            "eat SWEETs"
+            "eat SWEETs",
+            "EAT CANDY",
+            "EAT DESSERT"
           ]
         },
         {
           "points": 3,
           "display": "GOSSIP",
           "patterns": [
-            "GOSSIP"
+            "GOSSIP",
+            "SPREAD RUMORS"
           ]
         }
       ]
@@ -51411,7 +51458,8 @@
           "points": 11,
           "display": "CARD GAMES",
           "patterns": [
-            "CARD games"
+            "CARD games",
+            "CARDS"
           ]
         },
         {
@@ -52272,7 +52320,8 @@
           "points": 18,
           "display": "RABBIT",
           "patterns": [
-            "RABBIT"
+            "RABBIT",
+            "BUNNY"
           ]
         },
         {
@@ -54391,7 +54440,8 @@
           "points": 37,
           "display": "TOO CROWDED",
           "patterns": [
-            "too CROWDed"
+            "too CROWDed",
+            "CROWDED"
           ]
         },
         {
@@ -54406,7 +54456,8 @@
           "points": 14,
           "display": "HATE SAND",
           "patterns": [
-            "hate SAND"
+            "hate SAND",
+            "SAND"
           ]
         },
         {
@@ -55505,28 +55556,32 @@
           "points": 13,
           "display": "ANNIVERSARY",
           "patterns": [
-            "ANNiVERSaRY"
+            "ANNiVERSaRY",
+            "WEDDING ANNIVERSARY"
           ]
         },
         {
           "points": 3,
           "display": "PROMOTION",
           "patterns": [
-            "PROMOTION"
+            "PROMOTION",
+            "RAISE"
           ]
         },
         {
           "points": 2,
           "display": "GRADUATION",
           "patterns": [
-            "GRADUATION"
+            "GRADUATION",
+            "GRAD"
           ]
         },
         {
           "points": 2,
           "display": "WEDDING",
           "patterns": [
-            "WEDDING"
+            "WEDDING",
+            "MARRIAGE"
           ]
         }
       ]
@@ -57276,14 +57331,17 @@
           "display": "GUN",
           "patterns": [
             "GUN",
-            "HOLSTER"
+            "HOLSTER",
+            "PISTOL",
+            "RIFLE"
           ]
         },
         {
           "points": 6,
           "display": "COWBOY HAT",
           "patterns": [
-            "cowboy HAT"
+            "cowboy HAT",
+            "STETSON"
           ]
         },
         {
@@ -61754,7 +61812,9 @@
           "display": "SPORTING EVENT",
           "patterns": [
             "SPORTing event",
-            "GAME"
+            "GAME",
+            "SPORTS EVENT",
+            "MATCH"
           ]
         },
         {
@@ -61763,7 +61823,8 @@
           "patterns": [
             "BIRDs",
             "WILDLIFE",
-            "ANIMAL"
+            "ANIMAL",
+            "BIRDWATCHING"
           ]
         },
         {
@@ -67546,7 +67607,8 @@
           "points": 80,
           "display": "SWINGS",
           "patterns": [
-            "SWINGs"
+            "SWINGs",
+            "SWING SET"
           ]
         },
         {
@@ -67568,7 +67630,8 @@
           "points": 5,
           "display": "MONKEY BARS",
           "patterns": [
-            "MONKEY BARs"
+            "MONKEY BARs",
+            "JUNGLE GYM"
           ]
         }
       ]
@@ -68003,14 +68066,16 @@
           "display": "SWIMSUIT CONTEST",
           "patterns": [
             "SWIMSUIT contest",
-            "BATHING SUIT"
+            "BATHING SUIT",
+            "SWIMWEAR"
           ]
         },
         {
           "points": 28,
           "display": "TALENT CONTEST",
           "patterns": [
-            "TALENT contest"
+            "TALENT contest",
+            "TALENT SHOW"
           ]
         },
         {
@@ -68019,14 +68084,16 @@
           "patterns": [
             "SPEAKing",
             "INTERVIEW",
-            "QUESTION"
+            "QUESTION",
+            "QUESTION AND ANSWER"
           ]
         },
         {
           "points": 3,
           "display": "EVENING GOWN CONTEST",
           "patterns": [
-            "EVENING GOWN contest"
+            "EVENING GOWN contest",
+            "FORMAL GOWN"
           ]
         }
       ]
@@ -69638,7 +69705,9 @@
           "points": 5,
           "display": "COWORKER",
           "patterns": [
-            "COWORKER"
+            "COWORKER",
+            "CO WORKER",
+            "COLLEAGUE"
           ]
         }
       ]
@@ -70191,7 +70260,8 @@
           "points": 44,
           "display": "SONG",
           "patterns": [
-            "SONG"
+            "SONG",
+            "MUSIC"
           ]
         },
         {
@@ -70216,7 +70286,8 @@
           "points": 2,
           "display": "LETTER",
           "patterns": [
-            "LETTER"
+            "LETTER",
+            "NOTE"
           ]
         }
       ]
@@ -71284,21 +71355,25 @@
           "display": "CAR",
           "patterns": [
             "CAR",
-            "AUTO"
+            "AUTO",
+            "AUTOMOBILE"
           ]
         },
         {
           "points": 18,
           "display": "CLOTHES",
           "patterns": [
-            "CLOTHes"
+            "CLOTHes",
+            "CLOTHING",
+            "APPAREL"
           ]
         },
         {
           "points": 12,
           "display": "FURNITURE",
           "patterns": [
-            "FURNITURE"
+            "FURNITURE",
+            "FURNISHINGS"
           ]
         }
       ]
@@ -72257,21 +72332,25 @@
           "points": 37,
           "display": "WEDDING MARCH",
           "patterns": [
-            "WEDDING MARCH"
+            "WEDDING MARCH",
+            "HERE COMES THE BRIDE"
           ]
         },
         {
           "points": 16,
           "display": "WEDDING SONG",
           "patterns": [
-            "WEDDING SONG"
+            "WEDDING SONG",
+            "THE WEDDING SONG"
           ]
         },
         {
           "points": 8,
           "display": "WEVE ONLY JUST BEGUN",
           "patterns": [
-            "weve ONLY JUST BEGUN"
+            "weve ONLY JUST BEGUN",
+            "WE'VE ONLY JUST BEGUN",
+            "WE HAVE ONLY JUST BEGUN"
           ]
         },
         {
@@ -73946,7 +74025,8 @@
           "points": 60,
           "display": "READ",
           "patterns": [
-            "READ"
+            "READ",
+            "READING"
           ]
         },
         {
@@ -73962,14 +74042,16 @@
           "points": 10,
           "display": "STUDY",
           "patterns": [
-            "STUDY"
+            "STUDY",
+            "STUDYING"
           ]
         },
         {
           "points": 3,
           "display": "THINK",
           "patterns": [
-            "THINK"
+            "THINK",
+            "THINKING"
           ]
         }
       ]
@@ -77173,14 +77255,17 @@
           "display": "STATUS",
           "patterns": [
             "STATUS",
-            "POPULARITY"
+            "POPULARITY",
+            "REPUTATION"
           ]
         },
         {
           "points": 5,
           "display": "ROBBERY",
           "patterns": [
-            "ROBbery"
+            "ROBbery",
+            "BURGLARY",
+            "THEFT"
           ]
         },
         {
@@ -77197,7 +77282,9 @@
           "display": "STOCK MARKET",
           "patterns": [
             "STOCK market",
-            "SHARES"
+            "SHARES",
+            "STOCKS",
+            "INVESTMENTS"
           ]
         }
       ]
@@ -78705,14 +78792,16 @@
           "points": 5,
           "display": "DOCTORS OFFICE",
           "patterns": [
-            "DOCTORs office"
+            "DOCTORs office",
+            "CLINIC"
           ]
         },
         {
           "points": 3,
           "display": "DENTISTS OFFICE",
           "patterns": [
-            "DENTISTs office"
+            "DENTISTs office",
+            "DENTAL OFFICE"
           ]
         }
       ]
@@ -79213,7 +79302,8 @@
           "display": "HANDKERCHIEF",
           "patterns": [
             "HANdKERCHieF",
-            "HANKY"
+            "HANKY",
+            "HANKIE"
           ]
         },
         {
@@ -82877,7 +82967,8 @@
           "points": 27,
           "display": "TIE",
           "patterns": [
-            "TIE"
+            "TIE",
+            "NECKTIE"
           ]
         },
         {
@@ -82891,7 +82982,9 @@
           "points": 3,
           "display": "GLASSES",
           "patterns": [
-            "GLASSES"
+            "GLASSES",
+            "EYEGLASSES",
+            "SPECTACLES"
           ]
         },
         {
@@ -83005,14 +83098,16 @@
           "points": 48,
           "display": "SALESPERSON",
           "patterns": [
-            "SALESperson"
+            "SALESperson",
+            "SALES REP"
           ]
         },
         {
           "points": 22,
           "display": "PILOT",
           "patterns": [
-            "PILOT"
+            "PILOT",
+            "AIRLINE PILOT"
           ]
         },
         {
@@ -83020,14 +83115,16 @@
           "display": "FLIGHT ATTENDANT",
           "patterns": [
             "FLIGHT ATTENDaNT",
-            "STEWARD"
+            "STEWARD",
+            "STEWARDESS"
           ]
         },
         {
           "points": 8,
           "display": "TRUCK DRIVER",
           "patterns": [
-            "TRUCK driver"
+            "TRUCK driver",
+            "TRUCKER"
           ]
         },
         {
@@ -89773,7 +89870,8 @@
           "points": 40,
           "display": "BOTTLE",
           "patterns": [
-            "BOTTLE"
+            "BOTTLE",
+            "BOTTLE CAP"
           ]
         },
         {
@@ -89787,14 +89885,16 @@
           "points": 5,
           "display": "CAN",
           "patterns": [
-            "CAN"
+            "CAN",
+            "TIN CAN"
           ]
         },
         {
           "points": 4,
           "display": "CHIPS",
           "patterns": [
-            "CHIPs"
+            "CHIPs",
+            "CHIP BAG"
           ]
         },
         {
@@ -89802,7 +89902,8 @@
           "display": "SAFE",
           "patterns": [
             "SAFE",
-            "VAULT"
+            "VAULT",
+            "LOCKBOX"
           ]
         }
       ]
@@ -96216,28 +96317,32 @@
           "points": 45,
           "display": "6",
           "patterns": [
-            "6"
+            "6",
+            "SIX"
           ]
         },
         {
           "points": 33,
           "display": "7",
           "patterns": [
-            "7"
+            "7",
+            "SEVEN"
           ]
         },
         {
           "points": 13,
           "display": "8",
           "patterns": [
-            "8"
+            "8",
+            "EIGHT"
           ]
         },
         {
           "points": 8,
           "display": "5",
           "patterns": [
-            "5"
+            "5",
+            "FIVE"
           ]
         }
       ]
@@ -108410,21 +108515,25 @@
           "points": 41,
           "display": "FISH",
           "patterns": [
-            "FISH"
+            "FISH",
+            "FISHING"
           ]
         },
         {
           "points": 18,
           "display": "PLAY BALL",
           "patterns": [
-            "PLAY BALL"
+            "PLAY BALL",
+            "PLAY CATCH",
+            "PLAY BASEBALL"
           ]
         },
         {
           "points": 9,
           "display": "GO CAMPING",
           "patterns": [
-            "go CAMPing"
+            "go CAMPing",
+            "CAMPING"
           ]
         },
         {
@@ -108447,7 +108556,8 @@
           "display": "HIKE",
           "patterns": [
             "HIKE",
-            "WALK"
+            "WALK",
+            "HIKING"
           ]
         },
         {
@@ -108482,7 +108592,8 @@
           "points": 2,
           "display": "SPORTS",
           "patterns": [
-            "SPORTs"
+            "SPORTs",
+            "PLAY SPORTS"
           ]
         },
         {

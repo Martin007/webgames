@@ -6,7 +6,7 @@ import type {
   SavedGame,
 } from './types';
 
-export const QUESTIONS_PER_DAY = 6;
+export const QUESTIONS_PER_DAY = 4;
 export const MAX_STRIKES = 3;
 
 const CHALLENGE_EPOCH_UTC = Date.UTC(2025, 0, 1);
@@ -198,7 +198,7 @@ export const getShareText = (
     '',
     tiles,
     '',
-    '6 questions. One daily challenge.',
+    '4 questions. One daily challenge.',
   ].join('\n');
 };
 
