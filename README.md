@@ -5,9 +5,10 @@ Collection of word web games.
 
 Feudle is a static, four-question daily challenge built with React, Vite, and
 Remotion. Players type survey-board answers, collect each answer's point value,
-and get three misses per round. A deterministic UTC-day seed gives everyone the
-same questions, progress is saved in the browser, and the final spoiler-free
-score grid can be copied and shared.
+and get three misses per round. Challenge #1 begins on 2026-08-14 (UTC). A
+deterministic challenge sequence gives everyone the same questions and uses every
+question once before the sequence wraps, progress is saved in the browser, and
+the final spoiler-free score grid can be copied and shared.
 
 Run it locally with:
 

@@ -30,7 +30,7 @@ export interface RoundResult {
 }
 
 export interface SavedGame {
-  version: 1;
+  version: 2;
   dayKey: string;
   challengeNumber: number;
   questionsPerDay: number;

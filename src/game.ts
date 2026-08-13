@@ -9,8 +9,9 @@ import type {
 export const QUESTIONS_PER_DAY = 4;
 export const MAX_STRIKES = 3;
 
-const CHALLENGE_EPOCH_UTC = Date.UTC(2025, 0, 1);
+const CHALLENGE_EPOCH_UTC = Date.UTC(2026, 7, 14);
 const DAY_MS = 86_400_000;
+const QUESTION_ORDER_SEED = 'feudle:question-order:v1';
 
 export const normalizeGuess = (value: string) =>
   value.trim().replace(/\s+/g, ' ').toLocaleLowerCase();
@@ -114,15 +115,18 @@ export const getUtcDayKey = (date = new Date()) =>
   ].join('-');
 
 export const getChallengeNumber = (date = new Date()) =>
-  Math.floor(
-    (Date.UTC(
-      date.getUTCFullYear(),
-      date.getUTCMonth(),
-      date.getUTCDate(),
-    ) -
-      CHALLENGE_EPOCH_UTC) /
-      DAY_MS,
-  ) + 1;
+  Math.max(
+    1,
+    Math.floor(
+      (Date.UTC(
+        date.getUTCFullYear(),
+        date.getUTCMonth(),
+        date.getUTCDate(),
+      ) -
+        CHALLENGE_EPOCH_UTC) /
+        DAY_MS,
+    ) + 1,
+  );
 
 const hashString = (value: string) => {
   let hash = 2166136261;
@@ -133,41 +137,37 @@ const hashString = (value: string) => {
   return hash >>> 0;
 };
 
-const mulberry32 = (seed: number) => () => {
-  let value = (seed += 0x6d2b79f5);
-  value = Math.imul(value ^ (value >>> 15), value | 1);
-  value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
-  return ((value ^ (value >>> 14)) >>> 0) / 4_294_967_296;
-};
-
 export const getDailyQuestions = (
   questions: Question[],
-  dayKey: string,
+  challengeNumber: number,
   count = QUESTIONS_PER_DAY,
 ) => {
   if (questions.length < count) {
     throw new Error(`At least ${count} questions are required.`);
   }
 
-  const shuffled = [...questions];
-  const random = mulberry32(hashString(`feudle:${dayKey}`));
-
-  for (let index = shuffled.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(random() * (index + 1));
-    [shuffled[index], shuffled[swapIndex]] = [
-      shuffled[swapIndex],
-      shuffled[index],
-    ];
+  if (!Number.isSafeInteger(challengeNumber) || challengeNumber < 1) {
+    throw new Error('Challenge number must be a positive integer.');
   }
 
-  return shuffled.slice(0, count);
+  const ordered = [...questions].sort((first, second) => {
+    const firstHash = hashString(`${QUESTION_ORDER_SEED}:${first.id}`);
+    const secondHash = hashString(`${QUESTION_ORDER_SEED}:${second.id}`);
+    return firstHash - secondHash || first.id.localeCompare(second.id);
+  });
+  const start = (challengeNumber - 1) * count;
+
+  return Array.from(
+    {length: count},
+    (_, index) => ordered[(start + index) % ordered.length],
+  );
 };
 
 export const emptySavedGame = (
   dayKey: string,
   challengeNumber: number,
 ): SavedGame => ({
-  version: 1,
+  version: 2,
   dayKey,
   challengeNumber,
   questionsPerDay: QUESTIONS_PER_DAY,

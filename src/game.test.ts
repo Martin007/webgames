@@ -1,6 +1,7 @@
 import {describe, expect, it} from 'vitest';
 import {
   findAnswerIndex,
+  getChallengeNumber,
   getDailyQuestions,
   getShareText,
   matchesAnswer,
@@ -60,18 +61,38 @@ describe('daily challenge', () => {
     answers: [answer(['ANSWER'])],
   }));
 
-  it('selects four deterministic, unique questions', () => {
-    const first = getDailyQuestions(questions, '2026-07-28');
-    const again = getDailyQuestions(questions, '2026-07-28');
+  it('selects four deterministic, unique questions for a challenge', () => {
+    const first = getDailyQuestions(questions, 1);
+    const again = getDailyQuestions(questions, 1);
     expect(first).toHaveLength(4);
     expect(new Set(first.map(({id}) => id))).toHaveLength(4);
     expect(first.map(({id}) => id)).toEqual(again.map(({id}) => id));
   });
 
-  it('changes the selection on another day', () => {
-    const first = getDailyQuestions(questions, '2026-07-28');
-    const next = getDailyQuestions(questions, '2026-07-29');
-    expect(first.map(({id}) => id)).not.toEqual(next.map(({id}) => id));
+  it('uses every question before repeating', () => {
+    const cycle = Array.from({length: 5}, (_, index) =>
+      getDailyQuestions(questions, index + 1),
+    ).flat();
+
+    expect(new Set(cycle.map(({id}) => id))).toHaveLength(20);
+    expect(getDailyQuestions(questions, 6).map(({id}) => id)).toEqual(
+      getDailyQuestions(questions, 1).map(({id}) => id),
+    );
+  });
+
+  it('wraps only after the final remaining question has been used', () => {
+    const shortSet = questions.slice(0, 5);
+    const first = getDailyQuestions(shortSet, 1);
+    const second = getDailyQuestions(shortSet, 2);
+
+    expect(new Set([...first, ...second].map(({id}) => id))).toHaveLength(5);
+    expect(second[0].id).not.toBe(first[0].id);
+  });
+
+  it('starts Challenge #1 on 2026-08-14 UTC', () => {
+    expect(getChallengeNumber(new Date('2026-08-13T00:00:00.000Z'))).toBe(1);
+    expect(getChallengeNumber(new Date('2026-08-14T00:00:00.000Z'))).toBe(1);
+    expect(getChallengeNumber(new Date('2026-08-15T00:00:00.000Z'))).toBe(2);
   });
 });
 

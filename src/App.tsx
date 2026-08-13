@@ -61,7 +61,7 @@ const loadSavedGame = (dayKey: string): SavedGame | null => {
     if (!raw) return null;
     const saved = JSON.parse(raw) as SavedGame;
     if (
-      saved.version !== 1 ||
+      saved.version !== 2 ||
       saved.dayKey !== dayKey ||
       saved.questionsPerDay !== QUESTIONS_PER_DAY ||
       !Array.isArray(saved.rounds)
@@ -92,7 +92,7 @@ const getLifetimeStats = (): LifetimeStats => {
       const item = localStorage.getItem(key);
       if (!item) continue;
       const parsed = JSON.parse(item) as SavedGame;
-      if (parsed.version === 1 && parsed.status === 'complete') {
+      if (parsed.version === 2 && parsed.status === 'complete') {
         completed.push(parsed);
       }
     }
@@ -749,8 +749,10 @@ export const App = () => {
 
   const dailyQuestions = useMemo(
     () =>
-      data ? getDailyQuestions(data.questions, dayKey, QUESTIONS_PER_DAY) : [],
-    [data, dayKey],
+      data
+        ? getDailyQuestions(data.questions, challengeNumber, QUESTIONS_PER_DAY)
+        : [],
+    [challengeNumber, data],
   );
 
   useEffect(() => {
