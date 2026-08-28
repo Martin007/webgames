@@ -57825,7 +57825,8 @@
           "points": 9,
           "display": "LAS VEGAS",
           "patterns": [
-            "LAS VEGAS"
+            "LAS VEGAS",
+            "VEGAS"
           ]
         }
       ]
@@ -58993,7 +58994,8 @@
           "points": 43,
           "display": "KILLER WHALE",
           "patterns": [
-            "KILLER whale"
+            "KILLER whale",
+            "ORCA"
           ]
         },
         {
@@ -59021,7 +59023,8 @@
           "points": 3,
           "display": "GRAY WHALE",
           "patterns": [
-            "GRaY whale"
+            "GRaY whale",
+            "GREY whale"
           ]
         },
         {
@@ -61618,7 +61621,9 @@
           "points": 42,
           "display": "MOVIE THEATER",
           "patterns": [
-            "MOVIE theater"
+            "MOVIE theater",
+            "CINEMA",
+            "MOVIE THEATre"
           ]
         },
         {
@@ -107251,7 +107256,8 @@
           "points": 8,
           "display": "VACUUM",
           "patterns": [
-            "VACUUM"
+            "VACUUM cleaner",
+            "HOOVER"
           ]
         },
         {
@@ -107297,7 +107303,8 @@
           "points": 2,
           "display": "TAP",
           "patterns": [
-            "TAP"
+            "TAP",
+            "FAUCET"
           ]
         },
         {
@@ -110552,8 +110559,9 @@
           "points": 52,
           "display": "GAS",
           "patterns": [
-            "GAS",
-            "FUEL"
+            "GASoline",
+            "FUEL",
+            "PETROL"
           ]
         },
         {
@@ -110582,7 +110590,8 @@
           "display": "AC UNIT",
           "patterns": [
             "AC UNIT",
-            "AIR CONDITIONer"
+            "AIR CONDITIONer",
+            "AIR CONditioning"
           ]
         },
         {
@@ -110686,7 +110695,7 @@
           "points": 39,
           "display": "DRUM",
           "patterns": [
-            "DRUM"
+            "DRUMs set"
           ]
         },
         {
