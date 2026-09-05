@@ -22,7 +22,7 @@ export interface Bank {
 export interface Lifelines {
   fifty: {at: number; removed: Choice[]} | null;
   audience: {at: number; votes: number[]} | null;
-  phone: {at: number; choice: Choice; confidence: 'fairly sure' | 'not certain'} | null;
+  phone: {at: number; choice: Choice | null; confidence: 'fairly sure' | 'not certain' | 'does not know' | 'no answer'} | null;
 }
 export interface Game {
   version: 1;
@@ -134,9 +134,17 @@ export function reduceGame(g: Game, action: Action): Game {
       lifelines: {...g.lifelines, fifty: {at: g.index, removed}}};
   }
   // These are deterministic simulated hints, not a live audience or an actual call.
+  if (action.name === 'phone') {
+    const connection = rng();
+    if (connection < 0.10) return {...g, lifelines: {...g.lifelines,
+      phone: {at: g.index, choice: null, confidence: 'no answer'}}};
+    if (connection < 0.25) return {...g, lifelines: {...g.lifelines,
+      phone: {at: g.index, choice: null, confidence: 'does not know'}}};
+    const favorite = rng() < 0.78 ? q.answer : wrong[Math.floor(rng() * wrong.length)];
+    return {...g, lifelines: {...g.lifelines,
+      phone: {at: g.index, choice: favorite, confidence: rng() > 0.4 ? 'fairly sure' : 'not certain'}}};
+  }
   const favorite = rng() < 0.78 ? q.answer : wrong[Math.floor(rng() * wrong.length)];
-  if (action.name === 'phone') return {...g, lifelines: {...g.lifelines,
-    phone: {at: g.index, choice: favorite, confidence: rng() > 0.4 ? 'fairly sure' : 'not certain'}}};
   const weights = [0, 1, 2, 3].map((c) => !available.includes(c as Choice) ? 0 : c === favorite ? 45 + Math.floor(rng() * 35) : 5 + Math.floor(rng() * 20));
   const sum = weights.reduce((a, b) => a + b, 0);
   const votes = weights.map((w) => Math.floor(100 * w / sum));
@@ -180,7 +188,12 @@ export function restoreGame(raw: string | null, day: string): Game | null {
         const h = g.lifelines.audience!;
         if (!Array.isArray(h.votes) || h.votes.length !== 4 || !h.votes.every((n) => Number.isInteger(n) && n >= 0 && n <= 100)
           || h.votes.reduce((a, b) => a + b, 0) !== 100) return null;
-      } else if (!isChoice(g.lifelines.phone!.choice) || !['fairly sure', 'not certain'].includes(g.lifelines.phone!.confidence)) return null;
+      } else {
+        const h = g.lifelines.phone!;
+        const unavailable = h.choice === null && ['does not know', 'no answer'].includes(h.confidence);
+        const answered = isChoice(h.choice) && ['fairly sure', 'not certain'].includes(h.confidence);
+        if (!unavailable && !answered) return null;
+      }
     }
     if (g.phase === 'question' && g.selected !== null && removedChoices(g).includes(g.selected)) return null;
     return g;
