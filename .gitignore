@@ -2,3 +2,8 @@ node_modules/
 dist/
 .vite/
 *.local
+
+# Recreated from the committed CSV snapshot by predev/prebuild/pretest.
+/public/games/triviaire/questions.json
+
+*.tmp
