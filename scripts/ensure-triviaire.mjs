@@ -24,6 +24,7 @@ try {
       bank = convertSheets(await fetchSheets());
       console.log('Q1-Q15 snapshots are not committed yet; prepared Triviaire from the live supplied sheet. Run npm run import:triviaire to snapshot all tabs.');
     } catch (fetchError) {
+      if (process.env.CI) throw new Error(`Could not fetch all Q1-Q15 tabs in CI: ${fetchError.message}`);
       // Keep local/offline development usable during the migration. The engine understands the legacy flat pack.
       const existing = await readFile(OUTPUT, 'utf8');
       JSON.parse(existing);
