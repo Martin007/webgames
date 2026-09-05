@@ -56,14 +56,14 @@ test('combines Q1 through Q15 as explicit difficulty pools', () => {
   const missing = new Map(tabs); missing.delete(15);
   assert.throws(() => convertSheets(missing), /Missing Q15/);
 });
-test('level-aware IDs and URLs preserve the source tab', () => {
+test('level-aware IDs and URLs preserve the source tab and raw headers', () => {
   const q1 = convertLevelCsv(rows(2), 1);
   const q15 = convertLevelCsv(rows(2), 15);
   assert.equal(q1.questions[0].level, 1);
   assert.equal(q15.questions[0].level, 15);
   assert.notEqual(q1.questions[0].id, q15.questions[0].id);
-  assert.match(sheetCsvUrl(1), /sheet=Q1$/);
-  assert.match(sheetCsvUrl(15), /sheet=Q15$/);
+  assert.match(sheetCsvUrl(1), /sheet=Q1&headers=0$/);
+  assert.match(sheetCsvUrl(15), /sheet=Q15&headers=0$/);
 });
 
 test('reads the workbook’s transposed bank plus row-wise appended questions', () => {

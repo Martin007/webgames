@@ -13,7 +13,7 @@ export const SNAPSHOT = 'data/triviaire/source.csv';
 export const SNAPSHOT_DIR = 'data/triviaire';
 export const OUTPUT = 'public/games/triviaire/questions.json';
 export const snapshotPath = (level) => `${SNAPSHOT_DIR}/Q${level}.csv`;
-export const sheetCsvUrl = (level) => `${SHEET_URL.replace('/edit', '')}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(`Q${level}`)}`;
+export const sheetCsvUrl = (level) => `${SHEET_URL.replace('/edit', '')}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(`Q${level}`)}&headers=0`;
 
 /** RFC 4180-style CSV, including BOM, CRLF, quoted commas/newlines and escaped quotes. */
 export function parseCsv(text) {
