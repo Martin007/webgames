@@ -43,39 +43,91 @@ const clean = (s) => String(s ?? '').normalize('NFC').trim().replace(/\s+/g, ' '
 const norm = (s) => clean(s).toLowerCase();
 const digest = (s) => createHash('sha256').update(s).digest('hex');
 const validLevel = (level) => Number.isInteger(level) && level >= 1 && level <= 15;
+const REQUIRED_FIELDS = ['question', 'a', 'b', 'c', 'd', 'correct'];
 
 function parseQuestionRows(text, label, makeId, level) {
   if (/^\s*<!doctype|^\s*<html/i.test(text)) throw new Error(`Google returned an HTML page for ${label}, not a CSV. Check sheet sharing.`);
   const rows = parseCsv(text);
   if (rows.length < 2) throw new Error(`${label} is empty.`);
-  const header = rows[0].map(norm);
-  const columns = ['question', 'a', 'b', 'c', 'd', 'correct'].map((h) => header.indexOf(h));
-  if (columns.some((i) => i < 0)) {
-    const preview = rows.slice(0, 3).map((row) => row.slice(0, 8).map(clean).join(' | ')).join(' / ');
-    throw new Error(`Required columns for ${label}: Question, A, B, C, D, Correct. First rows: ${preview}`);
-  }
+
   const seen = new Map(); const questions = []; const duplicates = []; const excludedRows = [];
-  for (let i = 1; i < rows.length; i++) {
-    const r = rows[i]; const values = columns.map((c) => clean(r[c]));
-    const [prompt, ...rest] = values; const choices = rest.slice(0, 4); const answer = 'ABCD'.indexOf(values[5].toUpperCase());
-    if (!prompt || choices.some((c) => !c) || answer < 0 || values[5].length !== 1 || new Set(choices.map(norm)).size !== 4) {
-      throw new Error(`Invalid question/choices/correct answer on ${label} row ${i + 1}. No files were written.`);
+  const addQuestion = ({prompt, choices, correct, sourceRows, source, contributor, location}) => {
+    prompt = clean(prompt); choices = choices.map(clean); correct = clean(correct).toUpperCase();
+    const answer = 'ABCD'.indexOf(correct);
+    if (!prompt || choices.some((c) => !c) || answer < 0 || correct.length !== 1 || new Set(choices.map(norm)).size !== 4) {
+      throw new Error(`Invalid question/choices/correct answer at ${label} ${location}. No files were written.`);
     }
     if (prompt.length < 8) {
-      excludedRows.push({row: i + 1, reason: 'Incomplete prompt (fewer than 8 characters).'});
-      continue;
+      excludedRows.push({row: sourceRows[0], reason: 'Incomplete prompt (fewer than 8 characters).'});
+      return;
     }
     const previous = seen.get(norm(prompt));
     if (previous) {
-      if (norm(previous.choices[previous.answer]) !== norm(choices[answer])) throw new Error(`Conflicting correct answers on ${label} rows ${previous.sourceRows[0]} and ${i + 1}.`);
-      previous.sourceRows.push(i + 1); duplicates.push(i + 1); continue;
+      if (norm(previous.choices[previous.answer]) !== norm(choices[answer])) throw new Error(`Conflicting correct answers for "${prompt}" in ${label}.`);
+      previous.sourceRows.push(...sourceRows.filter((n) => !previous.sourceRows.includes(n))); duplicates.push(sourceRows[0]); return;
     }
-    const q = {id: makeId(prompt), ...(level ? {level} : {}), prompt, choices, answer, sourceRows: [i + 1]};
-    if (clean(r[6])) q.source = clean(r[6]);
-    if (clean(r[7])) q.contributor = clean(r[7]);
+    const q = {id: makeId(prompt), ...(level ? {level} : {}), prompt, choices, answer, sourceRows};
+    if (clean(source)) q.source = clean(source);
+    if (clean(contributor)) q.contributor = clean(contributor);
     seen.set(norm(prompt), q); questions.push(q);
+  };
+
+  // Newer tabs/exports may use one question per row with a conventional header.
+  const header = rows[0].map(norm);
+  const columns = REQUIRED_FIELDS.map((h) => header.indexOf(h));
+  if (columns.every((i) => i >= 0)) {
+    for (let i = 1; i < rows.length; i++) {
+      const r = rows[i];
+      addQuestion({
+        prompt: r[columns[0]], choices: columns.slice(1, 5).map((c) => r[c]), correct: r[columns[5]],
+        sourceRows: [i + 1], source: r[6], contributor: r[7], location: `row ${i + 1}`,
+      });
+    }
+    return {rows: rows.length - 1, duplicates, excludedRows, questions};
   }
-  return {rows: rows.length - 1, duplicates, excludedRows, questions};
+
+  // The original workbook stores the main bank transposed: field names down column A,
+  // with each question occupying a column. Newer questions are appended row-wise below it.
+  const fieldRows = new Map();
+  const fieldIndexes = new Set();
+  for (let i = 0; i < rows.length; i++) {
+    const key = norm(rows[i][0]);
+    const canonical = key === 'question source' || key === 'source' ? 'source' : key;
+    if ([...REQUIRED_FIELDS, 'source', 'contributor'].includes(canonical) && !fieldRows.has(canonical)) {
+      fieldRows.set(canonical, rows[i]); fieldIndexes.add(i);
+    }
+  }
+  if (REQUIRED_FIELDS.some((field) => !fieldRows.has(field))) {
+    const preview = rows.slice(0, 3).map((row) => row.slice(0, 8).map(clean).join(' | ')).join(' / ');
+    throw new Error(`Could not find the ${label} question fields. First rows: ${preview}`);
+  }
+
+  const maxColumns = Math.max(...REQUIRED_FIELDS.map((field) => fieldRows.get(field).length));
+  for (let column = 1; column < maxColumns; column++) {
+    const prompt = fieldRows.get('question')[column];
+    const choices = ['a', 'b', 'c', 'd'].map((field) => fieldRows.get(field)[column]);
+    const correct = fieldRows.get('correct')[column];
+    const core = [prompt, ...choices, correct].map(clean);
+    if (core.every((value) => !value)) continue;
+    addQuestion({
+      prompt, choices, correct, sourceRows: [column + 1],
+      source: fieldRows.get('source')?.[column], contributor: fieldRows.get('contributor')?.[column],
+      location: `column ${column + 1}`,
+    });
+  }
+
+  // Also ingest any normal row-oriented records appended below the transposed block.
+  for (let i = 0; i < rows.length; i++) {
+    if (fieldIndexes.has(i)) continue;
+    const r = rows[i];
+    const firstSix = r.slice(0, 6).map(clean);
+    if (firstSix.length < 6 || !firstSix[0] || !/^[ABCD]$/i.test(firstSix[5])) continue;
+    addQuestion({
+      prompt: r[0], choices: r.slice(1, 5), correct: r[5], sourceRows: [i + 1],
+      source: r[6], contributor: r[7], location: `row ${i + 1}`,
+    });
+  }
+  return {rows: rows.length, duplicates, excludedRows, questions};
 }
 
 /** Legacy single-tab conversion retained for old snapshots/tests and offline fallback. */
