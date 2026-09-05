@@ -1,0 +1,32 @@
+name: Triviaire source check
+on:
+  push:
+    branches: [feat/triviaire-game-hub]
+    paths: [.github/workflows/triviaire-source-check.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve supplied public question sheet
+        continue-on-error: true
+        run: |
+          mkdir -p /tmp/triviaire-source
+          curl --fail --location --max-time 60 'https://docs.google.com/spreadsheets/d/1-SYaM0xz_f7YLtMnIk6WkyDa78JOsk-mJD37diF-Vuc/export?format=csv&gid=599441168' --output /tmp/triviaire-source/questions.csv
+          python3 - <<'PY'
+          import csv, pathlib
+          p = pathlib.Path('/tmp/triviaire-source/questions.csv')
+          rows = list(csv.reader(p.open()))
+          print('Rows:', len(rows))
+          print('First rows:', rows[:4])
+          PY
+      - name: Archive source for local verification
+        run: |
+          git archive --format=tar.gz HEAD > /tmp/triviaire-source/repository.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: triviaire-source
+          path: /tmp/triviaire-source/
+          retention-days: 1
