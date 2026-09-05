@@ -30,8 +30,7 @@ export default function Home() {
     <a className="wg-skip" href="#lineup" onClick={(e) => {e.preventDefault(); document.getElementById('lineup')?.focus();}}>Skip to games</a>
     <header className="wg-header"><Wordmark /><nav aria-label="Main navigation"><span className="wg-header-note"><i /> A fresh challenge, every day</span><button className="wg-text-btn" onClick={() => setHelp(true)}>How it works <Icon name="help" /></button></nav></header>
     <main className="wg-main">
-      <section className="wg-intro" aria-labelledby="welcome-title">
-        <div className="wg-intro-copy"><p className="wg-eyebrow"><span /> YOUR DAILY PLAY BREAK</p><h1 id="welcome-title">A little play.<br /><span>Every day.</span><svg className="wg-doodle" width="65" height="65" viewBox="0 0 65 65" fill="none" aria-hidden="true"><path d="m32 2 3 23L54 9 41 30l23 3-23 5 13 20-20-13-3 20-4-22L8 56l15-21L1 31l24-4L12 8l18 17Z" stroke="currentColor" strokeWidth="2.5" /></svg></h1><p className="wg-lede">Big game-show energy. Little daily rituals.<br />Pick your challenge and make today a winning day.</p></div>
+      <section className="wg-intro" aria-label="Today’s lineup">
         <div className="wg-daily-stamp"><span className="wg-stamp-label"><Icon name="clock" /> TODAY’S LINEUP</span><strong>{displayDay(day)}</strong><span>Two games. Two fresh challenges.</span><div className="wg-stamp-reset">Next reset <b>{countdown(remaining)}</b><small>00:00 UTC</small></div></div>
       </section>
       <section id="lineup" className="wg-lineup" tabIndex={-1} aria-labelledby="lineup-title">
@@ -53,9 +52,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <section className="wg-ritual" aria-label="About the games"><div className="wg-ritual-icon"><Icon name="spark" /></div><div><h2>A small ritual. A little friendly competition.</h2><p>Everyone gets the same daily challenges. Play your way, then share your score.</p></div><span className="wg-free-note">Always free.<br />Just for fun.</span></section>
     </main>
-    <footer className="wg-footer"><Wordmark /><p>No downloads. No sign-ups. Just play.</p><span>Made for your daily break <span aria-hidden="true">↗</span></span></footer>
     {help && <Modal title="Your daily dose of play" onClose={() => setHelp(false)}><p>Choose a game, take on today’s challenge, and share your spoiler-free result with friends.</p><div className="wg-help-rule"><Icon name="clock" /><p><strong>A fresh start at midnight UTC.</strong> Each game has one challenge per day, with the same questions for everyone using the current question pack.</p></div><div className="wg-help-rule"><Icon name="check" /><p><strong>Your progress stays here.</strong> Games save in this browser automatically. No account is needed; progress does not sync between devices.</p></div><div className="wg-help-rule"><Icon name="trophy" /><p><strong>Nothing to lose.</strong> All prizes are imaginary. These are independent, unofficial games made for fun.</p></div><button className="wg-primary" onClick={() => setHelp(false)}>Let’s play <Icon name="arrow" /></button></Modal>}
   </div>;
 }
