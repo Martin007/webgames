@@ -10,14 +10,22 @@ const progress = (n: number) => {
   for (let i = 0; i < n; i++) game = reduceGame(answer(game), {type: 'next'});
   return game;
 };
+const dateAfter = (days: number) => new Date(Date.parse(`${day}T00:00:00Z`) + days * 86_400_000).toISOString().slice(0, 10);
 
 describe('question pack and daily scheduling', () => {
-  it('imports the actual supplied sheet without duplicate questions', () => {
+  it('imports the actual supplied sheet without duplicate questions within a difficulty level', () => {
     expect(bank.source.rows).toBeGreaterThanOrEqual(15);
     expect(bank.source.duplicatesRemoved).toBeGreaterThanOrEqual(0);
     expect(bank.questions).toHaveLength(bank.source.rows - bank.source.duplicatesRemoved - (bank.source.excludedRows?.length ?? 0));
     expect(bank.questions.every((q) => q.prompt.length >= 8)).toBe(true);
-    expect(new Set(bank.questions.map((q) => q.prompt.toLowerCase())).size).toBe(bank.questions.length);
+    if (bank.source.difficulty === 'Q1-Q15') {
+      expect(bank.source.sheets).toHaveLength(15);
+      expect(bank.source.sheets!.every((sheet) => sheet.questions > 0)).toBe(true);
+      expect(bank.questions.every((q) => Number.isInteger(q.level) && q.level! >= 1 && q.level! <= 15)).toBe(true);
+      expect(new Set(bank.questions.map((q) => `${q.level}:${q.prompt.toLowerCase()}`)).size).toBe(bank.questions.length);
+    } else {
+      expect(new Set(bank.questions.map((q) => q.prompt.toLowerCase())).size).toBe(bank.questions.length);
+    }
     expect(bank.questions.some((q) => Boolean(q.contributor))).toBe(true);
   });
   it('uses midnight UTC regardless of the player’s timezone', () => {
@@ -39,16 +47,33 @@ describe('question pack and daily scheduling', () => {
       expect(q.choices[q.answer]).toBe(original.choices[original.answer]);
     }
   });
-  it('exhausts the pack before repeating and has no duplicates within a day', () => {
-    const all = [];
-    for (let d = 0; d < 400; d++) {
-      const date = new Date(Date.parse(`${day}T00:00:00Z`) + d * 86_400_000).toISOString().slice(0, 10);
-      const deck = dailyDeck(bank, date);
-      expect(new Set(deck.map((q) => q.id)).size).toBe(15);
-      all.push(...deck.map((q) => q.id));
+  it('rotates through the available question pools before repeating', () => {
+    if (bank.source.difficulty !== 'Q1-Q15') {
+      const all = [];
+      for (let d = 0; d < 400; d++) {
+        const deck = dailyDeck(bank, dateAfter(d));
+        expect(new Set(deck.map((q) => q.id)).size).toBe(15);
+        all.push(...deck.map((q) => q.id));
+      }
+      expect(new Set(all.slice(0, bank.questions.length)).size).toBe(bank.questions.length);
+      expect(all[bank.questions.length]).toBe(all[0]);
+      return;
     }
-    expect(new Set(all.slice(0, bank.questions.length)).size).toBe(bank.questions.length);
-    expect(all[bank.questions.length]).toBe(all[0]);
+    const base = dailyDeck(bank, day);
+    expect(base.map((q) => q.level)).toEqual(PRIZES.map((_, i) => i + 1));
+    const sampleDays = 100;
+    const seen = PRIZES.map(() => new Set<string>());
+    for (let d = 0; d < sampleDays; d++) {
+      const deck = dailyDeck(bank, dateAfter(d));
+      expect(new Set(deck.map((q) => q.id)).size).toBe(15);
+      deck.forEach((q, i) => seen[i].add(q.id));
+    }
+    for (let i = 0; i < 15; i++) {
+      const level = i + 1;
+      const poolSize = bank.questions.filter((q) => q.level === level).length;
+      expect(seen[i].size).toBe(Math.min(sampleDays, poolSize));
+      expect(dailyDeck(bank, dateAfter(poolSize))[i].id).toBe(base[i].id);
+    }
   });
   it('rejects invalid packs and dates', () => {
     expect(() => validateBank({...bank, version: 2})).toThrow();
