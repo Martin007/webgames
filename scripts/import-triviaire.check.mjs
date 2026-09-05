@@ -33,7 +33,7 @@ test('rejects conflicting correct answers instead of silently picking one', () =
 });
 test('rejects HTML/login responses, missing columns, incomplete packs and bad answers', () => {
   assert.throws(() => convertCsv('<!DOCTYPE html><html>Sign in</html>'), /HTML/);
-  assert.throws(() => convertCsv('Question,A,B,C,D\nQ,A,B,C,D'), /Required columns/);
+  assert.throws(() => convertCsv('Question,A,B,C,D\nQ,A,B,C,D'), /question fields|Required columns/i);
   assert.throws(() => convertCsv(rows(14)), /15 unique/);
   assert.throws(() => convertCsv(rows().replace('Four,A', 'Four,Z')), /row 2/);
   assert.throws(() => convertCsv(rows().replace('One,Two', 'One,One')), /row 2/);
@@ -64,4 +64,27 @@ test('level-aware IDs and URLs preserve the source tab', () => {
   assert.notEqual(q1.questions[0].id, q15.questions[0].id);
   assert.match(sheetCsvUrl(1), /sheet=Q1$/);
   assert.match(sheetCsvUrl(15), /sheet=Q15$/);
+});
+
+test('reads the workbook’s transposed bank plus row-wise appended questions', () => {
+  const mixed = [
+    'Question,First column question?,Second column question?',
+    'A,One,Red',
+    'B,Two,Blue',
+    'C,Three,Green',
+    'D,Four,Yellow',
+    'Correct,A,B',
+    'Question Source,Episode one,Episode two',
+    'Contributor,Alice,Bob',
+    'Appended row question?,North,South,East,West,C,Episode three,Carol',
+  ].join('\n');
+  const sheet = convertLevelCsv(mixed, 7);
+  assert.equal(sheet.questions.length, 3);
+  assert.deepEqual(sheet.questions.map((q) => q.level), [7,7,7]);
+  assert.equal(sheet.questions[0].prompt, 'First column question?');
+  assert.equal(sheet.questions[0].source, 'Episode one');
+  assert.equal(sheet.questions[1].contributor, 'Bob');
+  assert.equal(sheet.questions[2].prompt, 'Appended row question?');
+  assert.equal(sheet.questions[2].answer, 2);
+  assert.equal(sheet.questions[2].contributor, 'Carol');
 });
