@@ -50,7 +50,10 @@ function parseQuestionRows(text, label, makeId, level) {
   if (rows.length < 2) throw new Error(`${label} is empty.`);
   const header = rows[0].map(norm);
   const columns = ['question', 'a', 'b', 'c', 'd', 'correct'].map((h) => header.indexOf(h));
-  if (columns.some((i) => i < 0)) throw new Error(`Required columns for ${label}: Question, A, B, C, D, Correct.`);
+  if (columns.some((i) => i < 0)) {
+    const preview = rows.slice(0, 3).map((row) => row.slice(0, 8).map(clean).join(' | ')).join(' / ');
+    throw new Error(`Required columns for ${label}: Question, A, B, C, D, Correct. First rows: ${preview}`);
+  }
   const seen = new Map(); const questions = []; const duplicates = []; const excludedRows = [];
   for (let i = 1; i < rows.length; i++) {
     const r = rows[i]; const values = columns.map((c) => clean(r[c]));
