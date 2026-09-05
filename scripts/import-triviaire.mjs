@@ -55,6 +55,8 @@ function parseQuestionRows(text, label, makeId, level) {
     prompt = clean(prompt); choices = choices.map(clean); correct = clean(correct).toUpperCase();
     const answer = 'ABCD'.indexOf(correct);
     if (!prompt || choices.some((c) => !c) || answer < 0 || correct.length !== 1 || new Set(choices.map(norm)).size !== 4) {
+      const reason = 'Invalid or incomplete question, choices, or correct answer.';
+      if (level) { excludedRows.push({row: sourceRows[0], reason}); return; }
       throw new Error(`Invalid question/choices/correct answer at ${label} ${location}. No files were written.`);
     }
     if (prompt.length < 8) {
@@ -195,7 +197,7 @@ export async function main(args = process.argv.slice(2)) {
   const bank = convertSheets(csvByLevel);
   await writeAtomic(output, JSON.stringify(bank, null, 2) + '\n');
   if (!inputDir && resolve(output) === resolve(OUTPUT)) await Promise.all(LEVELS.map((level) => writeAtomic(snapshotPath(level), csvByLevel.get(level))));
-  console.log(`Imported ${bank.questions.length} questions across Q1-Q15 from ${bank.source.rows} rows; removed ${bank.source.duplicatesRemoved} within-tab duplicates; excluded ${bank.source.excludedRows.length} incomplete prompts. Revision: ${bank.revision}.`);
+  console.log(`Imported ${bank.questions.length} questions across Q1-Q15 from ${bank.source.rows} rows; removed ${bank.source.duplicatesRemoved} within-tab duplicates; excluded ${bank.source.excludedRows.length} incomplete or invalid entries. Revision: ${bank.revision}.`);
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main().catch((error) => { console.error(error.message); process.exitCode = 1; });

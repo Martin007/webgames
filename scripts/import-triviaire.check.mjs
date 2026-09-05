@@ -88,3 +88,11 @@ test('reads the workbook’s transposed bank plus row-wise appended questions', 
   assert.equal(sheet.questions[2].answer, 2);
   assert.equal(sheet.questions[2].contributor, 'Carol');
 });
+
+test('quarantines malformed records in a difficulty tab but keeps valid questions', () => {
+  const csv = 'Question,A,B,C,D,Correct,,\nValid question here?,One,Two,Three,Four,A,,\nBroken question here?,One,Two,,Four,C,,';
+  const sheet = convertLevelCsv(csv, 9);
+  assert.equal(sheet.questions.length, 1);
+  assert.equal(sheet.excludedRows.length, 1);
+  assert.match(sheet.excludedRows[0].reason, /Invalid or incomplete/);
+});
