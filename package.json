@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run && node --test scripts/import-triviaire.check.mjs",
+    "predev": "node scripts/ensure-triviaire.mjs",
+    "prebuild": "node scripts/ensure-triviaire.mjs",
+    "pretest": "node scripts/ensure-triviaire.mjs",
+    "import:triviaire": "node scripts/import-triviaire.mjs"
   },
   "dependencies": {
     "@remotion/player": "4.0.500",
