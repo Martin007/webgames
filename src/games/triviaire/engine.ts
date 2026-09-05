@@ -3,9 +3,11 @@ import {challengeNumber} from '../../shared/daily';
 export const PRIZES = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000] as const;
 export const STORAGE_PREFIX = 'triviaire:daily:';
 export const LETTERS = ['A', 'B', 'C', 'D'] as const;
+export const LEVELS = PRIZES.map((_, i) => i + 1);
 export type Choice = 0 | 1 | 2 | 3;
 export interface Question {
   id: string;
+  level?: number;
   prompt: string;
   choices: [string, string, string, string];
   answer: Choice;
@@ -16,7 +18,14 @@ export interface Question {
 export interface Bank {
   version: 1;
   revision: string;
-  source: {url: string; rows: number; duplicatesRemoved: number; excludedRows?: {row: number; reason: string}[]; difficulty: 'unrated'};
+  source: {
+    url: string;
+    rows: number;
+    duplicatesRemoved: number;
+    excludedRows?: {row: number; reason: string; level?: number}[];
+    difficulty: 'unrated' | 'Q1-Q15';
+    sheets?: {level: number; name: string; rows: number; duplicatesRemoved: number; excludedRows: number; questions: number}[];
+  };
   questions: Question[];
 }
 export interface Lifelines {
@@ -66,37 +75,53 @@ function shuffled<T>(items: readonly T[], rng: () => number): T[] {
   return copy;
 }
 const isChoice = (n: unknown): n is Choice => Number.isInteger(n) && Number(n) >= 0 && Number(n) < 4;
+const isLevel = (n: unknown): n is number => Number.isInteger(n) && Number(n) >= 1 && Number(n) <= 15;
 const isRecord = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
 const isText = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0;
 export function validQuestion(v: unknown): v is Question {
   if (!isRecord(v)) return false;
   return isText(v.id) && isText(v.prompt) && Array.isArray(v.choices) && v.choices.length === 4
-    && v.choices.every(isText) && new Set(v.choices.map((c) => c.trim().toLowerCase())).size === 4 && isChoice(v.answer);
+    && v.choices.every(isText) && new Set(v.choices.map((c) => c.trim().toLowerCase())).size === 4 && isChoice(v.answer)
+    && (v.level === undefined || isLevel(v.level));
 }
 export function validateBank(value: unknown): Bank {
   if (!isRecord(value) || value.version !== 1 || !isText(value.revision)
     || !isRecord(value.source) || !isText(value.source.url)
+    || !['unrated', 'Q1-Q15'].includes(String(value.source.difficulty))
     || !Array.isArray(value.questions) || value.questions.length < PRIZES.length
     || !value.questions.every(validQuestion)) throw new Error('The question pack is invalid or incomplete.');
   const qs = value.questions as Question[];
+  const tabbed = value.source.difficulty === 'Q1-Q15';
   if (new Set(qs.map((q) => q.id)).size !== qs.length
-    || new Set(qs.map((q) => q.prompt.trim().toLowerCase())).size !== qs.length) {
+    || (!tabbed && new Set(qs.map((q) => q.prompt.trim().toLowerCase())).size !== qs.length)) {
     throw new Error('The question pack contains duplicate questions.');
+  }
+  if (tabbed && (qs.some((q) => !isLevel(q.level)) || LEVELS.some((level) => !qs.some((q) => q.level === level)))) {
+    throw new Error('The question pack must contain at least one question from every Q1-Q15 difficulty tab.');
   }
   return value as unknown as Bank;
 }
-/** A fixed, ID-based order exhausts the bank before wrapping. Answer order is seeded per day. */
+function withShuffledChoices(q: Question, day: string): Question {
+  const order = shuffled<Choice>([0, 1, 2, 3], random(hash(`${day}:${q.id}:choices`)));
+  return {...q, choices: order.map((j) => q.choices[j]) as Question['choices'], answer: order.indexOf(q.answer) as Choice};
+}
+/** Pick exactly one question from each difficulty tab. Legacy flat packs retain their old deterministic order. */
 export function dailyDeck(bank: Bank, day: string): Question[] {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(day) || (!Number.isFinite(Date.parse(`${day}T00:00:00Z`)) || new Date(`${day}T00:00:00Z`).toISOString().slice(0, 10) !== day)) throw new Error('Invalid challenge date.');
   if (bank.questions.length < PRIZES.length) throw new Error('At least 15 questions are required.');
+  if (bank.source.difficulty === 'Q1-Q15') {
+    return LEVELS.map((level) => {
+      const pool = bank.questions.filter((q) => q.level === level).sort((a, b) =>
+        hash(`triviaire-v2:q${level}:${a.id}`) - hash(`triviaire-v2:q${level}:${b.id}`) || (a.id < b.id ? -1 : 1));
+      if (!pool.length) throw new Error(`No Q${level} questions are available.`);
+      const q = pool[(challengeNumber(day) - 1) % pool.length];
+      return withShuffledChoices(q, day);
+    });
+  }
   const sorted = [...bank.questions].sort((a, b) =>
     hash(`triviaire-v1:${a.id}`) - hash(`triviaire-v1:${b.id}`) || (a.id < b.id ? -1 : 1));
   const start = ((challengeNumber(day) - 1) * PRIZES.length) % sorted.length;
-  return Array.from({length: PRIZES.length}, (_, i) => {
-    const q = sorted[(start + i) % sorted.length];
-    const order = shuffled<Choice>([0, 1, 2, 3], random(hash(`${day}:${q.id}:choices`)));
-    return {...q, choices: order.map((j) => q.choices[j]) as Question['choices'], answer: order.indexOf(q.answer) as Choice};
-  });
+  return Array.from({length: PRIZES.length}, (_, i) => withShuffledChoices(sorted[(start + i) % sorted.length], day));
 }
 export const newGame = (bank: Bank, day: string): Game => ({
   version: 1, day, revision: bank.revision, deck: dailyDeck(bank, day), index: 0,

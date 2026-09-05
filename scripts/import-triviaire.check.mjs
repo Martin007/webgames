@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {convertCsv, parseCsv} from './import-triviaire.mjs';
+import {convertCsv, convertLevelCsv, convertSheets, LEVELS, parseCsv, sheetCsvUrl} from './import-triviaire.mjs';
 const rows = (n = 15) => 'Question,A,B,C,D,Correct,,\r\n' + Array.from({length: n}, (_, i) => `Question ${i}?,One,Two,Three,Four,${'ABCD'[i % 4]},,`).join('\r\n');
 
 test('CSV supports BOM, CRLF, escaped quotes, commas and embedded newlines', () => {
@@ -44,4 +44,24 @@ test('quarantines truncated prompts without rewriting the original snapshot', ()
   assert.equal(bank.questions.length, 15);
   assert.equal(bank.source.rows, 16);
   assert.deepEqual(bank.source.excludedRows, [{row: 17, reason: 'Incomplete prompt (fewer than 8 characters).'}]);
+});
+
+test('combines Q1 through Q15 as explicit difficulty pools', () => {
+  const tabs = new Map(LEVELS.map((level) => [level, rows(2)]));
+  const bank = convertSheets(tabs);
+  assert.equal(bank.source.difficulty, 'Q1-Q15');
+  assert.deepEqual(bank.source.sheets.map((sheet) => sheet.level), LEVELS);
+  assert.deepEqual([...new Set(bank.questions.map((q) => q.level))], LEVELS);
+  assert.equal(bank.questions.length, 30);
+  const missing = new Map(tabs); missing.delete(15);
+  assert.throws(() => convertSheets(missing), /Missing Q15/);
+});
+test('level-aware IDs and URLs preserve the source tab', () => {
+  const q1 = convertLevelCsv(rows(2), 1);
+  const q15 = convertLevelCsv(rows(2), 15);
+  assert.equal(q1.questions[0].level, 1);
+  assert.equal(q15.questions[0].level, 15);
+  assert.notEqual(q1.questions[0].id, q15.questions[0].id);
+  assert.match(sheetCsvUrl(1), /sheet=Q1$/);
+  assert.match(sheetCsvUrl(15), /sheet=Q15$/);
 });
