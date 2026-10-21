@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {convertCsv, convertLevelCsv, convertSheets, LEVELS, parseCsv, sheetCsvUrl} from './import-triviaire.mjs';
+import {applyExplanations, convertCsv, convertLevelCsv, convertSheets, LEVELS, parseCsv, sheetCsvUrl} from './import-triviaire.mjs';
 const rows = (n = 15) => 'Question,A,B,C,D,Correct,,\r\n' + Array.from({length: n}, (_, i) => `Question ${i}?,One,Two,Three,Four,${'ABCD'[i % 4]},,`).join('\r\n');
 
 test('CSV supports BOM, CRLF, escaped quotes, commas and embedded newlines', () => {
@@ -95,4 +95,71 @@ test('quarantines malformed records in a difficulty tab but keeps valid question
   assert.equal(sheet.questions.length, 1);
   assert.equal(sheet.excludedRows.length, 1);
   assert.match(sheet.excludedRows[0].reason, /Invalid or incomplete/);
+});
+
+const explanation = () => ({
+  summary: 'One is the correct answer.',
+  choices: ['Why one is correct.', 'Why two is incorrect.', 'Why three is incorrect.', 'Why four is incorrect.'],
+  sources: [{title: 'Reference', url: 'https://example.com/reference'}],
+});
+const catalogFor = (question, value = explanation()) => ({version: 1, questions: {
+  [question.id]: {prompt: question.prompt, choices: question.choices, answer: question.answer, explanation: value},
+}});
+
+test('explanations change only metadata and revision, preserving all source question fields and order', () => {
+  const bank = convertSheets(new Map(LEVELS.map((level) => [level, rows(2)])));
+  const catalog = catalogFor(bank.questions[0]);
+  const enriched = applyExplanations(bank, catalog);
+  assert.deepEqual(enriched.questions[0].explanation, explanation());
+  assert.equal(enriched.questions.filter((question) => question.explanation).length, 1);
+  assert.deepEqual(enriched.questions.map(({explanation: ignored, ...question}) => question), bank.questions);
+  assert.notEqual(enriched.revision, bank.revision);
+  assert.deepEqual(applyExplanations(enriched, catalog), enriched);
+  assert.deepEqual(applyExplanations(enriched, {version: 1, questions: {}}), bank);
+});
+
+test('missing, null and blank explanations stay absent, and unrelated question IDs are harmless', () => {
+  const bank = convertCsv(rows());
+  for (const value of [undefined, null, '', '   ']) {
+    const catalog = catalogFor(bank.questions[0]);
+    catalog.questions[bank.questions[0].id].explanation = value;
+    assert.deepEqual(applyExplanations(bank, catalog), bank);
+  }
+  const catalog = catalogFor({...bank.questions[0], id: 'a-question-from-another-pack'});
+  assert.deepEqual(applyExplanations(bank, catalog), bank);
+});
+
+test('stale explanations are omitted when the original prompt, choice order or correct answer changes', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  for (const changed of [
+    {...question, prompt: 'A different prompt?'},
+    {...question, choices: ['Two', 'One', 'Three', 'Four']},
+    {...question, answer: 1},
+  ]) {
+    const warnings = [];
+    const enriched = applyExplanations(bank, catalogFor(changed), {warn: (message) => warnings.push(message)});
+    assert.deepEqual(enriched, bank);
+    assert.equal(warnings.length, 1);
+    assert.match(warnings[0], /Skipping stale explanation/);
+  }
+});
+
+test('explanations normalize whitespace and reject incomplete rationales or unsafe source URLs', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  const spaced = explanation();
+  spaced.summary = '  One is\n the correct answer.  ';
+  spaced.choices[0] = '  Why one is correct.  ';
+  assert.deepEqual(applyExplanations(bank, catalogFor(question, spaced)).questions[0].explanation, explanation());
+  for (const invalid of [
+    'A summary without the required choice explanations.',
+    {...explanation(), summary: ''},
+    {...explanation(), choices: ['Only one choice.']},
+    {...explanation(), choices: ['One', 'Two', 'Three', ' ']},
+    {...explanation(), sources: [{title: 'Unsafe', url: 'javascript:alert(1)'}]},
+    {...explanation(), sources: [{title: 'Insecure', url: 'http://example.com'}]},
+  ]) assert.throws(() => applyExplanations(bank, catalogFor(question, invalid)), /Explanation/);
+  assert.throws(() => applyExplanations(bank, {version: 2, questions: {}}), /version 1/);
+  assert.throws(() => applyExplanations(bank, {version: 1, questions: []}), /questions object/);
 });

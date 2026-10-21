@@ -5,6 +5,12 @@ export const STORAGE_PREFIX = 'triviaire:daily:';
 export const LETTERS = ['A', 'B', 'C', 'D'] as const;
 export const LEVELS = PRIZES.map((_, i) => i + 1);
 export type Choice = 0 | 1 | 2 | 3;
+export interface Explanation {
+  summary: string;
+  /** Reasons follow the question's current choice order, including after shuffling. */
+  choices: [string, string, string, string];
+  sources?: {title: string; url: string}[];
+}
 export interface Question {
   id: string;
   level?: number;
@@ -14,6 +20,7 @@ export interface Question {
   sourceRows?: number[];
   source?: string;
   contributor?: string;
+  explanation?: Explanation;
 }
 export interface Bank {
   version: 1;
@@ -78,11 +85,20 @@ const isChoice = (n: unknown): n is Choice => Number.isInteger(n) && Number(n) >
 const isLevel = (n: unknown): n is number => Number.isInteger(n) && Number(n) >= 1 && Number(n) <= 15;
 const isRecord = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
 const isText = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0;
+export function validExplanation(v: unknown): v is Explanation {
+  if (!isRecord(v) || !isText(v.summary) || !Array.isArray(v.choices)
+    || v.choices.length !== 4 || !v.choices.every(isText)) return false;
+  return v.sources === undefined || (Array.isArray(v.sources) && v.sources.every((source) => {
+    if (!isRecord(source) || !isText(source.title) || !isText(source.url)) return false;
+    try { return new URL(source.url).protocol === 'https:'; } catch { return false; }
+  }));
+}
 export function validQuestion(v: unknown): v is Question {
   if (!isRecord(v)) return false;
   return isText(v.id) && isText(v.prompt) && Array.isArray(v.choices) && v.choices.length === 4
     && v.choices.every(isText) && new Set(v.choices.map((c) => c.trim().toLowerCase())).size === 4 && isChoice(v.answer)
-    && (v.level === undefined || isLevel(v.level));
+    && (v.level === undefined || isLevel(v.level))
+    && (v.explanation === undefined || validExplanation(v.explanation));
 }
 export function validateBank(value: unknown): Bank {
   if (!isRecord(value) || value.version !== 1 || !isText(value.revision)
@@ -103,7 +119,20 @@ export function validateBank(value: unknown): Bank {
 }
 function withShuffledChoices(q: Question, day: string): Question {
   const order = shuffled<Choice>([0, 1, 2, 3], random(hash(`${day}:${q.id}:choices`)));
-  return {...q, choices: order.map((j) => q.choices[j]) as Question['choices'], answer: order.indexOf(q.answer) as Choice};
+  return {...q, choices: order.map((j) => q.choices[j]) as Question['choices'], answer: order.indexOf(q.answer) as Choice,
+    ...(q.explanation ? {explanation: {...q.explanation, choices: order.map((j) => q.explanation!.choices[j]) as Explanation['choices']}} : {})};
+}
+/** Enrich an older saved question without replacing any part of its gameplay snapshot. */
+export function questionExplanation(question: Question, bank: Bank): Explanation | undefined {
+  const current = bank.questions.find((q) => q.id === question.id);
+  if (current?.explanation && validExplanation(current.explanation)
+    && current.prompt === question.prompt
+    && current.choices[current.answer] === question.choices[question.answer]
+    && question.choices.every((choice) => current.choices.includes(choice))) {
+    return {...current.explanation, choices: question.choices.map((choice) =>
+      current.explanation!.choices[current.choices.indexOf(choice)]) as Explanation['choices']};
+  }
+  return validExplanation(question.explanation) ? question.explanation : undefined;
 }
 /** Pick exactly one question from each difficulty tab. Legacy flat packs retain their old deterministic order. */
 export function dailyDeck(bank: Bank, day: string): Question[] {

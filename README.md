@@ -68,6 +68,10 @@ Merging a pull request, not merely opening it, triggers the production deploymen
 Each correct answer advances the prize ladder from $100 to $1,000,000. Select
 A–D, then explicitly press **Final answer**. Answer selection alone never submits.
 The answer reveal is saved immediately; refreshing cannot undo a locked answer.
+A completed question shows an **Explanation** button beside **Next question** or
+**See my result** when that question has editorial explanation data. It explains
+the correct answer and each alternative, with source links when available. The
+button stays hidden before the answer is locked and for questions without data.
 A wrong answer ends the daily run. Correct answers at questions 5 and 10 secure
 $1,000 and $32,000 respectively. **Walk away** confirms the choice and keeps the
 current winnings. There is no countdown timer on individual questions.
@@ -153,12 +157,18 @@ Runtime JSON contract:
 ```ts
 interface TriviaireQuestion {
   id: string;                        // Stable hash of the normalized prompt
+  level?: number;                    // Q1–Q15 pool; absent in the legacy flat pack
   prompt: string;
   choices: [string, string, string, string];
   answer: 0 | 1 | 2 | 3;
   sourceRows?: number[];
   source?: string;
   contributor?: string;
+  explanation?: {
+    summary: string;
+    choices: [string, string, string, string]; // Same order as question.choices
+    sources?: {title: string; url: string}[];  // HTTPS links
+  };
 }
 interface TriviaireBank {
   version: 1;
@@ -176,6 +186,60 @@ interface TriviaireBank {
 }
 ```
 
+### Adding answer explanations
+
+Explanations are maintained separately from the source workbook in
+`data/triviaire/explanations.json`. Both the explicit importer and the build-time
+preparation step merge this catalog into the generated question pack. The
+preparation step also reapplies the catalog when using an existing offline pack,
+so removing an explanation removes it from the next generated pack.
+
+The initial catalog covers all 15 questions in challenge #47 (21 October 2026)
+from pack `72c4f5f8271c52ce`. Each entry explains the correct answer and all three
+alternatives, with sources. The heraldry entry also clarifies the source prompt's
+ambiguous wording. Explanations stay attached to those questions on future days;
+other questions show no button until their entries are added.
+
+Use the question's stable ID and copy its **original, unshuffled** `prompt`,
+`choices` and zero-based `answer` from `public/games/triviaire/questions.json`:
+
+```json
+{
+  "version": 1,
+  "questions": {
+    "t-q1-<prompt-hash>": {
+      "prompt": "The exact question prompt",
+      "choices": ["First choice", "Second choice", "Third choice", "Fourth choice"],
+      "answer": 0,
+      "explanation": {
+        "summary": "Explain the fact or reasoning that makes the answer correct.",
+        "choices": [
+          "Why the first choice is correct.",
+          "Why the second choice does not answer this question.",
+          "Why the third choice does not answer this question.",
+          "Why the fourth choice does not answer this question."
+        ],
+        "sources": [{"title": "Reference title", "url": "https://example.com/reference"}]
+      }
+    }
+  }
+}
+```
+
+The four explanations follow the source choice order, and the game keeps them
+aligned when shuffling answers. The summary and all four choice explanations
+must be nonempty. Sources are optional and must use valid HTTPS URLs. Missing,
+null or blank explanation values are omitted. A missing catalog is equivalent
+to an empty one, and entries for questions absent from a pack are ignored.
+
+The copied question fields are identity guards: if a later sheet edit changes
+the prompt, choice order or keyed correct answer, the importer warns and skips
+that explanation until its entry is reviewed. This prevents an old explanation
+from being attached to a changed question. Adding explanations updates the pack
+revision without changing its question IDs, daily selection, answers or order.
+Run `npm test` and `npm run build` after editing the catalog, and commit the
+catalog rather than the generated JSON.
+
 ## Project layout
 
 ```text
@@ -187,6 +251,7 @@ src/
     feudle/                  Original game, tests, styles and animation
     triviaire/               New game, pure engine, tests and styles
 data/triviaire/source.csv     Versioned question-sheet export
+data/triviaire/explanations.json  Optional, source-checked answer explanations
 public/
   favicon.svg
   games/feudle/questions.json Original Feudle bank (unchanged)
@@ -199,11 +264,12 @@ scripts/
 
 ## Verification
 
-`npm test` runs the existing 13 Feudle/animation tests, 46 Triviaire engine tests,
-and 8 importer tests. Coverage includes deterministic decks and answer mapping,
+`npm test` runs the Feudle/animation tests, Triviaire engine and explanation tests,
+and importer tests. Coverage includes deterministic decks and answer mapping,
 UTC boundaries, all prize checkpoints and wrong-answer payouts, walk-away,
 all three lifelines, invalid saves, result sharing, data validation and CSV edge
-cases. `npm run build` performs the TypeScript check and production build.
+cases, explanation-to-choice alignment, existing-save enrichment, and stale
+explanation guards. `npm run build` performs the TypeScript check and production build.
 
 The implementation was also exercised in Chromium using the compiled app with
 in-memory copies of the real static assets: all three lifelines, a full win,

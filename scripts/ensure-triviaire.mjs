@@ -1,7 +1,7 @@
 // Prefer committed Q1-Q15 snapshots. Until they exist, refresh from the public sheet at build time.
 import {readFile, writeFile, rename, mkdir} from 'node:fs/promises';
 import {dirname} from 'node:path';
-import {convertSheets, fetchSheets, OUTPUT, readSnapshots} from './import-triviaire.mjs';
+import {applyExplanations, convertSheets, fetchSheets, OUTPUT, readExplanations, readSnapshots} from './import-triviaire.mjs';
 
 async function writePack(bank) {
   const content = JSON.stringify(bank, null, 2) + '\n';
@@ -26,14 +26,13 @@ try {
     } catch (fetchError) {
       if (process.env.CI) throw new Error(`Could not fetch all Q1-Q15 tabs in CI: ${fetchError.message}`);
       // Keep local/offline development usable during the migration. The engine understands the legacy flat pack.
-      const existing = await readFile(OUTPUT, 'utf8');
-      JSON.parse(existing);
+      bank = JSON.parse(await readFile(OUTPUT, 'utf8'));
       console.warn(`Could not refresh Q1-Q15 (${fetchError.message}). Using the existing pack. Snapshot error: ${snapshotError.message}`);
-      process.exit(0);
     }
   }
+  bank = applyExplanations(bank, await readExplanations());
   await writePack(bank);
-  console.log(`Prepared ${bank.questions.length} Triviaire questions across Q1-Q15.`);
+  console.log(`Prepared ${bank.questions.length} Triviaire questions with ${bank.questions.filter((question) => question.explanation).length} explanations.`);
 } catch (error) {
   console.error('Could not prepare Triviaire questions:', error.message);
   process.exitCode = 1;

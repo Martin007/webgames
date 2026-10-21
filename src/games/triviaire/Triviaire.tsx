@@ -1,7 +1,7 @@
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {challengeNumber, countdown, displayDay} from '../../shared/daily';
 import {Icon, Modal, TriviaireEmblem, useDailyClock, Wordmark} from '../../shared/ui';
-import {correctCount, LETTERS, money, newGame, PRIZES, reduceGame, removedChoices, restoreGame, secured, shareText, STORAGE_PREFIX, validateBank, winnings, type Action, type Bank, type Choice, type Game, type Lifelines} from './engine';
+import {correctCount, LETTERS, money, newGame, PRIZES, questionExplanation, reduceGame, removedChoices, restoreGame, secured, shareText, STORAGE_PREFIX, validateBank, winnings, type Action, type Bank, type Choice, type Explanation, type Game, type Lifelines, type Question} from './engine';
 import './triviaire.css';
 
 const safeRead = (key: string): string | null => {
@@ -51,6 +51,27 @@ function HintPanel({game}: {game: Game}) {
     {phone && <section className="tr-hint-card"><div className="tr-hint-heading"><Icon name="phone" /><h3>{phone.confidence === 'no answer' ? 'No one picked up' : phone.confidence === 'does not know' ? 'Your friend isn’t sure' : 'A friend on the line'}</h3><span>SIMULATED</span></div>{phone.choice === null ? <blockquote>{phone.confidence === 'no answer' ? '“Straight to voicemail. No answer this time.”' : '“I wish I could help, but I honestly don’t know this one.”'}</blockquote> : <blockquote>“I’m {phone.confidence}, but I’d go with <strong>{LETTERS[phone.choice]}: {game.deck[game.index].choices[phone.choice]}</strong>.”</blockquote>}<p>{phone.choice === null ? 'The lifeline is used — you’ll have to trust your own judgment.' : 'Your virtual friend can get it wrong, too.'}</p></section>}
   </div>;
 }
+function ExplanationContent({question, explanation}: {question: Question; explanation: Explanation}) {
+  return <div className="tr-explanation">
+    <p className="tr-explanation-question">{question.prompt}</p>
+    <p>{explanation.summary}</p>
+    <section className="tr-explanation-correct" aria-labelledby="tr-explanation-correct">
+      <h3 id="tr-explanation-correct"><Icon name="check" />Why this answer is correct</h3>
+      <h4>{LETTERS[question.answer]}: {question.choices[question.answer]}</h4>
+      <p>{explanation.choices[question.answer]}</p>
+    </section>
+    <section aria-labelledby="tr-explanation-others">
+      <h3 id="tr-explanation-others">Why the other answers don’t fit</h3>
+      <ul className="tr-explanation-choices">{question.choices.map((choice, index) => index === question.answer ? null : <li key={choice}>
+        <h4>{LETTERS[index]}: {choice}</h4><p>{explanation.choices[index]}</p>
+      </li>)}</ul>
+    </section>
+    {Boolean(explanation.sources?.length) && <section className="tr-explanation-sources" aria-labelledby="tr-explanation-sources">
+      <h3 id="tr-explanation-sources">Sources</h3>
+      <ul>{explanation.sources!.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<span className="tr-sr-only"> (opens in a new tab)</span></a></li>)}</ul>
+    </section>}
+  </div>;
+}
 function Results({game, remaining}: {game: Game; remaining: number}) {
   const [copied, setCopied] = useState(false);
   const [manual, setManual] = useState('');
@@ -82,6 +103,7 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
   const [game, setGame] = useState<Game | null>(() => restoreGame(safeRead(key), day));
   const [storageWarning, setStorageWarning] = useState(false);
   const [walkConfirm, setWalkConfirm] = useState(false);
+  const [explanationId, setExplanationId] = useState<string | null>(null);
   const [restoredInvalid] = useState(() => Boolean(safeRead(key)) && !restoreGame(safeRead(key), day));
   const heading = useRef<HTMLHeadingElement>(null);
   const audio = useRef<AudioContext | null>(null);
@@ -136,6 +158,7 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
   useEffect(() => () => {void audio.current?.close();}, []);
   const q = game?.deck[game.index];
   const reveal = game?.phase === 'reveal';
+  const explanation = reveal && q ? questionExplanation(q, bank) : undefined;
   const hidden = game ? removedChoices(game) : [];
   return <>
     {storageWarning && <p className="tr-notice" role="status">This browser can’t save progress. Keep this tab open to finish your challenge.</p>}
@@ -161,12 +184,19 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
             const selected = game.selected === i;
             return <button key={`${q!.id}:${i}`} className={`tr-answer ${selected ? 'is-selected' : ''} ${removed ? 'is-removed' : ''} ${right ? 'is-right' : ''} ${wrong ? 'is-wrong' : ''}`} disabled={removed || reveal} aria-pressed={selected} aria-label={removed ? `${LETTERS[i]}: answer removed by 50:50` : `${LETTERS[i]}: ${choice}${right ? ', correct answer' : wrong ? ', incorrect answer' : ''}`} onClick={() => send({type: 'select', choice: i as Choice})}><span className="tr-answer-inner"><b>{LETTERS[i]}<span>:</span></b><span>{removed ? '—' : choice}</span>{right ? <Icon name="check" /> : wrong ? <Icon name="close" /> : selected ? <span className="tr-selected-dot" /> : null}</span></button>;
           })}</div>
-          {reveal ? <div className={`tr-feedback ${game.status === 'lost' ? 'tr-feedback--wrong' : ''}`}><div role="status"><Icon name={game.status === 'lost' ? 'close' : 'check'} /><p><strong>{game.status === 'won' ? 'One million. You did it!' : game.status === 'lost' ? 'That’s not the answer.' : game.index === 4 || game.index === 9 ? 'Correct — safety net secured!' : 'That’s the right answer!'}</strong><span>{game.status === 'lost' ? `The correct answer is ${LETTERS[q!.answer]}: ${q!.choices[q!.answer]}. You leave with ${money(winnings(game))}.` : `${money(winnings(game))} is yours${game.status === 'playing' ? '. Ready to keep climbing?' : '.'}`}</span></p></div><button className="tr-gold-button" onClick={() => send({type: 'next'})}>{game.status === 'playing' ? 'Next question' : 'See my result'}<Icon name="arrow" /></button></div>
+          {reveal ? <div className={`tr-feedback ${game.status === 'lost' ? 'tr-feedback--wrong' : ''}`}>
+            <div className="tr-feedback-message" role="status"><Icon name={game.status === 'lost' ? 'close' : 'check'} /><p><strong>{game.status === 'won' ? 'One million. You did it!' : game.status === 'lost' ? 'That’s not the answer.' : game.index === 4 || game.index === 9 ? 'Correct — safety net secured!' : 'That’s the right answer!'}</strong><span>{game.status === 'lost' ? `The correct answer is ${LETTERS[q!.answer]}: ${q!.choices[q!.answer]}. You leave with ${money(winnings(game))}.` : `${money(winnings(game))} is yours${game.status === 'playing' ? '. Ready to keep climbing?' : '.'}`}</span></p></div>
+            <div className="tr-feedback-actions">
+              {explanation && <button className="tr-secondary-button tr-explanation-button" aria-haspopup="dialog" onClick={() => setExplanationId(q!.id)}><Icon name="help" />Explanation</button>}
+              <button className="tr-gold-button" onClick={() => {setExplanationId(null); send({type: 'next'});}}>{game.status === 'playing' ? 'Next question' : 'See my result'}<Icon name="arrow" /></button>
+            </div>
+          </div>
           : <div className="tr-actions"><button className="tr-walk-button" onClick={() => setWalkConfirm(true)}>Walk away <span>with {money(winnings(game))}</span></button><button className="tr-gold-button tr-lock-button" disabled={game.selected === null} onClick={() => send({type: 'answer'})}>Final answer <Icon name="check" /></button></div>}
           <HintPanel game={game} />
           {!reveal && <p className="tr-keyboard-note">Choose carefully. Your answer is only locked when you press <b>Final answer.</b><span>A–D to choose · No time limit</span></p>}
         </section>}
     </main><PrizeLadder game={game} /></div>
+    {reveal && q && explanation && explanationId === q.id && <Modal title="Explanation" dark onClose={() => setExplanationId(null)}><ExplanationContent question={q} explanation={explanation} /><button className="tr-gold-button" onClick={() => setExplanationId(null)}>Back to question</button></Modal>}
     {walkConfirm && game && <Modal title="Time to walk away?" dark onClose={() => setWalkConfirm(false)}><p>You’ll finish today’s challenge with <strong>{money(winnings(game))}</strong> in virtual winnings. There’s no second attempt today.</p><p>Keep playing, and the next question is worth <strong>{money(PRIZES[game.index])}</strong>. A wrong answer takes you back to <strong>{money(secured(correctCount(game)))}</strong>.</p><div className="tr-dialog-actions"><button className="tr-secondary-button" onClick={() => setWalkConfirm(false)}>Stay in the hot seat</button><button className="tr-gold-button" onClick={() => {send({type: 'walk'}); setWalkConfirm(false);}}>Take {money(winnings(game))}</button></div></Modal>}
   </>;
 }

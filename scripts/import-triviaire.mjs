@@ -11,6 +11,7 @@ export const LEGACY_SHEET_URL = `${SHEET_URL}?gid=599441168`;
 export const LEVELS = Array.from({length: 15}, (_, i) => i + 1);
 export const SNAPSHOT = 'data/triviaire/source.csv';
 export const SNAPSHOT_DIR = 'data/triviaire';
+export const EXPLANATIONS = 'data/triviaire/explanations.json';
 export const OUTPUT = 'public/games/triviaire/questions.json';
 export const snapshotPath = (level) => `${SNAPSHOT_DIR}/Q${level}.csv`;
 export const sheetCsvUrl = (level) => `${SHEET_URL.replace('/edit', '')}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(`Q${level}`)}&headers=0`;
@@ -169,6 +170,72 @@ export function convertSheets(csvByLevel) {
     questions};
 }
 
+const isRecord = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
+const isText = (value) => typeof value === 'string' && value.trim().length > 0;
+const fourTexts = (value) => Array.isArray(value) && value.length === 4 && value.every(isText);
+
+function normalizeExplanation(value, id) {
+  if (value == null || (typeof value === 'string' && !value.trim())) return undefined;
+  if (!isRecord(value) || !isText(value.summary) || !fourTexts(value.choices)) {
+    throw new Error(`Explanation for ${id} needs a summary and four choice explanations.`);
+  }
+  const explanation = {summary: clean(value.summary), choices: value.choices.map(clean)};
+  if (value.sources !== undefined) {
+    if (!Array.isArray(value.sources)) throw new Error(`Explanation sources for ${id} must be an array.`);
+    explanation.sources = value.sources.map((source) => {
+      if (!isRecord(source) || !isText(source.title) || !isText(source.url)) {
+        throw new Error(`Explanation sources for ${id} need a title and an HTTPS URL.`);
+      }
+      let url;
+      try { url = new URL(source.url.trim()); } catch { /* Report one useful validation error below. */ }
+      if (!url || url.protocol !== 'https:') {
+        throw new Error(`Explanation sources for ${id} need an HTTPS URL.`);
+      }
+      return {title: clean(source.title), url: source.url.trim()};
+    });
+  }
+  return explanation;
+}
+
+/** Apply optional editorial metadata without changing question identity, order or answers. */
+export function applyExplanations(bank, catalog, {warn = console.warn} = {}) {
+  if (!isRecord(catalog) || catalog.version !== 1 || !isRecord(catalog.questions)) {
+    throw new Error('The Triviaire explanation catalog must have version 1 and a questions object.');
+  }
+  const entries = new Map();
+  for (const [id, entry] of Object.entries(catalog.questions)) {
+    if (!isRecord(entry)) throw new Error(`Invalid explanation entry for ${id}.`);
+    const explanation = normalizeExplanation(entry.explanation, id);
+    if (!explanation) continue;
+    if (!isText(entry.prompt) || !fourTexts(entry.choices)
+      || !Number.isInteger(entry.answer) || entry.answer < 0 || entry.answer > 3) {
+      throw new Error(`Explanation entry for ${id} needs the original prompt, four choices and correct-answer index.`);
+    }
+    entries.set(id, {prompt: clean(entry.prompt), choices: entry.choices.map(clean), answer: entry.answer, explanation});
+  }
+  const questions = bank.questions.map((question) => {
+    // The catalog is authoritative, including when rebuilding an existing offline pack.
+    const {explanation: previousExplanation, ...base} = question;
+    const entry = entries.get(question.id);
+    if (!entry) return base;
+    if (entry.prompt !== question.prompt || entry.answer !== question.answer
+      || entry.choices.some((choice, index) => choice !== question.choices[index])) {
+      warn(`Skipping stale explanation for ${question.id}: the prompt, choices or correct answer changed.`);
+      return base;
+    }
+    return {...base, explanation: entry.explanation};
+  });
+  return {...bank, revision: digest(JSON.stringify(questions)).slice(0, 16), questions};
+}
+
+export async function readExplanations(path = EXPLANATIONS) {
+  try { return JSON.parse(await readFile(resolve(path), 'utf8')); }
+  catch (error) {
+    if (error.code === 'ENOENT') return {version: 1, questions: {}};
+    throw new Error(`Could not read ${path}: ${error.message}`);
+  }
+}
+
 export async function fetchSheets() {
   const entries = await Promise.all(LEVELS.map(async (level) => {
     const response = await fetch(sheetCsvUrl(level), {signal: AbortSignal.timeout(30_000)});
@@ -194,7 +261,7 @@ export async function main(args = process.argv.slice(2)) {
   const csvByLevel = inputDir
     ? new Map(await Promise.all(LEVELS.map(async (level) => [level, await readFile(resolve(inputDir, `Q${level}.csv`), 'utf8')])))
     : await fetchSheets();
-  const bank = convertSheets(csvByLevel);
+  const bank = applyExplanations(convertSheets(csvByLevel), await readExplanations());
   await writeAtomic(output, JSON.stringify(bank, null, 2) + '\n');
   if (!inputDir && resolve(output) === resolve(OUTPUT)) await Promise.all(LEVELS.map((level) => writeAtomic(snapshotPath(level), csvByLevel.get(level))));
   console.log(`Imported ${bank.questions.length} questions across Q1-Q15 from ${bank.source.rows} rows; removed ${bank.source.duplicatesRemoved} within-tab duplicates; excluded ${bank.source.excludedRows.length} incomplete or invalid entries. Revision: ${bank.revision}.`);

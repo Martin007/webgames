@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "questions": {
+    "t-q1-dab7e627294f3fc9": {
+      "prompt": "Which of these games is not a battle royale?",
+      "choices": [
+        "Fortnite",
+        "Apex Legends",
+        "League of Legends",
+        "Call of Duty: Warzone"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "League of Legends is a team strategy game whose standard mode is won by destroying the opposing Nexus. The other three choices all offer battle royale play, where competitors fight to be the last player or squad alive.",
+        "choices": [
+          "Fortnite Battle Royale sends players onto an island to outlast their opponents while the Storm closes in. It is a battle royale, so it does not fit the question.",
+          "Apex Legends is a squad-based battle royale shooter. Its core Battle Royale matches are won by the last surviving team.",
+          "In its standard mode, two teams of five champions compete to destroy the enemy Nexus. That base-destruction objective makes League the exception in this list.",
+          "Warzone has a Battle Royale mode in which squads collect equipment and fight as gas shrinks the playable area. The last team standing wins."
+        ],
+        "sources": [
+          {
+            "title": "Riot Games: How to play League of Legends",
+            "url": "https://www.leagueoflegends.com/en-us/how-to-play/"
+          },
+          {
+            "title": "Epic Games: Fortnite Battle Royale",
+            "url": "https://www.fortnite.com/@epic/battle-royale?lang=en-US"
+          },
+          {
+            "title": "Electronic Arts: Introducing Apex Legends",
+            "url": "https://news.ea.com/press-releases/press-releases-details/2019/Respawn-Launches-Apex-Legends-a-Free-to-Play-Battle-Royale-Experience-Available-Now-on-PC-PS4-and-Xbox-One/default.aspx"
+          },
+          {
+            "title": "Call of Duty: Warzone game modes",
+            "url": "https://www.callofduty.com/warzone"
+          }
+        ]
+      }
+    },
+    "t-q2-93792765600175c5": {
+      "prompt": "What feat did Argentina accomplish when it won the gold medal in soccer at the Olympics in 2004?",
+      "choices": [
+        "It played all its games with 10 players",
+        "It did not concede a single goal",
+        "It played without a goalie in the finals",
+        "It scored 60 points in 6 games."
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Argentina won all six matches in the 2004 Olympic men's football tournament, scoring 17 goals and conceding none. They completed the run with a 1–0 victory over Paraguay in the final.",
+        "choices": [
+          "Argentina did not play the whole tournament with ten players: its match lineups included eleven, including in the final. The remarkable record concerned goals conceded.",
+          "All six opponents finished their matches against Argentina with zero goals. A match without conceding is called a clean sheet, so Argentina kept six clean sheets.",
+          "Germán Lux was Argentina's goalkeeper, including in the final. Keeping a clean sheet means stopping the opposition from scoring, not playing without a goalkeeper.",
+          "Argentina scored 17 goals across six matches, not 60. Football match scores count goals; this was not a 60-point performance."
+        ],
+        "sources": [
+          {
+            "title": "FIFA: Argentina's 2004 Olympic triumph",
+            "url": "https://inside.fifa.com/tournaments/mens/mensolympic/athens2004/news/argentinian-flame-burns-brightest-94055"
+          },
+          {
+            "title": "Argentine Football Association: Athens 2004",
+            "url": "https://www.afa.com.ar/a/posts/medalleroolimpico-atenas-2004"
+          },
+          {
+            "title": "RSSSF: 2004 Olympic football match lineups",
+            "url": "https://www.rsssf.org/tableso/ol2004f-det.html"
+          }
+        ]
+      }
+    },
+    "t-q3-9c11621383a7eb9c": {
+      "prompt": "How many states are there in the USA?",
+      "choices": [
+        "48",
+        "52",
+        "50",
+        "45"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The United States has 50 states: the 48 adjoining states plus Alaska and Hawaii. Hawaii became the 50th state in 1959.",
+        "choices": [
+          "48 counts the adjoining states and leaves out Alaska and Hawaii. It is not the total for the whole country.",
+          "Alaska and Hawaii are already included in the total of 50. Adding them to 50 again would incorrectly produce 52.",
+          "50 includes every U.S. state, with Alaska and Hawaii included alongside the 48 adjoining states.",
+          "45 is an old count, predating Oklahoma's admission as the 46th state in 1907. Further admissions brought the total to 50."
+        ],
+        "sources": [
+          {
+            "title": "U.S. Geological Survey: Definitions of the United States",
+            "url": "https://www.usgs.gov/faqs/what-constitutes-united-states-what-are-official-definitions"
+          },
+          {
+            "title": "National Archives: Hawaii statehood",
+            "url": "https://www.archives.gov/legislative/features/hawaii"
+          },
+          {
+            "title": "National Archives: Oklahoma statehood",
+            "url": "https://www.archives.gov/legislative/features/oklahoma"
+          }
+        ]
+      }
+    },
+    "t-q4-9264bd11b710df23": {
+      "prompt": "What is the purpose of the sextant?",
+      "choices": [
+        "Sculpting stone",
+        "Navigating with the stars",
+        "Playing music",
+        "Measuring time"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "A sextant measures angles, especially the angle between a celestial object and the horizon. Navigators use those observations to help work out their position at sea.",
+        "choices": [
+          "A sextant is an optical measuring instrument, not a stone-cutting or sculpting tool. Its mirrors and graduated scale are used for observations.",
+          "Measuring the height of a star above the horizon helps a navigator determine position. The Sun, Moon and planets can also be used, so the instrument is not limited to stars.",
+          "Despite its instrument-like name, a sextant is used for navigation and angular measurement, not to produce musical notes.",
+          "Its scale measures angles rather than elapsed time. Time information can be used alongside celestial observations, but the sextant itself is not a clock."
+        ],
+        "sources": [
+          {
+            "title": "Old Royal Naval College: How a sextant was used at sea",
+            "url": "https://ornc.org/news/new-visitor-centre-display-sextant-stars/"
+          },
+          {
+            "title": "Royal Museums Greenwich: Marine sextant",
+            "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-43324"
+          }
+        ]
+      }
+    },
+    "t-q5-6899dd74613f1f06": {
+      "prompt": "In “Snow White and the Seven Dwarfs”, which of these is not a dwarf?",
+      "choices": [
+        "Sneezy",
+        "Happy",
+        "Sleepy",
+        "Crabby"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Disney's seven dwarfs are Doc, Grumpy, Happy, Sleepy, Bashful, Sneezy and Dopey. Crabby is not on that list; the irritable dwarf is called Grumpy.",
+        "choices": [
+          "Sneezy is one of the seven dwarfs, recognizable for his frequent sneezing. The question asks for a name that is absent.",
+          "Happy is the cheerful dwarf and is one of the seven, so he cannot be the exception.",
+          "Sleepy is the drowsy dwarf and is also one of the seven. His name belongs on the list.",
+          "No dwarf in Disney's group is named Crabby. It sounds like a description of Grumpy, but Grumpy is the actual name."
+        ],
+        "sources": [
+          {
+            "title": "Disney: Snow White and the Seven Dwarfs — synopsis and characters",
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs"
+          }
+        ]
+      }
+    },
+    "t-q6-ca5d1cc48e553467": {
+      "prompt": "In Greek mythology, who led the Argonauts?",
+      "choices": [
+        "Jason",
+        "Joseph",
+        "Jonathan",
+        "Jacob"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Jason led the Argonauts aboard the Argo in their quest for the Golden Fleece. The voyage is a story from Greek mythology.",
+        "choices": [
+          "Jason is the Greek hero who leads the expedition to obtain the Golden Fleece. The crew are called the Argonauts after their ship, the Argo.",
+          "Joseph is a biblical figure whose story includes life in Egypt. He is not the Greek hero who leads the voyage of the Argo.",
+          "Jonathan is known in biblical accounts as a son of Saul. The leader in the Argonaut story is Jason, a figure from a different tradition.",
+          "Jacob is the biblical father of Joseph. He is not the captain of the Argo or the leader of the Argonauts."
+        ],
+        "sources": [
+          {
+            "title": "The Metropolitan Museum of Art: Jason and the Golden Fleece",
+            "url": "https://www.metmuseum.org/art/collection/search/253427"
+          },
+          {
+            "title": "Genesis 47: Joseph and Jacob in Egypt",
+            "url": "https://bible.usccb.org/bible/genesis/47"
+          },
+          {
+            "title": "1 Samuel 14: Jonathan, son of Saul",
+            "url": "https://www.vatican.va/archive/ENG0839/_P78.HTM"
+          }
+        ]
+      }
+    },
+    "t-q7-178b8f239a30cb51": {
+      "prompt": "Which of these is a town in North Yorkshire?",
+      "choices": [
+        "Hopton",
+        "Skipton",
+        "Leapton",
+        "Jumpton"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Skipton is a town in North Yorkshire, as its town council confirms. The choices play on similar movement words—hop, skip, leap and jump—but the town's name is Skipton.",
+        "choices": [
+          "Hopton is a real place name used elsewhere, including a village in Suffolk. It is not the North Yorkshire town meant by this question.",
+          "Skipton is the town in North Yorkshire. Its town council works alongside North Yorkshire Council to provide local services.",
+          "Leapton is a look-alike alternative built around “leap”. The town referred to here is named Skipton.",
+          "Jumpton is another look-alike alternative built around “jump”. The correct North Yorkshire place name is Skipton."
+        ],
+        "sources": [
+          {
+            "title": "Skipton Town Council: About the council and town",
+            "url": "https://www.skiptontowncouncil.gov.uk/The_Council_40163.aspx"
+          },
+          {
+            "title": "Hopton cum Knettishall Parish Council: Suffolk location",
+            "url": "https://www.hoptoncumknettishall-pc.gov.uk/parish-council"
+          }
+        ]
+      }
+    },
+    "t-q8-de7d2864cfd7d100": {
+      "prompt": "Which artist wrote the song “Nothing Compares 2 U,” covered in 1990 by Sinéad O’Connor?",
+      "choices": [
+        "Michael Jackson",
+        "Prince",
+        "Nick Cave",
+        "Neil Young"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Prince wrote “Nothing Compares 2 U” and recorded his own version in 1984. It appeared on The Family's 1985 album before Sinéad O'Connor made her famous cover.",
+        "choices": [
+          "Michael Jackson was not the writer of this song. Its origin is documented in Prince's catalog and the recordings he made before O'Connor's cover.",
+          "Prince was the songwriter. His original recording and The Family's earlier release establish that O'Connor was interpreting an existing Prince composition.",
+          "Nick Cave did not write it. The song traces back to Prince and his side project The Family, rather than Cave's work.",
+          "Neil Young is not the songwriter. Prince had already written and recorded the song years before O'Connor's version."
+        ],
+        "sources": [
+          {
+            "title": "Prince Estate: Nothing Compares 2 U — official recording history",
+            "url": "https://discography.prince.com/albums/nothing-compares-2-u"
+          }
+        ]
+      }
+    },
+    "t-q9-a3684b45326d72fd": {
+      "prompt": "If we are in the year 1542, in what century are we?",
+      "choices": [
+        "The 14th century",
+        "The 15th century",
+        "The 16th century",
+        "The 17th century"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The 16th century runs from 1501 through 1600, so 1542 falls within it. Centuries count completed blocks of 100 years, starting with years 1–100 as the first century.",
+        "choices": [
+          "The 14th century covers 1301–1400, which is earlier than 1542.",
+          "The 15th century covers 1401–1500. The leading digits “15” in 1542 can be misleading: fifteen full centuries had already ended in 1500.",
+          "1542 is between 1501 and 1600, the inclusive boundaries of the 16th century.",
+          "The 17th century covers 1601–1700, so it had not yet begun in 1542."
+        ],
+        "sources": [
+          {
+            "title": "U.S. Naval Observatory: How centuries are numbered",
+            "url": "https://aa.usno.navy.mil/faq/millennium"
+          }
+        ]
+      }
+    },
+    "t-q10-5056834e308b24aa": {
+      "prompt": "Which of these is a tool with a large curved blade, used for cutting grass or crops?",
+      "choices": [
+        "Blithe",
+        "Hythe",
+        "Writhe",
+        "Scythe"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "A scythe is a hand tool with a long handle and a curved blade, traditionally swung near the ground to cut grass or harvest crops.",
+        "choices": [
+          "Blithe is an adjective meaning cheerful or unconcerned. It does not name a cutting tool.",
+          "Hythe is an old word for a landing place or small harbour, also preserved in place names. It is not an agricultural blade.",
+          "To writhe is to twist or squirm, often in pain. The word describes movement rather than a harvesting tool.",
+          "A scythe has the long, curved blade and handle described in the question. Its sweeping action cuts grass or grain close to the ground."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster: Scythe",
+            "url": "https://www.merriam-webster.com/dictionary/scythe"
+          },
+          {
+            "title": "Cambridge Dictionary: Blithe",
+            "url": "https://dictionary.cambridge.org/dictionary/english/blithe"
+          },
+          {
+            "title": "Collins Dictionary: Hithe / hythe",
+            "url": "https://www.collinsdictionary.com/dictionary/english/hithe"
+          },
+          {
+            "title": "Cambridge Dictionary: Writhe",
+            "url": "https://dictionary.cambridge.org/dictionary/english/writhe"
+          }
+        ]
+      }
+    },
+    "t-q11-90e532c3a40f75a3": {
+      "prompt": "What kind of material is 'morocco'?",
+      "choices": [
+        "Leather",
+        "Felt",
+        "Linen",
+        "Cotton"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "As a material, morocco is a type of leather, traditionally made from goatskin. Its distinctive grain, flexibility and durability made it popular for fine bookbindings.",
+        "choices": [
+          "Morocco belongs to the leather family: it is prepared from animal skin, traditionally goatskin, by tanning and finishing it.",
+          "Felt is made by matting fibres together. Morocco is tanned skin, not a felted textile.",
+          "Linen is a textile made from flax fibres. It is a plant-based fabric, unlike morocco leather.",
+          "Cotton is a plant fibre used to make textiles. Morocco refers to leather rather than cotton fabric."
+        ],
+        "sources": [
+          {
+            "title": "Museum of Fine Arts Boston, CAMEO: Morocco leather",
+            "url": "https://cameo.mfa.org/wiki/Morocco_leather"
+          },
+          {
+            "title": "Bookbinding and the Conservation of Books: Morocco",
+            "url": "https://cool.culturalheritage.org/don/dt/dt2275.html"
+          }
+        ]
+      }
+    },
+    "t-q12-38682490736d740a": {
+      "prompt": "What inventor was nicknamed the “Wizard of Menlo Park”?",
+      "choices": [
+        "Alfred Nobel",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Alexander Graham Bell"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Thomas Edison's inventions at his Menlo Park laboratory in New Jersey, especially the phonograph, helped earn him the nickname “Wizard of Menlo Park”.",
+        "choices": [
+          "Alfred Nobel invented dynamite and established the Nobel Prizes through his will. The Menlo Park nickname refers to Edison, not Nobel.",
+          "Edison led the Menlo Park laboratory. The press used the “Wizard” nickname as his phonograph and other inventions made him famous.",
+          "Nikola Tesla is associated with alternating-current electrical systems. He was not the inventor nicknamed after Edison's Menlo Park laboratory.",
+          "Alexander Graham Bell is associated with the development of the telephone. The “Wizard of Menlo Park” was Thomas Edison."
+        ],
+        "sources": [
+          {
+            "title": "Rutgers, Thomas A. Edison Papers: The Wizard of Menlo Park",
+            "url": "https://edison.rutgers.edu/digital-exhibits/edison-science-fiction/science-fiction-01"
+          },
+          {
+            "title": "Nobel Prize: Alfred Nobel",
+            "url": "https://www.nobelprize.org/alfred-nobel/"
+          },
+          {
+            "title": "U.S. Department of Energy: Tesla, Edison and the war of the currents",
+            "url": "https://www.energy.gov/articles/war-currents-ac-vs-dc-power"
+          },
+          {
+            "title": "Library of Congress: Alexander Graham Bell, inventor and scientist",
+            "url": "https://www.loc.gov/collections/alexander-graham-bell-papers/articles-and-essays/inventor-and-scientist/"
+          }
+        ]
+      }
+    },
+    "t-q13-9b8d5803fa713b22": {
+      "prompt": "Which trophy was donated by the sixth Governor-General of Canada?",
+      "choices": [
+        "Davis Cup",
+        "Stanley Cup",
+        "Admiral's Cup",
+        "Ryder Cup"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Lord Stanley of Preston, Canada's sixth Governor General, donated the hockey trophy that bears his name. It began as a prize for Canada's leading amateur hockey club and later became the NHL championship trophy.",
+        "choices": [
+          "The Davis Cup is a tennis trophy bought and donated by American player Dwight Davis. Its donor was not Lord Stanley.",
+          "The Stanley Cup is named after Lord Stanley, who donated it while serving as Governor General of Canada.",
+          "The Admiral's Cup is a sailing trophy introduced by members of the Royal Ocean Racing Club in 1957. It was not donated by Canada's sixth Governor General.",
+          "The Ryder Cup is a golf trophy donated by English businessman Samuel Ryder. It has a different donor and belongs to a different sport."
+        ],
+        "sources": [
+          {
+            "title": "Governor General of Canada: Lord Stanley, the Earl of Derby",
+            "url": "https://www.gg.ca/en/governor-general/former-governors-general/earl-derby"
+          },
+          {
+            "title": "Davis Cup: Official history",
+            "url": "https://www.daviscup.com/en/about/history"
+          },
+          {
+            "title": "Royal Ocean Racing Club: The Admiral's Cup",
+            "url": "https://www.rorc.org/admiral-s-cup"
+          },
+          {
+            "title": "The PGA: Ryder Cup history",
+            "url": "https://www.pga.info/discover/about-pga/ryder-cup/"
+          }
+        ]
+      }
+    },
+    "t-q14-238b49ef61256a0d": {
+      "prompt": "Which of these colours is considered the third in canonical heraldry, being used only in certain cases?",
+      "choices": [
+        "Green",
+        "Black",
+        "Purple",
+        "Red"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Purple, called purpure, is the source question's intended answer. Its heraldic status has varied and it has historically been used less often. The wording “the third” is ambiguous: modern heraldry also recognizes purpure among its regular colours, so this should not be read as a universal ranking or restriction.",
+        "choices": [
+          "Green is called vert in heraldry. It is a standard heraldic colour, rather than the historically disputed purpure that this question is trying to identify.",
+          "Black is called sable and is a standard heraldic colour. It is not the purple tincture whose status varied between heraldic traditions.",
+          "Purpure is the heraldic name for purple. Its historically rare and sometimes disputed use explains the intended answer, although the question overstates how universal that special status is.",
+          "Red is called gules and is a standard heraldic colour. The unusual status alluded to here concerns purpure, not gules."
+        ],
+        "sources": [
+          {
+            "title": "Canadian Heraldic Authority: Heraldry educational guide and colour glossary",
+            "url": "https://www.gg.ca/sites/default/files/media/Heraldry/pdf/heraldry-kit-en.pdf"
+          },
+          {
+            "title": "Heraldica: The historical status of purpure",
+            "url": "https://heraldica.org/topics/purpure.htm"
+          }
+        ]
+      }
+    },
+    "t-q15-d6ee118d2992cab0": {
+      "prompt": "What is the name of the bar where Kei and Kaneda first meet in \"Akira\"?",
+      "choices": [
+        "Harukiya",
+        "Hakirayu",
+        "Hayakura",
+        "Hariyaku"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "In the Akira manga, Kaneda first encounters Kei at Harukiya, a bar frequented by his gang. The other options use similar-sounding spellings of the bar's name.",
+        "choices": [
+          "Harukiya is the bar's name in the manga. The meeting occurs in the opening volume, where Kaneda notices Kei in the bar.",
+          "Hakirayu is a rearranged spelling used as a decoy here. The bar in this scene is named Harukiya.",
+          "Hayakura does not match the bar's name. The spelling used for the location is Harukiya.",
+          "Hariyaku is a look-alike spelling. The name to remember is Ha-ru-ki-ya: Harukiya."
+        ],
+        "sources": [
+          {
+            "title": "Akira Wiki: Part 1 — Tetsuo (manga plot summary)",
+            "url": "https://akira.fandom.com/wiki/Akira_Part_1%3A_Tetsuo"
+          },
+          {
+            "title": "Akira Wiki: Harukiya in the manga",
+            "url": "https://akira.fandom.com/wiki/Harukiya_%28disambiguation%29/manga"
+          }
+        ]
+      }
+    }
+  }
+}
