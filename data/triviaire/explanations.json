@@ -467,6 +467,900 @@
           }
         ]
       }
+    },
+    "t-q1-7ae1b196bda61c45": {
+      "prompt": "What are Baby Teeth also known as?",
+      "choices": [
+        "Milk Teeth",
+        "Goo-goo Teeth",
+        "Wisdom Teeth",
+        "Pacifier Teeth"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Baby teeth are also called milk teeth. They are the first set children grow, before permanent adult teeth replace them.",
+        "choices": [
+          "Milk teeth is the usual name for the temporary teeth of early childhood; the NHS uses this term when discussing a baby’s first teeth.",
+          "Goo-goo teeth is a playful baby-related phrase, not the established name for the first set of teeth.",
+          "Wisdom teeth belong to the adult set and are the last adult teeth to emerge, so they are different from baby teeth.",
+          "A pacifier is associated with babies, but pacifier teeth is not the standard name for their first set of teeth."
+        ],
+        "sources": [
+          {
+            "title": "NHS: Children’s teeth",
+            "url": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/taking-care-of-childrens-teeth/"
+          },
+          {
+            "title": "NHS inform: Everything you need to know about teeth",
+            "url": "https://www.nhsinform.scot/healthy-living/dental-health/your-teeth/everything-you-need-to-know-about-teeth/"
+          },
+          {
+            "title": "Leeds Teaching Hospitals NHS Trust: Wisdom teeth",
+            "url": "https://www.leedsth.nhs.uk/patients/resources/wisdom-teeth/"
+          }
+        ]
+      }
+    },
+    "t-q2-c6633190c86b8ead": {
+      "prompt": "What name is given to a person skilled in shooting?",
+      "choices": [
+        "Matthewsman",
+        "Lukesman",
+        "Marksman",
+        "Johnsman"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "A marksman is a person who shoots accurately at a target. The other choices play on personal names, whereas “mark” in this word refers to the target.",
+        "choices": [
+          "Matthewsman substitutes the name Matthew into the word pattern; it is not the standard term for a skilled shooter.",
+          "Lukesman substitutes the name Luke. The English word for someone skilled at hitting a target is marksman.",
+          "Marksman is the established word for a skilled shooter; the related word marksmanship means shooting skill.",
+          "Johnsman is another name-based distractor. It does not have the shooting-related meaning of marksman."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster: Marksman",
+            "url": "https://www.merriam-webster.com/dictionary/marksman"
+          },
+          {
+            "title": "Merriam-Webster: Marksmanship",
+            "url": "https://www.merriam-webster.com/dictionary/marksmanship"
+          }
+        ]
+      }
+    },
+    "t-q3-fa43f31505770d46": {
+      "prompt": "Complete the first line of the popular hymn: \"All things bright and ...\" what?",
+      "choices": [
+        "Shining",
+        "Natural",
+        "Beautiful",
+        "Sparkling"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Beautiful is the missing word in the familiar title and opening refrain of Cecil Frances Alexander’s hymn, published in 1848.",
+        "choices": [
+          "Shining is related in meaning to bright, but it is not the next word in this hymn’s familiar opening.",
+          "Natural fits the hymn’s theme of creation, but it does not complete the quoted phrase.",
+          "Beautiful completes the familiar phrase and the hymn’s title.",
+          "Sparkling suggests brightness, but the hymn uses beautiful in this position."
+        ],
+        "sources": [
+          {
+            "title": "Hymnary: All Things Bright and Beautiful",
+            "url": "https://hymnary.org/text/each_little_flower_that_opens"
+          }
+        ]
+      }
+    },
+    "t-q4-bddac6823df6abf0": {
+      "prompt": "What do you call a fear of spiders?",
+      "choices": [
+        "Arachnophobia",
+        "Spiderphobia",
+        "Araneaephobia",
+        "Insectophobia"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Medical references call an intense fear of spiders arachnophobia. That is the conventional term intended by this question, although the similarly constructed alternatives make some of its distractors less clear-cut.",
+        "choices": [
+          "Arachnophobia is the established name used by Cleveland Clinic for an intense fear of spiders.",
+          "Spiderphobia plainly describes a fear of spiders, but arachnophobia is the conventional term the question is testing.",
+          "Araneae is the scientific order containing spiders, so this is a potentially confusing distractor rather than an obviously unrelated fear. The cited medical reference uses arachnophobia as the standard name.",
+          "This option points to insects; the usual medical term for fear of insects is entomophobia. Spiders are arachnids, a different group from insects."
+        ],
+        "sources": [
+          {
+            "title": "Cleveland Clinic: Arachnophobia",
+            "url": "https://my.clevelandclinic.org/health/diseases/21852-arachnophobia-fear-of-spiders"
+          },
+          {
+            "title": "Cleveland Clinic: Entomophobia",
+            "url": "https://my.clevelandclinic.org/health/diseases/22551-entomophobia-fear-of-insects"
+          },
+          {
+            "title": "American Arachnological Society: Araneae",
+            "url": "https://www.americanarachnology.org/about-arachnids/arachnid-orders/araneae/"
+          }
+        ]
+      }
+    },
+    "t-q5-ad3149d0672e56fc": {
+      "prompt": "Which artist performed the song “Never Gonna Give You Up,” released in 1987?",
+      "choices": [
+        "Rick Astley",
+        "Rick Grimes",
+        "Rick Sanchez",
+        "Rick Roll"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Rick Astley performed the 1987 recording. The later internet prank called rickrolling uses that same song, which explains the joke behind the “Rick Roll” option.",
+        "choices": [
+          "Astley is the singer credited on the original recording and its official music video.",
+          "Rick Grimes is a fictional character from The Walking Dead, portrayed on television by Andrew Lincoln, rather than the singer of this record.",
+          "Rick Sanchez is the scientist character in the animated series Rick and Morty, not the artist credited on the song.",
+          "A rickroll is a prank that unexpectedly sends someone to Astley’s song or video. It is the name of the prank, not the performer’s name."
+        ],
+        "sources": [
+          {
+            "title": "Rick Astley: Never Gonna Give You Up — official video",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          },
+          {
+            "title": "Merriam-Webster: Rickroll",
+            "url": "https://www.merriam-webster.com/slang/rickroll"
+          },
+          {
+            "title": "AMC: Andrew Lincoln and the character Rick Grimes",
+            "url": "https://www.amc.com/blogs/watch-as-the-walking-dead-cast-and-creators-say-their-goodbyes-to-andrew-lincoln--1007160"
+          },
+          {
+            "title": "Warner Bros. Discovery: Rick and Morty series description",
+            "url": "https://press.wbd.com/us/synopses/rick-and-morty-series-description?language_content_entity=en"
+          }
+        ]
+      }
+    },
+    "t-q6-3d8decc60d7fe225": {
+      "prompt": "In the comic strips, Garfield the cat hates which day of the week?",
+      "choices": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Sunday"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Garfield’s dislike of Mondays is one of his recurring character traits. His official Nickelodeon character profile specifically identifies Monday as the day he hates.",
+        "choices": [
+          "Monday is the day singled out in Garfield’s familiar recurring complaint and official character description.",
+          "Wednesday is a midweek day, but Garfield’s signature day-of-the-week complaint targets Monday.",
+          "Friday is not the day identified by this running joke; the familiar Garfield association is Monday.",
+          "Sunday comes just before Monday, but Monday is the day named in Garfield’s well-known dislike."
+        ],
+        "sources": [
+          {
+            "title": "Nickelodeon Universe: Garfield",
+            "url": "https://nickelodeonuniverse.com/character/garfield/"
+          }
+        ]
+      }
+    },
+    "t-q7-1e5b7a864bb082c2": {
+      "prompt": "Who made the prophecy that a child born at the end of July would defeat Voldemort?",
+      "choices": [
+        "Sybill Trelawney",
+        "Minerva McGonagall",
+        "Firenze",
+        "Poppy Pomfrey"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Sybill Trelawney made the prophecy while Dumbledore was interviewing her for the Divination teaching post at the Hog’s Head Inn. She described a child with the power to defeat Voldemort.",
+        "choices": [
+          "Trelawney delivered this prophecy during her interview with Dumbledore. It is known as her first prophecy.",
+          "McGonagall taught Transfiguration and was Head of Gryffindor. She did not deliver this prophecy; Trelawney did.",
+          "Firenze also taught Divination, which makes him a plausible distractor, but this particular prophecy came from Trelawney.",
+          "Pomfrey was the Hogwarts matron and Healer who treated ill and injured students, not the speaker of the prophecy."
+        ],
+        "sources": [
+          {
+            "title": "Harry Potter Encyclopedia: Sybill Trelawney’s first prophecy",
+            "url": "https://www.harrypotter.com/fact-file/magical-miscellany/sybill-trelawneys-first-prophecy"
+          },
+          {
+            "title": "Harry Potter Encyclopedia: Minerva McGonagall",
+            "url": "https://www.harrypotter.com/fact-file/characters-and-pets/minerva-mcgonagall"
+          },
+          {
+            "title": "Harry Potter Encyclopedia: Firenze",
+            "url": "https://www.harrypotter.com/fact-file/characters-and-pets/firenze"
+          },
+          {
+            "title": "Harry Potter Encyclopedia: Poppy Pomfrey",
+            "url": "https://www.harrypotter.com/fact-file/characters-and-pets/poppy-pomfrey"
+          }
+        ]
+      }
+    },
+    "t-q8-40a5bf989337bdb7": {
+      "prompt": "What actress stars as Disney’s famous nanny in the 2018 movie “Mary Poppins Returns”?",
+      "choices": [
+        "Jessica Chastain",
+        "Emily Blunt",
+        "Emma Stone",
+        "Julie Walters"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Disney credits Emily Blunt as Mary Poppins in the 2018 sequel. Julie Walters is also in the cast, but she plays Ellen, the Banks family’s housekeeper.",
+        "choices": [
+          "Jessica Chastain does not play Mary Poppins in this film; Disney identifies Emily Blunt in that role.",
+          "Blunt plays the magical nanny Mary Poppins, the film’s title character.",
+          "Emma Stone is not the actress credited as Mary Poppins in the 2018 film; the role belongs to Emily Blunt.",
+          "Walters appears in the film as Ellen, the housekeeper, rather than as Mary Poppins."
+        ],
+        "sources": [
+          {
+            "title": "The Walt Disney Company: Mary Poppins Returns cast announcement",
+            "url": "https://thewaltdisneycompany.com/news/mary-poppins-returns-teaser-trailer-debuts-oscars/"
+          }
+        ]
+      }
+    },
+    "t-q9-cd636e5105c2d2d0": {
+      "prompt": "In which country did the actor Charlie Chaplin die?",
+      "choices": [
+        "Scotland",
+        "Sweden",
+        "Switzerland",
+        "Spain"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Charlie Chaplin died on Christmas Day, 25 December 1977, at his Swiss home, the Manoir de Ban. The country was Switzerland.",
+        "choices": [
+          "Scotland is not the recorded location of his death; Chaplin died at his home in Switzerland.",
+          "Sweden and Switzerland are different countries. Chaplin’s final home and place of death were in Switzerland.",
+          "His home, the Manoir de Ban, was in Switzerland, where he died in 1977.",
+          "Spain is not the location of his death; the Chaplin Office identifies his final home as Swiss."
+        ],
+        "sources": [
+          {
+            "title": "The Chaplin Office: Remembering Chaplin’s death at his Swiss home",
+            "url": "https://www.charliechaplin.com/en/infos/718-A-Christmas-Full-of-Sparkle-at-Chaplin-s-World"
+          }
+        ]
+      }
+    },
+    "t-q10-3bb7be5296499933": {
+      "prompt": "Where do piroshki come from?",
+      "choices": [
+        "Latvia",
+        "Kazakhstan",
+        "Russia",
+        "Poland"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Russia is the expected answer: piroshki is a Russian word for small filled pastries, commonly baked or fried. This is a culinary and linguistic association, not a claim that similar foods belong exclusively to one modern country.",
+        "choices": [
+          "Latvia has related filled buns such as pīrāgi, often made with bacon. The term piroshki in this question points to the Russian pastry tradition.",
+          "The cited dictionaries trace piroshki to Russian and describe a Russian pastry, so Kazakhstan is not the intended country of association. This does not mean the pastries cannot also be eaten there.",
+          "The name comes from Russian pirozhki, the plural of pirozhok, a diminutive of pirog. Dictionaries identify the pastries as Russian.",
+          "Polish pierogi have a similar name but are filled dumplings, usually boiled. Piroshki refers to the Russian filled pastries in this question."
+        ],
+        "sources": [
+          {
+            "title": "Cambridge Dictionary: Piroshki",
+            "url": "https://dictionary.cambridge.org/dictionary/english/piroshki"
+          },
+          {
+            "title": "Merriam-Webster: Piroshki and its Russian etymology",
+            "url": "https://www.merriam-webster.com/dictionary/piroshki"
+          },
+          {
+            "title": "Latvian Eats: Pīrāgi family recipe",
+            "url": "https://latvianeats.com/piragi/"
+          },
+          {
+            "title": "Culture.pl: Polish Food 101 — Pierogi",
+            "url": "https://culture.pl/en/work/polish-food-101-pierogi"
+          }
+        ]
+      }
+    },
+    "t-q11-424c9766da9c909b": {
+      "prompt": "According to legend, what did Joseph of Arimathea bring to Glastonbury?",
+      "choices": [
+        "Noah's Ark",
+        "Crown of Thorns",
+        "Turin Shroud",
+        "Holy Grail"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "In the Glastonbury legend, Joseph of Arimathea brings the Holy Grail to Britain. This is a medieval religious and Arthurian tradition, rather than an established historical journey.",
+        "choices": [
+          "Noah's Ark belongs to the biblical flood story; it is not the object Joseph brings in this Glastonbury legend.",
+          "The Crown of Thorns is associated with Jesus' crucifixion. The object in this legend is a cup, the Holy Grail.",
+          "The Turin Shroud is a cloth traditionally associated with Jesus' burial, not the cup Joseph is said to have brought to Glastonbury.",
+          "Later Arthurian stories describe Joseph bringing the Grail, identified with the cup used at the Last Supper, to Britain and hiding it near Glastonbury Tor."
+        ],
+        "sources": [
+          {
+            "title": "Glastonbury Abbey: Myths & Legends",
+            "url": "https://www.glastonburyabbey.com/myths-and-legends.php"
+          },
+          {
+            "title": "National Trust: History and legends of Glastonbury Tor",
+            "url": "https://www.nationaltrust.org.uk/visit/somerset/glastonbury-tor/history-of-glastonbury-tor"
+          }
+        ]
+      }
+    },
+    "t-q12-984ad83702c1df0d": {
+      "prompt": "NBA legend Shaquille O'Neal made his AEW debut in a mixed-tag team match with what AEW women's wrestler?",
+      "choices": [
+        "Jade Cargill",
+        "Hikaru Shida",
+        "Penelope Ford",
+        "Kris Statlander"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Shaquille O'Neal teamed with Jade Cargill for his AEW in-ring debut on March 3, 2021. They defeated Cody Rhodes and Red Velvet after Cargill pinned Red Velvet.",
+        "choices": [
+          "Cargill was Shaq's partner in the mixed tag match and scored the winning pinfall over Red Velvet.",
+          "Shida was not Shaq's partner in this match; AEW's results list Jade Cargill alongside him.",
+          "Ford was not one of the four competitors in this match. The two women involved were Jade Cargill and Red Velvet.",
+          "Statlander was not on Shaq's team; the announced pairing was Shaquille O'Neal and Jade Cargill."
+        ],
+        "sources": [
+          {
+            "title": "AEW: Dynamite Results for March 3, 2021",
+            "url": "https://www.allelitewrestling.com/post/aew-dynamite-results-for-march-3-2021"
+          }
+        ]
+      }
+    },
+    "t-q13-223c19d2582c56aa": {
+      "prompt": "What is the middle name of former boxer Mike Tyson?",
+      "choices": [
+        "Gerard",
+        "Nathan",
+        "Jeremy",
+        "Jonathan"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Mike Tyson's full birth name is Michael Gerard Tyson. Mike is the familiar short form of Michael; Gerard is his middle name.",
+        "choices": [
+          "Gerard is the middle name recorded in his biographical entry at the New Jersey Boxing Hall of Fame.",
+          "Nathan does not match his recorded birth name, Michael Gerard Tyson.",
+          "Jeremy is a distractor; his recorded middle name is Gerard.",
+          "Jonathan is not part of the recorded name Michael Gerard Tyson."
+        ],
+        "sources": [
+          {
+            "title": "New Jersey Boxing Hall of Fame: Mike Tyson",
+            "url": "https://www.njboxinghof.org/mike-tyson/"
+          }
+        ]
+      }
+    },
+    "t-q14-d87fb8db666ce02b": {
+      "prompt": "What is the outermost color in a rainbow?",
+      "choices": [
+        "Yellow",
+        "Green",
+        "Violet",
+        "Red"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Red is the outer edge of the usual primary rainbow, while violet is the inner edge. A secondary rainbow has the colors reversed, so the question assumes a primary rainbow.",
+        "choices": [
+          "Yellow lies between orange and green in the usual color sequence, inside the red edge of a primary rainbow.",
+          "Green lies in the middle region of the spectrum, between yellow and blue, rather than at the outer edge.",
+          "Violet is the inner edge of a primary rainbow. It becomes the outer edge in a secondary rainbow, where the order reverses.",
+          "Red forms the outer edge of a primary rainbow; its arc has a larger angular radius than the violet arc."
+        ],
+        "sources": [
+          {
+            "title": "Met Office: Rainbows — optical wonders",
+            "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows"
+          },
+          {
+            "title": "World Meteorological Organization: Manual on the Observation of Clouds and Other Meteors",
+            "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v1.pdf"
+          }
+        ]
+      }
+    },
+    "t-q15-bf0d9d69c5902316": {
+      "prompt": "Which actor wrote the film ‘The Gift’, inspired by his mother’s gifts of clairvoyance?",
+      "choices": [
+        "Keanu Reeves",
+        "Giovanni Ribisi",
+        "Billy Bob Thornton",
+        "Greg Kinnear"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Billy Bob Thornton co-wrote The Gift (2000) with Tom Epperson. Epperson says they developed a fictional story inspired by Thornton's mother's claimed psychic abilities; Sam Raimi directed the film.",
+        "choices": [
+          "Reeves acted in the film, but the screenplay credits belong to Thornton and Epperson.",
+          "Ribisi was part of the cast. He was not one of the two credited screenwriters.",
+          "Thornton shares the screenplay credit with Epperson, whose account identifies Thornton's mother as the inspiration. The claim of clairvoyance is part of that account, not a verified supernatural ability.",
+          "Kinnear appeared in the film as an actor; he did not receive a screenplay credit."
+        ],
+        "sources": [
+          {
+            "title": "Tom Epperson: The Gift (2000)",
+            "url": "https://www.tomepperson.com/the-gift.html"
+          },
+          {
+            "title": "Tom Epperson: The Gift — True Hollywood Stories",
+            "url": "https://www.tomepperson.com/the-gift---true-hollywood-stories.html"
+          }
+        ]
+      }
+    },
+    "t-q1-323a7555f35504ce": {
+      "prompt": "Who makes a fleeting appearance in almost all of Hitchcock's films?",
+      "choices": [
+        "Homer Simpson",
+        "His wife",
+        "Alfred Hitchcock",
+        "Cary Grant"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Alfred Hitchcock's brief cameo appearances became a recognizable signature of his films. The question refers to the director himself, although he did not appear in every film he made.",
+        "choices": [
+          "Homer Simpson is an animated television character, not the director whose cameos viewers look for in Hitchcock films.",
+          "His wife, Alma Reville, collaborated behind the scenes, including on screenplays. The famous recurring cameo performer was Hitchcock himself.",
+          "Hitchcock inserted short appearances of himself into many of his films, creating a recurring opportunity for audiences to spot the director.",
+          "Grant had substantial acting roles in Hitchcock films such as Suspicion. The recurring brief director appearances are those of Hitchcock, not Grant."
+        ],
+        "sources": [
+          {
+            "title": "Michael Walker, Hitchcock's Motifs: Cameo Appearances",
+            "url": "https://www.cambridge.org/core/books/abs/hitchcocks-motifs/cameo-appearances/39B287FA4A1BFABB0B41C968F3C5FD46"
+          },
+          {
+            "title": "Turner Classic Movies: Suspicion",
+            "url": "https://www.tcm.com/articles/64049/suspicion"
+          }
+        ]
+      }
+    },
+    "t-q2-b852e6b2bf05f2ae": {
+      "prompt": "Which of these is not a material used to build the Statue of Liberty?",
+      "choices": [
+        "Copper plates",
+        "Wrought iron",
+        "Galvanized steel",
+        "Cardboard"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Cardboard is the intended answer: the statue has a copper exterior and an iron supporting structure, with stainless steel added during restoration. The 'galvanized steel' option is imprecise and makes the question less clear than it should be.",
+        "choices": [
+          "Copper sheets form the statue's exterior, so copper is a documented construction material.",
+          "The original supporting framework used wrought iron, as described in the National Park Service guidebook.",
+          "This option is ambiguous: the National Park Service documents stainless steel replacing iron armature bars during the 1980s restoration. That does not establish that galvanized steel was used, so it should not be treated as a securely verified distractor.",
+          "Cardboard is the quiz's intended choice because the completed statue's exterior and supporting structure use metal. The questionable steel wording means this is not a perfectly unambiguous set of alternatives."
+        ],
+        "sources": [
+          {
+            "title": "National Park Service: Statue of Liberty Facts",
+            "url": "https://www.nps.gov/stli/learn/statue-of-liberty-facts.htm"
+          },
+          {
+            "title": "National Park Service: Restoring the Statue",
+            "url": "https://www.nps.gov/stli/learn/historyculture/places_restoring.htm"
+          },
+          {
+            "title": "National Park Service: Statue of Liberty Guidebook (1940), archived copy",
+            "url": "https://npshistory.com/publications/stli/brochures/1940/sec1.htm"
+          }
+        ]
+      }
+    },
+    "t-q3-975656b3f4505e38": {
+      "prompt": "What does the quintessential Hitchcock actress look like?",
+      "choices": [
+        "She is brunette and small",
+        "She is blonde and sophisticated",
+        "Tanned skin and crooked knees",
+        "She is red-haired and muscular"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "The question refers to the familiar 'Hitchcock blonde' archetype: an elegant, sophisticated blonde heroine, exemplified by Grace Kelly. It is a cinematic trope, not a description of every actress or heroine in his films.",
+        "choices": [
+          "Hitchcock also cast brunette heroines, but this description does not match the particular blonde archetype the question means.",
+          "Blonde hair and sophisticated styling are the traits conventionally associated with this Hitchcock heroine archetype.",
+          "Skin tone and knee shape are not the defining features of the Hitchcock blonde trope.",
+          "Hitchcock did feature some redheads, but red hair and a muscular build do not define the familiar archetype referenced here."
+        ],
+        "sources": [
+          {
+            "title": "Michael Walker, Hitchcock's Motifs: Blondes and Brunettes",
+            "url": "https://www.cambridge.org/core/books/abs/hitchcocks-motifs/blondes-and-brunettes/81F037CA330DCC7F53497BB259E7CF5E"
+          }
+        ]
+      }
+    },
+    "t-q4-bed59e3f40cc2f7d": {
+      "prompt": "Which of these is a novel by William Golding?",
+      "choices": [
+        "Lord of the Wasps",
+        "Lord of the Moths",
+        "Lord of the Flies",
+        "Lord of the Dance"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Lord of the Flies is William Golding's debut novel. It follows schoolboys stranded on an island as their attempts to maintain order give way to fear and violence.",
+        "choices": [
+          "This substitutes 'Wasps' for the insect in Golding's title; his novel is Lord of the Flies.",
+          "This is another altered version of the title. Golding's novel names flies, not moths.",
+          "This is the title listed by Golding's official website, which identifies it as his debut novel.",
+          "Lord of the Dance is not the title of Golding's island novel; the correct title is Lord of the Flies."
+        ],
+        "sources": [
+          {
+            "title": "William Golding: Lord of the Flies",
+            "url": "https://william-golding.co.uk/books/lord-of-the-flies/"
+          }
+        ]
+      }
+    },
+    "t-q5-bf94c95bce6e5c99": {
+      "prompt": "Who was New Zealand's first female PM?",
+      "choices": [
+        "Helen Clark",
+        "Jeanette Johns",
+        "Jenny Shipley",
+        "Kay Murray"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Jenny Shipley became New Zealand's first female prime minister in 1997 after replacing Jim Bolger as National Party leader. Helen Clark followed her in 1999, becoming the first woman to take the office after a general election victory.",
+        "choices": [
+          "Clark became prime minister after the 1999 election. Shipley had already held the office from 1997, so Clark was the second woman to serve.",
+          "Jeanette Johns is not the person identified in New Zealand's official history as its first female prime minister; that distinction belongs to Jenny Shipley.",
+          "Shipley's accession to office in 1997 made her the country's first female prime minister.",
+          "Kay Murray is not the woman who first held this office. The official account names Jenny Shipley, who succeeded Jim Bolger in 1997."
+        ],
+        "sources": [
+          {
+            "title": "NZ History: Jenny Shipley",
+            "url": "https://nzhistory.govt.nz/people/jenny-shipley"
+          },
+          {
+            "title": "NZ History: Helen Clark",
+            "url": "https://nzhistory.govt.nz/people/helen-clark"
+          }
+        ]
+      }
+    },
+    "t-q6-a18998f236e4dd59": {
+      "prompt": "What was the name of the first sheep produced by cloning?",
+      "choices": [
+        "Sally",
+        "Billy",
+        "Kelly",
+        "Dolly"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Dolly is the intended answer: she was the first mammal cloned from an adult body cell. The question is too broad as written, because sheep had already been cloned from embryonic cells before Dolly was born in 1996.",
+        "choices": [
+          "Sally is not the name of the sheep associated with this adult-cell cloning breakthrough; that sheep was Dolly.",
+          "Billy is not the name recorded for the Roslin Institute's famous clone. Dolly was a female sheep, or ewe.",
+          "Kelly is not the name of the 1996 adult-cell clone. The Roslin Institute identifies her as Dolly.",
+          "Dolly was cloned using genetic material from an adult sheep's mammary cell. Her significance was showing that an adult, specialized cell could be used to produce a new animal."
+        ],
+        "sources": [
+          {
+            "title": "University of Edinburgh, Roslin Institute: The life of Dolly",
+            "url": "https://vet.ed.ac.uk/roslin/about/history/dolly/facts/life-of-dolly"
+          },
+          {
+            "title": "National Museums Scotland: The story of Dolly the sheep",
+            "url": "https://www.nms.ac.uk/discover-catalogue/the-story-of-dolly-the-sheep"
+          }
+        ]
+      }
+    },
+    "t-q7-dde771c2c4de0d21": {
+      "prompt": "Which is not a unit of measurement of area?",
+      "choices": [
+        "Hectare",
+        "Furlong",
+        "Acre",
+        "Square yard"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "A furlong measures length, whereas the other three units measure area. One furlong is 220 yards, or one eighth of a mile.",
+        "choices": [
+          "A hectare measures area: one hectare equals 10,000 square metres. It therefore does not fit the question's exception.",
+          "A furlong is a distance of 660 feet, or 220 yards. It measures how long something is, not how much surface it covers.",
+          "An acre measures area: one acre equals 43,560 square feet. It is an area unit, unlike the furlong.",
+          "A square yard is the area of a square one yard on each side, equal to nine square feet. The word 'square' makes this an area unit."
+        ],
+        "sources": [
+          {
+            "title": "NIST: Revised unit conversion factors",
+            "url": "https://www.nist.gov/pml/us-surveyfoot/revised-unit-conversion-factors"
+          },
+          {
+            "title": "NIST: Units outside the International System of Units",
+            "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si"
+          }
+        ]
+      }
+    },
+    "t-q8-3a1b3f78cf91dda3": {
+      "prompt": "Where is the village that boasts the longest place name in the U.K.?",
+      "choices": [
+        "England",
+        "Northern Ireland",
+        "Scotland",
+        "Wales"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The village is Llanfairpwll on Anglesey, Wales. It is famous for its 58-character extended name, described by Anglesey's official tourism site as Britain's longest place name.",
+        "choices": [
+          "England is not the location of Llanfairpwll. The village belongs to Anglesey in Wales.",
+          "Northern Ireland is a different part of the United Kingdom; the village with this famous long name is on Anglesey in Wales.",
+          "Scotland is not the location of this village. The record in the question refers to Llanfairpwll in Wales.",
+          "Wales is correct because Llanfairpwll is on the Welsh island of Anglesey. Its long name is often shortened to Llanfairpwll or Llanfair PG."
+        ],
+        "sources": [
+          {
+            "title": "Visit Anglesey: Places you will love — Llanfairpwllgwyngyll",
+            "url": "https://www.visitanglesey.co.uk/en-gb/inspire/communities-and-culture/places-youll-love"
+          }
+        ]
+      }
+    },
+    "t-q9-2bf2647ea00a395f": {
+      "prompt": "What is the name of the building in which John McClane is trapped in \"Die Hard\" ?",
+      "choices": [
+        "Nakatomi Plaza",
+        "Nakatomi Skyline",
+        "Nakatomi Building",
+        "Nakatomi Tower"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "The fictional office building in Die Hard is called Nakatomi Plaza. The real Los Angeles building used to portray it was Fox Plaza.",
+        "choices": [
+          "Nakatomi Plaza is the building's proper name in the film. John McClane arrives there for his wife's office Christmas party before the hostage crisis begins.",
+          "Nakatomi Skyline changes the second word of the name. The building is named Nakatomi Plaza.",
+          "Nakatomi Building describes a building associated with the company, but it is not the specific proper name asked for: Nakatomi Plaza.",
+          "Nakatomi Tower sounds plausible because the setting is a high-rise, but the building's proper name is Nakatomi Plaza."
+        ],
+        "sources": [
+          {
+            "title": "American Film Institute Catalog: Die Hard (1988)",
+            "url": "https://catalog.afi.com/Catalog/moviedetails/55749"
+          }
+        ]
+      }
+    },
+    "t-q10-920bbf9032da945d": {
+      "prompt": "How many gold medals has Michael Phelps brought home?",
+      "choices": [
+        "9",
+        "12",
+        "23",
+        "31"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The intended answer is Michael Phelps's Olympic gold-medal total: 23. He won 28 Olympic medals overall, including three silver and two bronze. The question needs that Olympic qualification; it is not counting every competition in his career.",
+        "choices": [
+          "Nine would undercount Phelps's Olympic gold medals. His completed Olympic record contains 23 golds.",
+          "Twelve is not his Olympic gold total. The official record lists 23 gold, three silver and two bronze medals.",
+          "Twenty-three is his Olympic gold-medal total. With three silver and two bronze medals, that makes 28 Olympic medals overall.",
+          "Thirty-one is too high: it exceeds even his total of 28 Olympic medals of all colours. Only 23 of those were gold."
+        ],
+        "sources": [
+          {
+            "title": "Olympics: Michael Phelps — Olympic medals and records",
+            "url": "https://www.olympics.com/en/news/michael-phelps-olympic-medals-record-how-many-gold-swimmer-world-record"
+          },
+          {
+            "title": "Team USA: Michael Phelps",
+            "url": "https://www.teamusa.com/profiles/michael-phelps"
+          }
+        ]
+      }
+    },
+    "t-q11-03fc142735fe295e": {
+      "prompt": "Which international organization did Woodrow Wilson establish?",
+      "choices": [
+        "The League of Nations",
+        "Commonwealth of Nations",
+        "International Court of Justice",
+        "International Labour Organization"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Woodrow Wilson was a leading advocate and architect of the League of Nations. His Fourteen Points called for an association of nations, and he chaired the commission that drafted its Covenant in 1919. It was established through international agreement, not by Wilson alone.",
+        "choices": [
+          "The League of Nations was the international association Wilson championed to help preserve peace. He played a central role in negotiating its Covenant at the Paris Peace Conference.",
+          "The modern Commonwealth took shape through the 1949 London Declaration, long after Wilson's presidency. It was not the organization proposed in his Fourteen Points.",
+          "The International Court of Justice was established under the United Nations Charter in 1945 and began work in 1946. It was not Wilson's League of Nations.",
+          "The International Labour Organization was also created in the 1919 peace settlement, but it addressed labour conditions and standards. The organization identified with Wilson's proposal for a general association of nations was the League."
+        ],
+        "sources": [
+          {
+            "title": "United Nations Geneva: Historical background of the League of Nations",
+            "url": "https://www.ungeneva.org/en/about/league-of-nations/background"
+          },
+          {
+            "title": "United Nations Geneva: League organs and associated institutions",
+            "url": "https://www.ungeneva.org/en/about/league-of-nations/organs"
+          },
+          {
+            "title": "The Commonwealth: London Declaration of 1949",
+            "url": "https://thecommonwealth.org/london-declaration-1949"
+          },
+          {
+            "title": "International Court of Justice: The Court",
+            "url": "https://www.icj-cij.org/court/"
+          }
+        ]
+      }
+    },
+    "t-q12-9fb6ece17d3d7d3d": {
+      "prompt": "What fruit, which is partially toxic, is the national dish of Jamaica when it is combined with codfish?",
+      "choices": [
+        "Starfruit",
+        "Ackee",
+        "Passion Fruit",
+        "Papaya"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Jamaica's national dish is ackee and saltfish, with saltfish commonly referring to salted cod. The toxicity clue points to ackee: unripe fruit and the seeds contain dangerous levels of the toxin hypoglycin A.",
+        "choices": [
+          "The dish clue identifies ackee, not starfruit. Starfruit is not the fruit paired with saltfish in Jamaica's national dish.",
+          "Ackee is the fruit in ackee and saltfish. It also fits the toxicity clue because unripe ackee and its seeds can contain dangerous amounts of hypoglycin A.",
+          "Passion fruit is not the fruit named in this national dish. The traditional combination is ackee with saltfish.",
+          "Papaya is a different fruit and is not the ackee in ackee and saltfish. The salted-cod pairing in the question identifies ackee."
+        ],
+        "sources": [
+          {
+            "title": "Jamaica Tourist Board: Jamaican food",
+            "url": "https://www.visitjamaica.com/best-of-jamaica/food/"
+          },
+          {
+            "title": "U.S. Food and Drug Administration: Hypoglycin and ackee fruit",
+            "url": "https://www.fda.gov/food/natural-toxins-food/hypoglycin-and-ackee-fruit"
+          }
+        ]
+      }
+    },
+    "t-q13-13791723940a2188": {
+      "prompt": "Which of these First Ladies was nicknamed \"Lady Bird\" for her support of the highway beautification project?",
+      "choices": [
+        "Claudia Johnson",
+        "Patricia Nixon",
+        "Jacqueline Kennedy",
+        "Elizabeth Truman"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Claudia Alta 'Lady Bird' Johnson championed highway beautification, but the question gives the wrong origin for her nickname. A nursemaid gave her the nickname in early childhood, decades before her work associated with the Highway Beautification Act of 1965.",
+        "choices": [
+          "Claudia Alta Johnson, wife of Lyndon B. Johnson, was Lady Bird. Her highway beautification work matches the clue, although her nickname came from childhood rather than that project.",
+          "Pat Nixon was Richard Nixon's wife and was born Thelma Catherine Ryan. 'Lady Bird' was Claudia Johnson's nickname, not hers.",
+          "Jacqueline Kennedy was John F. Kennedy's wife and was commonly known as Jackie. She was not Lady Bird Johnson.",
+          "Elizabeth Virginia Truman, wife of Harry S. Truman, was known as Bess. The nickname Lady Bird belonged to Claudia Johnson."
+        ],
+        "sources": [
+          {
+            "title": "Lyndon Baines Johnson Library: Lady Bird Johnson",
+            "url": "https://www.lbjlibrary.org/life-and-legacy/lady-bird-johnson"
+          },
+          {
+            "title": "Richard Nixon Library: Pat Nixon, First Lady of the United States",
+            "url": "https://www.nixonlibrary.gov/news/pat-nixon-first-lady-united-states"
+          },
+          {
+            "title": "John F. Kennedy Library: Life of Jacqueline B. Kennedy",
+            "url": "https://www.jfklibrary.org/learn/about-jfk/life-of-jacqueline-b-kennedy"
+          },
+          {
+            "title": "Harry S. Truman Library: Biographical sketch of Bess Truman",
+            "url": "https://www.trumanlibrary.gov/education/trivia/biographical-sketch-bess-truman"
+          }
+        ]
+      }
+    },
+    "t-q14-e0ea02a32322e4b6": {
+      "prompt": "What Smurf comic book won the Prix Alfred Enfant at the Angoulême International Comic Book Festival in France?",
+      "choices": [
+        "Smurf Soup",
+        "The Olympic Smurfs",
+        "Baby Smurf",
+        "The Smurflings"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "The Olympic Smurfs, titled Les Schtroumpfs olympiques in French, won the Alfred Enfant at Angoulême in 1984. It is volume 11 of the original French album series.",
+        "choices": [
+          "Smurf Soup corresponds to La Soupe aux Schtroumpfs, volume 10 of the French series. The 1984 youth prize went to the following volume, The Olympic Smurfs.",
+          "The Olympic Smurfs is the winning album. The museum association identifies Peyo's 1984 youth award with Les Schtroumpfs olympiques, volume 11.",
+          "Baby Smurf corresponds to Le Bébé Schtroumpf, volume 12. It is a different album from the prize-winning volume 11.",
+          "The Smurflings corresponds to Les P'tits Schtroumpfs, volume 13. The award in this question belongs to The Olympic Smurfs, volume 11."
+        ],
+        "sources": [
+          {
+            "title": "Friends of the Angoulême Comics Museum: 1984 Alfred trophy donation (PDF, page 10)",
+            "url": "https://s6b82609a6d2090b3.jimcontent.com/download/version/1680004177/module/14262420827/name/Lettre%20AMBD%20fin%202022%20et%20plus%201%C3%A8re%20partie.pdf"
+          },
+          {
+            "title": "Dupuis: Les Schtroumpfs, volume 10 — La Soupe aux Schtroumpfs",
+            "url": "https://www.dupuis.com/les-schtroumpfs/bd/les-schtroumpfs-tome-10-la-soupe-aux-schtroumpfs/960"
+          },
+          {
+            "title": "Dupuis: Les Schtroumpfs, volume 12 — Le Bébé Schtroumpf",
+            "url": "https://www.dupuis.com/les-schtroumpfs/bd/les-schtroumpfs-tome-12-le-bebe-schtroumpf/962"
+          },
+          {
+            "title": "Dupuis: Les Schtroumpfs, volume 13 — Les P'tits Schtroumpfs",
+            "url": "https://www.dupuis.com/les-schtroumpfs/bd/les-schtroumpfs-tome-13-les-p-tits-schtroumpfs/963"
+          }
+        ]
+      }
+    },
+    "t-q15-05c0757da366eaf8": {
+      "prompt": "Which of the following was the recipient of the Nobel Prize for Peace in 1989?",
+      "choices": [
+        "Dalai Lama",
+        "Pope John Paul II",
+        "Mikhail Gorbachev",
+        "United Nations"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "The 1989 Nobel Peace Prize was awarded to the 14th Dalai Lama, Tenzin Gyatso, for advocating peaceful solutions grounded in tolerance and mutual respect, including his nonviolent approach to Tibet's cause.",
+        "choices": [
+          "The Dalai Lama is the laureate named in the official 1989 Nobel Peace Prize record. The award recognized his commitment to peaceful solutions and preserving his people's cultural heritage.",
+          "Pope John Paul II was not the 1989 Nobel Peace Prize recipient. The official record names the Dalai Lama for that year.",
+          "Mikhail Gorbachev received the Nobel Peace Prize in 1990, one year after the Dalai Lama.",
+          "The United Nations shared the Nobel Peace Prize with Kofi Annan in 2001. It was not the recipient of the 1989 award."
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize: The Dalai Lama — 1989 Peace Prize facts",
+            "url": "https://www.nobelprize.org/prizes/peace/1989/lama/facts/"
+          },
+          {
+            "title": "Nobel Prize: The Nobel Peace Prize 1990",
+            "url": "https://www.nobelprize.org/prizes/peace/1990/summary/"
+          },
+          {
+            "title": "Nobel Prize: The Nobel Peace Prize 2001",
+            "url": "https://www.nobelprize.org/prizes/peace/2001/summary/"
+          }
+        ]
+      }
     }
   }
 }

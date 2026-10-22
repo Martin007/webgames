@@ -194,11 +194,11 @@ preparation step merge this catalog into the generated question pack. The
 preparation step also reapplies the catalog when using an existing offline pack,
 so removing an explanation removes it from the next generated pack.
 
-The initial catalog covers all 15 questions in challenge #47 (21 October 2026)
-from pack `72c4f5f8271c52ce`. Each entry explains the correct answer and all three
-alternatives, with sources. The heraldry entry also clarifies the source prompt's
-ambiguous wording. Explanations stay attached to those questions on future days;
-other questions show no button until their entries are added.
+The catalog covers all 45 questions in challenges #47–49 (21–23 October 2026).
+Each entry explains the correct answer and all three alternatives, with sources
+and clarifying notes where a source prompt is imprecise. Explanations stay attached
+to those questions on future days; other questions show no button until their
+entries are added.
 
 Use the question's stable ID and copy its **original, unshuffled** `prompt`,
 `choices` and zero-based `answer` from `public/games/triviaire/questions.json`:
