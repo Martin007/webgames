@@ -11,6 +11,10 @@ export interface Explanation {
   choices: [string, string, string, string];
   sources?: {title: string; url: string}[];
 }
+export interface FriendReply {
+  answer?: string;
+  hint?: string;
+}
 export interface Question {
   id: string;
   level?: number;
@@ -21,6 +25,7 @@ export interface Question {
   source?: string;
   contributor?: string;
   explanation?: Explanation;
+  friendReply?: FriendReply;
 }
 export interface Bank {
   version: 1;
@@ -38,7 +43,7 @@ export interface Bank {
 export interface Lifelines {
   fifty: {at: number; removed: Choice[]} | null;
   audience: {at: number; votes: number[]} | null;
-  phone: {at: number; choice: Choice | null; confidence: 'fairly sure' | 'not certain' | 'does not know' | 'no answer'} | null;
+  phone: {at: number; choice: Choice | null; confidence: 'fairly sure' | 'not certain' | 'does not know' | 'no answer'; message?: string} | null;
 }
 export interface Game {
   version: 1;
@@ -93,12 +98,17 @@ export function validExplanation(v: unknown): v is Explanation {
     try { return new URL(source.url).protocol === 'https:'; } catch { return false; }
   }));
 }
+export function validFriendReply(v: unknown): v is FriendReply {
+  return isRecord(v) && (v.answer === undefined || isText(v.answer)) && (v.hint === undefined || isText(v.hint))
+    && (isText(v.answer) || isText(v.hint));
+}
 export function validQuestion(v: unknown): v is Question {
   if (!isRecord(v)) return false;
   return isText(v.id) && isText(v.prompt) && Array.isArray(v.choices) && v.choices.length === 4
     && v.choices.every(isText) && new Set(v.choices.map((c) => c.trim().toLowerCase())).size === 4 && isChoice(v.answer)
     && (v.level === undefined || isLevel(v.level))
-    && (v.explanation === undefined || validExplanation(v.explanation));
+    && (v.explanation === undefined || validExplanation(v.explanation))
+    && (v.friendReply === undefined || validFriendReply(v.friendReply));
 }
 export function validateBank(value: unknown): Bank {
   if (!isRecord(value) || value.version !== 1 || !isText(value.revision)
@@ -122,17 +132,34 @@ function withShuffledChoices(q: Question, day: string): Question {
   return {...q, choices: order.map((j) => q.choices[j]) as Question['choices'], answer: order.indexOf(q.answer) as Choice,
     ...(q.explanation ? {explanation: {...q.explanation, choices: order.map((j) => q.explanation!.choices[j]) as Explanation['choices']}} : {})};
 }
+function sameQuestionContent(question: Question, current: Question): boolean {
+  return current.id === question.id && current.prompt === question.prompt
+    && current.choices[current.answer] === question.choices[question.answer]
+    && question.choices.every((choice) => current.choices.includes(choice));
+}
 /** Enrich an older saved question without replacing any part of its gameplay snapshot. */
 export function questionExplanation(question: Question, bank: Bank): Explanation | undefined {
   const current = bank.questions.find((q) => q.id === question.id);
-  if (current?.explanation && validExplanation(current.explanation)
-    && current.prompt === question.prompt
-    && current.choices[current.answer] === question.choices[question.answer]
-    && question.choices.every((choice) => current.choices.includes(choice))) {
+  if (current?.explanation && validExplanation(current.explanation) && sameQuestionContent(question, current)) {
     return {...current.explanation, choices: question.choices.map((choice) =>
       current.explanation!.choices[current.choices.indexOf(choice)]) as Explanation['choices']};
   }
   return validExplanation(question.explanation) ? question.explanation : undefined;
+}
+/** Resolve current reply text without changing a saved question or an earlier call. */
+export function questionFriendReply(question: Question, bank?: Bank): FriendReply | undefined {
+  const current = bank?.questions.find((q) => q.id === question.id);
+  if (current?.friendReply && validFriendReply(current.friendReply) && sameQuestionContent(question, current)) {
+    return current.friendReply;
+  }
+  return validFriendReply(question.friendReply) ? question.friendReply : undefined;
+}
+/** Older calls can gain display text without changing their persisted outcome or spending another lifeline. */
+export function phoneReplyMessage(question: Question, phone: NonNullable<Lifelines['phone']>, bank?: Bank): string | undefined {
+  if (isText(phone.message)) return phone.message;
+  const reply = questionFriendReply(question, bank);
+  if (phone.choice === question.answer) return reply?.answer;
+  return phone.choice === null && phone.confidence === 'does not know' ? reply?.hint : undefined;
 }
 /** Pick exactly one question from each difficulty tab. Legacy flat packs retain their old deterministic order. */
 export function dailyDeck(bank: Bank, day: string): Question[] {
@@ -162,7 +189,7 @@ export const correctCount = (g: Game): number => g.answers.filter((a, i) => a ==
 export const secured = (correct: number): number => correct >= 10 ? 32000 : correct >= 5 ? 1000 : 0;
 export const winnings = (g: Game): number => g.status === 'lost' ? secured(correctCount(g)) : PRIZES[correctCount(g) - 1] ?? 0;
 
-export function reduceGame(g: Game, action: Action): Game {
+export function reduceGame(g: Game, action: Action, bank?: Bank): Game {
   if (action.type === 'next') {
     if (g.phase !== 'reveal') return g;
     return g.status !== 'playing' ? {...g, phase: 'result'} : {...g, index: g.index + 1, selected: null, phase: 'question'};
@@ -192,11 +219,16 @@ export function reduceGame(g: Game, action: Action): Game {
     const connection = rng();
     if (connection < 0.10) return {...g, lifelines: {...g.lifelines,
       phone: {at: g.index, choice: null, confidence: 'no answer'}}};
+    const reply = questionFriendReply(q, bank);
     if (connection < 0.25) return {...g, lifelines: {...g.lifelines,
-      phone: {at: g.index, choice: null, confidence: 'does not know'}}};
+      phone: {at: g.index, choice: null, confidence: 'does not know', ...(reply?.hint ? {message: reply.hint} : {})}}};
     const favorite = rng() < 0.78 ? q.answer : wrong[Math.floor(rng() * wrong.length)];
+    const confidence = rng() > 0.4 ? 'fairly sure' : 'not certain';
+    if (favorite !== q.answer && reply?.hint) return {...g, lifelines: {...g.lifelines,
+      phone: {at: g.index, choice: null, confidence: 'does not know', message: reply.hint}}};
     return {...g, lifelines: {...g.lifelines,
-      phone: {at: g.index, choice: favorite, confidence: rng() > 0.4 ? 'fairly sure' : 'not certain'}}};
+      phone: {at: g.index, choice: favorite, confidence,
+        ...(favorite === q.answer && reply?.answer ? {message: reply.answer} : {})}}};
   }
   const favorite = rng() < 0.78 ? q.answer : wrong[Math.floor(rng() * wrong.length)];
   const weights = [0, 1, 2, 3].map((c) => !available.includes(c as Choice) ? 0 : c === favorite ? 45 + Math.floor(rng() * 35) : 5 + Math.floor(rng() * 20));
@@ -247,6 +279,8 @@ export function restoreGame(raw: string | null, day: string): Game | null {
         const unavailable = h.choice === null && ['does not know', 'no answer'].includes(h.confidence);
         const answered = isChoice(h.choice) && ['fairly sure', 'not certain'].includes(h.confidence);
         if (!unavailable && !answered) return null;
+        if (h.message !== undefined && (!isText(h.message) || h.confidence === 'no answer'
+          || (answered && h.choice !== g.deck[h.at].answer))) return null;
       }
     }
     if (g.phase === 'question' && g.selected !== null && removedChoices(g).includes(g.selected)) return null;

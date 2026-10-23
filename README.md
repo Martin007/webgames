@@ -33,12 +33,14 @@ npm run build
 npm run preview
 ```
 
-`predev`, `pretest`, and `prebuild` validate the committed Triviaire CSV snapshot
-and generate `public/games/triviaire/questions.json`. After dependencies are
-installed, builds do **not** need Google Sheets access. Vite copies both games’
-JSON files to `dist/games/…`; question banks are fetched as static assets, not
-bundled into the main application JavaScript. Generated JSON is ignored by Git;
-the source snapshot and importer are versioned together.
+`predev`, `pretest`, and `prebuild` prepare
+`public/games/triviaire/questions.json` from Q1–Q15 CSV snapshots when available,
+or fetch those tabs from Google Sheets. Until all fifteen snapshots are committed,
+CI builds require sheet access. Local development can fall back to an existing
+generated pack when offline. Both editorial catalogs are reapplied in every case.
+Vite copies both games’ JSON files to `dist/games/…`; question banks are fetched
+as static assets, not bundled into the main application JavaScript. Generated JSON
+is ignored by Git; snapshots, editorial catalogs and the importer are versioned.
 
 ### Routes and deployment
 
@@ -83,7 +85,10 @@ Each lifeline may be used once per daily run:
 - **Phone a friend** produces a seeded, simulated suggestion.
 
 The latter two can be wrong and are explicitly labeled simulated. They do not
-contact real people. Optional original synthesized sound effects are off by
+contact real people. Questions can have custom friend replies: the answer text
+is used for a correct simulated guess, and the hint text for a wrong guess or an
+unknown answer. Missed calls and missing variants retain the standard messages.
+Optional original synthesized sound effects are off by
 default. Keyboard A–D selection, native focus-trapped dialogs, visible focus,
 status announcements, reduced motion, and mobile layouts are supported.
 
@@ -107,24 +112,32 @@ anti-cheat or globally verified leaderboard is implied.
 
 ## Triviaire question source and conversion
 
-The initial snapshot comes from the [supplied Google Sheet](https://docs.google.com/spreadsheets/d/1-SYaM0xz_f7YLtMnIk6WkyDa78JOsk-mJD37diF-Vuc/edit?gid=599441168), tab `599441168`, retrieved on 2026-09-05.
+The current importer reads difficulty tabs **Q1–Q15** from the
+[supplied Google Sheet](https://docs.google.com/spreadsheets/d/1-SYaM0xz_f7YLtMnIk6WkyDa78JOsk-mJD37diF-Vuc/edit).
+Each tab contributes its own difficulty pool, with stable IDs derived from its
+level and normalized prompt. It accepts both the workbook's transposed question
+columns and conventional row-oriented exports.
+
+The legacy single-tab snapshot in `data/triviaire/source.csv` was retrieved on
+2026-09-05 from tab `599441168`.
 It contains **1,044 data rows**. The importer removes **60 duplicate prompts**
 with matching correct answers. One truncated prompt (`J`, source row 177) is
 quarantined rather than shown to players, leaving **983 playable questions**.
 Initial runtime revision: `c6954bcb18d809a8`.
 
-The original export is in `data/triviaire/source.csv`; generated runtime data is
-in `public/games/triviaire/questions.json`. Original source row numbers and the
+Current tab snapshots use `data/triviaire/Q1.csv` through `Q15.csv`; generated
+runtime data is in `public/games/triviaire/questions.json`. Original source row numbers and the
 sheet’s optional source/contributor columns are retained in the JSON. Correct
 answer letters are converted to zero-based indices. Text is normalized without
 rewriting the supplied questions or changing their keyed correct answers.
 Incomplete prompts shorter than eight characters are excluded and recorded in
 `source.excludedRows`; the original CSV remains unchanged.
 
-The sheet has **no difficulty ratings**. Stakes increase, but question difficulty
-is mixed; the game does not pretend the later questions are independently rated
-harder. Import validation checks structure and consistency, not factual accuracy:
-the community questions have not been independently fact-checked.
+The legacy snapshot has no difficulty ratings; current Q1–Q15 pools retain the
+workbook's intended levels. Import validation checks structure and consistency,
+not factual accuracy: the entire community question bank has not been
+independently fact-checked. Editorial explanations include sources and notes on
+ambiguous wording for the questions they cover.
 
 To intentionally refresh the versioned snapshot from the source sheet:
 
@@ -132,21 +145,24 @@ To intentionally refresh the versioned snapshot from the source sheet:
 npm run import:triviaire
 npm test
 npm run build
-# Review and commit data/triviaire/source.csv and any accompanying code changes.
+# Review and commit data/triviaire/Q1.csv through Q15.csv and accompanying changes.
 ```
 
-Or import an exported CSV without network access:
+Or convert a directory containing exported `Q1.csv` through `Q15.csv` without
+network access:
 
 ```sh
-npm run import:triviaire -- --input /path/to/questions.csv
+npm run import:triviaire -- --input-dir /path/to/tab-csvs
 ```
 
-Both commands update the source snapshot and generated JSON only after validating
-the input. Use `--output /path/to/pack.json` to convert a separate pack without
-changing the committed snapshot. The parser supports BOMs, quoted commas,
-newlines, escaped quotes and CRLF. It rejects malformed rows, non-unique choices,
-invalid correct-answer letters, HTML/login responses, conflicting duplicate
-answers and banks containing fewer than fifteen unique questions.
+Both commands validate all fifteen tabs and merge the editorial catalogs before
+writing generated JSON. The default online import also saves the downloaded tab
+snapshots; `--input-dir` reads the supplied files without copying them into the
+repository. Use `--output /path/to/pack.json` to convert a separate pack without
+changing the committed snapshots. The parser supports BOMs, quoted commas,
+newlines, escaped quotes and CRLF. It rejects malformed CSV, HTML/login responses,
+conflicting duplicate answers and missing or empty difficulty pools. Incomplete
+or invalid questions within a difficulty tab are excluded and reported.
 
 A deployment with a changed pack can change the deck for players who have not
 started that day; already-started runs retain their snapshot. Review data changes
@@ -169,18 +185,23 @@ interface TriviaireQuestion {
     choices: [string, string, string, string]; // Same order as question.choices
     sources?: {title: string; url: string}[];  // HTTPS links
   };
+  friendReply?: {
+    answer?: string;                 // Correct simulated guess, including uncertain ones
+    hint?: string;                   // Wrong guess or unknown answer
+  };                                // At least one nonempty variant when present
 }
 interface TriviaireBank {
   version: 1;
   revision: string;
   source: {
     url: string;
-    gid: string;
     rows: number;
     duplicatesRemoved: number;
-    duplicateRows: number[];
-    excludedRows: {row: number; reason: string}[];
-    difficulty: 'unrated';
+    duplicateRows?: number[];         // Legacy single-tab metadata
+    excludedRows: {level?: number; row: number; reason: string}[];
+    difficulty: 'unrated' | 'Q1-Q15';
+    sheets?: {level: number; name: string; rows: number; duplicatesRemoved: number;
+      excludedRows: number; questions: number}[];
   };
   questions: TriviaireQuestion[];
 }
@@ -241,6 +262,69 @@ revision without changing its question IDs, daily selection, answers or order.
 Run `npm test` and `npm run build` after editing the catalog, and commit the
 catalog rather than the generated JSON.
 
+### Adding Phone a friend replies
+
+Optional custom replies live in `data/triviaire/friend-replies.json`. The initial
+catalog covers the first ten questions of challenge #49 (23 October 2026), with
+both variants for each question. Replies remain available whenever those
+questions appear again.
+
+Copy the stable question ID and its exact **original, unshuffled** `prompt`,
+`choices` and zero-based numeric `answer` from the generated question pack:
+
+```json
+{
+  "version": 1,
+  "questions": {
+    "t-q1-<prompt-hash>": {
+      "prompt": "The exact question prompt",
+      "choices": ["First choice", "Second choice", "Third choice", "Fourth choice"],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Here is the connection I remember that makes this answer fit.",
+        "hint": "I am not sure, but here is a useful clue to think about."
+      }
+    }
+  }
+}
+```
+
+Use answer **names or text**, never hard-coded A–D letters: the game shuffles
+choices for each challenge. Each reply can have an `answer`, a `hint`, or both.
+The simulated call result determines which variant is used:
+
+| Simulated result | Custom variant |
+| --- | --- |
+| Correct guess, whether fairly sure or uncertain | `answer` |
+| Wrong guess or does not know | `hint` |
+| No answer / missed call | Standard missed-call message |
+
+If the matching variant is absent, the standard simulated message is used. A
+custom hint replaces a wrong guess with an unsure reply that recommends no
+option. The random draws and one-use lifeline rule stay the same. Write hints as
+useful clues, and keep each reply concise enough to read in the inline hint card.
+
+New call messages are saved with their result. A previously started game can use
+the current catalog when calling. For an older call that has already been used,
+the display may add answer text to a correct recommendation or a hint to an
+unknown result; its saved choice, confidence and progress stay unchanged. Older
+wrong recommendations and missed calls keep their standard message, and a saved
+custom message always takes precedence over newer catalog text.
+
+The importer normalizes Unicode and whitespace. Missing, null and blank variants
+are omitted; if neither variant has text, no `friendReply` is emitted. Other
+payload or variant types are rejected. As with explanations, the copied question
+fields are guards: changed prompts, choice order or answers produce a warning
+and skip the reply until reviewed. Entries for absent question IDs are harmless,
+and a missing catalog is equivalent to an empty one.
+
+Both the explicit importer and build preparation merge this catalog after the
+explanation catalog. They also reapply both catalogs to existing offline packs,
+so removing or blanking a reply removes earlier metadata. Reply changes update
+the pack revision while preserving explanations, question IDs, daily selection,
+choices, answers and source fields. Run `npm test` and `npm run build`, then
+commit the catalog and code changes rather than generated JSON.
+
 ## Project layout
 
 ```text
@@ -253,6 +337,7 @@ src/
     triviaire/               New game, pure engine, tests and styles
 data/triviaire/source.csv     Versioned question-sheet export
 data/triviaire/explanations.json  Optional, source-checked answer explanations
+data/triviaire/friend-replies.json  Optional custom Phone a friend answer/hint text
 public/
   favicon.svg
   games/feudle/questions.json Original Feudle bank (unchanged)
@@ -265,12 +350,13 @@ scripts/
 
 ## Verification
 
-`npm test` runs the Feudle/animation tests, Triviaire engine and explanation tests,
+`npm test` runs the Feudle/animation tests, Triviaire engine and editorial-metadata tests,
 and importer tests. Coverage includes deterministic decks and answer mapping,
 UTC boundaries, all prize checkpoints and wrong-answer payouts, walk-away,
 all three lifelines, invalid saves, result sharing, data validation and CSV edge
-cases, explanation-to-choice alignment, existing-save enrichment, and stale
-explanation guards. `npm run build` performs the TypeScript check and production build.
+cases, explanation-to-choice alignment, existing-save enrichment, stale metadata
+guards, friend-reply variants, catalog removal and offline reapplication.
+`npm run build` performs the TypeScript check and production build.
 
 The implementation was also exercised in Chromium using the compiled app with
 in-memory copies of the real static assets: all three lifelines, a full win,

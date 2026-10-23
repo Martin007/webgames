@@ -12,6 +12,7 @@ export const LEVELS = Array.from({length: 15}, (_, i) => i + 1);
 export const SNAPSHOT = 'data/triviaire/source.csv';
 export const SNAPSHOT_DIR = 'data/triviaire';
 export const EXPLANATIONS = 'data/triviaire/explanations.json';
+export const FRIEND_REPLIES = 'data/triviaire/friend-replies.json';
 export const OUTPUT = 'public/games/triviaire/questions.json';
 export const snapshotPath = (level) => `${SNAPSHOT_DIR}/Q${level}.csv`;
 export const sheetCsvUrl = (level) => `${SHEET_URL.replace('/edit', '')}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(`Q${level}`)}&headers=0`;
@@ -236,6 +237,57 @@ export async function readExplanations(path = EXPLANATIONS) {
   }
 }
 
+function normalizeFriendReply(value, id) {
+  if (value == null || (typeof value === 'string' && !value.trim())) return undefined;
+  if (!isRecord(value)) throw new Error(`Friend reply for ${id} must be an object with answer or hint text.`);
+  const reply = {};
+  for (const variant of ['answer', 'hint']) {
+    if (value[variant] == null) continue;
+    if (typeof value[variant] !== 'string') throw new Error(`Friend reply ${variant} for ${id} must be text.`);
+    const text = clean(value[variant]);
+    if (text) reply[variant] = text;
+  }
+  return Object.keys(reply).length ? reply : undefined;
+}
+
+/** Reapply the authoritative friend catalog, including to an existing offline pack. */
+export function applyFriendReplies(bank, catalog, {warn = console.warn} = {}) {
+  if (!isRecord(catalog) || catalog.version !== 1 || !isRecord(catalog.questions)) {
+    throw new Error('The Triviaire friend reply catalog must have version 1 and a questions object.');
+  }
+  const entries = new Map();
+  for (const [id, entry] of Object.entries(catalog.questions)) {
+    if (!isRecord(entry)) throw new Error(`Invalid friend reply entry for ${id}.`);
+    const friendReply = normalizeFriendReply(entry.friendReply, id);
+    if (!friendReply) continue;
+    if (!isText(entry.prompt) || !fourTexts(entry.choices)
+      || !Number.isInteger(entry.answer) || entry.answer < 0 || entry.answer > 3) {
+      throw new Error(`Friend reply entry for ${id} needs the original prompt, four choices and correct-answer index.`);
+    }
+    entries.set(id, {prompt: clean(entry.prompt), choices: entry.choices.map(clean), answer: entry.answer, friendReply});
+  }
+  const questions = bank.questions.map((question) => {
+    const {friendReply: previousReply, ...base} = question;
+    const entry = entries.get(question.id);
+    if (!entry) return base;
+    if (entry.prompt !== question.prompt || entry.answer !== question.answer
+      || entry.choices.some((choice, index) => choice !== question.choices[index])) {
+      warn(`Skipping stale friend reply for ${question.id}: the prompt, choices or correct answer changed.`);
+      return base;
+    }
+    return {...base, friendReply: entry.friendReply};
+  });
+  return {...bank, revision: digest(JSON.stringify(questions)).slice(0, 16), questions};
+}
+
+export async function readFriendReplies(path = FRIEND_REPLIES) {
+  try { return JSON.parse(await readFile(resolve(path), 'utf8')); }
+  catch (error) {
+    if (error.code === 'ENOENT') return {version: 1, questions: {}};
+    throw new Error(`Could not read ${path}: ${error.message}`);
+  }
+}
+
 export async function fetchSheets() {
   const entries = await Promise.all(LEVELS.map(async (level) => {
     const response = await fetch(sheetCsvUrl(level), {signal: AbortSignal.timeout(30_000)});
@@ -261,7 +313,8 @@ export async function main(args = process.argv.slice(2)) {
   const csvByLevel = inputDir
     ? new Map(await Promise.all(LEVELS.map(async (level) => [level, await readFile(resolve(inputDir, `Q${level}.csv`), 'utf8')])))
     : await fetchSheets();
-  const bank = applyExplanations(convertSheets(csvByLevel), await readExplanations());
+  const [explanations, friendReplies] = await Promise.all([readExplanations(), readFriendReplies()]);
+  const bank = applyFriendReplies(applyExplanations(convertSheets(csvByLevel), explanations), friendReplies);
   await writeAtomic(output, JSON.stringify(bank, null, 2) + '\n');
   if (!inputDir && resolve(output) === resolve(OUTPUT)) await Promise.all(LEVELS.map((level) => writeAtomic(snapshotPath(level), csvByLevel.get(level))));
   console.log(`Imported ${bank.questions.length} questions across Q1-Q15 from ${bank.source.rows} rows; removed ${bank.source.duplicatesRemoved} within-tab duplicates; excluded ${bank.source.excludedRows.length} incomplete or invalid entries. Revision: ${bank.revision}.`);

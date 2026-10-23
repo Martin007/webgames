@@ -1,6 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {applyExplanations, convertCsv, convertLevelCsv, convertSheets, LEVELS, parseCsv, sheetCsvUrl} from './import-triviaire.mjs';
+import {execFile} from 'node:child_process';
+import {mkdtemp, mkdir, readFile, rm, writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {promisify} from 'node:util';
+import {applyExplanations, applyFriendReplies, convertCsv, convertLevelCsv, convertSheets, FRIEND_REPLIES, LEVELS, OUTPUT, parseCsv, readFriendReplies, sheetCsvUrl} from './import-triviaire.mjs';
 const rows = (n = 15) => 'Question,A,B,C,D,Correct,,\r\n' + Array.from({length: n}, (_, i) => `Question ${i}?,One,Two,Three,Four,${'ABCD'[i % 4]},,`).join('\r\n');
 
 test('CSV supports BOM, CRLF, escaped quotes, commas and embedded newlines', () => {
@@ -162,4 +167,144 @@ test('explanations normalize whitespace and reject incomplete rationales or unsa
   ]) assert.throws(() => applyExplanations(bank, catalogFor(question, invalid)), /Explanation/);
   assert.throws(() => applyExplanations(bank, {version: 2, questions: {}}), /version 1/);
   assert.throws(() => applyExplanations(bank, {version: 1, questions: []}), /questions object/);
+});
+
+const friendReply = () => ({answer: 'I think it is One.', hint: 'Think about the first number.'});
+const friendCatalogFor = (question, value = friendReply()) => ({version: 1, questions: {
+  [question.id]: {prompt: question.prompt, choices: question.choices, answer: question.answer, friendReply: value},
+}});
+
+test('friend replies change only metadata and revision, preserving explanations and source question fields', () => {
+  const original = convertSheets(new Map(LEVELS.map((level) => [level, rows(2)])));
+  const explanations = catalogFor(original.questions[0]);
+  const bank = applyExplanations(original, explanations);
+  const catalog = friendCatalogFor(bank.questions[0]);
+  const enriched = applyFriendReplies(bank, catalog);
+  assert.deepEqual(enriched.questions[0].friendReply, friendReply());
+  assert.equal(enriched.questions.filter((question) => question.friendReply).length, 1);
+  assert.deepEqual(enriched.questions.map(({friendReply: ignored, ...question}) => question), bank.questions);
+  assert.deepEqual(enriched.source, bank.source);
+  assert.notEqual(enriched.revision, bank.revision);
+  assert.deepEqual(applyFriendReplies(enriched, catalog), enriched);
+  assert.deepEqual(applyFriendReplies(applyExplanations(enriched, explanations), catalog), enriched);
+
+  const edited = applyFriendReplies(enriched, friendCatalogFor(bank.questions[0], {...friendReply(), answer: 'One is my guess.'}));
+  assert.notEqual(edited.revision, enriched.revision);
+  assert.deepEqual(edited.questions[0].explanation, bank.questions[0].explanation);
+  assert.deepEqual(applyFriendReplies(enriched, {version: 1, questions: {}}), bank);
+});
+
+test('friend replies normalize whitespace and Unicode while supporting either variant independently', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  const variants = [
+    [{answer: '  Cafe\u0301\n  One.  ', hint: '\t Think about\n the first number. '}, {answer: 'Café One.', hint: friendReply().hint}],
+    [{answer: '  One. ', hint: null}, {answer: 'One.'}],
+    [{hint: '  A clue.\n'}, {hint: 'A clue.'}],
+    [{answer: '', hint: 'A clue.'}, {hint: 'A clue.'}],
+  ];
+  for (const [raw, normalized] of variants) {
+    assert.deepEqual(applyFriendReplies(bank, friendCatalogFor(question, raw)).questions[0].friendReply, normalized);
+  }
+});
+
+test('missing, null and blank friend replies remove old metadata, and unrelated IDs are harmless', () => {
+  const original = convertCsv(rows());
+  const bank = applyExplanations(original, catalogFor(original.questions[0]));
+  const enriched = applyFriendReplies(bank, friendCatalogFor(bank.questions[0]));
+  for (const value of [undefined, null, '', ' \n ', {}, {answer: null, hint: undefined}, {answer: ' ', hint: '\t'}]) {
+    const catalog = friendCatalogFor(bank.questions[0]);
+    catalog.questions[bank.questions[0].id].friendReply = value;
+    assert.deepEqual(applyFriendReplies(enriched, catalog), bank);
+  }
+  const unrelated = friendCatalogFor({...bank.questions[0], id: 'a-question-from-another-pack'});
+  assert.deepEqual(applyFriendReplies(bank, unrelated), bank);
+});
+
+test('stale friend reply guards warn and remove previously applied replies', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  const enriched = applyFriendReplies(bank, friendCatalogFor(question));
+  for (const changed of [
+    {...question, prompt: 'A different prompt?'},
+    {...question, choices: ['Two', 'One', 'Three', 'Four']},
+    {...question, answer: 1},
+  ]) {
+    const warnings = [];
+    assert.deepEqual(applyFriendReplies(enriched, friendCatalogFor(changed), {warn: (message) => warnings.push(message)}), bank);
+    assert.equal(warnings.length, 1);
+    assert.match(warnings[0], /Skipping stale friend reply/);
+  }
+});
+
+test('friend reply catalogs reject malformed payloads, variants and question guards', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  for (const value of ['A bare reply.', 0, false, [], {answer: 42}, {hint: []}, {answer: {}, hint: 'A valid hint.'}]) {
+    assert.throws(() => applyFriendReplies(bank, friendCatalogFor(question, value)), /Friend reply/);
+  }
+  for (const changed of [
+    {...question, prompt: null},
+    {...question, choices: ['One', 'Two', 'Three']},
+    {...question, choices: ['One', 'Two', 'Three', '']},
+    {...question, answer: '0'},
+    {...question, answer: 4},
+    {...question, answer: 0.5},
+  ]) assert.throws(() => applyFriendReplies(bank, friendCatalogFor(changed)), /original prompt, four choices and correct-answer index/);
+  for (const catalog of [null, {version: 2, questions: {}}, {version: 1, questions: []}]) {
+    assert.throws(() => applyFriendReplies(bank, catalog), /version 1 and a questions object/);
+  }
+  assert.throws(() => applyFriendReplies(bank, {version: 1, questions: {[question.id]: null}}), /Invalid friend reply entry/);
+});
+
+const runNode = promisify(execFile);
+async function fixtureDirectory(t) {
+  const directory = await mkdtemp(resolve('.triviaire-check-'));
+  t.after(() => rm(directory, {recursive: true, force: true}));
+  await mkdir(resolve(directory, 'data/triviaire'), {recursive: true});
+  return directory;
+}
+
+test('friend catalog reader treats a missing file as empty and reports invalid JSON', async (t) => {
+  const directory = await fixtureDirectory(t);
+  const path = resolve(directory, FRIEND_REPLIES);
+  assert.deepEqual(await readFriendReplies(path), {version: 1, questions: {}});
+  const catalog = friendCatalogFor(convertCsv(rows()).questions[0]);
+  await writeFile(path, JSON.stringify(catalog));
+  assert.deepEqual(await readFriendReplies(path), catalog);
+  await writeFile(path, '{invalid JSON');
+  await assert.rejects(readFriendReplies(path), /Could not read/);
+});
+
+test('explicit CSV import and offline preparation reapply both catalogs with stable revisions', async (t) => {
+  const directory = await fixtureDirectory(t);
+  const csvDirectory = resolve(directory, 'csv');
+  await mkdir(csvDirectory);
+  await Promise.all(LEVELS.map((level) => writeFile(resolve(csvDirectory, `Q${level}.csv`), rows(2))));
+  const original = convertSheets(new Map(LEVELS.map((level) => [level, rows(2)])));
+  const explanations = catalogFor(original.questions[0]);
+  const friendReplies = friendCatalogFor(original.questions[0]);
+  await Promise.all([
+    writeFile(resolve(directory, 'data/triviaire/explanations.json'), JSON.stringify(explanations)),
+    writeFile(resolve(directory, FRIEND_REPLIES), JSON.stringify(friendReplies)),
+  ]);
+  const expected = applyFriendReplies(applyExplanations(original, explanations), friendReplies);
+  const importer = fileURLToPath(new URL('./import-triviaire.mjs', import.meta.url));
+  await runNode(process.execPath, [importer, '--input-dir', csvDirectory], {cwd: directory, timeout: 10_000});
+  const output = resolve(directory, OUTPUT);
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), expected);
+
+  const ensure = fileURLToPath(new URL('./ensure-triviaire.mjs', import.meta.url));
+  const noNetwork = 'data:text/javascript,globalThis.fetch=async()=>{throw new Error("Offline fixture")};';
+  const prepare = () => runNode(process.execPath, ['--import', noNetwork, ensure], {
+    cwd: directory, timeout: 10_000, env: {...process.env, CI: ''},
+  });
+  await prepare();
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), expected);
+  await prepare();
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), expected);
+
+  await rm(resolve(directory, FRIEND_REPLIES));
+  await prepare();
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), applyExplanations(original, explanations));
 });

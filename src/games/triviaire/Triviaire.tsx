@@ -1,7 +1,7 @@
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {challengeNumber, countdown, displayDay} from '../../shared/daily';
 import {Icon, Modal, TriviaireEmblem, useDailyClock, Wordmark} from '../../shared/ui';
-import {correctCount, LETTERS, money, newGame, PRIZES, questionExplanation, reduceGame, removedChoices, restoreGame, secured, shareText, STORAGE_PREFIX, validateBank, winnings, type Action, type Bank, type Choice, type Explanation, type Game, type Lifelines, type Question} from './engine';
+import {correctCount, LETTERS, money, newGame, phoneReplyMessage, PRIZES, questionExplanation, reduceGame, removedChoices, restoreGame, secured, shareText, STORAGE_PREFIX, validateBank, winnings, type Action, type Bank, type Choice, type Explanation, type Game, type Lifelines, type Question} from './engine';
 import './triviaire.css';
 
 const safeRead = (key: string): string | null => {
@@ -42,13 +42,20 @@ function PrizeLadder({game}: {game: Game | null}) {
     </div>
   </aside>;
 }
-function HintPanel({game}: {game: Game}) {
+function HintPanel({game, bank}: {game: Game; bank: Bank}) {
   const audience = game.lifelines.audience?.at === game.index ? game.lifelines.audience : null;
   const phone = game.lifelines.phone?.at === game.index ? game.lifelines.phone : null;
+  const phoneMessage = phone ? phoneReplyMessage(game.deck[game.index], phone, bank) : undefined;
   if (!audience && !phone) return null;
   return <div className="tr-hints" aria-live="polite">
     {audience && <section className="tr-hint-card"><div className="tr-hint-heading"><Icon name="people" /><h3>The audience has voted</h3><span>SIMULATED</span></div><div className="tr-poll">{audience.votes.map((vote, i) => <div key={i} className="tr-poll-column"><b>{vote}%</b><div className="tr-poll-track"><span style={{height: `${vote}%`}} /></div><span>{LETTERS[i]}</span></div>)}</div><p>A little help, not a guarantee. Trust your own judgment.</p></section>}
-    {phone && <section className="tr-hint-card"><div className="tr-hint-heading"><Icon name="phone" /><h3>{phone.confidence === 'no answer' ? 'No one picked up' : phone.confidence === 'does not know' ? 'Your friend isn’t sure' : 'A friend on the line'}</h3><span>SIMULATED</span></div>{phone.choice === null ? <blockquote>{phone.confidence === 'no answer' ? '“Straight to voicemail. No answer this time.”' : '“I wish I could help, but I honestly don’t know this one.”'}</blockquote> : <blockquote>“I’m {phone.confidence}, but I’d go with <strong>{LETTERS[phone.choice]}: {game.deck[game.index].choices[phone.choice]}</strong>.”</blockquote>}<p>{phone.choice === null ? 'The lifeline is used — you’ll have to trust your own judgment.' : 'Your virtual friend can get it wrong, too.'}</p></section>}
+    {phone && <section className="tr-hint-card">
+      <div className="tr-hint-heading"><Icon name="phone" /><h3>{phone.confidence === 'no answer' ? 'No one picked up' : phone.confidence === 'does not know' ? 'Your friend isn’t sure' : 'A friend on the line'}</h3><span>SIMULATED</span></div>
+      {phoneMessage ? <blockquote>“{phone.choice !== null && <>I’m {phone.confidence}, but I’d go with <strong>{LETTERS[phone.choice]}: {game.deck[game.index].choices[phone.choice]}</strong>. </>}{phoneMessage}”</blockquote>
+        : phone.choice === null ? <blockquote>{phone.confidence === 'no answer' ? '“Straight to voicemail. No answer this time.”' : '“I wish I could help, but I honestly don’t know this one.”'}</blockquote>
+        : <blockquote>“I’m {phone.confidence}, but I’d go with <strong>{LETTERS[phone.choice]}: {game.deck[game.index].choices[phone.choice]}</strong>.”</blockquote>}
+      <p>{phone.choice === null ? phoneMessage ? 'A clue to help you think it through. The final choice is yours.' : 'The lifeline is used — you’ll have to trust your own judgment.' : 'Your virtual friend can get it wrong, too.'}</p>
+    </section>}
   </div>;
 }
 function ExplanationContent({question, explanation}: {question: Question; explanation: Explanation}) {
@@ -108,7 +115,7 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
   const heading = useRef<HTMLHeadingElement>(null);
   const audio = useRef<AudioContext | null>(null);
   const previousAnswers = useRef(game?.answers.length ?? 0);
-  const send = useCallback((action: Action) => setGame((current) => current ? reduceGame(current, action) : current), []);
+  const send = useCallback((action: Action) => setGame((current) => current ? reduceGame(current, action, bank) : current), [bank]);
   useEffect(() => {
     try {
       if (game) localStorage.setItem(key, JSON.stringify(game));
@@ -172,7 +179,7 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
           <div className="tr-lifelines" aria-label="Lifelines">{(['fifty', 'audience', 'phone'] as (keyof Lifelines)[]).map((name) => {
             const used = Boolean(game.lifelines[name]);
             const label = name === 'fifty' ? '50:50' : name === 'audience' ? 'Ask the audience' : 'Phone a friend';
-            const title = name === 'fifty' ? 'Remove two incorrect answers' : name === 'phone' ? 'A simulated friend may be wrong, not know, or fail to pick up' : 'A simulated hint that may be wrong';
+            const title = name === 'fifty' ? 'Remove two incorrect answers' : name === 'phone' ? 'A simulated friend may suggest an answer, offer a clue, be wrong, or fail to pick up' : 'A simulated hint that may be wrong';
             return <button key={name} className={`tr-lifeline ${used ? 'is-used' : ''}`} disabled={used || reveal} onClick={() => send({type: 'lifeline', name})} aria-label={`${label}${used ? ' — used' : ''}`} title={title}><span className="tr-lifeline-symbol">{name === 'fifty' ? <b>50:50</b> : <Icon name={name === 'audience' ? 'people' : 'phone'} />}{used && <span className="tr-lifeline-slash" />}</span><span>{used ? 'Used' : label}</span></button>;
           })}</div>
           <div className="tr-question-meta"><span>QUESTION <b>{String(game.index + 1).padStart(2, '0')}</b> / 15</span><span>GENERAL KNOWLEDGE</span></div>
@@ -192,7 +199,7 @@ function Session({bank, day, remaining, sound}: {bank: Bank; day: string; remain
             </div>
           </div>
           : <div className="tr-actions"><button className="tr-walk-button" onClick={() => setWalkConfirm(true)}>Walk away <span>with {money(winnings(game))}</span></button><button className="tr-gold-button tr-lock-button" disabled={game.selected === null} onClick={() => send({type: 'answer'})}>Final answer <Icon name="check" /></button></div>}
-          <HintPanel game={game} />
+          <HintPanel game={game} bank={bank} />
           {!reveal && <p className="tr-keyboard-note">Choose carefully. Your answer is only locked when you press <b>Final answer.</b><span>A–D to choose · No time limit</span></p>}
         </section>}
     </main><PrizeLadder game={game} /></div>
@@ -236,6 +243,6 @@ export default function Triviaire() {
       : <main className="tr-load-state" aria-live="polite"><div className="wg-loader" /><h1>Setting the stage…</h1><p>Getting today’s questions ready.</p></main>}
     </div>
     <footer className="tr-footer"><span>15 questions. Three lifelines. One final answer.</span><p>An independent, unofficial trivia game. Virtual prizes only.</p><a href="#/">A WEBGAMES DAILY CHALLENGE <span>↗</span></a></footer>
-    {help && <Modal title="So, you want to be a Triviaire?" dark onClose={() => setHelp(false)}><p>Answer 15 multiple-choice questions to climb from $100 to a virtual $1,000,000. Everyone gets the same daily questions, and there’s no timer.</p><div className="wg-help-rule"><Icon name="check" /><p><strong>Make it your final answer.</strong>Select A, B, C, or D, then press Final answer to lock it in. One wrong answer ends your daily run.</p></div><div className="wg-help-rule"><Icon name="trophy" /><p><strong>Protect your winnings.</strong>Questions 5 and 10 secure $1,000 and $32,000. Walk away before answering to keep your current prize.</p></div><div className="wg-help-rule"><Icon name="people" /><p><strong>Three lifelines. One use each.</strong>50:50 removes two wrong answers. Ask the audience gives a simulated hint that can be wrong. Phone a friend can also be wrong — and sometimes your friend won’t pick up or simply won’t know. No real people are contacted.</p></div><div className="wg-help-rule"><Icon name="clock" /><p><strong>One hot seat every day.</strong>The challenge resets at 00:00 UTC, including in an open tab. Progress is saved in this browser. Returning to an unfinished game resumes it.</p></div><p className="tr-help-note">Questions come from the supplied community sheet. The pack has no difficulty ratings: the stakes increase, but question difficulty is mixed. All winnings are imaginary; this game is not affiliated with the television show.</p><button className="tr-gold-button" onClick={() => setHelp(false)}>I’m ready <Icon name="arrow" /></button></Modal>}
+    {help && <Modal title="So, you want to be a Triviaire?" dark onClose={() => setHelp(false)}><p>Answer 15 multiple-choice questions to climb from $100 to a virtual $1,000,000. Everyone gets the same daily questions, and there’s no timer.</p><div className="wg-help-rule"><Icon name="check" /><p><strong>Make it your final answer.</strong>Select A, B, C, or D, then press Final answer to lock it in. One wrong answer ends your daily run.</p></div><div className="wg-help-rule"><Icon name="trophy" /><p><strong>Protect your winnings.</strong>Questions 5 and 10 secure $1,000 and $32,000. Walk away before answering to keep your current prize.</p></div><div className="wg-help-rule"><Icon name="people" /><p><strong>Three lifelines. One use each.</strong>50:50 removes two wrong answers. Ask the audience gives a simulated hint that can be wrong. Phone a friend may suggest an answer or offer a clue when unsure. Your friend can be wrong, not know, or fail to pick up. No real people are contacted.</p></div><div className="wg-help-rule"><Icon name="clock" /><p><strong>One hot seat every day.</strong>The challenge resets at 00:00 UTC, including in an open tab. Progress is saved in this browser. Returning to an unfinished game resumes it.</p></div><p className="tr-help-note">Questions come from the supplied community sheet. The pack has no difficulty ratings: the stakes increase, but question difficulty is mixed. All winnings are imaginary; this game is not affiliated with the television show.</p><button className="tr-gold-button" onClick={() => setHelp(false)}>I’m ready <Icon name="arrow" /></button></Modal>}
   </div>;
 }

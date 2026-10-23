@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "questions": {
+    "t-q1-323a7555f35504ce": {
+      "prompt": "Who makes a fleeting appearance in almost all of Hitchcock's films?",
+      "choices": [
+        "Homer Simpson",
+        "His wife",
+        "Alfred Hitchcock",
+        "Cary Grant"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Those little cameos were his signature: he’d turn up on screen just long enough for viewers to spot the director. He didn’t appear in every film, though.",
+        "hint": "I’m thinking of the person behind the camera. Those little appearances were a director’s signature, rather than a recurring acting role."
+      }
+    },
+    "t-q2-b852e6b2bf05f2ae": {
+      "prompt": "Which of these is not a material used to build the Statue of Liberty?",
+      "choices": [
+        "Copper plates",
+        "Wrought iron",
+        "Galvanized steel",
+        "Cardboard"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The statue’s copper skin and metal framework are the clue. I’d call this the intended answer, with a caveat: the restoration records specify stainless steel, and the original question is imprecise about the metals.",
+        "hint": "I remember a copper skin over a metal framework, with stainless steel added during restoration. I’d use that picture as a clue, but the original question isn’t perfectly precise about the metals."
+      }
+    },
+    "t-q3-975656b3f4505e38": {
+      "prompt": "What does the quintessential Hitchcock actress look like?",
+      "choices": [
+        "She is brunette and small",
+        "She is blonde and sophisticated",
+        "Tanned skin and crooked knees",
+        "She is red-haired and muscular"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Grace Kelly is the example I think of: blonde hair and that elegant, polished style. It’s a familiar screen archetype, not a rule for every actress he cast.",
+        "hint": "I’m picturing Grace Kelly’s elegant screen image. This is asking about a familiar type of heroine, not a description of every woman Hitchcock cast."
+      }
+    },
+    "t-q4-bed59e3f40cc2f7d": {
+      "prompt": "Which of these is a novel by William Golding?",
+      "choices": [
+        "Lord of the Wasps",
+        "Lord of the Moths",
+        "Lord of the Flies",
+        "Lord of the Dance"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That’s Golding’s debut novel, about schoolboys stranded on an island. Their attempt to keep order collapses into fear and violence.",
+        "hint": "I’m remembering the schoolboys stranded on an island, with their little society falling apart. The insect in the title is the bit I’d try to recall."
+      }
+    },
+    "t-q5-bf94c95bce6e5c99": {
+      "prompt": "Who was New Zealand's first female PM?",
+      "choices": [
+        "Helen Clark",
+        "Jeanette Johns",
+        "Jenny Shipley",
+        "Kay Murray"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "She took office in 1997 after replacing Jim Bolger as National Party leader. The first woman to reach the office following an election victory came later, in 1999.",
+        "hint": "I’m thinking of the change of National Party leader in 1997. The first woman to hold the job got there before the 1999 election."
+      }
+    },
+    "t-q6-a18998f236e4dd59": {
+      "prompt": "What was the name of the first sheep produced by cloning?",
+      "choices": [
+        "Sally",
+        "Billy",
+        "Kelly",
+        "Dolly"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "She was born in 1996 and became the first mammal cloned from an adult body cell. Earlier sheep clones used embryonic cells, so “first cloned sheep” is a bit too broad.",
+        "hint": "I remember she was named after a famous country singer. The breakthrough was cloning from an adult cell; sheep had been cloned from embryonic cells before."
+      }
+    },
+    "t-q7-dde771c2c4de0d21": {
+      "prompt": "Which is not a unit of measurement of area?",
+      "choices": [
+        "Hectare",
+        "Furlong",
+        "Acre",
+        "Square yard"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That measures distance: 220 yards, or an eighth of a mile. The key is length versus how much surface something covers.",
+        "hint": "I remember one of these units is 220 yards, or an eighth of a mile. That’s a distance, so I’d try to match that fact to the right name."
+      }
+    },
+    "t-q8-3a1b3f78cf91dda3": {
+      "prompt": "Where is the village that boasts the longest place name in the U.K.?",
+      "choices": [
+        "England",
+        "Northern Ireland",
+        "Scotland",
+        "Wales"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Llanfairpwll, on the island of Anglesey, is the village I’m thinking of. Its famous extended name has 58 characters.",
+        "hint": "I’m thinking of Anglesey and a village usually shortened to Llanfair PG. If you can place that island, you’ve got the country."
+      }
+    },
+    "t-q9-2bf2647ea00a395f": {
+      "prompt": "What is the name of the building in which John McClane is trapped in \"Die Hard\" ?",
+      "choices": [
+        "Nakatomi Plaza",
+        "Nakatomi Skyline",
+        "Nakatomi Building",
+        "Nakatomi Tower"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "McClane arrives there for his wife’s office Christmas party before the hostage crisis starts. The real building was Fox Plaza, which is a handy way to remember that last word.",
+        "hint": "I’m remembering that the real building was Fox Plaza. I’d use that to jog my memory of the fictional building’s second word."
+      }
+    },
+    "t-q10-920bbf9032da945d": {
+      "prompt": "How many gold medals has Michael Phelps brought home?",
+      "choices": [
+        "9",
+        "12",
+        "23",
+        "31"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That’s his Olympic gold count. He won 28 Olympic medals altogether; three silvers and two bronzes make up the rest.",
+        "hint": "I remember his Olympic total was 28 medals, with three silver and two bronze. I’d subtract those to get the golds."
+      }
+    }
+  }
+}
