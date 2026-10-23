@@ -1361,6 +1361,2389 @@
           }
         ]
       }
+    },
+    "t-q1-8d88cc44a234e11f": {
+      "prompt": "What’s the name of the river around which Egyptian civilization developed?",
+      "choices": [
+        "Nile",
+        "Rhine",
+        "Amazon",
+        "Mississippi"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Ancient Egyptian civilization developed along the Nile. Its water and fertile floodplain supported farming and settlements in an otherwise largely desert region.",
+        "choices": [
+          "The Nile runs through Egypt, and its annual floods helped sustain the farmland on which ancient Egyptian society depended.",
+          "The Rhine is a European river connecting the Alps with the North Sea; it is far from Egypt.",
+          "The Amazon flows through South America, including Brazil, rather than northeastern Africa.",
+          "The Mississippi flows through the United States in North America, so it is not the river associated with ancient Egypt."
+        ],
+        "sources": [
+          {
+            "title": "British Museum — Early Egypt",
+            "url": "https://www.britishmuseum.org/collection/galleries/early-egypt"
+          },
+          {
+            "title": "International Commission for the Protection of the Rhine — The Rhine",
+            "url": "https://www.iksr.org/en/topics/rhine"
+          },
+          {
+            "title": "NASA — The Amazon River",
+            "url": "https://www.nasa.gov/image-article/amazon-river/"
+          },
+          {
+            "title": "National Park Service — Mississippi River Facts",
+            "url": "https://www.nps.gov/miss/riverfacts.htm"
+          }
+        ]
+      }
+    },
+    "t-q2-3c1c6b8aa290804c": {
+      "prompt": "Complete the title of Puccini's opera, \"Madame...\"?",
+      "choices": [
+        "Grasshopper",
+        "Dragonfly",
+        "Moth",
+        "Butterfly"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Puccini's opera is Madama Butterfly, often called Madame Butterfly in English. The title refers to its heroine Cio-Cio-San, who is known as Butterfly.",
+        "choices": [
+          "Grasshopper is an insect name, but it does not complete the title of this Puccini opera.",
+          "Dragonfly is another insect name; Puccini's heroine is called Butterfly, not Dragonfly.",
+          "Moth does not match the opera's title or Cio-Cio-San's name.",
+          "Butterfly completes the title: Madama Butterfly is Puccini's opera about Cio-Cio-San and the American naval officer Pinkerton."
+        ],
+        "sources": [
+          {
+            "title": "Metropolitan Opera — Synopsis: Madama Butterfly",
+            "url": "https://www.metopera.org/discover/synopses/madama-butterfly/"
+          },
+          {
+            "title": "Metropolitan Opera — Puccini's Madama Butterfly",
+            "url": "https://www.metopera.org/about/press-releases/puccinis-madama-butterfly-returns-to-the--met-stage-on-march-19/"
+          }
+        ]
+      }
+    },
+    "t-q3-fd94edee579e02b6": {
+      "prompt": "Which band made it big in the ‘80s with the hit “Don’t You Want Me”?",
+      "choices": [
+        "The Martian League",
+        "The Human League",
+        "The Animal League",
+        "The Ghost League"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "The Human League recorded Don't You Want Me. Released in 1981, it became a major hit and the UK's Christmas number one that year.",
+        "choices": [
+          "The Martian League is not the artist credited with this hit; the band's name uses Human.",
+          "The Human League is the credited band, and the single spent five weeks at number one on the UK chart.",
+          "The Animal League substitutes a different word into the band's name; the recording is by The Human League.",
+          "The Ghost League is not the credited performer of the 1981 hit."
+        ],
+        "sources": [
+          {
+            "title": "Official Charts — Don't You Want Me by The Human League",
+            "url": "https://www.officialcharts.com/songs/human-league-dont-you-want-me-0/"
+          }
+        ]
+      }
+    },
+    "t-q4-7d8af841825ed8da": {
+      "prompt": "What name is given to the space in front of and below the stage which contains the orchestra?",
+      "choices": [
+        "The hole",
+        "The ditch",
+        "The grave",
+        "The pit"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The orchestra pit is the recessed area in front of, and often partly beneath, a theater's stage where the musicians perform.",
+        "choices": [
+          "Hole is a general word for an opening or hollow; the established theater term for this space is orchestra pit.",
+          "Ditch is not the theatrical name for the musicians' area beneath the front of the stage.",
+          "Grave is associated with burial, not the usual name of a theater's orchestra space.",
+          "Pit is the shortened form of orchestra pit, which names exactly the space described."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster — Orchestra pit",
+            "url": "https://www.merriam-webster.com/dictionary/orchestra%20pit"
+          }
+        ]
+      }
+    },
+    "t-q5-9bab3a34c398c7c4": {
+      "prompt": "Which is the short sequence of letters and numbers at the end of a postal address?",
+      "choices": [
+        "Barcode",
+        "Lettercode",
+        "Postcode",
+        "Mailcode"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The intended term is postcode, which identifies a postal delivery area. The letters-and-numbers description matches systems such as the UK's; some countries use entirely numeric postal codes.",
+        "choices": [
+          "A barcode is a pattern designed for a scanner to read. It is different from the postcode written as characters in an address.",
+          "Lettercode is not the standard name of the postal delivery-area identifier described here; postcode is.",
+          "A UK postcode combines letters and numbers to help identify where mail should be delivered.",
+          "Mailcode is not the term used for the UK address element in this question; its standard name is postcode."
+        ],
+        "sources": [
+          {
+            "title": "Office for National Statistics — Postal geographies",
+            "url": "https://www.ons.gov.uk/methodology/geography/ukgeographies/postalgeography"
+          },
+          {
+            "title": "Universal Postal Union — Addressing and Postcode Manual",
+            "url": "https://www.upu.int/UPU/media/upu/publications/manualAddressingAddressingAndPostcodeManualEn.pdf"
+          },
+          {
+            "title": "Merriam-Webster — Barcode",
+            "url": "https://www.merriam-webster.com/dictionary/barcode"
+          }
+        ]
+      }
+    },
+    "t-q6-7a5e5d3fbfa59daf": {
+      "prompt": "What is the Latin equivalent of \"tit-for-tat\"?",
+      "choices": [
+        "Quo vadis",
+        "Ipso facto",
+        "Caveat emptor",
+        "Quid pro quo"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Quid pro quo is the intended answer: one thing given in exchange for another. The match is approximate, because tit-for-tat often suggests retaliation, while a quid pro quo can be an ordinary exchange.",
+        "choices": [
+          "Quo vadis asks where someone is going; it does not describe an exchange or a return action.",
+          "Ipso facto means that something follows from the fact or action itself, rather than being given in exchange.",
+          "Caveat emptor warns the buyer to beware. It concerns a buyer's caution, not reciprocity.",
+          "Quid pro quo describes giving or receiving something in return for something else, making it the closest option to tit-for-tat."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster — Quid pro quo",
+            "url": "https://www.merriam-webster.com/dictionary/quid%20pro%20quo"
+          },
+          {
+            "title": "Merriam-Webster — Tit for tat",
+            "url": "https://www.merriam-webster.com/dictionary/tit%20for%20tat"
+          },
+          {
+            "title": "Merriam-Webster — Quo vadis",
+            "url": "https://www.merriam-webster.com/dictionary/quo%20vadis"
+          },
+          {
+            "title": "Merriam-Webster — Ipso facto",
+            "url": "https://www.merriam-webster.com/dictionary/ipso%20facto"
+          },
+          {
+            "title": "Cornell Legal Information Institute — Caveat emptor",
+            "url": "https://www.law.cornell.edu/wex/Caveat_emptor"
+          }
+        ]
+      }
+    },
+    "t-q7-1816d3aafd756b5a": {
+      "prompt": "During an astrological year, which sign of the zodiac comes after Taurus but before Cancer?",
+      "choices": [
+        "Gemini",
+        "Libra",
+        "Virgo",
+        "Aries"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "In the traditional sequence of the twelve zodiac signs, Taurus is followed by Gemini, then Cancer. This asks about the order used in astrology.",
+        "choices": [
+          "Gemini is the third sign in the conventional sequence, directly between Taurus and Cancer.",
+          "Libra comes between Virgo and Scorpio, later in the sequence.",
+          "Virgo follows Leo and precedes Libra; it does not follow Taurus.",
+          "Aries comes immediately before Taurus, not between Taurus and Cancer."
+        ],
+        "sources": [
+          {
+            "title": "University of Chicago — Encyclopaedia Britannica (1911): Zodiac",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Topics/astronomy/_Texts/secondary/Britannica_1911%2A/zodiac.html"
+          }
+        ]
+      }
+    },
+    "t-q8-ce800f2ec063b769": {
+      "prompt": "In the cartoon \"The Lion King,\" whose son is Simba?",
+      "choices": [
+        "Scar",
+        "Mufasa",
+        "Timon",
+        "Pumba"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Simba is the son of King Mufasa in Disney's The Lion King. Scar is his uncle, while Timon and Pumbaa become his friends during his exile.",
+        "choices": [
+          "Scar is Simba's uncle and the rival who takes Mufasa's throne; he is not Simba's father.",
+          "Mufasa is Simba's father, whose example helps Simba understand his responsibilities as king.",
+          "Timon is the meerkat who befriends Simba after he leaves the Pride Lands.",
+          "Pumbaa, spelled Pumba in the choice, is the warthog who befriends Simba alongside Timon."
+        ],
+        "sources": [
+          {
+            "title": "Disney D23 — The Lion King (1994)",
+            "url": "https://d23.com/a-to-z/lion-king-the-film/"
+          }
+        ]
+      }
+    },
+    "t-q9-1af1764e064e6d09": {
+      "prompt": "In the series “Moon Knight,” Marc Spector is possessed by which Egyptian god?",
+      "choices": [
+        "Anubis",
+        "Khonshu",
+        "Osiris",
+        "Ra"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Marc Spector serves Khonshu, the Egyptian moon god, in Moon Knight. More precisely, Marc is Khonshu's human avatar; possessed is a loose description of their relationship.",
+        "choices": [
+          "Anubis is associated with mummification and the dead in Egyptian religion, but he is not Marc's divine patron in the series.",
+          "Khonshu is the deity Marc serves as an avatar, which is the relationship the question is asking about.",
+          "Osiris has a different avatar, Selim, in the series; Marc serves Khonshu.",
+          "Ra, also called Re, is the Egyptian sun god. Marc's patron in the series is the moon god Khonshu."
+        ],
+        "sources": [
+          {
+            "title": "Marvel — Marc Spector: Marvel 101, Moon Knight",
+            "url": "https://www.marvel.com/watch/digital-series/marvel-101/marc-spector-marvel-101-marvel-studios-moon-knight"
+          },
+          {
+            "title": "Marvel — Moon Knight: Episode 6 Details Log",
+            "url": "https://www.marvel.com/articles/tv-shows/moon-knight-episode-6-details-log-recap"
+          },
+          {
+            "title": "British Museum — Ancient Egyptian gods and goddesses",
+            "url": "https://www.britishmuseum.org/learn/schools/ages-7-11/ancient-egypt/ancient-egyptian-gods-and-goddesses"
+          },
+          {
+            "title": "Metropolitan Museum of Art — Scarab with a blessing related to Re",
+            "url": "https://www.metmuseum.org/art/collection/search/557090"
+          }
+        ]
+      }
+    },
+    "t-q10-4b5fa81b3c9a1b32": {
+      "prompt": "In the series “For All Mankind,” which country reaches the Moon first?",
+      "choices": [
+        "United States",
+        "USSR",
+        "France",
+        "China"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "For All Mankind imagines an alternate history in which the Soviet Union lands humans on the Moon before the United States. In real history, the first crewed landing was NASA's Apollo 11 in 1969.",
+        "choices": [
+          "The United States achieved the first crewed Moon landing in real history, but the series deliberately reverses that outcome.",
+          "The USSR, or Soviet Union, wins the race to the first crewed Moon landing in the show's fictional timeline.",
+          "France is not the winner in the show's premise: the first crewed landing is Soviet.",
+          "China is not the country shown winning the initial Moon race in this alternate history; that role belongs to the USSR."
+        ],
+        "sources": [
+          {
+            "title": "Apple TV Press — The alternate history shared by For All Mankind and Star City",
+            "url": "https://www.apple.com/au/tv-pr/originals/star-city/"
+          },
+          {
+            "title": "NASA — Apollo 11",
+            "url": "https://www.nasa.gov/mission/apollo-11/"
+          }
+        ]
+      }
+    },
+    "t-q11-9cf771ac32013ad7": {
+      "prompt": "Which country has an AK47 rifle on its flag?",
+      "choices": [
+        "Mozambique",
+        "Angola",
+        "Cambodia",
+        "Laos"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Mozambique's flag includes an AK-47 crossed with a hoe over an open book. These elements represent defense, agricultural production, and education.",
+        "choices": [
+          "Mozambique displays the rifle within the emblem on its flag's red triangle, making it the correct choice.",
+          "Angola's flag contains a machete, part of a cogwheel, and a star. The blade is not an AK-47.",
+          "Cambodia's flag depicts the temple of Angkor Wat, rather than a rifle.",
+          "Laos's flag has red and blue horizontal bands with a white disc in the center; it has no rifle emblem."
+        ],
+        "sources": [
+          {
+            "title": "Mozambique Embassy to the Holy See — National symbols",
+            "url": "https://www.embamocsantase.org/simbolos-nacionais/"
+          },
+          {
+            "title": "Flagmakers — History of Mozambique's flag",
+            "url": "https://flagmakers.co.uk/flag-history/mozambique/"
+          },
+          {
+            "title": "Angola Consulate — National symbols",
+            "url": "https://angolaconsulate.ae/national-symbols/"
+          },
+          {
+            "title": "US Department of State archive — Cambodia flag",
+            "url": "https://2021-2025.state.gov/countries-areas/cambodia/cb-lgflag/"
+          },
+          {
+            "title": "National Assembly of Lao PDR — National flag",
+            "url": "https://na.gov.la/about-the-lao-pdr/?lang=en"
+          }
+        ]
+      }
+    },
+    "t-q12-2d2db7d97e38164a": {
+      "prompt": "What baseball team has won two World Series without ever winning a division title?",
+      "choices": [
+        "Arizona Diamondbacks",
+        "Tampa Bay Rays",
+        "Miami Marlins",
+        "Minnesota Twins"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The Marlins won the 1997 and 2003 World Series from wild-card berths. Through the 2026 regular season, they had never won their division.",
+        "choices": [
+          "Arizona won the NL West in its 2001 World Series championship season, so it fails the no-division-title condition.",
+          "Tampa Bay won the AL East in 2008, so it does not meet the condition about never winning a division.",
+          "This is the franchise that won both championships as the Florida Marlins, before becoming the Miami Marlins.",
+          "Minnesota was a division winner in 1991 before winning that year's World Series, so it does not fit the question."
+        ],
+        "sources": [
+          {
+            "title": "MLB — Longest division-title droughts (September 2026)",
+            "url": "https://www.mlb.com/news/mlb-s-longest-division-title-droughts-c294031224"
+          },
+          {
+            "title": "Miami Marlins — Franchise history",
+            "url": "https://www.mlb.com/marlins/history"
+          },
+          {
+            "title": "MLB — Wild-card teams to reach the World Series",
+            "url": "https://www.mlb.com/news/wild-card-teams-to-make-the-world-series-c273264024"
+          },
+          {
+            "title": "Arizona Diamondbacks — Franchise timeline",
+            "url": "https://www.mlb.com/dbacks/history/timeline"
+          },
+          {
+            "title": "Tampa Bay Rays — Franchise history",
+            "url": "https://www.mlb.com/rays/history"
+          },
+          {
+            "title": "Minnesota Twins — Franchise timeline: 1990s",
+            "url": "https://www.mlb.com/twins/history/timeline-1990s"
+          }
+        ]
+      }
+    },
+    "t-q13-98d33459e72d9478": {
+      "prompt": "Which game in the \"Katamari Damacy\" series was released exclusively on Xbox 360?",
+      "choices": [
+        "We Love Katamari",
+        "Beautiful Katamari",
+        "Katamari Forever",
+        "Me and my Katamari"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Beautiful Katamari is the Xbox 360 entry among these titles. The other three originally appeared on PlayStation systems.",
+        "choices": [
+          "The original We Love Katamari was released for PlayStation 2. Its later Reroll remaster is a separate release.",
+          "Beautiful Katamari was released for Xbox 360, the platform listed in its original ESRB rating and publisher's launch lineup.",
+          "Katamari Forever was released for PlayStation 3, rather than Xbox 360.",
+          "Me & My Katamari was made for Sony's PlayStation Portable, usually abbreviated PSP."
+        ],
+        "sources": [
+          {
+            "title": "ESRB — Beautiful Katamari",
+            "url": "https://www.esrb.org/ratings/23366/beautiful-katamari/"
+          },
+          {
+            "title": "ESRB — We Love Katamari",
+            "url": "https://www.esrb.org/ratings/20435/we-love-katamari/"
+          },
+          {
+            "title": "ESRB — Katamari Forever",
+            "url": "https://www.esrb.org/ratings/27428/katamari-forever/"
+          },
+          {
+            "title": "Bandai Namco — We Love Katamari Reroll+ Royal Reverie",
+            "url": "https://en.bandainamcoent.eu/katamari/we-love-katamari-reroll-royal-reverie"
+          },
+          {
+            "title": "MobyGames — Me & My Katamari",
+            "url": "https://www.mobygames.com/game/22379/me-my-katamari/"
+          },
+          {
+            "title": "Wired — Namco Bandai's E3 2007 lineup",
+            "url": "https://www.wired.com/2007/07/namco-bandais-e"
+          }
+        ]
+      }
+    },
+    "t-q14-180f21d625d4e72d": {
+      "prompt": "What is the name of the artificial intelligence protecting the Eternals in \"Zardoz\"?",
+      "choices": [
+        "The Chalice",
+        "The Grail",
+        "The Tabernacle",
+        "The Reliquary"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "The system is called the Tabernacle. In Zardoz, its crystal-based power maintains the Eternals' immortality within the Vortex.",
+        "choices": [
+          "A chalice is a ceremonial drinking cup; The Chalice is not the name of the system in Zardoz.",
+          "The Grail is a sacred vessel in medieval legend, not the name given to the Eternals' controlling intelligence.",
+          "The Tabernacle is the entity connected to the crystals and the Eternals' immortality, which Zed ultimately disrupts.",
+          "A reliquary holds sacred relics. The film's system is called the Tabernacle, not the Reliquary."
+        ],
+        "sources": [
+          {
+            "title": "American Film Institute — Zardoz synopsis",
+            "url": "https://catalog.afi.com/Film/67522-ZARDOZ"
+          },
+          {
+            "title": "Merriam-Webster — Chalice",
+            "url": "https://www.merriam-webster.com/dictionary/chalice"
+          },
+          {
+            "title": "Merriam-Webster — Grail",
+            "url": "https://www.merriam-webster.com/dictionary/grail"
+          },
+          {
+            "title": "Merriam-Webster — Reliquary",
+            "url": "https://www.merriam-webster.com/dictionary/reliquary"
+          }
+        ]
+      }
+    },
+    "t-q15-3193e1ccd5637c92": {
+      "prompt": "Of which UK comedy show was 'Les Guignols' a French adaptation?",
+      "choices": [
+        "Allo 'Allo!",
+        "The Young Ones",
+        "Spitting Image",
+        "Dad's Army"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Les Guignols took inspiration from Spitting Image's satirical puppets. Adaptation is loose wording here: a proposed formal format deal did not materialize, and the French show developed its own news-parody format.",
+        "choices": [
+          "'Allo 'Allo! is a sitcom about a cafe owner in occupied France, not the puppet-satire model for Les Guignols.",
+          "The Young Ones centers on four students sharing a house. It is not the source of Les Guignols' political puppet format.",
+          "Spitting Image supplied the key inspiration: caricature puppets satirizing public figures, which Les Guignols adapted into a mock news broadcast.",
+          "Dad's Army is a sitcom about Britain's wartime Home Guard, rather than the puppet show that inspired Les Guignols."
+        ],
+        "sources": [
+          {
+            "title": "Hannah Andrews — Transnational Television Caricature: The Global Spread of Spitting Image 1984–1994",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/01439685.2024.2447139"
+          },
+          {
+            "title": "The Connexion — Interview with Les Guignols producer Yves Le Rolland",
+            "url": "https://www.connexionfrance.com/news/bringing-the-latex-news-for-26-years/594619"
+          },
+          {
+            "title": "BFI Sight and Sound — 'Allo 'Allo!",
+            "url": "https://www.bfi.org.uk/sight-and-sound/features/tv-eye-allo-allo-piece-de-resistance"
+          },
+          {
+            "title": "Netflix — The Young Ones",
+            "url": "https://www.netflix.com/title/70224482"
+          },
+          {
+            "title": "ITVX — Dad's Army",
+            "url": "https://www.itv.com/watch/dads-army/10a1112"
+          }
+        ]
+      }
+    },
+    "t-q1-df2134fdffe760b3": {
+      "prompt": "Typically, which of the following forms of transport is known as a double-decker?",
+      "choices": [
+        "Bicycle",
+        "Bus",
+        "Train",
+        "Plane"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "A double-decker usually means a bus with an upper and a lower passenger level. The word is not exclusive to buses: some trains and aircraft also have two decks.",
+        "choices": [
+          "A conventional bicycle does not have two passenger decks; the word double-decker concerns stacked levels.",
+          "Bus is the usual standalone meaning of double-decker, referring to a bus with two passenger levels.",
+          "Double-deck trains do exist, including Alstom's Coradia designs. Bus is still the usual meaning intended by the question's word typically.",
+          "Some planes, such as the Airbus A380, have two passenger decks. That makes this possible literally, but bus is the usual answer here."
+        ],
+        "sources": [
+          {
+            "title": "Cambridge Dictionary — Double-decker",
+            "url": "https://dictionary.cambridge.org/dictionary/english/double-decker"
+          },
+          {
+            "title": "Alstom — Coradia Max double-deck regional trains",
+            "url": "https://www.alstom.com/solutions/rolling-stock/regional-trains/coradia-max-regional-trains-optimised-modularity-and-capacity"
+          },
+          {
+            "title": "Airbus — A380",
+            "url": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380"
+          }
+        ]
+      }
+    },
+    "t-q2-04a685888ead89a8": {
+      "prompt": "Which of these countries is not part of Central America?",
+      "choices": [
+        "Honduras",
+        "New Zealand",
+        "Nicaragua",
+        "Panama"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "New Zealand belongs to Oceania. Honduras, Nicaragua, and Panama are all Central American countries, so New Zealand is the exception.",
+        "choices": [
+          "Honduras is in Central America, so it does not satisfy the question's not-part-of condition.",
+          "New Zealand is in Oceania, geographically separate from Central America.",
+          "Nicaragua is classified as part of Central America, making it one of the three countries that belong to the region.",
+          "Panama is also part of Central America; it is not the geographical exception in this list."
+        ],
+        "sources": [
+          {
+            "title": "United Nations Statistics Division — M49 geographic regions",
+            "url": "https://unstats.un.org/unsd/methodology/m49/overview/"
+          }
+        ]
+      }
+    },
+    "t-q3-82ba5ab07bc0caf6": {
+      "prompt": "Traditionally, who would be most likely to use a plow in his work?",
+      "choices": [
+        "Blacksmith",
+        "Archer",
+        "Farmer",
+        "Greengrocer"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "A farmer uses a plow to turn and loosen soil when preparing land for crops. That makes farming the occupation most directly connected with this tool.",
+        "choices": [
+          "A blacksmith's trade is forging iron. Making metalwork is a different role from using a plow to cultivate a field.",
+          "An archer uses a bow and arrows; plowing is agricultural work rather than archery.",
+          "A farmer prepares soil for planting, which is exactly the work a plow is designed to help with.",
+          "A greengrocer sells fresh fruit and vegetables. Selling produce does not itself involve plowing the land where it is grown."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster — Plow",
+            "url": "https://www.merriam-webster.com/dictionary/plow"
+          },
+          {
+            "title": "Merriam-Webster — Blacksmith",
+            "url": "https://www.merriam-webster.com/dictionary/blacksmith"
+          },
+          {
+            "title": "Merriam-Webster — Archer",
+            "url": "https://www.merriam-webster.com/dictionary/archer"
+          },
+          {
+            "title": "Merriam-Webster — Greengrocer",
+            "url": "https://www.merriam-webster.com/dictionary/greengrocer"
+          }
+        ]
+      }
+    },
+    "t-q4-89ff5d4954b97138": {
+      "prompt": "When is it most appropriate to sing or play a dirge?",
+      "choices": [
+        "Birthdays",
+        "Weddings",
+        "Christenings",
+        "Funerals"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "A dirge expresses mourning, especially for someone who has died. Funerals and memorials are therefore its traditional setting.",
+        "choices": [
+          "Birthdays usually celebrate a person's life and age; a dirge's mourning purpose does not match that usual occasion.",
+          "Weddings celebrate a marriage. Solemn wedding music is not automatically a dirge, which specifically conveys grief or lamentation.",
+          "A christening is a baptism ceremony, not a funeral or memorial; a dirge is not its customary kind of music.",
+          "Funerals are the best match because dirges are associated with grieving and commemorating the dead."
+        ],
+        "sources": [
+          {
+            "title": "Merriam-Webster — Dirge",
+            "url": "https://www.merriam-webster.com/dictionary/dirge"
+          },
+          {
+            "title": "Merriam-Webster — Christening",
+            "url": "https://www.merriam-webster.com/dictionary/christening"
+          }
+        ]
+      }
+    },
+    "t-q5-b6117cb9c4d53f70": {
+      "prompt": "In \"Money Heist\", who is Rio?",
+      "choices": [
+        "Anibal Cortés",
+        "Agata Jimenez",
+        "Daniel Ramos",
+        "Mirko Drakić"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Río is the alias of Aníbal Cortés in Money Heist, also known as La casa de papel. Antena 3's official character-name reveal identifies him by that name.",
+        "choices": [
+          "Aníbal Cortés is Río's real name in the story, making this the correct match.",
+          "Ágata Jiménez is the name associated with Nairobi, a different member of the group.",
+          "Daniel Ramos is Denver's name in Antena 3's character guide, not Río's.",
+          "This appears to mean Mirko Dragić, a name associated with Helsinki in cast listings; the spelling and Helsinki's name vary across sources. It is not Río's name."
+        ],
+        "sources": [
+          {
+            "title": "Antena 3 — The real names of the La casa de papel gang",
+            "url": "https://www.antena3.com/series/casa-de-papel/noticias/conoce-los-verdaderos-nombres-de-la-banda-de-atracadores-de-la-casa-de-papel_201711255a1940100cf2f56e3ec268dd.html"
+          },
+          {
+            "title": "Wikipedia — List of Money Heist cast members",
+            "url": "https://en.wikipedia.org/wiki/List_of_Money_Heist_cast_members"
+          }
+        ]
+      }
+    },
+    "t-q6-2814e65024419a78": {
+      "prompt": "For the Real Madrid team, what is \"La Fabrica\"?",
+      "choices": [
+        "Its practice center",
+        "Its academy",
+        "Its press room",
+        "Its locker room"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "La Fábrica is the nickname for Real Madrid’s youth academy and player-development system. The name means “the factory,” referring to its role in developing footballers.",
+        "choices": [
+          "The academy uses training facilities, but La Fábrica refers to the youth-development system rather than simply a practice venue.",
+          "Real Madrid’s youth academy is known as La Fábrica, where young players develop through the club’s youth teams.",
+          "A press room is where media conferences take place; La Fábrica names the club’s youth academy.",
+          "A locker room is a team’s changing area. La Fábrica refers to player development across the academy, not that room."
+        ],
+        "sources": [
+          {
+            "title": "Real Madrid — La Fábrica official youth academy page",
+            "url": "https://www.facebook.com/canterarealmadrid/"
+          },
+          {
+            "title": "La Fábrica (Real Madrid)",
+            "url": "https://en.wikipedia.org/wiki/La_F%C3%A1brica_%28Real_Madrid%29"
+          }
+        ]
+      }
+    },
+    "t-q7-90cad380541864fb": {
+      "prompt": "Which of these series is not a \"Doctor Who” spin-off?",
+      "choices": [
+        "Torchwood",
+        "K-9",
+        "Class",
+        "Extras"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Extras is Ricky Gervais and Stephen Merchant’s comedy about film and television extras. The other choices grew out of Doctor Who, although K-9 was independently produced rather than a BBC production.",
+        "choices": [
+          "Torchwood follows Doctor Who character Captain Jack Harkness and his alien-investigation team, making it a spin-off.",
+          "K-9 is based on the robot dog introduced in Doctor Who. It was an independent spin-off, so it should not be confused with a BBC-produced series.",
+          "Class is a Doctor Who spin-off set at Coal Hill School, a location associated with the parent series.",
+          "Extras is a separate comedy created by Ricky Gervais and Stephen Merchant; it does not continue Doctor Who’s characters or setting."
+        ],
+        "sources": [
+          {
+            "title": "Ricky Gervais — Extras: BBC press release",
+            "url": "https://www.rickygervais.com/extras_bbcpr.php"
+          },
+          {
+            "title": "Space.com — Doctor Who spin-offs ranked",
+            "url": "https://www.space.com/entertainment/space-movies-shows/doctor-who-spin-offs-ranked"
+          },
+          {
+            "title": "Royal Television Society — Launch date announced for Doctor Who spin-off Class",
+            "url": "https://rts.org.uk/article/launch-date-announced-doctor-who-spinoff-class"
+          }
+        ]
+      }
+    },
+    "t-q8-5a9cff996e6a65be": {
+      "prompt": "Which of these is a Stephen King best-seller?",
+      "choices": [
+        "It",
+        "And",
+        "That",
+        "So"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "It is Stephen King’s 1986 horror novel about friends confronting an evil presence in Derry, Maine, associated with Pennywise the clown.",
+        "choices": [
+          "It is the exact title of King’s 1986 novel; the title refers to the sinister entity at the center of the story.",
+          "And is not the title of the Stephen King novel in question. His bibliography lists It.",
+          "That resembles another short pronoun, but the published title is It, not That.",
+          "So is not this novel’s title. The correct one-word title in King’s bibliography is It."
+        ],
+        "sources": [
+          {
+            "title": "Stephen King — It",
+            "url": "https://stephenking.com/works/novel/it.html"
+          },
+          {
+            "title": "Stephen King — Novels and novellas",
+            "url": "https://stephenking.com/works/novel/grid.html"
+          }
+        ]
+      }
+    },
+    "t-q9-3be4ae6de6111b05": {
+      "prompt": "What is the name of Superman's secret hideaway?",
+      "choices": [
+        "The Sunken Waterfall",
+        "The Isle of Silence",
+        "Asteroid M",
+        "The Fortress of Solitude"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Superman’s famous private refuge is the Fortress of Solitude, which houses scientific equipment and reminders of Krypton in many versions of his story.",
+        "choices": [
+          "The Sunken Waterfall is not the name of Superman’s established refuge; DC identifies it as the Fortress of Solitude.",
+          "The Isle of Silence suggests a secluded retreat, but it is not the established name of Superman’s hideaway.",
+          "Asteroid M belongs to Marvel’s X-Men stories: it is Magneto’s orbital base, rather than Superman’s refuge.",
+          "The Fortress of Solitude is Superman’s retreat and a place where he preserves connections to his Kryptonian heritage."
+        ],
+        "sources": [
+          {
+            "title": "DC — Where in the World Is the Fortress of Solitude?",
+            "url": "https://www.dc.com/blog/2025/07/07/where-in-the-world-is-the-fortress-of-solitude"
+          },
+          {
+            "title": "Marvel — Important X-Men Locations, Explained",
+            "url": "https://www.marvel.com/articles/comics/important-x-men-locations-explained-list"
+          }
+        ]
+      }
+    },
+    "t-q10-19466b5e3a44ce2e": {
+      "prompt": "In 1984, the United States aced the medals table. How many Olympic titles did they win?",
+      "choices": [
+        "43",
+        "53",
+        "73",
+        "83"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "This refers specifically to the Los Angeles 1984 Summer Olympics. The United States won 83 gold medals, or Olympic titles, among 174 medals overall.",
+        "choices": [
+          "43 is 40 below the United States’ actual total of 83 gold medals at Los Angeles 1984.",
+          "53 is 30 below the recorded gold-medal total. Olympic titles here means golds, not all medals.",
+          "73 is ten below the official tally of 83 American gold medals.",
+          "The United States won 83 gold medals at the 1984 Summer Games in Los Angeles. This is not a combined total for the Summer and Winter Games."
+        ],
+        "sources": [
+          {
+            "title": "U.S. Olympic & Paralympic Museum — Los Angeles 1984 Olympic Games",
+            "url": "https://usopm.org/los-angeles-1984-olympic-games/"
+          },
+          {
+            "title": "Olympics — Los Angeles 1984 medal table",
+            "url": "https://www.olympics.com/en/olympic-games/los-angeles-1984/medals"
+          }
+        ]
+      }
+    },
+    "t-q11-95968cfc872356dc": {
+      "prompt": "Who wrote the script of the play “Harry Potter and the Cursed Child”?",
+      "choices": [
+        "J. K. Rowling",
+        "John Tiffany",
+        "Jack Thorne",
+        "Anthony Boyle"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Jack Thorne wrote the play’s script. The underlying original story is credited jointly to J. K. Rowling, John Tiffany and Jack Thorne, which is a different credit from playwright.",
+        "choices": [
+          "J. K. Rowling created Harry Potter and shares the original-story credit, but Jack Thorne wrote the play itself.",
+          "John Tiffany directed the production and shares its original-story credit. He is not the credited playwright.",
+          "Jack Thorne is credited with writing the play, as well as sharing the original-story credit with Rowling and Tiffany.",
+          "Anthony Boyle played Scorpius Malfoy in the original production; he was a cast member rather than the scriptwriter."
+        ],
+        "sources": [
+          {
+            "title": "Wizarding World — Harry Potter and the Cursed Child announcement",
+            "url": "https://www.harrypotter.com/news/cursed-child-announcement"
+          },
+          {
+            "title": "Wizarding World — First look at the Malfoys in character",
+            "url": "https://www.harrypotter.com/news/cursed-child-first-look-at-malfoys-in-character"
+          }
+        ]
+      }
+    },
+    "t-q12-2475a05ea56c43c7": {
+      "prompt": "Who would serve you a drink if you went to the bar in The Simpsons?",
+      "choices": [
+        "Moe",
+        "Maggie",
+        "Bart",
+        "Ned"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Moe Szyslak owns and tends Moe’s Tavern, the Springfield bar regularly visited by Homer and his friends.",
+        "choices": [
+          "Moe Szyslak is the owner and regular bartender of Moe’s Tavern, so he is the character associated with serving its drinks.",
+          "Maggie is Homer and Marge’s youngest child, not the bartender at Moe’s Tavern.",
+          "Bart is Homer and Marge’s son and is known for making prank calls to Moe’s Tavern, rather than being its regular bartender.",
+          "Ned Flanders is the Simpsons’ next-door neighbor. Moe is the regular bartender the question describes."
+        ],
+        "sources": [
+          {
+            "title": "Moe Szyslak — character and role in The Simpsons",
+            "url": "https://en.wikipedia.org/wiki/Moe_Szyslak"
+          },
+          {
+            "title": "Maggie Simpson — character and family",
+            "url": "https://en.wikipedia.org/wiki/Maggie_Simpson"
+          },
+          {
+            "title": "Ned Flanders — character and role in The Simpsons",
+            "url": "https://en.wikipedia.org/wiki/Ned_Flanders"
+          }
+        ]
+      }
+    },
+    "t-q13-d787671f560efdbe": {
+      "prompt": "Which fashion designer introduced the vivid shade now known as \"shocking pink\"?",
+      "choices": [
+        "Vivienne Westwood",
+        "Mary Quant",
+        "Elsa Schiaparelli",
+        "Coco Chanel"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Elsa Schiaparelli made shocking pink a signature of her fashion house in 1937, alongside the launch of her perfume Shocking.",
+        "choices": [
+          "Vivienne Westwood is strongly associated with punk fashion of the 1970s. Schiaparelli had introduced her signature shocking pink decades earlier.",
+          "Mary Quant helped popularize the miniskirt and youthful fashion in the 1960s. The shocking-pink association belongs to Schiaparelli.",
+          "Elsa Schiaparelli introduced the vivid pink as a signature house color in 1937, linking it to the name of her Shocking perfume.",
+          "Chanel is a different fashion house. The introduction and signature use of the shade called shocking pink are credited to Elsa Schiaparelli."
+        ],
+        "sources": [
+          {
+            "title": "Schiaparelli — History of the House",
+            "url": "https://schiaparelli.com/en/pages/l-histoire-de-la-maison"
+          },
+          {
+            "title": "Victoria and Albert Museum — Vivienne Westwood: punk, New Romantic and beyond",
+            "url": "https://www.vam.ac.uk/articles/vivienne-westwood-punk-new-romantic-and-beyond"
+          },
+          {
+            "title": "Victoria and Albert Museum — The miniskirt myth",
+            "url": "https://www.vam.ac.uk/articles/the-miniskirt-myth"
+          }
+        ]
+      }
+    },
+    "t-q14-7ad9277844a7c2ea": {
+      "prompt": "How many goals did Neymar score while playing for FC Barcelona?",
+      "choices": [
+        "85",
+        "95",
+        "105",
+        "115"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Neymar scored 105 goals in 186 official matches for FC Barcelona from 2013 to 2017. The answer counts competitive matches; Barcelona separately records nine goals in unofficial matches.",
+        "choices": [
+          "85 is 20 below his official Barcelona total of 105 goals.",
+          "95 is ten below the club’s recorded total for his official matches.",
+          "Barcelona’s player archive records 105 goals in 186 official appearances. That is the competitive-match total intended here.",
+          "115 is ten above his official tally. Even including the nine goals Barcelona records in unofficial matches gives 114, not 115."
+        ],
+        "sources": [
+          {
+            "title": "FC Barcelona Players — Neymar da Silva Santos Júnior: official and unofficial statistics",
+            "url": "https://players.fcbarcelona.com/en/player/603-neymar-neymar-da-silva-santos-junior"
+          }
+        ]
+      }
+    },
+    "t-q15-2cd992e83a4625d9": {
+      "prompt": "What is the longest bone in the human body?",
+      "choices": [
+        "The femur",
+        "The cubitus",
+        "The humerus",
+        "The sacrum"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "The femur, or thighbone, is the human body’s longest bone. It runs from the hip to the knee and helps support body weight.",
+        "choices": [
+          "The femur is the long bone of the thigh, connecting the hip and knee. It is the longest bone in the body.",
+          "Cubitus is an older anatomical term that can refer to the ulna, a forearm bone. It is shorter than the femur.",
+          "The humerus is the upper-arm bone, running from shoulder to elbow. It is shorter than the thigh’s femur.",
+          "The sacrum is a triangular bone formed from fused vertebrae at the base of the spine. It is not the body’s longest bone."
+        ],
+        "sources": [
+          {
+            "title": "Cleveland Clinic — Femur: anatomy and function",
+            "url": "https://my.clevelandclinic.org/health/body/22503-femur"
+          },
+          {
+            "title": "Taber’s Medical Dictionary — Cubitus",
+            "url": "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/753187/all/cubitus"
+          },
+          {
+            "title": "Cleveland Clinic — Ulna",
+            "url": "https://my.clevelandclinic.org/health/body/24520-ulna"
+          },
+          {
+            "title": "Cleveland Clinic — Humerus",
+            "url": "https://my.clevelandclinic.org/health/body/24612-humerus"
+          },
+          {
+            "title": "Cleveland Clinic — Spine structure and function",
+            "url": "https://my.clevelandclinic.org/health/articles/10040-spine-structure-and-function"
+          }
+        ]
+      }
+    },
+    "t-q1-bf3d783108669ea6": {
+      "prompt": "Which of these is a novel by Louisa May Alcott?",
+      "choices": [
+        "Little Women",
+        "Tiny Lasses",
+        "Lucky Ladies",
+        "Goodie Girls"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Louisa May Alcott wrote Little Women, following the four March sisters: Meg, Jo, Beth and Amy. Its first part appeared in 1868.",
+        "choices": [
+          "Little Women is Alcott’s novel about the March sisters, drawing on aspects of her own family life.",
+          "Tiny Lasses sounds like a paraphrase, but it is not the title of Alcott’s novel about the March sisters.",
+          "Lucky Ladies is not the published title of the Alcott novel in question; the book is Little Women.",
+          "Goodie Girls is a distractor, not the title of Alcott’s story of Meg, Jo, Beth and Amy."
+        ],
+        "sources": [
+          {
+            "title": "Louisa May Alcott’s Orchard House — Louisa May Alcott",
+            "url": "https://louisamayalcott.org/louisa-may-alcott"
+          },
+          {
+            "title": "University of Virginia Literature in Context — Little Women",
+            "url": "https://anthology.lib.virginia.edu/work/Alcott/alcott-little-women"
+          }
+        ]
+      }
+    },
+    "t-q2-c486790bb6a83e39": {
+      "prompt": "Which of these is a cosmetic in cream or cake form, used as a base for make-up?",
+      "choices": [
+        "Inauguration",
+        "Constitution",
+        "Initiation",
+        "Foundation"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Foundation is a cosmetic base applied to the face to help even out skin tone. It can come in forms such as cream, liquid or powder.",
+        "choices": [
+          "An inauguration marks the formal beginning of something, such as a term in office. It is not a makeup product.",
+          "A constitution can mean a country’s governing principles or something’s composition; it is not the cosmetic base described.",
+          "Initiation means beginning something or admitting someone into a group. The makeup term is foundation.",
+          "Foundation is the skin-colored cosmetic used as a base for facial makeup and to even out the complexion."
+        ],
+        "sources": [
+          {
+            "title": "Cambridge Dictionary — Foundation",
+            "url": "https://dictionary.cambridge.org/dictionary/english/foundation"
+          },
+          {
+            "title": "Cambridge Dictionary — Inauguration",
+            "url": "https://dictionary.cambridge.org/dictionary/english/inauguration"
+          },
+          {
+            "title": "Cambridge Dictionary — Constitution",
+            "url": "https://dictionary.cambridge.org/dictionary/english/constitution"
+          },
+          {
+            "title": "Cambridge Dictionary — Initiation",
+            "url": "https://dictionary.cambridge.org/dictionary/english/initiation"
+          }
+        ]
+      }
+    },
+    "t-q3-576f3b38c08090c7": {
+      "prompt": "Alitalia is the national airline of which country?",
+      "choices": [
+        "Italy",
+        "Sweden",
+        "Portugal",
+        "France"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Alitalia was Italy’s historic flag carrier. The question’s present tense is outdated: Alitalia stopped flying in October 2021, when ITA Airways began operations.",
+        "choices": [
+          "Italy is the correct historical association: Alitalia was an Italian airline and flag carrier. It ceased flying in October 2021.",
+          "Sweden is not the country associated with Alitalia, whose home country was Italy.",
+          "Portugal does not match Alitalia’s nationality; the airline was Italian.",
+          "France is not Alitalia’s home country. The historical national-airline association in the question is Italy."
+        ],
+        "sources": [
+          {
+            "title": "Spanish Aviation Safety Agency — Rights of passengers affected by Alitalia’s closure",
+            "url": "https://www.seguridadaerea.gob.es/en/noticias/derechos-de-los-pasajeros-afectados-por-el-cierre-de-la-compa%C3%B1%C3%ADa-alitalia"
+          },
+          {
+            "title": "Italian Chamber of Deputies — The Italian airport system and Alitalia/ITA transition",
+            "url": "https://temi.camera.it/leg19/temi/19_tl18_il_sistema_aeroportuale_italiano"
+          },
+          {
+            "title": "Reuters — Alitalia dies after 75 turbulent years, hands over to ITA",
+            "url": "https://www.investing.com/news/stock-market-news/alitalia-dies-after-75-turbulent-years-hands-over-to-ita-2644280"
+          }
+        ]
+      }
+    },
+    "t-q4-bd20e47bb5eea902": {
+      "prompt": "A chancel is a feature of what kind of building?",
+      "choices": [
+        "Warehouse",
+        "Airport",
+        "Church",
+        "Prison"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "A chancel is the part of a church around the altar or communion table, traditionally occupied by the clergy and sometimes the choir.",
+        "choices": [
+          "Warehouse storage areas are not what chancel means; the word identifies a particular area of a church.",
+          "An airport’s passenger or aircraft areas are not called a chancel. The term belongs to church architecture.",
+          "A church can have a chancel around its altar, set apart for worship leaders and often the choir.",
+          "A prison’s ordinary accommodation and custody areas are not a chancel. The word describes a church’s altar area."
+        ],
+        "sources": [
+          {
+            "title": "The United Methodist Church — Glossary: Chancel",
+            "url": "https://www.umc.org/en/content/glossary-chancel"
+          }
+        ]
+      }
+    },
+    "t-q5-9ae680233b508960": {
+      "prompt": "In the 2014 TV series \"The Flash,\" which pair of small-screen actors end up as partners?",
+      "choices": [
+        "Wentworth Miller & Dominic Purcell",
+        "Bryan Cranston & Aaron Paul",
+        "Matthew Perry & Matt LeBlanc",
+        "Benedict Cumberbatch & Martin Freeman"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Wentworth Miller and Dominic Purcell play Captain Cold and Heat Wave, who team up as villains in The Flash. The series began in 2014; their “Revenge of the Rogues” team-up aired in 2015.",
+        "choices": [
+          "Miller plays Captain Cold and Purcell plays Heat Wave. Their characters work together against the Flash in the first season.",
+          "Cranston and Paul are the duo behind Walter White and Jesse Pinkman in Breaking Bad, not Captain Cold and Heat Wave.",
+          "Perry and LeBlanc played Chandler and Joey in Friends. They are not the actors playing the villainous partners in The Flash.",
+          "Cumberbatch and Freeman play Sherlock Holmes and John Watson in Sherlock. The Flash pairing is Miller and Purcell."
+        ],
+        "sources": [
+          {
+            "title": "TVovermind — The Flash: Revenge of the Rogues review",
+            "url": "https://tvovermind.com/flash-season-1-episode-10-review-revenge-rogues/"
+          },
+          {
+            "title": "Television Academy — Breaking Bad",
+            "url": "https://www.televisionacademy.com/shows/breaking-bad"
+          },
+          {
+            "title": "Warner Bros. Discovery — The One Where They Got Back Together",
+            "url": "https://press.wbd.com/na/media-release/one-where-they-got-back-together"
+          },
+          {
+            "title": "PBS — Sherlock",
+            "url": "https://www.pbs.org/show/sherlock/"
+          }
+        ]
+      }
+    },
+    "t-q6-2c352dc66b50b6af": {
+      "prompt": "In which state of the United States do Joseph and Shannon plant their flag in the film \"Far Horizons\" released in 1992?",
+      "choices": [
+        "In Alabama",
+        "In Arizona",
+        "In Texas",
+        "In Oklahoma"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The intended film is Far and Away (1992), starring Joseph and Shannon; “Far Horizons” is a title error. They claim land in Oklahoma during the 1893 land rush, when it was still a territory; statehood followed in 1907.",
+        "choices": [
+          "Alabama is not the destination of Joseph and Shannon’s land-claim journey. The film’s climactic land rush is in Oklahoma.",
+          "Arizona is not the location of the land rush shown in Far and Away. The story leads the characters to Oklahoma.",
+          "Texas is not where they claim their land; the film’s land rush takes place in Oklahoma Territory.",
+          "Oklahoma is the intended answer. More precisely, the scene takes place in Oklahoma Territory, before Oklahoma became a state in 1907."
+        ],
+        "sources": [
+          {
+            "title": "Universal Pictures — Far and Away production notes (1992), archived by in70mm",
+            "url": "https://www.in70mm.com/presents/1959_super_panavision/1992_far_away/press/index.htm"
+          },
+          {
+            "title": "Oklahoma Historical Society — Opening Oklahoma to settlement",
+            "url": "https://www.okhistory.org/learn/opening5"
+          },
+          {
+            "title": "U.S. National Archives — Oklahoma statehood",
+            "url": "https://www.archives.gov/legislative/features/oklahoma"
+          }
+        ]
+      }
+    },
+    "t-q7-d21935aac695fe5c": {
+      "prompt": "Golden lion' and 'emperor' are types of which primate?",
+      "choices": [
+        "Macaque",
+        "Tamarin",
+        "Marmoset",
+        "Baboon"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Golden lion tamarins and emperor tamarins are small monkeys. Golden lion tamarins have a mane-like ruff, while emperor tamarins are recognizable by their long white mustaches.",
+        "choices": [
+          "Macaques are another group of monkeys. The two common names in this question refer to tamarins.",
+          "Both golden lion and emperor are familiar tamarin names, referring to monkeys known for their distinctive mane and mustache respectively.",
+          "Marmosets are close relatives of tamarins, and common-name usage can overlap, but the standard paired names here are golden lion tamarin and emperor tamarin.",
+          "Baboons belong to a different group of monkeys. Neither of the two names in this question is a type of baboon."
+        ],
+        "sources": [
+          {
+            "title": "Smithsonian’s National Zoo — Golden lion tamarin",
+            "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin"
+          },
+          {
+            "title": "Smithsonian’s National Zoo — Bearded emperor tamarin",
+            "url": "https://nationalzoo.si.edu/animals/bearded-emperor-tamarin"
+          },
+          {
+            "title": "Golden lion tamarin — common names and classification",
+            "url": "https://en.wikipedia.org/wiki/Golden_lion_tamarin"
+          }
+        ]
+      }
+    },
+    "t-q8-e86304b61d5bc337": {
+      "prompt": "What is Arthur’s nickname at the beginning of “The Sword in the Stone”?",
+      "choices": [
+        "Lump",
+        "Wart",
+        "Wort",
+        "Wimp"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Arthur is called Wart at the beginning of The Sword in the Stone, before his identity as the future king is revealed.",
+        "choices": [
+          "Lump is not Arthur’s nickname in this story. He is known as Wart.",
+          "Wart is the nickname used for young Arthur, who receives guidance from Merlin before becoming king.",
+          "Wort is a near-spelling distractor. Disney identifies Arthur’s nickname as Wart, with an a.",
+          "Wimp may sound like an unflattering nickname, but it is not the name Arthur is given in the story."
+        ],
+        "sources": [
+          {
+            "title": "D23 — Arthur",
+            "url": "https://d23.com/a-to-z/arthur/"
+          },
+          {
+            "title": "D23 — The Sword in the Stone",
+            "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/"
+          }
+        ]
+      }
+    },
+    "t-q9-15f85882ea0af642": {
+      "prompt": "In what year was the Russian space station Mir destroyed?",
+      "choices": [
+        "2000",
+        "2001",
+        "2002",
+        "2003"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Mir was deliberately deorbited on March 23, 2001. It broke apart during atmospheric reentry, with surviving debris falling into the South Pacific.",
+        "choices": [
+          "2000 is a year too early. Mir’s final atmospheric reentry occurred in March 2001.",
+          "2001 is correct: the controlled deorbit and reentry took place on March 23, ending Mir’s time in orbit.",
+          "2002 is a year too late; Mir had already reentered the atmosphere in March 2001.",
+          "2003 is two years too late. NASA’s historical account dates the station’s reentry to March 23, 2001."
+        ],
+        "sources": [
+          {
+            "title": "NASA — 20 Years Ago: Space Station Mir Reenters Earth’s Atmosphere",
+            "url": "https://www.nasa.gov/history/20-years-ago-space-station-mir-reenters-earths-atmosphere/"
+          }
+        ]
+      }
+    },
+    "t-q10-d20906e9396b644e": {
+      "prompt": "Which band released the first heavy metal album to top the U.S. charts?",
+      "choices": [
+        "Iron Maiden",
+        "Quiet Riot",
+        "Twisted Sister",
+        "Ratt"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Quiet Riot’s Metal Health reached No. 1 on the U.S. Billboard album chart in 1983. It is commonly credited as the first heavy-metal album to do so, although that “first” depends on how earlier rock records are classified.",
+        "choices": [
+          "Iron Maiden did not release Metal Health, the 1983 album associated with this commonly cited chart milestone.",
+          "Quiet Riot released Metal Health, which reached No. 1 in 1983. The historical “first heavy-metal album” label is a conventional claim with debatable genre boundaries.",
+          "Twisted Sister is a different band; the album behind the milestone in this question is Quiet Riot’s Metal Health.",
+          "Ratt did not record Metal Health. The No. 1 album referred to in the question belongs to Quiet Riot."
+        ],
+        "sources": [
+          {
+            "title": "Quiet Riot — Official biography",
+            "url": "https://www.quietriot.band/bio"
+          },
+          {
+            "title": "MusicRadar — How Cum On Feel the Noize helped Quiet Riot reach No. 1",
+            "url": "https://www.musicradar.com/artists/the-producer-said-if-you-guys-can-deliver-a-strong-performance-of-cum-on-feel-the-noize-youve-got-a-deal-how-a-70s-glam-rock-anthem-was-the-key-for-randy-rhoads-old-band-going-all-the-way-to-no-1"
+          }
+        ]
+      }
+    },
+    "t-q11-2d25f00bf2a5b297": {
+      "prompt": "In \"Initial D\", which of these characters does not take part in car races with a Toyota?",
+      "choices": [
+        "Takumi Fujiwara",
+        "Bunta Fujiwara",
+        "Itsuki Takeuchi",
+        "Kai Kotashiwa"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Bunta is the intended answer because he later drives a Subaru Impreza. The wording needs that qualification: he previously owned and drove the Toyota AE86 that he passed to Takumi, so it would be wrong to say he never used a Toyota.",
+        "choices": [
+          "Takumi's famous car is the Toyota Sprinter Trueno AE86. He therefore fits the Toyota group in the question.",
+          "Bunta's later car is a Subaru Impreza STi, making him the intended exception. Earlier, however, he drove the family's Toyota AE86, so this is a comparison of their later cars rather than their entire driving histories.",
+          "Itsuki drives a Toyota Corolla Levin AE85, which he initially mistakes for an AE86. Both are Toyotas, so he is not the intended exception.",
+          "This option appears to mean Kai Kogashiwa, whose surname is misspelled here. Sega's official character roster gives him a Toyota MR-S, so he also belongs to the Toyota group."
+        ],
+        "sources": [
+          {
+            "title": "Sega: Initial D Arcade Stage 8 — Gunma characters",
+            "url": "https://initiald.sega.jp/inid8/sp_chara_gunma.html"
+          },
+          {
+            "title": "Sega: Initial D Arcade Stage 8 — Kanagawa characters",
+            "url": "https://initiald.sega.jp/inid8/sp_chara_kanagawa.html"
+          },
+          {
+            "title": "Sega: Initial D Arcade Stage 8 — Toyota cars",
+            "url": "https://initiald.sega.jp/inid8/sp_car_toyota.html"
+          },
+          {
+            "title": "Sega: Initial D Arcade Stage 8 — Subaru cars",
+            "url": "https://initiald.sega.jp/inid8/sp_car_subaru.html"
+          }
+        ]
+      }
+    },
+    "t-q12-986cadef7c372cf1": {
+      "prompt": "What is the capital of the west African country of Benin?",
+      "choices": [
+        "Oporto",
+        "Porto-Novo",
+        "Pôrto Alegre",
+        "Port-au-Prince"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Porto-Novo is Benin's official capital. Cotonou is its economic centre and seat of government, which can cause confusion, but it is not one of the choices here.",
+        "choices": [
+          "Oporto is another name for Porto, a city in Portugal. It is not the capital of Benin.",
+          "Porto-Novo is the official capital of Benin, as identified by Benin's national tourism website and ECOWAS.",
+          "Porto Alegre is in Brazil and is the capital of the state of Rio Grande do Sul. It is not in West Africa.",
+          "Port-au-Prince is the capital of Haiti in the Caribbean. Its similar-looking name does not make it Benin's capital."
+        ],
+        "sources": [
+          {
+            "title": "Benin Tourism: A country to discover",
+            "url": "https://benin.bj/en/benin"
+          },
+          {
+            "title": "Visit Portugal: Porto",
+            "url": "https://www.visitportugal.com/en/NR/exeres/026893C2-A486-4211-9FF3-CD145E9163BA"
+          },
+          {
+            "title": "Government of Brazil: Porto Alegre",
+            "url": "https://www.gov.br/g20/en/about-the-g20/host-cities/porto-alegre-rs"
+          },
+          {
+            "title": "Visit Haiti: Port-au-Prince city guide",
+            "url": "https://visithaiti.com/destinations/port-au-prince-city-guide/"
+          }
+        ]
+      }
+    },
+    "t-q13-7cb6b48a885898d6": {
+      "prompt": "In ancient times, what was Athens’ national holiday called?",
+      "choices": [
+        "Thargelia",
+        "Thesmophoriazusae",
+        "Dionysia",
+        "Panathenaia"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The intended answer is the Panathenaia, Athens's major civic and religious festival honouring its patron goddess Athena. Calling it a single 'national holiday' is imprecise: ancient Athens celebrated several festivals, including the Thargelia and Dionysia.",
+        "choices": [
+          "The Thargelia was a real Athenian festival associated with Apollo and the harvest. It was not the Panathenaic celebration of Athena intended by this clue.",
+          "Thesmophoriazusae is the title of a comedy by Aristophanes, often translated as Women at the Thesmophoria. The related festival was called the Thesmophoria, not Thesmophoriazusae.",
+          "The Dionysia was another major Athenian festival, honouring Dionysus and featuring dramatic competitions. The question instead intends the civic festival dedicated to Athena.",
+          "The Panathenaia honoured Athena and brought Athens together for religious observances and competitions. A larger celebration, the Great Panathenaia, was held every four years."
+        ],
+        "sources": [
+          {
+            "title": "The Metropolitan Museum of Art: An early Panathenaic prize amphora",
+            "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Nikias_Made_Me_The_Metropolitan_Museum_Journal_v_34_1999.pdf"
+          },
+          {
+            "title": "Oxford Classical Dictionary: Thargelia",
+            "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548202332"
+          },
+          {
+            "title": "Harvard Center for Hellenic Studies: Ritual and Performativity — The Chorus in Old Comedy",
+            "url": "https://chs.harvard.edu/book/bierl-anton-ritual-and-performativity-the-chorus-in-old-comedy/"
+          },
+          {
+            "title": "Hellenic Ministry of Culture: The festival of the Great Dionysia",
+            "url": "https://ancienttheater.culture.gr/games/game_2/index.htm?lang=en"
+          }
+        ]
+      }
+    },
+    "t-q14-496f728e1b01bfe9": {
+      "prompt": "What game show host was a guest ring announcer for Wrestlemania 8 and introduced the 8-man tag team match?",
+      "choices": [
+        "Bob Barker",
+        "Richard Dawson",
+        "Ray Combs",
+        "Drew Carey"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Family Feud host Ray Combs was the guest ring announcer for the eight-man tag-team match at WrestleMania VIII in 1992. His introduction included jokes based on the survey format of Family Feud.",
+        "choices": [
+          "Bob Barker did appear in WWE as a guest host of Raw in September 2009. That was a different event from the WrestleMania VIII introduction in 1992.",
+          "Richard Dawson was the original host of Family Feud. It was fellow Family Feud host Ray Combs who handled this WrestleMania introduction.",
+          "Ray Combs introduced the eight-man tag-team match at WrestleMania VIII. The match report identifies him as the guest announcer from Family Feud.",
+          "Drew Carey is associated with an appearance in the 2001 Royal Rumble. He was not the guest announcer for this 1992 match."
+        ],
+        "sources": [
+          {
+            "title": "Wrestleview: WrestleMania VIII match report",
+            "url": "https://www.wrestleview.com/wwe-news/151290-wwf-wrestlemania-viii-results-april-5-1992-indianapolis/"
+          },
+          {
+            "title": "Family Feud: About the show and its hosts",
+            "url": "https://www.familyfeud.com/about/"
+          },
+          {
+            "title": "WWE: Raw guest stars, September–November 2009",
+            "url": "https://www.wwe.com/shows/raw/all-raw-guest-stars-2"
+          },
+          {
+            "title": "WWE: Drew Carey",
+            "url": "https://www.wwe.com/superstars/drewcarey"
+          }
+        ]
+      }
+    },
+    "t-q15-d5396edc71036fe4": {
+      "prompt": "In what American Indian dish are corn kernels cooked through the nixtamalization technique?",
+      "choices": [
+        "Pemmican",
+        "Sagamité",
+        "Cornbread",
+        "Hominy"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Hominy is maize prepared by treating the kernels with an alkaline solution, a process called nixtamalization. It is more accurately a prepared ingredient than one particular dish, and it can be used in many recipes.",
+        "choices": [
+          "Pemmican is a concentrated food made from dried meat and fat, sometimes with berries. It is not the name for nixtamalized corn kernels.",
+          "Sagamité refers to a soup or porridge, commonly involving corn, with recipes that vary among communities. It is not the specific name for the prepared kernels; the question's intended term is hominy.",
+          "Cornbread names a bread made with ground corn. The question asks for the prepared corn kernels themselves, which are called hominy.",
+          "Hominy is the prepared maize identified by the nixtamalization clue. The alkaline treatment loosens the kernels' outer hulls and changes their texture."
+        ],
+        "sources": [
+          {
+            "title": "Smithsonian Folklife Festival: Hominy by Nico Albert Williams",
+            "url": "https://festival.si.edu/2023/ozarks/recipes"
+          },
+          {
+            "title": "Manitoba Métis Federation: Pemmican",
+            "url": "https://www.mmf.mb.ca/metis-minute/pemmican"
+          },
+          {
+            "title": "University of British Columbia: Dictionary of Canadianisms — sagamité",
+            "url": "https://dchp.arts.ubc.ca/entries/sagamit%C3%A9"
+          },
+          {
+            "title": "Foods: Historical Indigenous food preparation using Three Sisters produce",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8001537/"
+          }
+        ]
+      }
+    },
+    "t-q1-74b9916787c4537b": {
+      "prompt": "Complete the title of this TV series, \"Starsky and...\"?",
+      "choices": [
+        "Pen",
+        "Hutch",
+        "Cage",
+        "Kennel"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "The series is Starsky & Hutch, named after its two police-detective partners. Hutch is the character's nickname; the other choices are wordplay on kinds of enclosures.",
+        "choices": [
+          "Pen does not complete the series title. The detective partnered with Starsky is Hutch.",
+          "Hutch completes Starsky & Hutch. The title names the show's two central detectives.",
+          "Cage is an enclosure, but it is not the second name in this television title.",
+          "Kennel is another enclosure-related distraction. The series is called Starsky & Hutch."
+        ],
+        "sources": [
+          {
+            "title": "Sony Pictures Television: Starsky & Hutch",
+            "url": "https://formats.sonypictures.com/starsky-hutch"
+          }
+        ]
+      }
+    },
+    "t-q2-297ecbc7c191253e": {
+      "prompt": "AEW's flagship TV show that airs on Wednesday nights is called what?",
+      "choices": [
+        "Nitro",
+        "Dynamite",
+        "RAW",
+        "Smackdown"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "AEW's flagship Wednesday-night programme is Dynamite. Nitro belonged to WCW, while Raw and SmackDown are WWE programmes.",
+        "choices": [
+          "Nitro was WCW's Monday-night programme. It is not the name of AEW's Wednesday show.",
+          "Dynamite is the AEW show identified in the question. AEW's official information lists its regular broadcast on Wednesday nights.",
+          "Raw is a WWE programme, not AEW's flagship show.",
+          "SmackDown is also a WWE programme. The AEW title sought here is Dynamite."
+        ],
+        "sources": [
+          {
+            "title": "All Elite Wrestling: About AEW",
+            "url": "https://www.allelitewrestling.com/about-aew"
+          },
+          {
+            "title": "WWE: WCW Monday Nitro",
+            "url": "https://www.wwe.com/shows/wcw-monday-nitro"
+          },
+          {
+            "title": "WWE: Raw",
+            "url": "https://www.wwe.com/shows/raw"
+          },
+          {
+            "title": "WWE: SmackDown",
+            "url": "https://www.wwe.com/shows/smackdown"
+          }
+        ]
+      }
+    },
+    "t-q3-51f58ce780b7c6c3": {
+      "prompt": "What was the signature submission manuever of the legendary Ric Flair?",
+      "choices": [
+        "Sleeper Hold",
+        "Sharpshooter",
+        "Figure-Four Leg Lock",
+        "Arm Bar"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Ric Flair is famously associated with the Figure-Four Leg Lock. WWE lists the Figure-Four Leglock as his signature move.",
+        "choices": [
+          "The Sleeper Hold is a different submission move, famously associated with Roddy Piper. It is not the signature move listed for Flair.",
+          "The Sharpshooter is strongly associated with Bret Hart. Flair's signature submission is the Figure-Four Leg Lock.",
+          "The Figure-Four Leg Lock is the move WWE identifies as Ric Flair's signature submission. This is the correct name among the choices.",
+          "An Arm Bar is a different submission hold, associated with wrestlers such as Ronda Rousey. It is not Flair's signature Figure-Four."
+        ],
+        "sources": [
+          {
+            "title": "WWE: Ric Flair",
+            "url": "https://www.wwe.com/superstars/ricflair"
+          },
+          {
+            "title": "WWE: Roddy Piper",
+            "url": "https://www.wwe.com/superstars/roddypiper"
+          },
+          {
+            "title": "WWE: Bret Hart",
+            "url": "https://www.wwe.com/superstars/brethart?page=33"
+          },
+          {
+            "title": "WWE: Ronda Rousey",
+            "url": "https://www.wwe.com/superstars/ronda-rousey"
+          }
+        ]
+      }
+    },
+    "t-q4-8cb16935203da928": {
+      "prompt": "Which singer released “Can’t Stop the Feeling” in 2016?",
+      "choices": [
+        "Justin Timberlake",
+        "Usher",
+        "Harry Styles",
+        "Eamon"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Justin Timberlake released Can't Stop the Feeling! in May 2016 as the first single from the Trolls soundtrack. He also co-wrote and co-produced it with Max Martin and Shellback.",
+        "choices": [
+          "Justin Timberlake is the credited artist on the 2016 single. Sony Music's release announcement also names him as a co-writer and co-producer.",
+          "Usher did not release the single identified here. The artist named in its 2016 release announcement is Justin Timberlake.",
+          "Harry Styles is not the singer credited on this single. Can't Stop the Feeling! was Timberlake's contribution to Trolls.",
+          "Eamon is not the credited performer of this release. The 2016 single and its soundtrack connection identify Justin Timberlake."
+        ],
+        "sources": [
+          {
+            "title": "Sony Music: Justin Timberlake releases Can't Stop the Feeling!",
+            "url": "https://www.sonymusic.co.uk/justin-timberlake-releases-new-single-cant-stop-the-feeling/"
+          }
+        ]
+      }
+    },
+    "t-q5-1f8adfe807abc973": {
+      "prompt": "Which of these is a hoisting or lifting device?",
+      "choices": [
+        "Block & tackle",
+        "Block & scrum",
+        "Block & foul",
+        "Block & kick"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "A block and tackle uses a rope threaded through pulleys to lift or move a load. Multiple supporting rope sections can reduce the pulling force needed, at the cost of pulling a longer length of rope.",
+        "choices": [
+          "Block and tackle is the established name for this pulley-and-rope lifting arrangement. The blocks hold the pulleys through which the line runs.",
+          "Block and scrum is not the name of the lifting device. It substitutes a sporting term for 'tackle'.",
+          "Block and foul is another altered phrase, not the name of the pulley arrangement used for hoisting.",
+          "Block and kick does not name this lifting mechanism. The correct fixed expression is block and tackle."
+        ],
+        "sources": [
+          {
+            "title": "NASA Technical Reports Server: Review of transport design concepts — block and tackle",
+            "url": "https://ntrs.nasa.gov/api/citations/19950006141/downloads/19950006141.pdf"
+          }
+        ]
+      }
+    },
+    "t-q6-26eea729190ef481": {
+      "prompt": "Bruce Oldfield is a leading figure in which branch of the arts?",
+      "choices": [
+        "Fashion",
+        "Architecture",
+        "Ballet",
+        "Opera"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Bruce Oldfield is a British fashion designer, particularly known for couture and bridalwear. His work includes Queen Camilla's coronation dress.",
+        "choices": [
+          "Fashion is his field: Oldfield designs clothing, including couture gowns and bridalwear.",
+          "Architecture concerns the design of buildings. Oldfield's recognised design work is in clothing and fashion.",
+          "Ballet is a performing art, whereas Oldfield is known as a fashion designer rather than a ballet dancer or choreographer.",
+          "Opera is musical theatre. Oldfield's reputation in the arts comes from fashion design, not from being an opera singer or composer."
+        ],
+        "sources": [
+          {
+            "title": "British Vogue: Bruce Oldfield biography",
+            "url": "https://www.vogue.co.uk/article/bruce-oldfield-biography"
+          },
+          {
+            "title": "The Royal Family: Coronation state portraits",
+            "url": "https://www.royal.uk/state-portraits"
+          }
+        ]
+      }
+    },
+    "t-q7-988cb91e981ef72b": {
+      "prompt": "On \"The Simpsons\", what is the name of Bart's best friend?",
+      "choices": [
+        "Murray",
+        "Merrill",
+        "Melvin",
+        "Milhouse"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Bart's best friend is Milhouse Van Houten. Disney's official Simpsons character guide identifies him as Bart's often awkward and unlucky companion.",
+        "choices": [
+          "Murray is not the name of Bart's best friend. The character is Milhouse Van Houten.",
+          "Merrill is a similar-sounding distraction, not the character identified as Bart's best friend.",
+          "Melvin does not identify Bart's best friend. His first name is Milhouse.",
+          "Milhouse Van Houten is Bart's best friend and frequent companion in his schemes. His name is the one listed in the official character guide."
+        ],
+        "sources": [
+          {
+            "title": "Disney+: The Simpsons characters guide — Milhouse Van Houten",
+            "url": "https://www.disneyplus.com/en-sg/explore/articles/the-simpsons-characters"
+          }
+        ]
+      }
+    },
+    "t-q8-af0b8af3929b0a20": {
+      "prompt": "How many stages does the Ariane 5 launcher consist of?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Ariane 5 is described as a two-stage launcher: a central main stage and an upper stage. It also carried two solid strap-on boosters, which assist launch but are not counted as two additional stacked stages.",
+        "choices": [
+          "One would omit the upper stage. Ariane 5 had both a main stage and a separate upper stage.",
+          "Two counts the main stage and upper stage, which is the convention intended here. The two side boosters are counted separately from those stages.",
+          "There were not three stacked core stages. The side boosters operated alongside the main stage rather than forming a third core stage above it.",
+          "Four confuses the two stages with the two strap-on boosters. The boosters do not make Ariane 5 a four-stage launcher."
+        ],
+        "sources": [
+          {
+            "title": "European Space Agency: Ariane 5 Generic",
+            "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Ariane/Ariane_5_Generic"
+          },
+          {
+            "title": "ArianeGroup: Ariane 5 — unrivaled performance and reliability",
+            "url": "https://www.ariane.group/en/news/ariane-5-des-performances-et-une-fiabilite-sans-egal/"
+          }
+        ]
+      }
+    },
+    "t-q9-187361abaed0a43e": {
+      "prompt": "Which is part of the title of the second \"Blair Witch\" film, \"Book of ...\"?",
+      "choices": [
+        "Ghosts",
+        "Shadows",
+        "Spirits",
+        "Souls"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "The second film is Book of Shadows: Blair Witch 2, released in 2000. Shadows is the word that completes its title.",
+        "choices": [
+          "Ghosts fits the horror theme, but it is not the word in this film's title.",
+          "Shadows completes Book of Shadows: Blair Witch 2, the title recorded by the American Film Institute.",
+          "Spirits is another plausible horror-related word, but the sequel's title uses Shadows.",
+          "Souls does not complete the title. The film is Book of Shadows: Blair Witch 2."
+        ],
+        "sources": [
+          {
+            "title": "American Film Institute Catalog: Book of Shadows — Blair Witch 2",
+            "url": "https://catalog.afi.com/Film/61061-BOOK-OF-SHADOWS-BLAIR-WITCH-2?cxt=filmography"
+          }
+        ]
+      }
+    },
+    "t-q10-a223b52ba0814a82": {
+      "prompt": "Mongolia is sandwiched between which two countries?",
+      "choices": [
+        "China & India",
+        "India & Russia",
+        "China & Russia",
+        "India & Pakistan"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Mongolia has only two neighbouring countries: Russia to the north and China to the south, east and west. It is landlocked between them.",
+        "choices": [
+          "China does border Mongolia, but India does not. The missing northern neighbour is Russia.",
+          "Russia borders Mongolia, but India does not. The other bordering country is China.",
+          "China and Russia are Mongolia's only land neighbours. This pair matches its complete international boundary.",
+          "Neither India nor Pakistan shares a border with Mongolia. Its neighbours are China and Russia."
+        ],
+        "sources": [
+          {
+            "title": "Embassy of Mongolia: Geography and climate",
+            "url": "https://mongolianembassy.us/about-mongolia/geography-and-climate/"
+          }
+        ]
+      }
+    },
+    "t-q11-7b15f8e69bd5925a": {
+      "prompt": "Who ordered the attack which became known as the Night of the Long Knives?",
+      "choices": [
+        "Stalin",
+        "Churchill",
+        "Hitler",
+        "Thatcher"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Adolf Hitler ordered the violent purge known as the Night of the Long Knives, carried out from 30 June to 2 July 1934. It targeted the SA leadership, including Ernst Röhm, as well as other political opponents.",
+        "choices": [
+          "Stalin directed purges in the Soviet Union, but this named event was a purge in Nazi Germany ordered by Hitler.",
+          "Churchill was a British politician, not the Nazi leader who ordered the 1934 killings. He first became Britain's prime minister in 1940.",
+          "Hitler ordered the purge, directing the SS against SA leaders and other opponents. It strengthened his control over the Nazi regime.",
+          "Thatcher was Britain's prime minister from 1979 to 1990, decades after this event. The 1934 purge was ordered by Hitler."
+        ],
+        "sources": [
+          {
+            "title": "United States Holocaust Memorial Museum: The Röhm Affair",
+            "url": "https://encyclopedia.ushmm.org/content/en/timeline-event/holocaust/1933-1938/roehm-affair"
+          },
+          {
+            "title": "United States Holocaust Memorial Museum: Josef Stalin",
+            "url": "https://encyclopedia.ushmm.org/content/en/article/josef-stalin"
+          },
+          {
+            "title": "UK Government: Winston Churchill",
+            "url": "https://www.gov.uk/government/history/past-prime-ministers/winston-churchill"
+          },
+          {
+            "title": "UK Government: Margaret Thatcher",
+            "url": "https://www.gov.uk/government/history/past-prime-ministers/margaret-thatcher"
+          }
+        ]
+      }
+    },
+    "t-q12-6bcd182665ef28a5": {
+      "prompt": "Who was Bob Hope and Bing Crosby's regular female sidekick in the \"Road\" films?",
+      "choices": [
+        "Myrna Loy",
+        "Dorothy Lamour",
+        "Claudette Colbert",
+        "Agnes Moorehead"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Dorothy Lamour was the regular female star alongside Bing Crosby and Bob Hope in the Road films. She led the first six and had a smaller role in the final film, The Road to Hong Kong, where Joan Collins became the female lead.",
+        "choices": [
+          "Myrna Loy is associated with William Powell in The Thin Man series. The regular female member of the Hope–Crosby Road trio was Dorothy Lamour.",
+          "Dorothy Lamour appeared with Hope and Crosby throughout the series, beginning with Road to Singapore. She is the regular co-star the question is asking for.",
+          "Claudette Colbert starred in It Happened One Night, but she was not the regular female star of the Road films. That role belonged to Lamour.",
+          "Agnes Moorehead is known for work including Bewitched, for which she received several Emmy nominations. She was not the Road series' regular female co-star."
+        ],
+        "sources": [
+          {
+            "title": "American Film Institute Catalog: Road to Singapore and the Road series",
+            "url": "https://catalog.afi.com/Film/5051-ROAD-TO-SINGAPORE"
+          },
+          {
+            "title": "American Film Institute: The Thin Man",
+            "url": "https://www.afi.com/robert-detail/3933-THETHINMAN/"
+          },
+          {
+            "title": "Academy of Motion Picture Arts and Sciences: The 1935 Oscars",
+            "url": "https://www.oscars.org/oscars/ceremonies/1935/W"
+          },
+          {
+            "title": "Television Academy: Agnes Moorehead",
+            "url": "https://www.televisionacademy.com/bios/agnes-moorehead"
+          }
+        ]
+      }
+    },
+    "t-q13-b60872907a131de7": {
+      "prompt": "Which of these options is not a primary flavor?",
+      "choices": [
+        "Bitter",
+        "Acidic",
+        "Umami",
+        "Savory"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The game marks Savory as the intended answer, but the question is flawed: savory is another name for umami, a recognised basic taste. Acidic also describes sourness, so none of these options is unambiguously outside the basic tastes.",
+        "choices": [
+          "Bitter is one of the commonly recognised basic tastes, alongside sweet, sour, salty and umami.",
+          "Acidic describes the sour taste produced by acids. The usual basic-taste label is 'sour', so this wording is less standard but still refers to a basic taste.",
+          "Umami is a recognised basic taste associated with substances such as glutamate. It is also called savory, which makes the proposed distinction between these options invalid.",
+          "Savory is the game's scoring answer, but it is not a scientifically valid exception: savory and umami name the same basic taste. This question therefore has no unique defensible answer as written."
+        ],
+        "sources": [
+          {
+            "title": "U.S. National Institute on Deafness and Other Communication Disorders: Taste disorders",
+            "url": "https://www.nidcd.nih.gov/health/taste-disorders"
+          },
+          {
+            "title": "Institute for Quality and Efficiency in Health Care: How does our sense of taste work?",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK279408/"
+          }
+        ]
+      }
+    },
+    "t-q14-663111acd2bda98d": {
+      "prompt": "What is the correct name of Kei Tendou's firearm in Blue Archive?",
+      "choices": [
+        "Luminous Nova",
+        "Radiant Nova",
+        "Brilliant Nova",
+        "Gleaming Nova"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Kei's exclusive railgun is named Luminous Nova. The English character database uses that name, and the Japanese weapon record gives the corresponding name ルミナス・ノヴァ.",
+        "choices": [
+          "Luminous Nova is the name listed for Kei's exclusive railgun. It matches the Japanese name's transliteration as well.",
+          "Radiant Nova substitutes a near-synonym for the first word. The weapon's actual name uses Luminous.",
+          "Brilliant Nova has similar imagery, but it is not the name listed for Kei's weapon. The name is Luminous Nova.",
+          "Gleaming Nova is another similar-sounding alternative. Kei's railgun is specifically called Luminous Nova."
+        ],
+        "sources": [
+          {
+            "title": "Gacha.gg: Kei — exclusive weapon",
+            "url": "https://www.gacha.gg/blue-archive/characters/kei"
+          },
+          {
+            "title": "Game8: Blue Archive — Kei and her unique weapon",
+            "url": "https://game8.jp/blue-archive/699441"
+          }
+        ]
+      }
+    },
+    "t-q15-f598001a69dc9ced": {
+      "prompt": "Which one of these Singstar games does not exist?",
+      "choices": [
+        "Singstar Country",
+        "Singstar Après-ski Party",
+        "Singstar Pyjama Party",
+        "Singstar Turkish Party"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "SingStar Pyjama Party is the invented title among these choices. SingStar Country, SingStar Après-Ski Party and SingStar Turkish Party were real releases, including regional editions that may be less familiar outside their markets.",
+        "choices": [
+          "SingStar Country was a real PlayStation 2 release. PlayStation's own announcement describes its country-music track list.",
+          "SingStar Après-Ski Party was a real German edition. Guinness World Records includes it in its record of country-specific SingStar releases.",
+          "SingStar Pyjama Party is the title that was not released. It mimics the naming style of the series' genuine party-themed editions.",
+          "SingStar Turkish Party was a real regional release, listed under Turkey in Guinness World Records' survey of the series."
+        ],
+        "sources": [
+          {
+            "title": "PlayStation Blog: SingStar releases including SingStar Country",
+            "url": "https://blog.playstation.com/2008/09/30/voulez-vous-to-sing-abba-coming-to-singstar/comment-page-2/"
+          },
+          {
+            "title": "Guinness World Records: Country-specific SingStar releases",
+            "url": "https://www.guinnessworldrecords.com/world-records/89147-most-country-specific-instalments-in-a-videogame-series"
+          }
+        ]
+      }
+    },
+    "t-q1-63bc04db7ec4b47f": {
+      "prompt": "Which game series physically evolves the character based on their choices?",
+      "choices": [
+        "Fable",
+        "Halo",
+        "Gears of War",
+        "Killer Instinct"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "In Fable, the hero’s appearance reflects how you play: training affects physique, combat can leave scars, and good or evil choices influence the character’s look and reputation.",
+        "choices": [
+          "Fable makes the hero’s physical development and moral appearance respond to the player’s actions.",
+          "Halo is a science-fiction shooter; its armour and character designs are not the choice-driven physical evolution described here.",
+          "Gears of War is a combat-focused shooter, rather than the role-playing series with this evolving hero system.",
+          "Killer Instinct is a fighting series with a roster of fighters, rather than a hero whose body and moral appearance develop through role-playing choices."
+        ],
+        "sources": [
+          {
+            "title": "Xbox Game Studios — Fable: The Lost Chapters",
+            "url": "https://store.steampowered.com/app/204030/Fable__The_Lost_Chapters/"
+          }
+        ]
+      }
+    },
+    "t-q2-60a80b207216af08": {
+      "prompt": "Which of these is a tonic or something which makes you feel more cheerful?",
+      "choices": [
+        "Pick-and-mix",
+        "Pickaxe",
+        "Pick-me-up",
+        "Pickpocket"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "A pick-me-up is something that restores energy or lifts your spirits, such as a refreshing drink. The other expressions share “pick” but have different meanings.",
+        "choices": [
+          "Pick-and-mix means choosing an assortment, especially sweets sold by weight; it is not the expression for a restorative tonic.",
+          "A pickaxe is a tool used to break hard ground or rock.",
+          "A pick-me-up is something that makes a person feel more energetic or cheerful.",
+          "A pickpocket is a thief who steals from someone’s pockets or bag."
+        ],
+        "sources": [
+          {
+            "title": "Cambridge Dictionary — pick-me-up",
+            "url": "https://dictionary.cambridge.org/dictionary/english/pick-me-up"
+          },
+          {
+            "title": "Collins Dictionary — pick and mix",
+            "url": "https://www.collinsdictionary.com/dictionary/english/pick-and-mix"
+          },
+          {
+            "title": "Cambridge Dictionary — pickaxe",
+            "url": "https://dictionary.cambridge.org/dictionary/english/pickaxe"
+          },
+          {
+            "title": "Cambridge Dictionary — pickpocket",
+            "url": "https://dictionary.cambridge.org/dictionary/english/pickpocket"
+          }
+        ]
+      }
+    },
+    "t-q3-59d2eba6c1b98bb9": {
+      "prompt": "Which team wears blue and dark red jerseys?",
+      "choices": [
+        "Real Madrid",
+        "Manchester United",
+        "Chelsea FC",
+        "FC Barcelona"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "FC Barcelona’s traditional home colours are blue and garnet, a dark red. The Catalan term “blaugrana” refers to that combination. This question concerns traditional home colours; clubs also use other colours in alternative kits.",
+        "choices": [
+          "Real Madrid’s traditional home shirt is white.",
+          "Manchester United’s traditional home shirt is red, rather than Barcelona’s blue-and-garnet combination.",
+          "Chelsea’s traditional home colour is royal blue, without Barcelona’s garnet stripes.",
+          "FC Barcelona is identified with blue and garnet, the colours described in the question."
+        ],
+        "sources": [
+          {
+            "title": "FC Barcelona — The colours",
+            "url": "https://www.fcbarcelona.com/en/club/identity/colours"
+          },
+          {
+            "title": "Real Madrid — The white shirt of the five European Cups",
+            "url": "https://www.realmadrid.com/StaticFiles/RealMadridResponsive/especiales/en/shirts-and-kits/white-shirt-5-european-cups.html"
+          },
+          {
+            "title": "Chelsea FC — Five facts about Chelsea on our birthday",
+            "url": "https://www.chelseafc.com/en/news/article/five-facts-about-chelsea-on-our-birthday"
+          },
+          {
+            "title": "Manchester United — Traditional red shirts at Arsenal",
+            "url": "https://www.manutd.com/en/news/things-we-noticed-from-arsenal-v-man-utd-on-3-september-2023"
+          }
+        ]
+      }
+    },
+    "t-q4-385681c55d7c705b": {
+      "prompt": "What is the missing word in the title of this Shakespeare play, \"Much ... About Nothing\"?",
+      "choices": [
+        "Fuss",
+        "To-do",
+        "Bother",
+        "Ado"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Shakespeare’s comedy is called Much Ado About Nothing. “Ado” means fuss, bustle or concern, which makes the other options plausible in meaning but incorrect as the title.",
+        "choices": [
+          "Fuss is close to the meaning of “ado,” but Shakespeare’s title does not use “Fuss.”",
+          "A to-do can mean a commotion, but “To-do” is not the word in the play’s title.",
+          "Bother can convey a similar idea, but it is not the title’s wording.",
+          "Ado completes the exact title: Much Ado About Nothing."
+        ],
+        "sources": [
+          {
+            "title": "Folger Shakespeare Library — Much Ado About Nothing",
+            "url": "https://www.folger.edu/explore/shakespeares-works/much-ado-about-nothing/"
+          },
+          {
+            "title": "Merriam-Webster — ado",
+            "url": "https://www.merriam-webster.com/dictionary/ado"
+          }
+        ]
+      }
+    },
+    "t-q5-ce81cf5d701b2a5e": {
+      "prompt": "Which band, comprised of Danger Mouse and CeeLo Green, scored a hit in 2006 with the track “Crazy”?",
+      "choices": [
+        "Black Pumas",
+        "The Roots",
+        "Gorillaz",
+        "Gnarls Barkley"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Gnarls Barkley paired singer CeeLo Green with producer Danger Mouse. Their 2006 debut album St. Elsewhere included the hit “Crazy.”",
+        "choices": [
+          "Black Pumas is the duo of Eric Burton and Adrian Quesada, a different pairing.",
+          "The Roots is the Philadelphia hip-hop group associated with Black Thought and Questlove, not the Green–Danger Mouse duo.",
+          "Danger Mouse produced Gorillaz’s Demon Days, but his partnership with CeeLo Green on “Crazy” was Gnarls Barkley.",
+          "Gnarls Barkley is the name used by CeeLo Green and Danger Mouse for their collaboration."
+        ],
+        "sources": [
+          {
+            "title": "Recording Academy — CeeLo Green",
+            "url": "https://www.grammy.com/artists/cee-lo-green/2335/"
+          },
+          {
+            "title": "Recording Academy — Black Pumas on their breakout year",
+            "url": "https://www.grammy.com/news/meet-first-time-grammy-nominee-black-pumas-their-breakout-year-creative-process-and-new/"
+          },
+          {
+            "title": "Recording Academy — The Roots",
+            "url": "https://www.grammy.com/artists/roots/7842/"
+          },
+          {
+            "title": "Recording Academy — The lasting impact of Gorillaz’s Demon Days",
+            "url": "https://www.grammy.com/news/lasting-impact-of-gorillaz-demon-days-grammys/"
+          }
+        ]
+      }
+    },
+    "t-q6-27eea5939bea4556": {
+      "prompt": "Which of these is a variation on the triathlon event?",
+      "choices": [
+        "Steelman",
+        "Ironman",
+        "Strongman",
+        "He-man"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Ironman is the intended answer: its full-distance triathlon combines a 2.4-mile swim, a 112-mile bike ride and a 26.2-mile run. The wording is broad, though: Steelman is also the name of a real triathlon event, so it cannot simply be dismissed as unrelated to triathlon.",
+        "choices": [
+          "Steelman is a real triathlon event offering sprint and Olympic distances. It is an event name, rather than the full-distance Ironman format intended here; the question should make that distinction clearer.",
+          "Ironman is the intended long-distance triathlon format, covering 140.6 miles across swimming, cycling and running.",
+          "Strongman competitions test strength through lifting and carrying events, rather than the swim–bike–run triathlon format.",
+          "He-man is a term for a muscular man and the name of a fictional hero, rather than the standard triathlon format intended here."
+        ],
+        "sources": [
+          {
+            "title": "IRONMAN — About the race format",
+            "url": "https://www.ironman.com/proseries/about-ironman"
+          },
+          {
+            "title": "Steelman Racing — Steelman Triathlon",
+            "url": "https://www.steelmanracing.com/steelman-triathlon"
+          }
+        ]
+      }
+    },
+    "t-q7-6f67e03cc781cd0e": {
+      "prompt": "Who invented the Kodak camera?",
+      "choices": [
+        "Eastman",
+        "Westman",
+        "Northman",
+        "Southman"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "George Eastman is credited with developing and introducing the Kodak camera in 1888. It came loaded with film and helped make photography practical for ordinary consumers; he did not invent photography itself.",
+        "choices": [
+          "Eastman refers to George Eastman, the photographic entrepreneur behind the original Kodak camera.",
+          "Westman is a directional-word distractor, not the surname of the Kodak founder credited here.",
+          "Northman is not the surname of the inventor and entrepreneur associated with the 1888 Kodak camera.",
+          "Southman is another directional-word distractor; the documented name is George Eastman."
+        ],
+        "sources": [
+          {
+            "title": "Kodak — George Eastman history",
+            "url": "https://www.kodak.com/en/company/page/george-eastman-history/"
+          },
+          {
+            "title": "George Eastman Museum — Kodak camera, barrel shutter",
+            "url": "https://collections.eastman.org/objects/49073/kodak-camera-barrel-shutter"
+          }
+        ]
+      }
+    },
+    "t-q8-a056c050cec6ffa5": {
+      "prompt": "Which major desert extends through Mongolia and China?",
+      "choices": [
+        "Atacama",
+        "Gibson",
+        "Kalahari",
+        "Gobi"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "The Gobi stretches across southern Mongolia and northern China. The other deserts are on different continents.",
+        "choices": [
+          "The Atacama is in South America, chiefly in northern Chile.",
+          "The Gibson Desert is in Western Australia.",
+          "The Kalahari is in southern Africa, including much of Botswana.",
+          "The Gobi spans parts of Mongolia and China, matching both countries in the question."
+        ],
+        "sources": [
+          {
+            "title": "NASA Earth Observatory — Gobi dust storm",
+            "url": "https://science.nasa.gov/earth/earth-observatory/gobi-dust-storm-46908/"
+          },
+          {
+            "title": "NASA Earth Observatory — Atacama Desert, Chile",
+            "url": "https://science.nasa.gov/earth/earth-observatory/atacama-desert-chile-4123/"
+          },
+          {
+            "title": "Geoscience Australia — Deserts",
+            "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+          },
+          {
+            "title": "NASA Earth Observatory — Kalahari and Okavango Delta",
+            "url": "https://science.nasa.gov/earth/earth-observatory/kalahari-and-okavango-delta-38367/"
+          }
+        ]
+      }
+    },
+    "t-q9-87e1ed40b2ed9baf": {
+      "prompt": "In the series “Brooklyn Nine-Nine,” what is the character Jake Peralta’s favourite movie?",
+      "choices": [
+        "Bad Boys",
+        "Die Hard",
+        "The Sound of Music",
+        "Dirty Harry"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Jake Peralta’s enthusiasm for Die Hard is a recurring joke in Brooklyn Nine-Nine. He repeatedly treats John McClane and situations from the film as models for his own police adventures.",
+        "choices": [
+          "Bad Boys is another police action film, but it is not the film singled out by Jake’s recurring Die Hard obsession.",
+          "Die Hard is Jake’s favourite: his love of the film and John McClane appears repeatedly in the series.",
+          "The Sound of Music is a musical, not the action film at the centre of this recurring Jake character trait.",
+          "Dirty Harry is another famous police film, but Jake’s signature movie fixation is Die Hard."
+        ],
+        "sources": [
+          {
+            "title": "Brooklyn Nine-Nine official channel — Jake Loves All Things Die Hard",
+            "url": "https://www.youtube.com/watch?v=j3lqyNzKLiQ"
+          },
+          {
+            "title": "Peacock — Brooklyn Nine-Nine’s funniest scenes",
+            "url": "https://www.peacocktv.com/blog/brooklyn-nine-nine-funniest-scenes"
+          }
+        ]
+      }
+    },
+    "t-q10-3fac0a06b651ae5e": {
+      "prompt": "Which former member of Genesis released the 1986 UK Top 5 single 'Sledgehammer'?",
+      "choices": [
+        "Phil Collins",
+        "Mike Rutherford",
+        "Tony Banks",
+        "Peter Gabriel"
+      ],
+      "answer": 3,
+      "explanation": {
+        "summary": "Peter Gabriel released “Sledgehammer” in April 1986 as the first single from So. It reached number four in the UK, satisfying the Top 5 clue. All four choices have a Genesis connection, but this was Gabriel’s solo release.",
+        "choices": [
+          "Phil Collins was Genesis’s drummer and later lead singer, but “Sledgehammer” was released by Peter Gabriel.",
+          "Mike Rutherford was Genesis’s bassist and guitarist; he was not the solo artist credited on this single.",
+          "Tony Banks was Genesis’s keyboardist, not the artist who released “Sledgehammer.”",
+          "Peter Gabriel wrote and released “Sledgehammer” on his 1986 album So."
+        ],
+        "sources": [
+          {
+            "title": "Peter Gabriel — Sledgehammer",
+            "url": "https://petergabriel.com/release/sledgehammer/"
+          },
+          {
+            "title": "Genesis — Band history and personnel",
+            "url": "https://en.wikipedia.org/wiki/Genesis_(band)"
+          }
+        ]
+      }
+    },
+    "t-q11-205de74d864eba24": {
+      "prompt": "Before he reached stardom as Han Solo in “Star Wars,” what job did Harrison Ford have?",
+      "choices": [
+        "Concierge",
+        "Teacher",
+        "Carpenter",
+        "Firefighter"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Harrison Ford worked as a carpenter while pursuing acting before Star Wars made him a major star. The distinction matters: carpentry supported him during his early acting career, rather than coming before any acting work at all.",
+        "choices": [
+          "A concierge helps guests or residents; that is not the trade Ford described doing during his early acting career.",
+          "Teaching is not the pre-stardom job identified in Ford’s account of that period.",
+          "Carpenter is correct: Ford discussed his carpentry work when recalling the years around his casting as Han Solo.",
+          "Firefighting is not the occupation described in the documented account behind this question."
+        ],
+        "sources": [
+          {
+            "title": "StarWars.com — Highlights from the 40 Years of Star Wars panel",
+            "url": "https://www.starwars.com/news/swco-2017-11-highlights-from-the-powerful-40-years-of-star-wars-panel"
+          }
+        ]
+      }
+    },
+    "t-q12-b849bea9bf2f68d5": {
+      "prompt": "What is the subject of the 1999 film \"Play it to the Bone\" starring Woody Harrelson and Antonio Banderas?",
+      "choices": [
+        "Baseball",
+        "Boxing",
+        "Horse racing",
+        "Poker"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Play It to the Bone is a boxing comedy-drama. Woody Harrelson and Antonio Banderas play boxers Vince Boudreau and Cesar Dominguez.",
+        "choices": [
+          "Baseball is not the sport at the centre of these characters’ story.",
+          "Boxing is correct: both leading characters are boxers, and the AFI catalogue classifies the film under boxing.",
+          "Horse racing is not the competitive sport depicted by the two leads.",
+          "Poker is a card game, whereas the film’s central competitors are boxers."
+        ],
+        "sources": [
+          {
+            "title": "American Film Institute — Play It to the Bone (1999)",
+            "url": "https://catalog.afi.com/Catalog/MovieDetails/61673"
+          }
+        ]
+      }
+    },
+    "t-q13-57895e698e4c0942": {
+      "prompt": "Which of these was a chart album for Avril Lavigne?",
+      "choices": [
+        "Let Go",
+        "Let Me",
+        "Let Out",
+        "Let Down"
+      ],
+      "answer": 0,
+      "explanation": {
+        "summary": "Let Go was Avril Lavigne’s debut album, released in 2002. It included “Complicated” and “Sk8er Boi.” The other choices alter the second word of the real album title.",
+        "choices": [
+          "Let Go is the actual title of Lavigne’s 2002 debut album.",
+          "Let Me is not the title of the Lavigne album identified by this question.",
+          "Let Out changes the title; the album is called Let Go.",
+          "Let Down also changes the title; the correct wording is Let Go."
+        ],
+        "sources": [
+          {
+            "title": "Avril Lavigne official store — Let Go",
+            "url": "https://store.avrillavigne.com/products/let-go-2lp-vinyl"
+          },
+          {
+            "title": "Sony Music Canada — Avril Lavigne, Let Go",
+            "url": "https://shop.sonymusic.ca/products/avril-lavigne-let-go-turquoise-vinyl"
+          }
+        ]
+      }
+    },
+    "t-q14-744bbb1615f447c0": {
+      "prompt": "Which Disney movie was a box office failure since it was competing with DreamWorks’ first “Shrek” movie?",
+      "choices": [
+        "Treasure Planet",
+        "Home on the Range",
+        "Atlantis: The Lost Empire",
+        "The Wild"
+      ],
+      "answer": 2,
+      "explanation": {
+        "summary": "Atlantis: The Lost Empire is the intended answer: it opened in 2001, the same year as the original Shrek, and its box-office performance disappointed Disney. The question overstates the cause: competition with Shrek alone does not establish why Atlantis underperformed.",
+        "choices": [
+          "Treasure Planet was released in 2002, after the original Shrek’s 2001 release.",
+          "Home on the Range was released in 2004, so it does not match the original Shrek’s release year.",
+          "Atlantis: The Lost Empire was released in 2001 and faced competition from Shrek; this matches the intended film, with the causal claim needing caution.",
+          "The Wild was released in 2006, five years after the first Shrek."
+        ],
+        "sources": [
+          {
+            "title": "Walt Disney Animation Studios — Films and release years",
+            "url": "https://disneyanimation.com/films/"
+          },
+          {
+            "title": "DreamWorks — Shrek (2001)",
+            "url": "https://www.dreamworks.com/movies/shrek"
+          },
+          {
+            "title": "Disney — The Wild",
+            "url": "https://movies.disney.com/the-wild"
+          },
+          {
+            "title": "Atlantis: The Lost Empire — Release and box-office reception",
+            "url": "https://en.wikipedia.org/wiki/Atlantis%3A_The_Lost_Empire"
+          }
+        ]
+      }
+    },
+    "t-q15-6cc682cdaeb36304": {
+      "prompt": "Who wrote “The Dark Forces: A Guide to Self-Protection”, a book used in the Defense Against the Dark Arts class?",
+      "choices": [
+        "Hermione Granger",
+        "Quentin Trimble",
+        "Miranda Goshawk",
+        "Beatrix Bloxam"
+      ],
+      "answer": 1,
+      "explanation": {
+        "summary": "Within the Harry Potter stories, Quentin Trimble is the credited author of The Dark Forces: A Guide to Self-Protection, one of the books on the first-year Hogwarts reading list.",
+        "choices": [
+          "Hermione Granger is a Hogwarts student and avid reader, not the credited author of this textbook.",
+          "Quentin Trimble is named as the book’s author on the Hogwarts book list.",
+          "Miranda Goshawk wrote The Standard Book of Spells, a different Hogwarts textbook.",
+          "Beatrix Bloxam is associated with The Toadstool Tales, not this Defence Against the Dark Arts textbook."
+        ],
+        "sources": [
+          {
+            "title": "HarryPotter.com — Magical books for your shelves",
+            "url": "https://www.harrypotter.com/features/which-magical-books-would-you-want-on-your-shelves"
+          },
+          {
+            "title": "HarryPotter.com — Ten things for your first day at Hogwarts",
+            "url": "https://www.harrypotter.com/features/ten-things-you-need-for-your-first-day-at-hogwarts"
+          },
+          {
+            "title": "The Harry Potter Lexicon — Beatrix Bloxam",
+            "url": "https://www.hp-lexicon.org/character/beatrix-bloxam/"
+          }
+        ]
+      }
     }
   }
 }

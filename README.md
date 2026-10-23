@@ -194,7 +194,8 @@ preparation step merge this catalog into the generated question pack. The
 preparation step also reapplies the catalog when using an existing offline pack,
 so removing an explanation removes it from the next generated pack.
 
-The catalog covers all 45 questions in challenges #47–49 (21–23 October 2026).
+The catalog covers all 120 questions in challenges #47–49 and #52–56
+(21–23 and 26–30 October 2026).
 Each entry explains the correct answer and all three alternatives, with sources
 and clarifying notes where a source prompt is imprecise. Explanations stay attached
 to those questions on future days; other questions show no button until their
