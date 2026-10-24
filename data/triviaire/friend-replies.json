@@ -294,6 +294,622 @@
         "answer": "That's the flag with a rifle crossed with a hoe over an open book. It's easy to mix it up with Angola, but that one has a machete and part of a cogwheel.",
         "hint": "I don't know but Angola has a machete and part of a cogwheel on its flag. I think you're looking for another African country."
       }
+    },
+    "t-q1-df2134fdffe760b3": {
+      "prompt": "Typically, which of the following forms of transport is known as a double-decker?",
+      "choices": [
+        "Bicycle",
+        "Bus",
+        "Train",
+        "Plane"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "London’s red buses are the classic example, with seats upstairs and downstairs. Trains and planes can have two decks too, so “typically” matters here.",
+        "hint": "I don't know but I’m picturing those red vehicles on London’s streets, with passengers riding upstairs as well as downstairs."
+      }
+    },
+    "t-q2-04a685888ead89a8": {
+      "prompt": "Which of these countries is not part of Central America?",
+      "choices": [
+        "Honduras",
+        "New Zealand",
+        "Nicaragua",
+        "Panama"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "New Zealand is way over in the southwest Pacific, in Oceania. Honduras, Nicaragua and Panama are all Central American countries.",
+        "hint": "I don't know but I remember Honduras and Nicaragua being in Central America. One of the other names makes me think of Australia’s part of the world."
+      }
+    },
+    "t-q3-82ba5ab07bc0caf6": {
+      "prompt": "Traditionally, who would be most likely to use a plow in his work?",
+      "choices": [
+        "Blacksmith",
+        "Archer",
+        "Farmer",
+        "Greengrocer"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "A plow turns the soil before crops are planted. A greengrocer comes into the picture later, selling the fruit and vegetables.",
+        "hint": "I don't know but I remember the tool turns over soil before seeds go in. That sounds like work in a field, rather than behind a shop counter."
+      }
+    },
+    "t-q4-89ff5d4954b97138": {
+      "prompt": "When is it most appropriate to sing or play a dirge?",
+      "choices": [
+        "Birthdays",
+        "Weddings",
+        "Christenings",
+        "Funerals"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "A dirge is a lament: music for mourning, especially someone who has died. That makes a farewell ceremony the natural setting.",
+        "hint": "I don't know but I associate that word with mourning, more like a musical lament than something you’d play to celebrate a new beginning."
+      }
+    },
+    "t-q5-b6117cb9c4d53f70": {
+      "prompt": "In \"Money Heist\", who is Rio?",
+      "choices": [
+        "Anibal Cortés",
+        "Agata Jimenez",
+        "Daniel Ramos",
+        "Mirko Drakić"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Río is Aníbal’s alias in the gang. The other names I recognize are Ágata Jiménez for Nairobi and Daniel Ramos for Denver.",
+        "hint": "I don't know but I can match Ágata Jiménez with Nairobi and Daniel Ramos with Denver. I’m blanking on Río’s own name."
+      }
+    },
+    "t-q6-2814e65024419a78": {
+      "prompt": "For the Real Madrid team, what is \"La Fabrica\"?",
+      "choices": [
+        "Its practice center",
+        "Its academy",
+        "Its press room",
+        "Its locker room"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The nickname means “the factory,” as in developing young footballers. Real Madrid uses it for the youth system, rather than just a particular training facility.",
+        "hint": "I don't know but fábrica means “factory” in Spanish. That makes me think of the club developing its next generation of players, rather than somewhere to hold a press conference."
+      }
+    },
+    "t-q7-90cad380541864fb": {
+      "prompt": "Which of these series is not a \"Doctor Who” spin-off?",
+      "choices": [
+        "Torchwood",
+        "K-9",
+        "Class",
+        "Extras"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That’s the Ricky Gervais and Stephen Merchant comedy about background actors. The others come from Doctor Who, although K-9 was produced independently of the BBC.",
+        "hint": "I don't know but I remember Ricky Gervais playing an actor who could hardly land a speaking part. That was a comedy about the film and TV business."
+      }
+    },
+    "t-q8-5a9cff996e6a65be": {
+      "prompt": "Which of these is a Stephen King best-seller?",
+      "choices": [
+        "It",
+        "And",
+        "That",
+        "So"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That’s the 1986 novel with Pennywise the clown, set in Derry, Maine. The story follows a group of friends as children and again as adults.",
+        "hint": "I don't know but Pennywise the clown is coming to mind, along with that town called Derry. I’m blanking on the very short book title."
+      }
+    },
+    "t-q9-3be4ae6de6111b05": {
+      "prompt": "What is the name of Superman's secret hideaway?",
+      "choices": [
+        "The Sunken Waterfall",
+        "The Isle of Silence",
+        "Asteroid M",
+        "The Fortress of Solitude"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Superman keeps reminders of Krypton and scientific equipment there. The name fits the idea of a private refuge where he can get some time alone.",
+        "hint": "I don't know but I’m picturing an icy hideaway full of things from Krypton. The name has something to do with being alone, if that sparks a memory."
+      }
+    },
+    "t-q10-19466b5e3a44ce2e": {
+      "prompt": "In 1984, the United States aced the medals table. How many Olympic titles did they win?",
+      "choices": [
+        "43",
+        "53",
+        "73",
+        "83"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The question means gold medals at the Los Angeles Summer Games. The US won 174 medals altogether, so the total medal haul would be a different number.",
+        "hint": "I don't know but I remember the US took 174 medals in Los Angeles, with just under half of them gold. That was the Summer Games haul."
+      }
+    },
+    "t-q11-95968cfc872356dc": {
+      "prompt": "Who wrote the script of the play “Harry Potter and the Cursed Child”?",
+      "choices": [
+        "J. K. Rowling",
+        "John Tiffany",
+        "Jack Thorne",
+        "Anthony Boyle"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Thorne wrote the play itself. Rowling and John Tiffany share the original-story credit with him, while Tiffany also directed the production.",
+        "hint": "I don't know but I remember Rowling helped with the story and Tiffany directed the play. Those credits aren’t the same as writing the script."
+      }
+    },
+    "t-q1-bf3d783108669ea6": {
+      "prompt": "Which of these is a novel by Louisa May Alcott?",
+      "choices": [
+        "Little Women",
+        "Tiny Lasses",
+        "Lucky Ladies",
+        "Goodie Girls"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the one with Meg, Jo, Beth and Amy. Alcott drew on her own sisters for the story, which makes the family connection easy to remember.",
+        "hint": "I don't know but I remember Alcott writing about four sisters called Meg, Jo, Beth and Amy. If those names ring a bell, that might help."
+      }
+    },
+    "t-q2-c486790bb6a83e39": {
+      "prompt": "Which of these is a cosmetic in cream or cake form, used as a base for make-up?",
+      "choices": [
+        "Inauguration",
+        "Constitution",
+        "Initiation",
+        "Foundation"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It's the skin-coloured layer that helps even out your complexion. The name makes sense to me because it gives the rest of your makeup a base.",
+        "hint": "I don't know but I'm thinking of the word builders use for the supporting base under a house. It has the same 'base for everything else' idea."
+      }
+    },
+    "t-q3-576f3b38c08090c7": {
+      "prompt": "Alitalia is the national airline of which country?",
+      "choices": [
+        "Italy",
+        "Sweden",
+        "Portugal",
+        "France"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Alitalia's big hub was Rome's Fiumicino airport. There's a catch with the wording, though: the airline stopped flying in 2021.",
+        "hint": "I don't know but I remember Alitalia using Fiumicino as a hub. If you can place that airport, that should help with the country."
+      }
+    },
+    "t-q4-bd20e47bb5eea902": {
+      "prompt": "A chancel is a feature of what kind of building?",
+      "choices": [
+        "Warehouse",
+        "Airport",
+        "Church",
+        "Prison"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The chancel makes me think of the altar and choir. It's the area set aside for the minister and, in some churches, the singers.",
+        "hint": "I don't know but I remember a chancel being near an altar, sometimes with the choir sitting there. That makes me think of a place of worship."
+      }
+    },
+    "t-q5-9ae680233b508960": {
+      "prompt": "In the 2014 TV series \"The Flash,\" which pair of small-screen actors end up as partners?",
+      "choices": [
+        "Wentworth Miller & Dominic Purcell",
+        "Bryan Cranston & Aaron Paul",
+        "Matthew Perry & Matt LeBlanc",
+        "Benedict Cumberbatch & Martin Freeman"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "They play Captain Cold and Heat Wave, who team up against Barry. It's the same pair who played the brothers in Prison Break.",
+        "hint": "I don't know but I remember this being a Prison Break reunion. The actors who played the brothers turned up as Captain Cold and Heat Wave."
+      }
+    },
+    "t-q6-2c352dc66b50b6af": {
+      "prompt": "In which state of the United States do Joseph and Shannon plant their flag in the film \"Far Horizons\" released in 1992?",
+      "choices": [
+        "In Alabama",
+        "In Arizona",
+        "In Texas",
+        "In Oklahoma"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The title's mixed up: this is Far and Away. They're joining the 1893 land rush in Oklahoma Territory, years before statehood.",
+        "hint": "I don't know but I think the title should be Far and Away. The ending is that 1893 land rush, when the place was still a territory."
+      }
+    },
+    "t-q7-d21935aac695fe5c": {
+      "prompt": "Golden lion' and 'emperor' are types of which primate?",
+      "choices": [
+        "Macaque",
+        "Tamarin",
+        "Marmoset",
+        "Baboon"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The golden lion one has that orange mane, and the emperor has a huge white moustache. Those two little monkeys are the pair I recognise.",
+        "hint": "I don't know but I can picture the emperor one: tiny monkey, enormous white moustache. I'm thinking of the little South American monkeys, not a big baboon."
+      }
+    },
+    "t-q8-e86304b61d5bc337": {
+      "prompt": "What is Arthur’s nickname at the beginning of “The Sword in the Stone”?",
+      "choices": [
+        "Lump",
+        "Wart",
+        "Wort",
+        "Wimp"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "I remember Merlin teaching him as a boy, before the sword reveals he's the future king. The nickname really doesn't sound very royal.",
+        "hint": "I don't know but the nickname reminds me of those little rough bumps people get on their hands. It's a pretty unflattering name for a future king."
+      }
+    },
+    "t-q9-15f85882ea0af642": {
+      "prompt": "In what year was the Russian space station Mir destroyed?",
+      "choices": [
+        "2000",
+        "2001",
+        "2002",
+        "2003"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That was the planned end of Mir, after about fifteen years in orbit. It broke up during reentry, with debris falling into the South Pacific.",
+        "hint": "I don't know but it was still up there at the end of 2000. I remember they brought it down deliberately, rather than losing it in an accident."
+      }
+    },
+    "t-q10-d20906e9396b644e": {
+      "prompt": "Which band released the first heavy metal album to top the U.S. charts?",
+      "choices": [
+        "Iron Maiden",
+        "Quiet Riot",
+        "Twisted Sister",
+        "Ratt"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The album was Metal Health, with 'Cum On Feel the Noize' on it. It hit number one in 1983, though 'first metal album' depends on what you count as metal.",
+        "hint": "I don't know but I remember the record was called Metal Health. It's the band that had the big cover of 'Cum On Feel the Noize.'"
+      }
+    },
+    "t-q11-2d25f00bf2a5b297": {
+      "prompt": "In \"Initial D\", which of these characters does not take part in car races with a Toyota?",
+      "choices": [
+        "Takumi Fujiwara",
+        "Bunta Fujiwara",
+        "Itsuki Takeuchi",
+        "Kai Kotashiwa"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "His later car is the Subaru Impreza. He drove the Toyota AE86 before passing it to Takumi, so the question skips over his earlier car.",
+        "hint": "I don't know but Takumi's car is a Toyota AE86, and Itsuki has an AE85, so I'd leave those two out. I vaguely remember a Subaru being involved."
+      }
+    },
+    "t-q1-74b9916787c4537b": {
+      "prompt": "Complete the title of this TV series, \"Starsky and...\"?",
+      "choices": [
+        "Pen",
+        "Hutch",
+        "Cage",
+        "Kennel"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's David Soul's blond detective, partnered with Paul Michael Glaser's Starsky. They're the duo with the red Ford Torino and their informant Huggy Bear.",
+        "hint": "I don't know but David Soul played the blond one, opposite Paul Michael Glaser. I'm picturing their red Ford Torino and the informant Huggy Bear."
+      }
+    },
+    "t-q2-297ecbc7c191253e": {
+      "prompt": "AEW's flagship TV show that airs on Wednesday nights is called what?",
+      "choices": [
+        "Nitro",
+        "Dynamite",
+        "RAW",
+        "Smackdown"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's AEW's regular midweek show. Raw and SmackDown are WWE shows, while Nitro was WCW's old Monday-night programme.",
+        "hint": "I don't know but Raw and SmackDown are WWE shows, and Nitro makes me think of old WCW. Those names don't fit AEW."
+      }
+    },
+    "t-q3-51f58ce780b7c6c3": {
+      "prompt": "What was the signature submission manuever of the legendary Ric Flair?",
+      "choices": [
+        "Sleeper Hold",
+        "Sharpshooter",
+        "Figure-Four Leg Lock",
+        "Arm Bar"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's Flair's classic leg submission. The Sharpshooter is the one I'd connect with Bret Hart instead.",
+        "hint": "I don't know but the Sharpshooter makes me think of Bret Hart. Flair's famous hold worked on the legs, rather than the arms or neck."
+      }
+    },
+    "t-q4-8cb16935203da928": {
+      "prompt": "Which singer released “Can’t Stop the Feeling” in 2016?",
+      "choices": [
+        "Justin Timberlake",
+        "Usher",
+        "Harry Styles",
+        "Eamon"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the upbeat song from Trolls. He helped write and produce it too, and he voices Branch in the films.",
+        "hint": "I don't know but that song is tied to Trolls. Think of the singer who voices Branch opposite Anna Kendrick's Poppy."
+      }
+    },
+    "t-q5-1f8adfe807abc973": {
+      "prompt": "Which of these is a hoisting or lifting device?",
+      "choices": [
+        "Block & tackle",
+        "Block & scrum",
+        "Block & foul",
+        "Block & kick"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Think of a rope looped through pulleys. It lets you lift something heavy with a smaller pull, though you have to pull more rope.",
+        "hint": "I don't know but I'm picturing ropes and pulleys. The second word also turns up in the name for fishing gear, if that helps."
+      }
+    },
+    "t-q6-26eea729190ef481": {
+      "prompt": "Bruce Oldfield is a leading figure in which branch of the arts?",
+      "choices": [
+        "Fashion",
+        "Architecture",
+        "Ballet",
+        "Opera"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He designed Queen Camilla's coronation dress. That's the connection I remember: gowns and clothes, rather than buildings or performances.",
+        "hint": "I don't know but I remember his name coming up around Queen Camilla's coronation outfit. I'm picturing a dress, not a building."
+      }
+    },
+    "t-q7-988cb91e981ef72b": {
+      "prompt": "On \"The Simpsons\", what is the name of Bart's best friend?",
+      "choices": [
+        "Murray",
+        "Merrill",
+        "Melvin",
+        "Milhouse"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He's the awkward kid with glasses who's usually tagging along with Bart. Van Houten is his surname, and he's got a crush on Lisa.",
+        "hint": "I don't know but his surname is Van Houten, and he's the nervous kid with glasses who has a crush on Lisa."
+      }
+    },
+    "t-q8-af0b8af3929b0a20": {
+      "prompt": "How many stages does the Ariane 5 launcher consist of?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "There's a main stage and an upper stage. The boosters strapped to the sides help at launch, but they aren't counted as extra stacked stages.",
+        "hint": "I don't know but I remember those side boosters being counted separately. You want the main rocket sections stacked above each other, not every bit that falls off."
+      }
+    },
+    "t-q9-187361abaed0a43e": {
+      "prompt": "Which is part of the title of the second \"Blair Witch\" film, \"Book of ...\"?",
+      "choices": [
+        "Ghosts",
+        "Shadows",
+        "Spirits",
+        "Souls"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Book of Shadows is also what they call the spellbook in Charmed. That's how I remember the title of this 2000 sequel.",
+        "hint": "I don't know but I think it's the same name as the sisters' spellbook in Charmed. I can picture them looking up spells in it."
+      }
+    },
+    "t-q10-a223b52ba0814a82": {
+      "prompt": "Mongolia is sandwiched between which two countries?",
+      "choices": [
+        "China & India",
+        "India & Russia",
+        "China & Russia",
+        "India & Pakistan"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Russia is on its northern side, and China runs around the south, east and west. That's why none of the pairs with India work.",
+        "hint": "I don't know but I remember India doesn't share a border with Mongolia. That knocks out quite a few of those pairs straight away."
+      }
+    },
+    "t-q11-7b15f8e69bd5925a": {
+      "prompt": "Who ordered the attack which became known as the Night of the Long Knives?",
+      "choices": [
+        "Stalin",
+        "Churchill",
+        "Hitler",
+        "Thatcher"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That was the 1934 purge targeting Ernst Röhm and other SA leaders, as well as political opponents. The SS carried out the killings on his orders.",
+        "hint": "I don't know but I remember this being a Nazi purge in Germany in 1934. Ernst Röhm and the SA leadership were among the targets."
+      }
+    },
+    "t-q1-63bc04db7ec4b47f": {
+      "prompt": "Which game series physically evolves the character based on their choices?",
+      "choices": [
+        "Fable",
+        "Halo",
+        "Gears of War",
+        "Killer Instinct"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the fantasy series where your choices show up on the hero. Fighting can leave scars, and the way you play changes how you look.",
+        "hint": "I don't know but I remember swords, spells and a hero whose body changed as you played. Halo and Gears are shooters, so I'd set those aside."
+      }
+    },
+    "t-q2-60a80b207216af08": {
+      "prompt": "Which of these is a tonic or something which makes you feel more cheerful?",
+      "choices": [
+        "Pick-and-mix",
+        "Pickaxe",
+        "Pick-me-up",
+        "Pickpocket"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the expression for something that perks you up, like a coffee when you're flagging or a little treat on a gloomy day.",
+        "hint": "I don't know but a pickaxe is a tool and a pickpocket steals things. I'd be looking for a phrase about lifting your mood."
+      }
+    },
+    "t-q3-59d2eba6c1b98bb9": {
+      "prompt": "Which team wears blue and dark red jerseys?",
+      "choices": [
+        "Real Madrid",
+        "Manchester United",
+        "Chelsea FC",
+        "FC Barcelona"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Those are their classic blue-and-garnet home colours. That's where the nickname 'blaugrana' comes from; the away shirts can look completely different.",
+        "hint": "I don't know but I picture Real Madrid in white and Chelsea in plain blue. That leaves the red-and-blue combination to work out."
+      }
+    },
+    "t-q4-385681c55d7c705b": {
+      "prompt": "What is the missing word in the title of this Shakespeare play, \"Much ... About Nothing\"?",
+      "choices": [
+        "Fuss",
+        "To-do",
+        "Bother",
+        "Ado"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It means fuss or commotion, which is why the other options sound plausible. Shakespeare used that older word in the actual title.",
+        "hint": "I don't know but there's that phrase people use before introducing someone: 'without further ...'. I think it's the same old-fashioned word for fuss."
+      }
+    },
+    "t-q5-ce81cf5d701b2a5e": {
+      "prompt": "Which band, comprised of Danger Mouse and CeeLo Green, scored a hit in 2006 with the track “Crazy”?",
+      "choices": [
+        "Black Pumas",
+        "The Roots",
+        "Gorillaz",
+        "Gnarls Barkley"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's the name CeeLo and Danger Mouse used together. 'Crazy' was on their album St. Elsewhere; Gorillaz is a different project Danger Mouse also worked with.",
+        "hint": "I don't know but I remember 'Crazy' being on an album called St. Elsewhere. That might jog the name; it's a separate project from Gorillaz."
+      }
+    },
+    "t-q6-27eea5939bea4556": {
+      "prompt": "Which of these is a variation on the triathlon event?",
+      "choices": [
+        "Steelman",
+        "Ironman",
+        "Strongman",
+        "He-man"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the long swim-bike-run race that finishes with a full marathon. One catch: Steelman is also a real triathlon, so the question could be more specific.",
+        "hint": "I don't know but I remember the long version finishes with a whole marathon after the swim and bike ride. I'd look for the big endurance-race name."
+      }
+    },
+    "t-q7-6f67e03cc781cd0e": {
+      "prompt": "Who invented the Kodak camera?",
+      "choices": [
+        "Eastman",
+        "Westman",
+        "Northman",
+        "Southman"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "George was his first name. He brought out the Kodak camera in 1888, already loaded with film, to make taking photos much easier for ordinary people.",
+        "hint": "I don't know but I think his first name was George. There's a music school in Rochester named after him, if that rings a bell."
+      }
+    },
+    "t-q8-a056c050cec6ffa5": {
+      "prompt": "Which major desert extends through Mongolia and China?",
+      "choices": [
+        "Atacama",
+        "Gibson",
+        "Kalahari",
+        "Gobi"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's the huge dry stretch across southern Mongolia and northern China. The other deserts listed are in South America, Australia and Africa.",
+        "hint": "I don't know but the Atacama is over in Chile, and the Gibson is in Australia. Neither of those can be the one on that border."
+      }
+    },
+    "t-q9-87e1ed40b2ed9baf": {
+      "prompt": "In the series “Brooklyn Nine-Nine,” what is the character Jake Peralta’s favourite movie?",
+      "choices": [
+        "Bad Boys",
+        "Die Hard",
+        "The Sound of Music",
+        "Dirty Harry"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Jake is always comparing himself to John McClane and trying to live out scenes from it. His obsession with that film keeps coming up.",
+        "hint": "I don't know but John McClane is the name Jake keeps bringing up. If you can place that action hero, you're probably on the right track."
+      }
+    },
+    "t-q10-3fac0a06b651ae5e": {
+      "prompt": "Which former member of Genesis released the 1986 UK Top 5 single 'Sledgehammer'?",
+      "choices": [
+        "Phil Collins",
+        "Mike Rutherford",
+        "Tony Banks",
+        "Peter Gabriel"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It's his solo single from So. The brass section and that strange animated video are the bits I remember.",
+        "hint": "I don't know but I can picture that video with the dancing chickens. The song was on an album called So, if that helps you place the singer."
+      }
+    },
+    "t-q11-205de74d864eba24": {
+      "prompt": "Before he reached stardom as Han Solo in “Star Wars,” what job did Harrison Ford have?",
+      "choices": [
+        "Concierge",
+        "Teacher",
+        "Carpenter",
+        "Firefighter"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He was doing woodwork to pay the bills while still taking acting jobs. Star Wars was his big break, not the first time he'd acted.",
+        "hint": "I don't know but I remember it was a hands-on trade, making things out of wood. He was doing that alongside acting jobs, before the big break."
+      }
     }
   }
 }

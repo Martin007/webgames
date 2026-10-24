@@ -266,8 +266,8 @@ catalog rather than the generated JSON.
 
 Optional custom replies live in `data/triviaire/friend-replies.json`. The catalog
 covers questions 1–10 of challenge #49 (23 October 2026) and questions 1–11 of
-challenge #52 (26 October 2026), with both variants for each question. Replies
-remain available whenever those questions appear again.
+challenges #52–#56 (26–30 October 2026), with both variants for each question.
+Replies remain available whenever those questions appear again.
 
 Copy the stable question ID and its exact **original, unshuffled** `prompt`,
 `choices` and zero-based numeric `answer` from the generated question pack:
