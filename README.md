@@ -264,10 +264,10 @@ catalog rather than the generated JSON.
 
 ### Adding Phone a friend replies
 
-Optional custom replies live in `data/triviaire/friend-replies.json`. The initial
-catalog covers the first ten questions of challenge #49 (23 October 2026), with
-both variants for each question. Replies remain available whenever those
-questions appear again.
+Optional custom replies live in `data/triviaire/friend-replies.json`. The catalog
+covers questions 1–10 of challenge #49 (23 October 2026) and questions 1–11 of
+challenge #52 (26 October 2026), with both variants for each question. Replies
+remain available whenever those questions appear again.
 
 Copy the stable question ID and its exact **original, unshuffled** `prompt`,
 `choices` and zero-based numeric `answer` from the generated question pack:
@@ -282,7 +282,7 @@ Copy the stable question ID and its exact **original, unshuffled** `prompt`,
       "answer": 0,
       "friendReply": {
         "answer": "Here is the connection I remember that makes this answer fit.",
-        "hint": "I am not sure, but here is a useful clue to think about."
+        "hint": "I don't know but I remember a related detail that might help."
       }
     }
   }
@@ -301,8 +301,11 @@ The simulated call result determines which variant is used:
 
 If the matching variant is absent, the standard simulated message is used. A
 custom hint replaces a wrong guess with an unsure reply that recommends no
-option. The random draws and one-use lifeline rule stay the same. Write hints as
-useful clues, and keep each reply concise enough to read in the inline hint card.
+option. The random draws and one-use lifeline rule stay the same. Write replies
+in a conversational voice, and keep them concise enough for the inline hint
+card. New hints should begin with `I don't know but` and offer useful partial
+knowledge: a related fact, a remembered detail, or a reason to rule out an option.
+They should not simply repeat the question or announce the correct answer.
 
 New call messages are saved with their result. A previously started game can use
 the current catalog when calling. For an older call that has already been used,

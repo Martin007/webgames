@@ -140,6 +140,160 @@
         "answer": "That’s his Olympic gold count. He won 28 Olympic medals altogether; three silvers and two bronzes make up the rest.",
         "hint": "I remember his Olympic total was 28 medals, with three silver and two bronze. I’d subtract those to get the golds."
       }
+    },
+    "t-q1-8d88cc44a234e11f": {
+      "prompt": "What’s the name of the river around which Egyptian civilization developed?",
+      "choices": [
+        "Nile",
+        "Rhine",
+        "Amazon",
+        "Mississippi"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The yearly floods left good soil for growing crops. People could farm along the river even with desert all around them.",
+        "hint": "I don't know but the Amazon is in South America and the Mississippi is in the US. We need a river in Africa, so I'd cross those two off."
+      }
+    },
+    "t-q2-3c1c6b8aa290804c": {
+      "prompt": "Complete the title of Puccini's opera, \"Madame...\"?",
+      "choices": [
+        "Grasshopper",
+        "Dragonfly",
+        "Moth",
+        "Butterfly"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The title is Cio-Cio-San’s nickname. She’s the Japanese heroine who marries Pinkerton, the American naval officer, and waits for him to return.",
+        "hint": "I don't know but I remember the story: a Japanese woman waiting for an American sailor called Pinkerton. Her name is Cio-Cio-San, if that rings a bell."
+      }
+    },
+    "t-q3-fd94edee579e02b6": {
+      "prompt": "Which band made it big in the ‘80s with the hit “Don’t You Want Me”?",
+      "choices": [
+        "The Martian League",
+        "The Human League",
+        "The Animal League",
+        "The Ghost League"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's their big single from Dare. I remember it was the Christmas number one in the UK back in 1981.",
+        "hint": "I don't know but I remember the album being called Dare. They were one of those synth-pop bands from Sheffield, if that helps you place them."
+      }
+    },
+    "t-q4-7d8af841825ed8da": {
+      "prompt": "What name is given to the space in front of and below the stage which contains the orchestra?",
+      "choices": [
+        "The hole",
+        "The ditch",
+        "The grave",
+        "The pit"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It's short for 'orchestra pit.' That's the lowered area in front of the stage where the musicians sit during a musical or an opera.",
+        "hint": "I don't know but I think it's the same word Americans use for the stone in a peach. Any of those fit?"
+      }
+    },
+    "t-q5-9bab3a34c398c7c4": {
+      "prompt": "Which is the short sequence of letters and numbers at the end of a postal address?",
+      "choices": [
+        "Barcode",
+        "Lettercode",
+        "Postcode",
+        "Mailcode"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's the bit Royal Mail uses to pin down a delivery area. The mix of letters and numbers is a clue that they're thinking of a British address.",
+        "hint": "I don't know but Americans call their version a ZIP code. This sounds like the British version of that, the bit that tells the postal service which area to send it to."
+      }
+    },
+    "t-q6-7a5e5d3fbfa59daf": {
+      "prompt": "What is the Latin equivalent of \"tit-for-tat\"?",
+      "choices": [
+        "Quo vadis",
+        "Ipso facto",
+        "Caveat emptor",
+        "Quid pro quo"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "I remember it as 'you do something for me, and I'll do something for you.' That's close, though tit-for-tat usually sounds more like getting your own back.",
+        "hint": "I don't know but I remember caveat emptor is 'buyer beware,' and quo vadis asks 'where are you going?' Neither sounds like giving something back."
+      }
+    },
+    "t-q7-1816d3aafd756b5a": {
+      "prompt": "During an astrological year, which sign of the zodiac comes after Taurus but before Cancer?",
+      "choices": [
+        "Gemini",
+        "Libra",
+        "Virgo",
+        "Aries"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It's the twins one; I remember the little horoscope pictures as a bull, a pair of twins, then a crab.",
+        "hint": "I don't know but I remember that one has twins as its symbol. I'm picturing two figures together, if that helps you put a name to it."
+      }
+    },
+    "t-q8-ce800f2ec063b769": {
+      "prompt": "In the cartoon \"The Lion King,\" whose son is Simba?",
+      "choices": [
+        "Scar",
+        "Mufasa",
+        "Timon",
+        "Pumba"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He's the king Simba is meant to succeed. Scar is Simba's uncle, and the meerkat and warthog only become Simba's friends after he runs away.",
+        "hint": "I don't know but I remember his dad has that deep James Earl Jones voice. He's the king early in the film, before Scar takes over."
+      }
+    },
+    "t-q9-1af1764e064e6d09": {
+      "prompt": "In the series “Moon Knight,” Marc Spector is possessed by which Egyptian god?",
+      "choices": [
+        "Anubis",
+        "Khonshu",
+        "Osiris",
+        "Ra"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He's the moon god with that big bird-skull head. Marc makes a deal with him to survive, and becomes his avatar.",
+        "hint": "I don't know but I remember the creepy bird-skull head and that he was a moon god. That might help separate him from the sun god."
+      }
+    },
+    "t-q10-4b5fa81b3c9a1b32": {
+      "prompt": "In the series “For All Mankind,” which country reaches the Moon first?",
+      "choices": [
+        "United States",
+        "USSR",
+        "France",
+        "China"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The show flips the real space race: the Soviets get people onto the Moon first, leaving NASA to catch up. In real life, Apollo 11 got there first.",
+        "hint": "I don't know but I remember NASA getting beaten at the start, which is the twist on real history. Who were the Americans racing against back then?"
+      }
+    },
+    "t-q11-9cf771ac32013ad7": {
+      "prompt": "Which country has an AK47 rifle on its flag?",
+      "choices": [
+        "Mozambique",
+        "Angola",
+        "Cambodia",
+        "Laos"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the flag with a rifle crossed with a hoe over an open book. It's easy to mix it up with Angola, but that one has a machete and part of a cogwheel.",
+        "hint": "I don't know but Angola has a machete and part of a cogwheel on its flag. I think you're looking for another African country."
+      }
     }
   }
 }
