@@ -5,7 +5,7 @@ import {mkdtemp, mkdir, readFile, rm, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {promisify} from 'node:util';
-import {applyExplanations, applyFriendReplies, convertCsv, convertLevelCsv, convertSheets, FRIEND_REPLIES, LEVELS, OUTPUT, parseCsv, readFriendReplies, sheetCsvUrl} from './import-triviaire.mjs';
+import {applyCorrections, applyExplanations, applyFriendReplies, convertCsv, convertLevelCsv, convertSheets, CORRECTIONS, FRIEND_REPLIES, LEVELS, OUTPUT, parseCsv, readCorrections, readFriendReplies, sheetCsvUrl} from './import-triviaire.mjs';
 const rows = (n = 15) => 'Question,A,B,C,D,Correct,,\r\n' + Array.from({length: n}, (_, i) => `Question ${i}?,One,Two,Three,Four,${'ABCD'[i % 4]},,`).join('\r\n');
 
 test('CSV supports BOM, CRLF, escaped quotes, commas and embedded newlines', () => {
@@ -257,6 +257,73 @@ test('friend reply catalogs reject malformed payloads, variants and question gua
   assert.throws(() => applyFriendReplies(bank, {version: 1, questions: {[question.id]: null}}), /Invalid friend reply entry/);
 });
 
+const correctionCatalogFor = (question, correction = {answer: (question.answer + 1) % 4}) => ({
+  version: 1,
+  questions: {[question.id]: {prompt: question.prompt, choices: question.choices, answer: question.answer, correction}},
+});
+
+test('question corrections preserve IDs, choices, source fields and ordering without mutating the source', () => {
+  const bank = convertCsv(rows());
+  const before = structuredClone(bank);
+  const original = bank.questions[0];
+  const catalog = correctionCatalogFor(original, {answer: 1, prompt: 'A corrected historical question?'});
+  const corrected = applyCorrections(bank, catalog);
+  assert.deepEqual(bank, before);
+  assert.deepEqual(corrected.questions.slice(1), bank.questions.slice(1));
+  assert.deepEqual(corrected.source, bank.source);
+  assert.deepEqual(corrected.questions[0], {
+    ...original, answer: 1, prompt: 'A corrected historical question?',
+    sourceCorrection: {
+      original: {prompt: original.prompt, choices: original.choices, answer: original.answer},
+      corrected: {prompt: 'A corrected historical question?', choices: original.choices, answer: 1},
+    },
+  });
+  assert.notEqual(corrected.revision, bank.revision);
+});
+
+test('corrections reapply, change and remove cleanly from an already corrected offline pack', () => {
+  const bank = convertCsv(rows());
+  const catalog = correctionCatalogFor(bank.questions[0]);
+  const corrected = applyCorrections(bank, catalog);
+  assert.deepEqual(applyCorrections(corrected, catalog), corrected);
+  const changed = correctionCatalogFor(bank.questions[0], {answer: 2});
+  assert.deepEqual(applyCorrections(corrected, changed), applyCorrections(bank, changed));
+  assert.deepEqual(applyCorrections(corrected, {version: 1, questions: {}}), bank);
+});
+
+test('corrections skip changed source guards and do not restore stale offline history over an edit', () => {
+  const bank = convertCsv(rows());
+  const original = bank.questions[0];
+  const catalog = correctionCatalogFor(original);
+  for (const change of [{prompt: 'Changed in the source?'}, {answer: 2}, {choices: ['Two', 'One', 'Three', 'Four']}, {choices: ['One', 'Two', 'Three']}]) {
+    const changed = {...bank, questions: [{...original, ...change}, ...bank.questions.slice(1)]};
+    const warnings = [];
+    assert.deepEqual(applyCorrections(changed, catalog, {warn: (message) => warnings.push(message)}).questions, changed.questions);
+    assert.match(warnings[0], /Skipping stale correction/);
+  }
+  const offline = applyCorrections(bank, catalog);
+  const edited = {...offline, questions: [{...offline.questions[0], prompt: 'An offline edit?'}, ...offline.questions.slice(1)]};
+  const warnings = [];
+  const result = applyCorrections(edited, catalog, {warn: (message) => warnings.push(message)});
+  assert.equal(result.questions[0].prompt, 'An offline edit?');
+  assert.equal(result.questions[0].sourceCorrection, undefined);
+  assert.equal(warnings.length, 2);
+  assert.match(warnings[0], /Ignoring stale correction history/);
+});
+
+test('correction catalogs reject invalid fields and cannot change identity or choice order', () => {
+  const bank = convertCsv(rows());
+  const question = bank.questions[0];
+  for (const correction of [null, {}, {id: 'another-id'}, {choices: ['Two', 'One', 'Three', 'Four']}, {answer: -1}, {answer: 4}, {answer: '1'}, {prompt: ''}]) {
+    assert.throws(() => applyCorrections(bank, correctionCatalogFor(question, correction)), /Correction/);
+  }
+  for (const catalog of [null, {version: 2, questions: {}}, {version: 1, questions: []}]) {
+    assert.throws(() => applyCorrections(bank, catalog), /correction catalog/);
+  }
+  assert.throws(() => applyCorrections(bank, correctionCatalogFor({...question, choices: ['One', 'One', 'Three', 'Four']})), /four distinct choices/);
+  assert.deepEqual(applyCorrections(bank, correctionCatalogFor({...question, id: 'not-in-this-pack'})), bank);
+});
+
 const runNode = promisify(execFile);
 async function fixtureDirectory(t) {
   const directory = await mkdtemp(resolve('.triviaire-check-'));
@@ -276,19 +343,33 @@ test('friend catalog reader treats a missing file as empty and reports invalid J
   await assert.rejects(readFriendReplies(path), /Could not read/);
 });
 
-test('explicit CSV import and offline preparation reapply both catalogs with stable revisions', async (t) => {
+test('correction reader treats a missing file as empty and reports invalid JSON', async (t) => {
+  const directory = await fixtureDirectory(t);
+  const path = resolve(directory, CORRECTIONS);
+  assert.deepEqual(await readCorrections(path), {version: 1, questions: {}});
+  const catalog = correctionCatalogFor(convertCsv(rows()).questions[0]);
+  await writeFile(path, JSON.stringify(catalog));
+  assert.deepEqual(await readCorrections(path), catalog);
+  await writeFile(path, '{invalid JSON');
+  await assert.rejects(readCorrections(path), /Could not read/);
+});
+
+test('explicit CSV import and offline preparation apply corrections before both metadata catalogs', async (t) => {
   const directory = await fixtureDirectory(t);
   const csvDirectory = resolve(directory, 'csv');
   await mkdir(csvDirectory);
   await Promise.all(LEVELS.map((level) => writeFile(resolve(csvDirectory, `Q${level}.csv`), rows(2))));
   const original = convertSheets(new Map(LEVELS.map((level) => [level, rows(2)])));
-  const explanations = catalogFor(original.questions[0]);
-  const friendReplies = friendCatalogFor(original.questions[0]);
+  const corrections = correctionCatalogFor(original.questions[0], {answer: 1, prompt: 'A corrected historical question?'});
+  const corrected = applyCorrections(original, corrections);
+  const explanations = catalogFor(corrected.questions[0]);
+  const friendReplies = friendCatalogFor(corrected.questions[0]);
   await Promise.all([
+    writeFile(resolve(directory, CORRECTIONS), JSON.stringify(corrections)),
     writeFile(resolve(directory, 'data/triviaire/explanations.json'), JSON.stringify(explanations)),
     writeFile(resolve(directory, FRIEND_REPLIES), JSON.stringify(friendReplies)),
   ]);
-  const expected = applyFriendReplies(applyExplanations(original, explanations), friendReplies);
+  const expected = applyFriendReplies(applyExplanations(corrected, explanations), friendReplies);
   const importer = fileURLToPath(new URL('./import-triviaire.mjs', import.meta.url));
   await runNode(process.execPath, [importer, '--input-dir', csvDirectory], {cwd: directory, timeout: 10_000});
   const output = resolve(directory, OUTPUT);
@@ -306,5 +387,9 @@ test('explicit CSV import and offline preparation reapply both catalogs with sta
 
   await rm(resolve(directory, FRIEND_REPLIES));
   await prepare();
-  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), applyExplanations(original, explanations));
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), applyExplanations(corrected, explanations));
+
+  await rm(resolve(directory, CORRECTIONS));
+  await prepare();
+  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), original);
 });

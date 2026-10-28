@@ -1,7 +1,7 @@
 // Prefer committed Q1-Q15 snapshots. Until they exist, refresh from the public sheet at build time.
 import {readFile, writeFile, rename, mkdir} from 'node:fs/promises';
 import {dirname} from 'node:path';
-import {applyExplanations, applyFriendReplies, convertSheets, fetchSheets, OUTPUT, readExplanations, readFriendReplies, readSnapshots} from './import-triviaire.mjs';
+import {applyCorrections, applyExplanations, applyFriendReplies, convertSheets, fetchSheets, OUTPUT, readCorrections, readExplanations, readFriendReplies, readSnapshots} from './import-triviaire.mjs';
 
 async function writePack(bank) {
   const content = JSON.stringify(bank, null, 2) + '\n';
@@ -30,8 +30,8 @@ try {
       console.warn(`Could not refresh Q1-Q15 (${fetchError.message}). Using the existing pack. Snapshot error: ${snapshotError.message}`);
     }
   }
-  const [explanations, friendReplies] = await Promise.all([readExplanations(), readFriendReplies()]);
-  bank = applyFriendReplies(applyExplanations(bank, explanations), friendReplies);
+  const [corrections, explanations, friendReplies] = await Promise.all([readCorrections(), readExplanations(), readFriendReplies()]);
+  bank = applyFriendReplies(applyExplanations(applyCorrections(bank, corrections), explanations), friendReplies);
   await writePack(bank);
   console.log(`Prepared ${bank.questions.length} Triviaire questions with ${bank.questions.filter((question) => question.explanation).length} explanations and ${bank.questions.filter((question) => question.friendReply).length} custom friend replies.`);
 } catch (error) {

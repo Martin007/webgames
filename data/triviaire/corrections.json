@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "questions": {
+    "t-q5-c7d1b814b3deb6a2": {
+      "prompt": "In World War II, Douglas Bader was best known as what?",
+      "choices": [
+        "Soldier",
+        "Sailor",
+        "Pilot",
+        "Politician"
+      ],
+      "answer": 1,
+      "correction": {
+        "answer": 2
+      },
+      "reason": "Douglas Bader was an RAF fighter pilot; the supplied sheet incorrectly keys Sailor.",
+      "sources": [
+        {
+          "title": "RAF Museum: Douglas Bader, Fighter Pilot",
+          "url": "https://www.rafmuseum.org.uk/research/online-exhibitions/douglas-bader-fighter-pilot/"
+        }
+      ]
+    },
+    "t-q8-40cea36d68f466bc": {
+      "prompt": "The modern pentathlon is comprised of fencing, swimming, shooting, running and which other event?",
+      "choices": [
+        "Weightlifting",
+        "Pole vaulting",
+        "Horse riding",
+        "Cycling"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Through the Paris 2024 Olympics, modern pentathlon comprised fencing, swimming, shooting, running and which other event?"
+      },
+      "reason": "Horse riding was part of the Olympic format through Paris 2024; UIPM replaced it with obstacle racing at senior level in 2025.",
+      "sources": [
+        {
+          "title": "UIPM: LA28 Olympic Games, Modern Pentathlon venue announced",
+          "url": "https://www.uipmworld.org/news/la28-olympic-games-modern-pentathlon-venue-announced"
+        }
+      ]
+    }
+  }
+}

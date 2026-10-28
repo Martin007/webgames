@@ -13,6 +13,7 @@ export const SNAPSHOT = 'data/triviaire/source.csv';
 export const SNAPSHOT_DIR = 'data/triviaire';
 export const EXPLANATIONS = 'data/triviaire/explanations.json';
 export const FRIEND_REPLIES = 'data/triviaire/friend-replies.json';
+export const CORRECTIONS = 'data/triviaire/corrections.json';
 export const OUTPUT = 'public/games/triviaire/questions.json';
 export const snapshotPath = (level) => `${SNAPSHOT_DIR}/Q${level}.csv`;
 export const sheetCsvUrl = (level) => `${SHEET_URL.replace('/edit', '')}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(`Q${level}`)}&headers=0`;
@@ -175,6 +176,63 @@ const isRecord = (value) => value !== null && typeof value === 'object' && !Arra
 const isText = (value) => typeof value === 'string' && value.trim().length > 0;
 const fourTexts = (value) => Array.isArray(value) && value.length === 4 && value.every(isText);
 
+function questionFields(value, id) {
+  if (!isRecord(value) || !isText(value.prompt) || !fourTexts(value.choices)
+    || new Set(value.choices.map(norm)).size !== 4
+    || !Number.isInteger(value.answer) || value.answer < 0 || value.answer > 3) {
+    throw new Error(`Correction for ${id} needs a prompt, four distinct choices and a correct-answer index.`);
+  }
+  return {prompt: clean(value.prompt), choices: value.choices.map(clean), answer: value.answer};
+}
+const matchesQuestion = (question, fields) => Array.isArray(question.choices) && question.choices.length === 4
+  && question.prompt === fields.prompt && question.answer === fields.answer
+  && question.choices.every((choice, index) => choice === fields.choices[index]);
+
+/** Correct verified source errors without changing IDs, difficulty pools or choice order. */
+export function applyCorrections(bank, catalog, {warn = console.warn} = {}) {
+  if (!isRecord(catalog) || catalog.version !== 1 || !isRecord(catalog.questions)) {
+    throw new Error('The Triviaire correction catalog must have version 1 and a questions object.');
+  }
+  const entries = new Map();
+  for (const [id, entry] of Object.entries(catalog.questions)) {
+    const original = questionFields(entry, id);
+    if (!isRecord(entry.correction) || !Object.keys(entry.correction).length
+      || Object.keys(entry.correction).some((key) => !['prompt', 'answer'].includes(key))) {
+      throw new Error(`Correction for ${id} may only replace the prompt or answer.`);
+    }
+    const corrected = questionFields({...original, ...entry.correction}, id);
+    entries.set(id, {original, corrected});
+  }
+  const questions = bank.questions.map((question) => {
+    const {sourceCorrection, ...unmarked} = question;
+    let base = unmarked;
+    // An offline pack may already contain a correction. Restore its guarded source
+    // fields first so edits/removals in the catalog work just like a fresh import.
+    if (sourceCorrection !== undefined) {
+      const original = questionFields(sourceCorrection?.original, question.id);
+      const corrected = questionFields(sourceCorrection?.corrected, question.id);
+      if (matchesQuestion(base, corrected)) base = {...base, ...original};
+      else warn(`Ignoring stale correction history for ${question.id}: question content changed.`);
+    }
+    const entry = entries.get(base.id);
+    if (!entry) return base;
+    if (!matchesQuestion(base, entry.original)) {
+      warn(`Skipping stale correction for ${base.id}: the prompt, choices or correct answer changed.`);
+      return base;
+    }
+    return {...base, ...entry.corrected, sourceCorrection: entry};
+  });
+  return {...bank, revision: digest(JSON.stringify(questions)).slice(0, 16), questions};
+}
+
+export async function readCorrections(path = CORRECTIONS) {
+  try { return JSON.parse(await readFile(resolve(path), 'utf8')); }
+  catch (error) {
+    if (error.code === 'ENOENT') return {version: 1, questions: {}};
+    throw new Error(`Could not read ${path}: ${error.message}`);
+  }
+}
+
 function normalizeExplanation(value, id) {
   if (value == null || (typeof value === 'string' && !value.trim())) return undefined;
   if (!isRecord(value) || !isText(value.summary) || !fourTexts(value.choices)) {
@@ -313,8 +371,8 @@ export async function main(args = process.argv.slice(2)) {
   const csvByLevel = inputDir
     ? new Map(await Promise.all(LEVELS.map(async (level) => [level, await readFile(resolve(inputDir, `Q${level}.csv`), 'utf8')])))
     : await fetchSheets();
-  const [explanations, friendReplies] = await Promise.all([readExplanations(), readFriendReplies()]);
-  const bank = applyFriendReplies(applyExplanations(convertSheets(csvByLevel), explanations), friendReplies);
+  const [corrections, explanations, friendReplies] = await Promise.all([readCorrections(), readExplanations(), readFriendReplies()]);
+  const bank = applyFriendReplies(applyExplanations(applyCorrections(convertSheets(csvByLevel), corrections), explanations), friendReplies);
   await writeAtomic(output, JSON.stringify(bank, null, 2) + '\n');
   if (!inputDir && resolve(output) === resolve(OUTPUT)) await Promise.all(LEVELS.map((level) => writeAtomic(snapshotPath(level), csvByLevel.get(level))));
   console.log(`Imported ${bank.questions.length} questions across Q1-Q15 from ${bank.source.rows} rows; removed ${bank.source.duplicatesRemoved} within-tab duplicates; excluded ${bank.source.excludedRows.length} incomplete or invalid entries. Revision: ${bank.revision}.`);

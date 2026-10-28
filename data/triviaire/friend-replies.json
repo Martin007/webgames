@@ -910,6 +910,846 @@
         "answer": "He was doing woodwork to pay the bills while still taking acting jobs. Star Wars was his big break, not the first time he'd acted.",
         "hint": "I don't know but I remember it was a hands-on trade, making things out of wood. He was doing that alongside acting jobs, before the big break."
       }
+    },
+    "t-q3-ceedfb3b1b6d8145": {
+      "prompt": "The river Thames flows through which English city?",
+      "choices": [
+        "Birmingham",
+        "Liverpool",
+        "Manchester",
+        "London"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "I always connect the Thames with Tower Bridge. Those two towers above the river are one of the city's most recognisable sights.",
+        "hint": "I don't know but I picture that river under Tower Bridge, with the two big towers. If you can place the bridge, you've got a clue."
+      }
+    },
+    "t-q4-c67096969b9e4a4e": {
+      "prompt": "Who was the regular host of \"The Tonight Show\" just before Jay Leno?",
+      "choices": [
+        "Jack Paar",
+        "Steve Allen",
+        "Dick Cavett",
+        "Johnny Carson"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He had the job for nearly thirty years, with Ed McMahon beside him. Leno took over when that long run ended in 1992.",
+        "hint": "I don't know but I remember Ed McMahon as the sidekick, and the host doing Carnac the Magnificent. Jack Paar's run was earlier."
+      }
+    },
+    "t-q5-8f75eba15f4c5c2b": {
+      "prompt": "What is a main ingredient in Scottish haggis?",
+      "choices": [
+        "Deer heart",
+        "Codfish liver",
+        "Sheep’s stomach",
+        "Sheep’s kidney"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's the traditional casing, rather than the filling. The mixture inside is meat, oatmeal, onions and spices, and modern haggis often uses other casings.",
+        "hint": "I don't know but I remember the traditional recipe using part of the animal as a pouch. I'd think about what holds the filling together."
+      }
+    },
+    "t-q6-c45c9e378792b155": {
+      "prompt": "What do you call 5-a-side football that is played indoors on a court marked out by lines rather than walls or boards?",
+      "choices": [
+        "Indoor volleyball",
+        "Hockey",
+        "Futsal",
+        "Trampolining"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I remember the smaller, less bouncy ball and the quick passing. When it goes over a touchline, play restarts with a kick-in.",
+        "hint": "I don't know but I associate it with a small, low-bounce ball and kick-ins from the sidelines. It's football with a bit of a basketball-court feel."
+      }
+    },
+    "t-q7-eb07c8bd7d48b16e": {
+      "prompt": "The Gulf of Tonkin washes the shores of which country?",
+      "choices": [
+        "Vietnam",
+        "Thailand",
+        "India",
+        "Japan"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "I connect the name with Ha Long Bay and those limestone islands rising out of the water. That puts me on the country's northeastern coast.",
+        "hint": "I don't know but Ha Long Bay is in that gulf. I picture all those limestone islands, up on the northeastern side of mainland Southeast Asia."
+      }
+    },
+    "t-q8-38b017334dc5e08e": {
+      "prompt": "Which of these is a mountain in Japan?",
+      "choices": [
+        "Mount Kilimanjaro",
+        "Mount Ararat",
+        "Mount Fuji",
+        "K2"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's that broad, almost perfectly shaped volcanic cone you see in Japanese prints and photos. At 3,776 metres, it's also the country's highest mountain.",
+        "hint": "I don't know but I can picture the one that appears in Japanese woodblock prints: a broad volcanic cone, often with a white cap of snow."
+      }
+    },
+    "t-q9-7e867c128b02df90": {
+      "prompt": "What type of fruit is a Cox's orange pippin?",
+      "choices": [
+        "Orange",
+        "Apple",
+        "Peach",
+        "Pear"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The orange in the name can throw you off. It's a dessert variety with red-orange colouring on its skin, the sort you'd eat fresh.",
+        "hint": "I don't know but I remember Cox's having red-striped skin over a greenish-yellow background. The 'orange' bit doesn't mean it's a citrus fruit."
+      }
+    },
+    "t-q10-115df39eb2dc477c": {
+      "prompt": "How did Russian athlete Aleksandr Bortyuk stand out in the 1992 Olympic Games in Albertville?",
+      "choices": [
+        "He didn't wake up on time",
+        "He ended up facing backwards for his team's whole bobsled race",
+        "He lost his suit",
+        "He was drunk on the day of the race"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "There's a photo of him sitting the wrong way round in the sled. He was with the Unified Team; calling him Russian is misleading.",
+        "hint": "I don't know but I remember a mishap as he climbed into the four-man sled. He still made it down the course with his teammates."
+      }
+    },
+    "t-q11-8601647595e0f5c4": {
+      "prompt": "What profession did Hitchcock not practice in the film industry?",
+      "choices": [
+        "Decorator",
+        "Co-writer",
+        "Director of Photography",
+        "Editor"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I think that's the intended answer, but there's a snag: Hitchcock said he once filled in for a sick cameraman and handled the lighting himself.",
+        "hint": "I don't know but he definitely wrote scripts and designed sets early on. Those two jobs are worth ruling out, though the question sounds a bit too absolute."
+      }
+    },
+    "t-q12-6c92af05a5e3b82d": {
+      "prompt": "What are the Giza’s main pyramids called?",
+      "choices": [
+        "Cheops, Giza, and Menkaure",
+        "Snefru, Cheops, and Djoser",
+        "Khafre, Cheops, and Menkaure",
+        "Khafre, Snefru, and Menkaure"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Cheops is another name for Khufu, which always trips me up. His Great Pyramid stands alongside the pyramids built for Khafre and Menkaure.",
+        "hint": "I don't know but the biggest one belongs to Khufu, also called Cheops. Giza is the place, not a pharaoh, so that knocks out one list."
+      }
+    },
+    "t-q13-3252d20e3e970ab6": {
+      "prompt": "With over 26 million copies sold, the best-selling live album of all time is the “MTV Unplugged” episode featuring...",
+      "choices": [
+        "Nirvana",
+        "Eric Clapton",
+        "Alice in Chains",
+        "Page and Plant"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "I recognise that one from the stripped-back version of Layla and Tears in Heaven. The huge sales figure is an estimate, though.",
+        "hint": "I don't know but I remember a blues guitarist turning Layla into something slower and acoustic. That session also had Tears in Heaven on it."
+      }
+    },
+    "t-q14-3a4a2405e7984644": {
+      "prompt": "On the eve of which saint's day is the festival of fire and animals celebrated in Spain?",
+      "choices": [
+        "St. Bernard",
+        "St. Anthony",
+        "St. Francis",
+        "St. George"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The Abbot, specifically. I remember horses passing through bonfire smoke on January 16, the evening before his feast day, in San Bartolome de Pinares.",
+        "hint": "I don't know but I picture an old hermit saint with a pig beside him in paintings. That animal association might help you pick the name."
+      }
+    },
+    "t-q3-f4acd2cbd5c6ddbb": {
+      "prompt": "What is the name of the rule that ends a tie during overtime?",
+      "choices": [
+        "The bronze goal",
+        "The wooden goal",
+        "The golden goal",
+        "The chocolate goal"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I remember the old football rule: score once in extra time and the match stops immediately. That's why those goals could settle a final in an instant.",
+        "hint": "I don't know but I remember commentators using a medal colour for that sudden-death winner. The next goal ended the match immediately."
+      }
+    },
+    "t-q4-0413ce2bf12d1323": {
+      "prompt": "Which word is used to describe a volcano which is neither extinct nor erupting?",
+      "choices": [
+        "Rampant",
+        "Dormant",
+        "Gallant",
+        "Extant"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The word makes me think of something asleep. That's the distinction here: the volcano is quiet, but another eruption is still possible.",
+        "hint": "I don't know but the word is related to the idea of sleeping. A volcano can be quiet for ages without being finished for good."
+      }
+    },
+    "t-q5-0b9aa4b968b2e6f0": {
+      "prompt": "According to the Bible, Goliath belonged to which tribe?",
+      "choices": [
+        "Brutes",
+        "Ignoramuses",
+        "Luddites",
+        "Philistines"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Goliath's the champion from Gath who faces David in the story. First Samuel puts him in the army fighting Saul and the Israelites.",
+        "hint": "I don't know but Goliath was fighting against the Israelites, not alongside them. I remember his hometown being Gath, if that rings any bells."
+      }
+    },
+    "t-q6-68c9c7ee911044c6": {
+      "prompt": "On what day of the week was the 1997 General Election?",
+      "choices": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The UK vote was on 1 May 1997. British general elections usually use that weekday, so the date fits the familiar polling-day pattern.",
+        "hint": "I don't know but I'm assuming they mean the UK election. Voting was on 1 May, and it followed the usual British polling-day tradition."
+      }
+    },
+    "t-q7-1b194f00f87b3e5c": {
+      "prompt": "Which of these world leaders died in 1953?",
+      "choices": [
+        "Winston Churchill",
+        "Josef Stalin",
+        "Franklin D Roosevelt",
+        "John F Kennedy"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "His death was announced in March 1953, during the early Cold War. I connect that date with the change of leadership in the Soviet Union.",
+        "hint": "I don't know but Roosevelt died in 1945 and Kennedy in 1963, so those dates don't fit. I'd start by ruling those two out."
+      }
+    },
+    "t-q8-e956461a95bd7103": {
+      "prompt": "In 1971, Glenn Frey and Bernie Leadon were 2 founding members of which band?",
+      "choices": [
+        "The Eagles",
+        "The Doobie Brothers",
+        "Lynyrd Skynyrd",
+        "Pink Floyd"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Frey and Leadon started out alongside Don Henley and Randy Meisner. That blend of country sounds and vocal harmonies is what makes the lineup click for me.",
+        "hint": "I don't know but Don Henley and Randy Meisner were in that original lineup too. I associate them with Take It Easy and a lot of country harmonies."
+      }
+    },
+    "t-q9-7937d31a8ca8ef89": {
+      "prompt": "According to a Beatles song, who keeps her face \"in a jar by the door\"?",
+      "choices": [
+        "Lady Madonna",
+        "Jude",
+        "Eleanor Rigby",
+        "Lucy in the Sky with Diamonds"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I recognise it from the strings and Paul McCartney's voice. It's the Revolver song about loneliness, with Father McKenzie appearing in the same story.",
+        "hint": "I don't know but I remember Father McKenzie being in that song too, with strings instead of the usual guitar sound. It's a fairly bleak story."
+      }
+    },
+    "t-q10-be82b4a9c03bfee6": {
+      "prompt": "Which Rusted Root song went unnoticed in 1994 only to become a cult hit years later thanks to the films “Matilda” and “Ice Age”?",
+      "choices": [
+        "“Send Me on My Way”",
+        "“Ecstasy”",
+        "“Cruel Sun”",
+        "“Welcome to My Party”"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "I recognise that bouncy percussion straight away. The films gave it a new audience, though it had already reached the U.S. singles chart in 1995.",
+        "hint": "I don't know but I'm hearing that cheerful tune with lots of percussion. The title sounds like someone setting off on a journey."
+      }
+    },
+    "t-q11-942412e3b6d1b37c": {
+      "prompt": "Which of these is not a type of apple?",
+      "choices": [
+        "Bergamot",
+        "Golden Delicious",
+        "Pippin",
+        "Winesap"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That’s the citrus fruit whose distinctive scent is associated with Earl Grey tea. The tea connection gives it away as the odd one out among those apple names.",
+        "hint": "I don't know but one of those names makes me think of the citrus scent in Earl Grey tea. That sounds more promising than an orchard connection."
+      }
+    },
+    "t-q12-20b749ae00d26955": {
+      "prompt": "Who is the Roman equivalent of the Greek goddess Athena?",
+      "choices": [
+        "Venus",
+        "Victoria",
+        "Minerva",
+        "Diana"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The Romans identified Minerva with Athena. Both are associated with wisdom, and that helmeted figure with an owl is the image that helps me connect them.",
+        "hint": "I don't know but I remember an owl as the clue to the wisdom goddess. I’d try matching that bird with one of the Roman names."
+      }
+    },
+    "t-q13-8ba1502eb6dceaa6": {
+      "prompt": "As of the 2021 Royal Rumble, at nearly 5 hours, who has spent the most career time wrestling in the Royal Rumble match?",
+      "choices": [
+        "Kane",
+        "Chirs Jericho",
+        "Randy Orton",
+        "Steve Austin"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "By that 2021 cutoff, Chris Jericho had built up almost five hours across his Rumble appearances. That’s cumulative time, rather than a single marathon match.",
+        "hint": "I don't know but I associate that long-running record with the wrestler called Y2J. I can picture the nickname more easily than the actual stats."
+      }
+    },
+    "t-q14-098ac6a6a933e334": {
+      "prompt": "What is the name of the diamond that adorned the crown of Louis XV and the sword of Napoleon I?",
+      "choices": [
+        "Nabob",
+        "Sultan",
+        "Regent",
+        "Monarch"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The stone was bought for the French Crown during Philippe d’Orléans’s rule. It later moved between royal settings, including Louis XV’s crown and Napoleon’s sword.",
+        "hint": "I don't know but the name makes me think of someone who rules on a young king’s behalf. That French court connection might help place the title."
+      }
+    },
+    "t-q3-863b3db187b6500b": {
+      "prompt": "What are the giant monuments in Egypt called?",
+      "choices": [
+        "Pyramids",
+        "Cathedrals",
+        "Skyscrapers",
+        "Camels"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The famous examples at Giza were built as tombs for Egyptian kings. Their broad bases and sloping sides give them that instantly recognizable pointed shape.",
+        "hint": "I don't know but I’m picturing the ancient stone structures at Giza, with sloping sides meeting at a point. Their shape is probably the giveaway."
+      }
+    },
+    "t-q4-a204e9fd424d6861": {
+      "prompt": "Who is the editor-in-chief of the Daily Planet?",
+      "choices": [
+        "Perry White",
+        "Jimmy Olsen",
+        "Clark Kent",
+        "Lois Lane"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He’s the tough editor in the classic Superman setup, with Clark and Lois reporting to him. Later comics have also put Lois in that chair.",
+        "hint": "I don't know but I remember Clark and Lois answering to a tough newsroom boss. He’s the one who brought them onto the paper."
+      }
+    },
+    "t-q5-c7d1b814b3deb6a2": {
+      "prompt": "In World War II, Douglas Bader was best known as what?",
+      "choices": [
+        "Soldier",
+        "Sailor",
+        "Pilot",
+        "Politician"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Bader was a Royal Air Force fighter ace who flew in the Battle of Britain. He returned to flying after losing both legs in a crash.",
+        "hint": "I don't know but the name rings a bell from the RAF and the Battle of Britain. I’m also remembering that he’d lost both legs."
+      }
+    },
+    "t-q6-4475bff4221e8e6b": {
+      "prompt": "Steve Martin starred in the film \"The Man with Two...\"?",
+      "choices": [
+        "Lives",
+        "Brains",
+        "Names",
+        "Guns"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It’s the 1983 comedy where Steve Martin plays a neurosurgeon who falls for a disembodied brain. That bizarre romance is what makes the title fit.",
+        "hint": "I don't know but I remember Steve Martin playing a surgeon and talking to something kept in a jar. The title is a pretty literal joke."
+      }
+    },
+    "t-q7-cc0fee9b14076d89": {
+      "prompt": "Which of these musicians would normally use a plectrum?",
+      "choices": [
+        "Drummer",
+        "Guitarist",
+        "Trumpeter",
+        "Pianist"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "A plectrum is another word for a pick, held between finger and thumb to pluck or strum strings. That makes it a match for playing a guitar.",
+        "hint": "I don't know but I think a plectrum is the little pick you hold between your fingers. It’s for plucking strings, which narrows down the instrument."
+      }
+    },
+    "t-q8-f63980453a2973e9": {
+      "prompt": "Who played Morpheus in the film \"The Matrix\"?",
+      "choices": [
+        "Denzel Washington",
+        "Morgan Freeman",
+        "Laurence Fishburne",
+        "Forrest Whittaker"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Fishburne is Morpheus in the original 1999 film, alongside Keanu Reeves as Neo. He later played Daily Planet editor Perry White in Man of Steel.",
+        "hint": "I don't know but I’m picturing the actor who played Perry White in Man of Steel. Same face as the original Morpheus, if that helps."
+      }
+    },
+    "t-q9-d14d43bebd8a0d91": {
+      "prompt": "Which TV detective often came back and said 'Just one more thing'?",
+      "choices": [
+        "Starsky",
+        "Ironside",
+        "Columbo",
+        "Kojak"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That’s Peter Falk’s shabby-looking detective, who’d seem ready to leave before returning with another awkward question. The casual manner often made suspects underestimate him.",
+        "hint": "I don't know but I can picture Peter Falk in that crumpled raincoat, looking harmless while he bothers the suspect. That face is the clue I’d follow."
+      }
+    },
+    "t-q10-9c89ce1c7adadbea": {
+      "prompt": "In what year did Stephen King publish his first novel?",
+      "choices": [
+        "1956",
+        "1974",
+        "1996",
+        "2014"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "His first published novel was Carrie, the story of a bullied schoolgirl with telekinetic powers. King’s site dates its release to April of that year.",
+        "hint": "I don't know but I remember his debut was Carrie, and I associate that book with the seventies. I’d use that decade to narrow the dates."
+      }
+    },
+    "t-q11-b115c72881b0ecb0": {
+      "prompt": "Which of these ships was not commanded by Captain Haddock?",
+      "choices": [
+        "The Sirius",
+        "The S.S. Ramona",
+        "The Karaboudjan",
+        "The Peary"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That was the rival expedition’s ship in The Shooting Star. Haddock was in command of the Aurora during the race to reach the meteorite.",
+        "hint": "I don't know but I remember the rival ship in The Shooting Star being named after an Arctic explorer. That explorer connection might jog the name."
+      }
+    },
+    "t-q12-c66abdb35c9d1145": {
+      "prompt": "In what year was refuelling banned in F1?",
+      "choices": [
+        "2005",
+        "2008",
+        "2010",
+        "2012"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That was the first season without in-race refuelling since 1993. Fuel stops had returned in 1994 and continued through 2009, before this newer ban took effect.",
+        "hint": "I don't know but I remember fuel hoses still being used in the 2009 season. So I’d rule out dates before that and look just after."
+      }
+    },
+    "t-q13-1bc4b36b17eada60": {
+      "prompt": "Who was the drummer with the rock band The Doors?",
+      "choices": [
+        "Jim Morrison",
+        "John Densmore",
+        "Ray Manzarek",
+        "Robby Krieger"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Densmore supplied the drums behind Morrison’s vocals. Ray Manzarek handled keyboards and Robby Krieger played guitar, so those two names belong to different instruments.",
+        "hint": "I don't know but I remember Morrison singing and Manzarek playing that distinctive keyboard sound. Those two names belong away from the drum kit."
+      }
+    },
+    "t-q14-1c4d1182d3ea0eb6": {
+      "prompt": "In ancient times, what decisive battle marked the end of the Roman Republic?",
+      "choices": [
+        "Battle of Actium",
+        "Battle of Cannae",
+        "Battle of Pharsalus",
+        "Battle of Zama"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Octavian defeated Antony and Cleopatra at this naval battle in 31 BC. It cleared his path to sole rule; the Empire is usually dated from 27 BC.",
+        "hint": "I don't know but I remember Octavian facing Antony and Cleopatra at sea. That civil-war clash is the scene I’m trying to match to a name."
+      }
+    },
+    "t-q3-325d47f4e1f1f368": {
+      "prompt": "In which Italian city can one take a gondola ride?",
+      "choices": [
+        "Venice",
+        "Milan",
+        "Pisa",
+        "Rome"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The gondola is the traditional boat of Venice’s canals. The Grand Canal and the smaller waterways are what make that city the famous setting for those rides.",
+        "hint": "I don't know but I’m picturing the Grand Canal and the Rialto Bridge. That’s the watery city I associate with those long, narrow boats."
+      }
+    },
+    "t-q4-6ec828807ef6a38d": {
+      "prompt": "Which Olympic sport did Dick Fosbury revolutionize in 1968?",
+      "choices": [
+        "Chess-boxing",
+        "Jai alai",
+        "The high jump",
+        "The cheese race"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He won Olympic gold in Mexico City by clearing the bar backwards, landing on his back. The Fosbury Flop changed how competitors approached the event.",
+        "hint": "I don't know but I remember the Fosbury Flop: going over a bar with your back toward it. It’s the technique, rather than running faster, that rings a bell."
+      }
+    },
+    "t-q5-f9a8dc7a96f12470": {
+      "prompt": "Which branch of biology deals with organisms and their environment?",
+      "choices": [
+        "Zoology",
+        "Ecology",
+        "Botany",
+        "Geology"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Ecology looks at relationships: how living things interact with one another and with their surroundings. It includes whole systems, rather than studying only plants or only animals.",
+        "hint": "I don't know but I’m thinking of food webs and how a change in one species affects its neighbours. That’s broader than looking at plants or animals alone."
+      }
+    },
+    "t-q6-82d1ec4d116a2463": {
+      "prompt": "What is the zodiac sign of a child born on Halloween?",
+      "choices": [
+        "Virgo",
+        "Scorpio",
+        "Libra",
+        "Capricorn"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Halloween is October 31, which falls within the late-October to November dates used for Scorpio in the Western tropical zodiac. It’s comfortably away from a sign boundary.",
+        "hint": "I don't know but I associate late October birthdays with the sign represented by a creature with claws and a sting. I can picture the symbol."
+      }
+    },
+    "t-q7-6eafe851b791ca02": {
+      "prompt": "What is the genre of Arvi Teikari’s game “Baba is You”?",
+      "choices": [
+        "A platform game",
+        "A puzzle game",
+        "A role-playing game",
+        "A walking simulator game"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "You solve each level by pushing word blocks around to change its rules. Even statements about what you control can be rewritten, which is the whole trick.",
+        "hint": "I don't know but I remember pushing words around to rewrite the rules on screen. It was more about figuring out clever combinations than jumping through a level."
+      }
+    },
+    "t-q8-11139dcbf23e0d1d": {
+      "prompt": "What sound can be heard at the start of AC/DC’s album “Back in Black”?",
+      "choices": [
+        "Singer laughing",
+        "Bells",
+        "Crow",
+        "Bagpipe"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The album opens with Hells Bells, with that slow tolling before the guitar comes in. It's the first track, rather than the title track.",
+        "hint": "I don't know but I remember slow, ominous tolling before the guitars start. It sounds like something hanging in a church tower."
+      }
+    },
+    "t-q9-025abf44a7ce600b": {
+      "prompt": "At the 2009 Teen Choice Awards, what controversial move did a 16-year-old Miley Cyrus execute during her performance of “Party in the U.S.A.”?",
+      "choices": [
+        "Grand jeté",
+        "Striptease",
+        "Twerk",
+        "Pole dance"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's the label reports used for the moment involving an ice-cream-cart prop. She later said the upright pole was there to help her balance.",
+        "hint": "I don't know but I remember the ice-cream-cart prop with a vertical support in the middle. The headlines focused on that part of the staging."
+      }
+    },
+    "t-q10-a6ff065d9774971d": {
+      "prompt": "Which communication tower in Toronto offers a panoramic view of the city?",
+      "choices": [
+        "Space Needle",
+        "CN Tower",
+        "Willis Tower",
+        "200 Clarendon Street"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the Toronto landmark with the high observation decks. The initials came from Canadian National, the railway company that built it.",
+        "hint": "I don't know but I remember a railway company being behind it: Canadian National. The initials of that company are the clue I'd hang on to."
+      }
+    },
+    "t-q11-92dea29781f37511": {
+      "prompt": "What type of food is kombu?",
+      "choices": [
+        "Tea leaves",
+        "Lichen",
+        "Kelp",
+        "Tofu"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the seaweed used to give dashi stock that savoury flavour. You often see it sold as dried, broad strips, especially in Japanese cooking.",
+        "hint": "I don't know but I remember it going into dashi stock in Japanese cooking. It's harvested from the sea, rather than being made from soybeans."
+      }
+    },
+    "t-q12-9ca4142dea7a0759": {
+      "prompt": "How many replicas of The Unicorn were made by its Captain?",
+      "choices": [
+        "3",
+        "7",
+        "12",
+        "15"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Each model hid a piece of the treasure clue. Tintin and Haddock had to bring those parchments together before they could work out where to look.",
+        "hint": "I don't know but I remember one model turning up at a market, then others completing the clue. They were replicas hiding parchments, not a whole fleet."
+      }
+    },
+    "t-q13-4e43de7595c72c4e": {
+      "prompt": "Before Tokyo 2020, how many gold medals out of a total of 32 had China won in table tennis?",
+      "choices": [
+        "9",
+        "11",
+        "16",
+        "28"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "They had taken nearly every gold since table tennis joined the Olympics. Only four of those first 32 titles went elsewhere, which shows how dominant they were.",
+        "hint": "I don't know but I remember Sweden's Jan-Ove Waldner being one of the rare gold-medal winners from elsewhere. China had won far more than half by then."
+      }
+    },
+    "t-q14-5e764d651eb75c97": {
+      "prompt": "Which episode of the series “Black Mirror” features a love story between two women played by Mackenzie Davis and Gugu Mbatha-Raw?",
+      "choices": [
+        "Bandersnatch",
+        "San Junipero",
+        "The Entire History of You",
+        "Shut Up and Dance"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the one with Kelly and Yorkie in the seaside town, with all that '80s music. Their romance is the part that makes the episode stand out.",
+        "hint": "I don't know but I remember the two women meeting in a seaside town with a very '80s nightclub. Their characters were called Kelly and Yorkie."
+      }
+    },
+    "t-q3-e1ad6d276aa33768": {
+      "prompt": "Ancient Romans primarily cooked with what ingredients?",
+      "choices": [
+        "Big Mac and large fries",
+        "Bread, vegetables, and grains",
+        "Hawaiian pizza",
+        "Nice kebab"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Wheat and other cereals were staples, whether as loaves or porridge. Lentils and other pulses mattered too; grand banquets weren't everyone's everyday meal.",
+        "hint": "I don't know but I remember wheat and barley being everyday staples, often made into porridge. The fancy banquet food wasn't what everyone could afford."
+      }
+    },
+    "t-q4-92a81d95f9f7d0df": {
+      "prompt": "Who was the vocalist for the legendary rock band Led Zeppelin?",
+      "choices": [
+        "Michael Flower",
+        "Edward Veg",
+        "Bradley Fruit",
+        "Robert Plant"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He was the frontman with that huge high voice. He later recorded Raising Sand with Alison Krauss, which sounds a long way from those Zeppelin records.",
+        "hint": "I don't know but I remember the singer later making Raising Sand with Alison Krauss. That country and blues pairing was quite a change from his old band."
+      }
+    },
+    "t-q5-18ccc2948590164f": {
+      "prompt": "What is a mamba?",
+      "choices": [
+        "Dance",
+        "Snake",
+        "Fruit",
+        "Whale"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's an African reptile; the black mamba is probably the best-known example. The dance with the similar name is the mambo, with an 'o'.",
+        "hint": "I don't know but I remember the black mamba being venomous. The dance name is spelled with an 'o' at the end, so watch that last letter."
+      }
+    },
+    "t-q6-9e39db4a40d792aa": {
+      "prompt": "Which word is represented by the sign known as an ampersand?",
+      "choices": [
+        "Approximately",
+        "At",
+        "About",
+        "And"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It's the curly & symbol, the one in phrases like fish & chips. You read it as the joining word between the two things.",
+        "hint": "I don't know but it's the curly '&' symbol you see between two names. Saying something like 'fish & chips' aloud might jog your memory."
+      }
+    },
+    "t-q7-6a68eb0cfc68c6e7": {
+      "prompt": "In “Brother Bear”, what is the name of the human who is turned into a bear?",
+      "choices": [
+        "Sitka",
+        "Kenai",
+        "Denahi",
+        "Koda"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He's the younger brother who gets transformed, then travels with Koda. Koda is already a bear cub, so those two names are easy to mix up.",
+        "hint": "I don't know but Koda is the little cub. Sitka and Denahi are the brothers of the guy who gets turned into a bear."
+      }
+    },
+    "t-q8-40cea36d68f466bc": {
+      "prompt": "Through the Paris 2024 Olympics, modern pentathlon comprised fencing, swimming, shooting, running and which other event?",
+      "choices": [
+        "Weightlifting",
+        "Pole vaulting",
+        "Horse riding",
+        "Cycling"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's the event in the Olympic format used through Paris 2024. It involved show jumping; obstacle racing replaced it in the sport's newer format.",
+        "hint": "I don't know but I remember a show-jumping course being involved, rather than another pure test of strength. That's the part the newer obstacle event replaced."
+      }
+    },
+    "t-q9-0f24773d6d447ea5": {
+      "prompt": "The video for Elton John’s “I’m Still Standing” was shot on a beach in which country?",
+      "choices": [
+        "Italy",
+        "France",
+        "Spain",
+        "Morocco"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The video was filmed around Cannes and Nice on the Riviera. Most of it was outside the Carlton hotel and on its beach, with some scenes at the Negresco.",
+        "hint": "I don't know but I can picture the Carlton hotel in Cannes behind some of the scenes. If you can place that film-festival town, that should help."
+      }
+    },
+    "t-q10-c710e62869b759e0": {
+      "prompt": "What happens to Superman in the \"All-Star Superman\" comic?",
+      "choices": [
+        "His secret identity is made public",
+        "He loses his powers",
+        "The world forgets he exists",
+        "He only has one year to live"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The trip close to the Sun overloads his cells with radiation. He's becoming more powerful, but the damage leaves him with roughly a year.",
+        "hint": "I don't know but I remember the Sun giving him too much energy, rather than taking his powers away. The story turns into a race against time."
+      }
+    },
+    "t-q11-7dd6f30288f64d8b": {
+      "prompt": "In which form did Nostradamus write his predictions?",
+      "choices": [
+        "Blank verse",
+        "Rhyming couplets",
+        "Acrostics",
+        "Quatrains"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "His predictions are usually arranged as four-line verses. The shape of each little stanza is what the question is getting at, rather than a hidden-message technique.",
+        "hint": "I don't know but I remember the predictions coming in little groups of four lines. The poetry term for that pattern should narrow it down."
+      }
+    },
+    "t-q12-2808ccd8dfe12165": {
+      "prompt": "In Norse mythology, what does the goddess Freya preside over?",
+      "choices": [
+        "Svartalfheim",
+        "Elysium",
+        "Folkvangr",
+        "Midgard"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's her domain, where she receives half of those killed in battle. Odin receives the other half; they don't all go to his hall.",
+        "hint": "I don't know but I remember Freya taking half of the fallen warriors, with Odin taking the rest. So I'd think of her own afterlife domain."
+      }
+    },
+    "t-q13-a822687eee388a8e": {
+      "prompt": "What is the nickname of Mickey Rourke’s character in ‘The Wrestler’?",
+      "choices": [
+        "Brian ‘The Bull’ Johnson",
+        "Randy ‘The Ram’ Robinson",
+        "Jimmy ‘The Bear’ Williamson",
+        "Richie ‘The Rhino’ Richardson"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's his ring nickname: 'The Ram.' He's an ageing wrestler still chasing the crowd's cheers after his big-time career has faded.",
+        "hint": "I don't know but his nickname was a horned animal, the sort you'd find in a flock. That image stuck with me more than his surname."
+      }
+    },
+    "t-q14-5e76fda5e3feb74b": {
+      "prompt": "What is the initial sequence of the 13-digit barcode that identifies goods registered in Brazil?",
+      "choices": [
+        "520",
+        "560",
+        "779",
+        "789"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Brazil uses this prefix and 790. They show that the number came through GS1 Brazil; they don't prove the product was actually manufactured there.",
+        "hint": "I don't know but I remember 790 being another Brazilian prefix. The number says which GS1 organisation issued it, rather than where the item was manufactured."
+      }
     }
   }
 }
