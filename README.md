@@ -212,10 +212,10 @@ interface TriviaireBank {
 Verified errors in the source workbook can be corrected in
 `data/triviaire/corrections.json`. Each entry copies the stable ID's original
 `prompt`, four `choices`, and zero-based `answer`, then supplies a `correction`
-containing a replacement `prompt`, `answer`, or both. Include a reason and source
-links. IDs, difficulty levels, choice order and daily question selection stay
-the same. The current corrections fix Douglas Bader's answer to Pilot and give
-the modern-pentathlon question an explicit Paris 2024 cutoff.
+containing a replacement `prompt`, `answer`, or both. To fix one option's text,
+use `correction.choice: {"index": 0, "text": "Corrected option"}` with its
+zero-based index. Include a reason and source links. IDs, difficulty levels,
+option positions and daily question selection stay the same.
 
 Corrections run before explanations and friend replies, whose guards must match
 the corrected question. A changed source guard warns and skips the correction.
@@ -285,7 +285,8 @@ catalog rather than the generated JSON.
 Optional custom replies live in `data/triviaire/friend-replies.json`. The catalog
 covers questions 1–10 of challenge #49 (23 October 2026) and questions 1–11 of
 challenges #52–#56 (26–30 October 2026), plus questions 3–14 of challenges #59–#63
-(2–6 November 2026), with both variants for each question.
+(2–6 November 2026), #66–#70 (9–13 November 2026), and #73–#87
+(16–30 November 2026). All 365 covered questions have both reply variants.
 Replies remain available whenever those questions appear again.
 
 Copy the stable question ID and its exact **original, unshuffled** `prompt`,

@@ -40,6 +40,792 @@
           "url": "https://www.uipmworld.org/news/la28-olympic-games-modern-pentathlon-venue-announced"
         }
       ]
+    },
+    "t-q6-0ae50c492cd085ce": {
+      "prompt": "Which city on the planet Sera houses a high-security prison in the \"Gears of War\" game series?",
+      "choices": [
+        "Ilima",
+        "Jacinto",
+        "Timgad",
+        "Ghato"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which name completes '___ Maximum Security Prison', nicknamed 'the Slab', in Gears of War?"
+      },
+      "reason": "The official prison name is Jacinto Maximum Security Prison, but its location is on the Jacinto Plateau near Ephyra. Asking for the prison's name avoids a misleading city-location assertion.",
+      "sources": [
+        {
+          "title": "BradyGames official Gears of War strategy guide",
+          "url": "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/promotions/Gears3/9780744013610.pdf"
+        },
+        {
+          "title": "Xbox Wire: Gears of War 4 April update",
+          "url": "https://news.xbox.com/en-us/2017/04/04/gears-of-war-4-april-update/"
+        }
+      ]
+    },
+    "t-q13-b8b3402981a76270": {
+      "prompt": "Who has won the most Grammy awards?",
+      "choices": [
+        "Aretha Franklin",
+        "Henry Mancini",
+        "Sir Georg Solti",
+        "Sir Paul McCartney"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these people has won the most Grammy Awards?"
+      },
+      "reason": "Solti still leads the listed people with 31 awards, but Beyonce surpassed his overall record. The question must be scoped to these options.",
+      "sources": [
+        {
+          "title": "Recording Academy: Georg Solti",
+          "url": "https://www.grammy.com/artists/georg-solti/7181/"
+        },
+        {
+          "title": "Recording Academy: Top Grammy winners",
+          "url": "https://www.grammy.com/news/who-are-the-top-grammy-awards-winners-of-all-time/"
+        }
+      ]
+    },
+    "t-q3-921284cec4f84ee4": {
+      "prompt": "How many people are in Daft Punk?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "How many members made up Daft Punk?"
+      },
+      "reason": "Daft Punk announced its split in 2021; past tense removes an outdated present-tense implication.",
+      "sources": [
+        {
+          "title": "Recording Academy: Daft Punk essentials",
+          "url": "https://www.grammy.com/news/daft-punk-essential-songs-edm-thomas-bangalter-random-access-memories-pharrell-williams-weeknd-grammys/"
+        },
+        {
+          "title": "Recording Academy: Daft Punk accepts Get Lucky award",
+          "url": "https://www.grammy.com/news/daft-punk-get-lucky-grammy-win-pharrell-williams-acceptance-speech-video-rewind/"
+        }
+      ]
+    },
+    "t-q6-8b82da7b80a06b67": {
+      "prompt": "Which Oscar-winning American directors filmed the atrocities of war and documented the Nuremberg Trials?",
+      "choices": [
+        "John Ford and George Stevens",
+        "Charlie Chaplin and Buster Keaton",
+        "Alfred Hitchcock and Billy Wilder",
+        "Walt Disney and Tex Avery"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which pair of American directors helped film or assemble Nazi atrocity footage used as evidence at the Nuremberg Trials?"
+      },
+      "reason": "Stevens filmed camp liberation and Ford oversaw OSS compilation work. The original wording blurred evidence footage with recording the courtroom.",
+      "sources": [
+        {
+          "title": "Memorial de la Shoah: From Hollywood to Nuremberg exhibition",
+          "url": "https://www.memorialdelashoah.org/evenements-expositions/out-of-town/exhibitions-and-events-abroad/from-hollywood-to-nuremberg-john-ford-samuel-fuller-george-stevens.html"
+        },
+        {
+          "title": "Nuremberg Films: The films and production history",
+          "url": "https://nurembergfilm.org/the-films/"
+        }
+      ]
+    },
+    "t-q7-76938eff3d9a5c52": {
+      "prompt": "How does Dumbo figure out that he can fly?",
+      "choices": [
+        "Trying to jump from a tree",
+        "During a clown show",
+        "Fleeing the ringmaster",
+        "Drinking champagne"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which event triggers the pink-elephant sequence in Disney's 1941 Dumbo?"
+      },
+      "reason": "Champagne triggers hallucinations; discovering flight comes later with the tree and crows. This stem keeps the existing option/key while making the causal claim accurate.",
+      "sources": [
+        {
+          "title": "AFI: Dumbo 1941",
+          "url": "https://catalog.afi.com/Catalog/moviedetails/26684"
+        },
+        {
+          "title": "D 23: Dumbo",
+          "url": "https://d23.com/a-to-z/dumbo-film/"
+        }
+      ]
+    },
+    "t-q8-3d6e0dcdf3b387e6": {
+      "prompt": "How many Olympic gold medals has Martin Fourcade won?",
+      "choices": [
+        "0",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "6"
+        }
+      },
+      "reason": "Vancouver 2010 mass-start gold was reallocated to Fourcade, increasing his Olympic gold count from 5 to 6. The index is unchanged.",
+      "sources": [
+        {
+          "title": "IOC: Martin Fourcade profile",
+          "url": "https://www.olympics.com/ioc/mr-martin-fourcade"
+        },
+        {
+          "title": "IOC: Vancouver 2010 and Sochi 2014 medal reallocations",
+          "url": "https://www.olympics.com/ioc/news/ioc-executive-board-approves-olympic-medal-reallocations-for-vancouver-2010-and-sochi-2014"
+        },
+        {
+          "title": "IBU: Fourcade's 2026 medal reallocation ceremony",
+          "url": "https://www.biathlonworld.com/news/medal-reallocation-milano-cortina-2026-biathlon/7aVqiPjdNpcvL75IFrZLPc"
+        }
+      ]
+    },
+    "t-q9-7653a47c07b4b821": {
+      "prompt": "Which Square Enix RPG was rereleased in 2020?",
+      "choices": [
+        "Final Fantasy V",
+        "Final Fantasy VII",
+        "Final Fantasy III",
+        "Final Fantasy XV"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which Square Enix RPG received a major remake in 2020?"
+      },
+      "reason": "The 2020 release was a remake/reimagining, not a simple rerelease of the old game.",
+      "sources": [
+        {
+          "title": "Square Enix: Final Fantasy VII Remake is out now",
+          "url": "https://www.square-enix-games.com/en_US/news/final-fantasy-vii-remake-out-now-ps4"
+        },
+        {
+          "title": "Square Enix: Remake launch and Midgar setting",
+          "url": "https://press.na.square-enix.com/FINAL-FANTASY-VII-REMAKE-SHIPMENTS-AND-DIGITAL-SALES-SURPASS-35-MILLIO"
+        }
+      ]
+    },
+    "t-q6-a132186f68e6088d": {
+      "prompt": "Which name is used for \"J\" in the phonetic alphabet?",
+      "choices": [
+        "Juliet",
+        "Joanna",
+        "John",
+        "Jeremy"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which name represents \"J\" in the NATO phonetic alphabet?",
+        "choice": {
+          "index": 0,
+          "text": "Juliett"
+        }
+      },
+      "reason": "NATO and ICAO spell the codeword Juliett, with two final t letters; specifying the alphabet removes ambiguity.",
+      "sources": [
+        {
+          "title": "NATO phonetic alphabet",
+          "url": "https://www.nato.int/en/about-us/nato-history/history-by-theme/symbols-of-nato/nato-phonetic-alphabet"
+        },
+        {
+          "title": "ICAO: Annex 10 aeronautical telecommunications",
+          "url": "https://www.icao.int/sites/default/files/postalhistory/annex_10_aeronautical_telecommunications.htm"
+        }
+      ]
+    },
+    "t-q11-4d5c0bd00daa352b": {
+      "prompt": "What is the name of the movement seeking to modernize American cinema in the 1970s?",
+      "choices": [
+        "The American New Wave",
+        "New Hollywood",
+        "The New Golden Age",
+        "Cinema Verite"
+      ],
+      "answer": 1,
+      "correction": {
+        "choice": {
+          "index": 0,
+          "text": "French New Wave"
+        }
+      },
+      "reason": "The American New Wave is an overlapping name for New Hollywood, making the original distractor defensible. French New Wave is a distinct movement.",
+      "sources": [
+        {
+          "title": "Cambridge History: New Hollywood and post-classical cinema",
+          "url": "https://www.cambridge.org/core/books/abs/cambridge-history-of-american-popular-culture/new-hollywood-and-postclassical-cinema/0785391920A879253173D65F96456D21"
+        },
+        {
+          "title": "Oxford Academic: the American New Wave",
+          "url": "https://academic.oup.com/book/12454/chapter-abstract/162084481"
+        }
+      ]
+    },
+    "t-q13-8a5ea139f10c6910": {
+      "prompt": "You cannot visit Croft Manor in which Tomb Raider game?",
+      "choices": [
+        "Tomb Raider II",
+        "Tomb Raider: The Last Revelation",
+        "Tomb Raider Legend",
+        "Rise of the Tomb Raider"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Including the Blood Ties expansion, which of these Tomb Raider games does not feature Croft Manor as an explorable location?"
+      },
+      "reason": "Rise of the Tomb Raider requires the Blood Ties expansion for the explorable manor. Including the expansion explicitly leaves The Last Revelation as the intended answer.",
+      "sources": [
+        {
+          "title": "Tomb Raider: The Iris",
+          "url": "https://www.tombraider.com/news/video-games/tomb-raider-lore-the-iris"
+        },
+        {
+          "title": "Rise of the Tomb Raider: 20 Year Celebration",
+          "url": "https://www.tombraider.com/products/games/rise-of-the-tomb-raider-20-year-celebration"
+        },
+        {
+          "title": "Tomb Raider: classic-era essentials",
+          "url": "https://www.tombraider.com/news/video-games/10-things-you-need-to-know-before-playing-classic-era-tomb-raider"
+        },
+        {
+          "title": "Tomb Raider: Legend, Anniversary and Underworld essentials",
+          "url": "https://www.tombraider.com/news/video-games/10-things-you-need-to-know-before-playing-legend-anniversary-and-underworld"
+        }
+      ]
+    },
+    "t-q4-e78b92eada29fecd": {
+      "prompt": "During a match in the UEFA Champions League, formerly the European Cup, how many referees monitor the match?",
+      "choices": [
+        "1",
+        "5",
+        "3",
+        "6"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Under UEFA's former system with goal-line assistants, how many match officials were used, excluding the fourth official?"
+      },
+      "reason": "The original present-tense count is ambiguous. The former additional-assistant system used a referee, two touchline assistants, two goal-line assistants and a fourth official; excluding the last gives the keyed five.",
+      "sources": [
+        {
+          "title": "UEFA: five-referee trial",
+          "url": "https://www.uefa.com/news-media/news/0252-0cdfec4e8f9c-5beddb79b26b-1000--five-refs-trial-to-be-requested-for-major-competitions/"
+        },
+        {
+          "title": "UEFA: additional assistant referees",
+          "url": "https://www.uefa.com/news-media/news/0211-0f8a3439cdec-7f31dcc578d8-1000--additional-assistant-referees/"
+        }
+      ]
+    },
+    "t-q5-61c17accc6b10ef0": {
+      "prompt": "What word comes after the name of this fruit to make a derogatory term for a small country dominated by foreign interests and dependent on a single export?",
+      "choices": [
+        "Executive",
+        "Government",
+        "Bourgoisie",
+        "Republic"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "What word follows \"banana\" in a derogatory term for a small country dominated by foreign interests and dependent on a single export?"
+      },
+      "reason": "The original stem refers to an unidentified fruit, but this question has no image or fruit name. Naming banana makes the intended phrase answerable.",
+      "sources": [
+        {
+          "title": "Merriam-Webster: banana republic",
+          "url": "https://www.merriam-webster.com/dictionary/banana%20republic"
+        }
+      ]
+    },
+    "t-q11-55e1339d946aa24e": {
+      "prompt": "Who created the special effects for John Carpenter's \"The Thing\" ?",
+      "choices": [
+        "Phil Tippett",
+        "Tom Savini",
+        "Stan Winston",
+        "Rob Bottin"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Who led the special makeup effects work on John Carpenter's 1982 film \"The Thing\"?"
+      },
+      "reason": "Rob Bottin led the makeup-effects work, while distractor Stan Winston also contributed the dog creature. The narrower stem prevents treating a real contributor as wholly incorrect.",
+      "sources": [
+        {
+          "title": "Stan Winston School: The Thing dog creature",
+          "url": "https://www.linkedin.com/posts/stanwinstonschool_michikotagawa-johncarpenter-thething-activity-7343657990358499328-FcFY"
+        },
+        {
+          "title": "SYFY: The Thing dog creature and artist interview",
+          "url": "https://www.syfy.com/syfy-wire/john-carpenter-the-thing-dog-creature-action-figure-announcement"
+        }
+      ]
+    },
+    "t-q13-4d367a095efb1415": {
+      "prompt": "Composer Jesper Kyd never created music for which of these games?",
+      "choices": [
+        "Borderlands 3",
+        "SoulCalibur V",
+        "Assassin's Creed: Unity",
+        "Freedom Fighters"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these games has a score composed by Chris Tilton, Sarah Schachner and Ryan Amon?"
+      },
+      "reason": "The original claim that Jesper Kyd never created music for Unity is too broad: the official complete soundtrack credits him too. The official concert program identifies Tilton, Schachner and Amon for Unity; the new stem names them without claiming exclusive authorship.",
+      "sources": [
+        {
+          "title": "Assassin's Creed Symphonic Adventure: official program",
+          "url": "https://assassinscreedsymphonicadventure.com/program/"
+        },
+        {
+          "title": "Ubisoft Music: Unity complete soundtrack credits",
+          "url": "https://music.apple.com/us/album/assassins-creed-unity-the-complete-edition-original/1640085309"
+        },
+        {
+          "title": "Jesper Kyd: music catalog",
+          "url": "https://www.jesperkyd.com/music/"
+        },
+        {
+          "title": "Ubisoft: Assassin's Creed Unity",
+          "url": "https://www.ubisoft.com/en-us/game/assassins-creed/unity"
+        }
+      ]
+    },
+    "t-q4-c280b92b6fb0cb36": {
+      "prompt": "Against what gift from the Greeks does Priest Laocoon warn his fellow citizens in the Iliad?",
+      "choices": [
+        "Pandora's box",
+        "The Trojan Horse",
+        "The Trident of Poseidon",
+        "The Tunic of Nessus"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Against what gift from the Greeks does the priest Laocoön warn his fellow citizens in the Aeneid?"
+      },
+      "reason": "Laocoön’s warning appears in Virgil’s Aeneid Book II, not Homer’s Iliad.",
+      "sources": [
+        {
+          "title": "Virgil — Aeneid Book II, translated text",
+          "url": "https://www.poetryintranslation.com/PITBR/Latin/VirgilAeneidII.php"
+        }
+      ]
+    },
+    "t-q9-6408a43c6a2e13d8": {
+      "prompt": "What does the Syldavian motto \"Eih bennek, eih blavek\" mean?",
+      "choices": [
+        "\"I'm here, I'm staying\"",
+        "\"Gather thistles, expect prickles\"",
+        "\"Who sleeps, dines\"",
+        "\"Who will live, will see\""
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In the English version of King Ottokar’s Sceptre, how is the Syldavian motto “Eih bennek, eih blavek” rendered?"
+      },
+      "reason": "The album rendering differs from the literal Brussels-dialect wordplay; both meanings occur among the choices.",
+      "sources": [
+        {
+          "title": "Tintin — Album rendering and Brussels-dialect meaning of the motto",
+          "url": "https://www.tintin.com/fr/news/5669"
+        }
+      ]
+    },
+    "t-q13-aa9936541159ef6f": {
+      "prompt": "Who is the best striker in the history of the Liverpool club?",
+      "choices": [
+        "Michael Owen",
+        "Jamie Carragher",
+        "Ian Rush",
+        "Steven Gerrard"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Who is Liverpool FC’s all-time leading goalscorer for the men’s team?"
+      },
+      "reason": "Ian Rush holds the club’s scoring record; best striker is subjective.",
+      "sources": [
+        {
+          "title": "Liverpool FC — Club records",
+          "url": "https://www.liverpoolfc.com/info/liverpool-fc-records"
+        },
+        {
+          "title": "Liverpool FC — Ian Rush",
+          "url": "https://www.liverpoolfc.com/info/ian-rush"
+        }
+      ]
+    },
+    "t-q14-1cbc0f6c1e65ff49": {
+      "prompt": "From which neighborhood does Tony Manero come from in \"Saturday Night Fever\"?",
+      "choices": [
+        "Queens",
+        "Bronx",
+        "Manhattan",
+        "Broadway"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In which New York City borough does Tony Manero live in Saturday Night Fever?",
+        "choice": {
+          "index": 1,
+          "text": "Brooklyn"
+        }
+      },
+      "reason": "Tony lives in Bay Ridge, Brooklyn. None of the original choices is correct; replace the keyed Bronx choice in place and ask for borough rather than neighbourhood.",
+      "sources": [
+        {
+          "title": "AFI — Saturday Night Fever synopsis",
+          "url": "https://catalog.afi.com/Catalog/moviedetails/55921"
+        }
+      ]
+    },
+    "t-q11-56243c2974a6b055": {
+      "prompt": "What do Norman Bates and Dr Jekyll have in common?",
+      "choices": [
+        "They were directed by Hitchcock",
+        "They are in novels by Robert Bloch",
+        "Their devotions for their mothers",
+        "They were portrayed by the same actor"
+      ],
+      "answer": 1,
+      "correction": {
+        "answer": 3
+      },
+      "reason": "Anthony Perkins portrayed Norman Bates and Dr Jekyll. Dr Jekyll originated with Robert Louis Stevenson, not Robert Bloch.",
+      "sources": [
+        {
+          "title": "Arrow Films — Edge of Sanity",
+          "url": "https://www.arrowfilms.com/p/edge-of-sanity-blu-ray/13745647/"
+        }
+      ]
+    },
+    "t-q12-b0a3acccbb8ec37d": {
+      "prompt": "What year was the game \"The Chronicles of Riddick: Escape from Butcher Bay\" released on Xbox?",
+      "choices": [
+        "2002",
+        "2003",
+        "2004",
+        "2005"
+      ],
+      "answer": 1,
+      "correction": {
+        "answer": 2
+      },
+      "reason": "The original Xbox release was in 2004, confirmed by the developer; 2004 is already present at choice index 2.",
+      "sources": [
+        {
+          "title": "Starbreeze — Escape from Butcher Bay",
+          "url": "https://www.starbreeze.com/our-work/the-chronicles-of-riddick-escape-of-butcher-bay/"
+        }
+      ]
+    },
+    "t-q5-2d86f515d421ec62": {
+      "prompt": "Who had the right to sentence people to the death penalty in ancient Egypt?",
+      "choices": [
+        "Pharaoh only",
+        "Pharaoh and his vizier",
+        "Vizier and governors",
+        "The death penalty was prohibited"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Who was regarded as the supreme judicial authority in ancient Egypt?"
+      },
+      "reason": "The pharaoh was regarded as supreme judge, but viziers and courts also judged serious crimes. The original wording overstates exclusive personal control of death sentences across Egyptian history.",
+      "sources": [
+        {
+          "title": "Museu Egipci — The pharaoh",
+          "url": "https://www.museuegipci.com/en/the-pharaoh"
+        },
+        {
+          "title": "UCLA Encyclopedia of Egyptology — Law Courts",
+          "url": "https://escholarship.org/uc/item/4136j3s7"
+        }
+      ]
+    },
+    "t-q12-bc3b1be0b3f4e3e4": {
+      "prompt": "For which French brand of soap did the Smurfs do advertising in 1964?",
+      "choices": [
+        "La Javanaise",
+        "La Congolaise",
+        "La Marseillaise",
+        "La Versaillaise"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "For which brand of soap did the Smurfs do advertising in 1964?"
+      },
+      "reason": "Original packaging identifies Savonnerie Laurent Frères in Waterloo and carries French and Dutch text. Remove the unsupported French nationality; the dated Spirou issue bibliography supports the 1964 adverts.",
+      "sources": [
+        {
+          "title": "BDoubliées — Original Spirou issue bibliography, 1964",
+          "url": "https://bdoubliees.com/journalspirou/annees/1964.htm"
+        },
+        {
+          "title": "Industriemuseum — La Congolaise original soap packaging",
+          "url": "https://www.industriemuseum.be/nl/collectie-item/toiletzeep-van-het-merk-la-congolaise"
+        }
+      ]
+    },
+    "t-q3-0c70663b326e7c53": {
+      "prompt": "What is the tool used to write on papyrus called?",
+      "choices": [
+        "Permanent marker",
+        "Fluorescent felt-tipped pen",
+        "Bic",
+        "Stylus"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "What is the pointed tool used to write on ancient wax tablets called?"
+      },
+      "reason": "Papyrus was ordinarily written on with inked reed pens or brushes. A stylus accurately fits wax tablets, so this preserves the existing correct option while repairing the medium.",
+      "sources": [
+        {
+          "title": "University of Michigan Papyrology Collection — Media for Writing in Graeco-Roman Egypt",
+          "url": "https://apps.lib.umich.edu/files/collections/papyrus/exhibits/writing/media.html"
+        },
+        {
+          "title": "British Library — Keep taking the (wax) tablets",
+          "url": "https://www.bl.uk/stories/blogs/posts/keep-taking-the-wax-tablets"
+        }
+      ]
+    },
+    "t-q8-c35d8d8083221a9e": {
+      "prompt": "What is the scientific word for an earthworm?",
+      "choices": [
+        "Stick insect",
+        "Silkworm",
+        "Lumbricina",
+        "Rain worm"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these is an older scientific group name for earthworms?"
+      },
+      "reason": "Lumbricina is a historical group name, not a species name or the accepted name in all modern taxonomies. ITIS treats it as an older synonym of Crassiclitellata.",
+      "sources": [
+        {
+          "title": "ITIS — Lumbricina (TSN 69069)",
+          "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=69069"
+        },
+        {
+          "title": "ITIS — Crassiclitellata (TSN 974256)",
+          "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=974256"
+        }
+      ]
+    },
+    "t-q6-fd91d4aa9945a152": {
+      "prompt": "What is the name of the circuit where the F1 Japanese Grand Prix will take place in 2024?",
+      "choices": [
+        "Suzuka",
+        "Okayama",
+        "Fuji",
+        "Motegi"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which circuit hosted the Formula One Japanese Grand Prix in 2024?"
+      },
+      "reason": "The 2024 race has already taken place; past tense preserves the dated question and its Suzuka answer.",
+      "sources": [
+        {
+          "title": "Formula 1 — 2024 Japanese Grand Prix race result",
+          "url": "https://www.formula1.com/en/results/2024/races/1232/japan/race-result"
+        }
+      ]
+    },
+    "t-q5-e96b23811183d76a": {
+      "prompt": "Which country will host the 2022 World Cup?",
+      "choices": [
+        "France",
+        "Qatar",
+        "Russia",
+        "Germany"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which country hosted the 2022 men's FIFA World Cup?"
+      },
+      "reason": "The 2022 tournament has already taken place; past tense and explicit men's FIFA competition preserve the intended Qatar answer.",
+      "sources": [
+        {
+          "title": "FIFA — Qatar 2022 World Cup at a glance",
+          "url": "https://inside.fifa.com/tournament-organisation/world-cup-2022-in-numbers/fifa-world-cup-qatar-2022-at-a-glance"
+        }
+      ]
+    },
+    "t-q8-4f96794168732d1e": {
+      "prompt": "Which club plays in the stadium called Wanda Metropolitano?",
+      "choices": [
+        "Atlético Madrid",
+        "FC Seville",
+        "Valencia",
+        "Real Madrid"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which football club moved into the stadium then called the Wanda Metropolitano in 2017?"
+      },
+      "reason": "The stadium has changed sponsorship names since 2017; anchor the question to its opening name.",
+      "sources": [
+        {
+          "title": "Atlético de Madrid — Un día histórico",
+          "url": "https://www.atleticodemadrid.com/noticias/un-dia-historico"
+        }
+      ]
+    },
+    "t-q14-83babe52f5d77b2f": {
+      "prompt": "Why did New Order lose money on its single “Blue Monday”?",
+      "choices": [
+        "Records were stolen",
+        "Plagiarism trial",
+        "Cover was too expensive",
+        "Nobody bought it"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "According to the well-known story, why did New Order lose money on its single “Blue Monday”?"
+      },
+      "reason": "The sleeve-cost explanation is a famous but disputed story, including in firsthand accounts; qualify it as such.",
+      "sources": [
+        {
+          "title": "Cardiff Times — Interview with Peter Hook",
+          "url": "https://cardiff-times.co.uk/carl-marsh-speaks-with-music-legend-peter-hook-about-his-upcoming-tour/"
+        },
+        {
+          "title": "Radio X — Did the Blue Monday sleeve really lose money?",
+          "url": "https://www.radiox.co.uk/artists/new-order/did-the-blue-monday-12-sleeve-really-lose-money/"
+        }
+      ]
+    },
+    "t-q3-5d479d0981d227dc": {
+      "prompt": "On the Moon, what is the weight of an individual weighing 60 kilograms?",
+      "choices": [
+        "5 kilograms",
+        "10 kilograms",
+        "30 kilograms",
+        "60 kilograms"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "On the Moon, what is the mass of a person whose mass is 60 kilograms on Earth?"
+      },
+      "reason": "Mass stays the same while lunar weight as a force is lower; the original question confused mass and weight.",
+      "sources": [
+        {
+          "title": "NASA Glenn Research Center — Weight equation",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/weight-equation-2/"
+        }
+      ]
+    },
+    "t-q12-3f2362597f364587": {
+      "prompt": "How many different endings does the game \"Heavy Rain\" have?",
+      "choices": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "How many different epilogues can Ethan Mars have in “Heavy Rain”?"
+      },
+      "reason": "Seven is the number of Ethan Mars epilogues, not the number of endings across every character.",
+      "sources": [
+        {
+          "title": "Quantic Dream — Heavy Rain",
+          "url": "https://www.quanticdream.com/en/heavy-rain"
+        },
+        {
+          "title": "Gamepressure — Heavy Rain endings and epilogues",
+          "url": "https://www.gamepressure.com/heavyrainhd/list-of-all-endings/z88745"
+        }
+      ]
+    },
+    "t-q7-1069bd2c4684b615": {
+      "prompt": "In the film \"Robin Hood: Men in Tights\" by Mel Brooks, why is Atchoo in England?",
+      "choices": [
+        "He is a prisoner of the Crusades",
+        "He is on a language stay",
+        "He works for the sheriff",
+        "He hides from Richard the Lionheart"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In “Robin Hood: Men in Tights”, why does Asneeze say his son Ahchoo is in England?",
+        "choice": {
+          "index": 1,
+          "text": "He's an exchange student"
+        }
+      },
+      "reason": "The film dialogue specifically describes Ahchoo as an exchange student; language stay is an imprecise translation.",
+      "sources": [
+        {
+          "title": "Robin Hood: Men in Tights — Film transcript",
+          "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=robin-hood-men-in-tights"
+        }
+      ]
+    },
+    "t-q14-202cecdace254f7f": {
+      "prompt": "When Steven Spielberg bought the rights to Tintin, which Belgian actor offered to play his hero?",
+      "choices": [
+        "Jérémie Renier",
+        "Benoît Poelvoorde",
+        "François Damiens",
+        "Jean-Claude Van Damme"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which Belgian actor was mentioned in 2003 press speculation about playing Tintin?"
+      },
+      "reason": "The contemporary report describes speculative casting, not a confirmed offer. The finished film cast Jamie Bell.",
+      "sources": [
+        {
+          "title": "Mail & Guardian — Tintin goes to Hollywood (2 March 2003)",
+          "url": "https://mg.co.za/news/south-africa/2003-03-02-tintin-goes-to-hollywood/"
+        },
+        {
+          "title": "Amblin — The Adventures of Tintin",
+          "url": "https://amblin.com/movie/the-adventures-of-tintin/"
+        }
+      ]
+    },
+    "t-q6-e187af73c09a189d": {
+      "prompt": "What nationality is the athlete Sonia O'Sullivan?",
+      "choices": [
+        "American",
+        "Canadian",
+        "Australian",
+        "Irish"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which national team did Sonia O’Sullivan represent at four Olympic Games?"
+      },
+      "reason": "O’Sullivan also gained Australian citizenship in 2006, so the original nationality question had two valid choices. Her Olympic representation was Irish.",
+      "sources": [
+        {
+          "title": "Team Ireland — Sonia O’Sullivan",
+          "url": "https://olympics.ie/athletes/sonia-osullivan/"
+        },
+        {
+          "title": "RTÉ — O’Sullivan granted Australian citizenship",
+          "url": "https://www.rte.ie/sport/athletics/2006/0125/200627-osullivans/"
+        }
+      ]
     }
   }
 }

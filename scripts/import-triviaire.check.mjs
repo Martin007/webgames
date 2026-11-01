@@ -291,6 +291,19 @@ test('corrections reapply, change and remove cleanly from an already corrected o
   assert.deepEqual(applyCorrections(corrected, {version: 1, questions: {}}), bank);
 });
 
+test('a corrected choice label stays at its original index and can be updated or removed offline', () => {
+  const bank = convertCsv(rows());
+  const catalog = correctionCatalogFor(bank.questions[0], {choice: {index: 0, text: ' Five '}});
+  const corrected = applyCorrections(bank, catalog);
+  assert.deepEqual(corrected.questions[0].choices, ['Five', 'Two', 'Three', 'Four']);
+  assert.equal(corrected.questions[0].answer, bank.questions[0].answer);
+  assert.deepEqual(corrected.questions.slice(1), bank.questions.slice(1));
+  assert.deepEqual(applyCorrections(corrected, catalog), corrected);
+  const updated = correctionCatalogFor(bank.questions[0], {choice: {index: 0, text: 'Six'}});
+  assert.deepEqual(applyCorrections(corrected, updated), applyCorrections(bank, updated));
+  assert.deepEqual(applyCorrections(corrected, {version: 1, questions: {}}), bank);
+});
+
 test('corrections skip changed source guards and do not restore stale offline history over an edit', () => {
   const bank = convertCsv(rows());
   const original = bank.questions[0];
@@ -314,7 +327,9 @@ test('corrections skip changed source guards and do not restore stale offline hi
 test('correction catalogs reject invalid fields and cannot change identity or choice order', () => {
   const bank = convertCsv(rows());
   const question = bank.questions[0];
-  for (const correction of [null, {}, {id: 'another-id'}, {choices: ['Two', 'One', 'Three', 'Four']}, {answer: -1}, {answer: 4}, {answer: '1'}, {prompt: ''}]) {
+  for (const correction of [null, {}, {id: 'another-id'}, {choices: ['Two', 'One', 'Three', 'Four']}, {answer: -1}, {answer: 4}, {answer: '1'}, {prompt: ''},
+    {choice: null}, {choice: {index: 4, text: 'Five'}}, {choice: {index: '0', text: 'Five'}}, {choice: {index: 0, text: ''}},
+    {choice: {index: 0, text: 'Two'}}, {choice: {index: 0, text: 'Five', id: 'another-id'}}]) {
     assert.throws(() => applyCorrections(bank, correctionCatalogFor(question, correction)), /Correction/);
   }
   for (const catalog of [null, {version: 2, questions: {}}, {version: 1, questions: []}]) {
@@ -360,7 +375,7 @@ test('explicit CSV import and offline preparation apply corrections before both 
   await mkdir(csvDirectory);
   await Promise.all(LEVELS.map((level) => writeFile(resolve(csvDirectory, `Q${level}.csv`), rows(2))));
   const original = convertSheets(new Map(LEVELS.map((level) => [level, rows(2)])));
-  const corrections = correctionCatalogFor(original.questions[0], {answer: 1, prompt: 'A corrected historical question?'});
+  const corrections = correctionCatalogFor(original.questions[0], {answer: 1, prompt: 'A corrected historical question?', choice: {index: 1, text: 'A corrected choice'}});
   const corrected = applyCorrections(original, corrections);
   const explanations = catalogFor(corrected.questions[0]);
   const friendReplies = friendCatalogFor(corrected.questions[0]);

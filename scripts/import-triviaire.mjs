@@ -197,10 +197,18 @@ export function applyCorrections(bank, catalog, {warn = console.warn} = {}) {
   for (const [id, entry] of Object.entries(catalog.questions)) {
     const original = questionFields(entry, id);
     if (!isRecord(entry.correction) || !Object.keys(entry.correction).length
-      || Object.keys(entry.correction).some((key) => !['prompt', 'answer'].includes(key))) {
-      throw new Error(`Correction for ${id} may only replace the prompt or answer.`);
+      || Object.keys(entry.correction).some((key) => !['prompt', 'answer', 'choice'].includes(key))) {
+      throw new Error(`Correction for ${id} may only replace the prompt, answer or one choice label.`);
     }
-    const corrected = questionFields({...original, ...entry.correction}, id);
+    const {choice, ...replacement} = entry.correction;
+    if ('choice' in entry.correction) {
+      if (!isRecord(choice) || !Number.isInteger(choice.index) || choice.index < 0 || choice.index > 3
+        || !isText(choice.text) || Object.keys(choice).some((key) => !['index', 'text'].includes(key))) {
+        throw new Error(`Correction choice for ${id} needs an index from 0 to 3 and nonempty text.`);
+      }
+      replacement.choices = original.choices.map((text, index) => index === choice.index ? choice.text : text);
+    }
+    const corrected = questionFields({...original, ...replacement}, id);
     entries.set(id, {original, corrected});
   }
   const questions = bank.questions.map((question) => {
