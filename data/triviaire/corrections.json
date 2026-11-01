@@ -826,6 +826,737 @@
           "url": "https://www.rte.ie/sport/athletics/2006/0125/200627-osullivans/"
         }
       ]
+    },
+    "t-q10-77e91d8f0173111a": {
+      "prompt": "In the animated series \"Batman Beyond,\" what drives Bruce Wayne to hang up his cape?",
+      "choices": [
+        "His secret identity is discovered",
+        "He is betrayed by a member of the Bat Family",
+        "He is mortally wounded",
+        "He is forbidden from using a firearm"
+      ],
+      "answer": 3,
+      "correction": {
+        "choice": {
+          "index": 3,
+          "text": "He resorts to threatening someone with a firearm"
+        }
+      },
+      "reason": "Bruce retires after resorting to a gun during Rebirth, not because someone forbids him to use one.",
+      "sources": [
+        {
+          "title": "DC: Batman Beyond series",
+          "url": "https://www.dc.com/tv/batman-beyond-1999-2001"
+        },
+        {
+          "title": "DCAU Resource: Rebirth chronology",
+          "url": "https://www.dcauresource.com/timeline.php"
+        }
+      ]
+    },
+    "t-q13-a21a02acb0f87d27": {
+      "prompt": "After the success of their 1998 single “Music Sounds Better With You,” which electronic trio turned down a $3-million offer to produce an album?",
+      "choices": [
+        "Daft Punk",
+        "Stardust",
+        "Super Discount",
+        "Cassius"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "After the success of their 1998 single “Music Sounds Better With You,” which electronic trio reportedly turned down a $3-million offer to produce an album?"
+      },
+      "reason": "Available coverage labels the precise album-offer amount as reported or alleged; this qualification avoids presenting it as directly confirmed.",
+      "sources": [
+        {
+          "title": "Alan Braxe interview: Stardust demos and decision",
+          "url": "https://www.musicradar.com/news/tech/alan-braxe-interview-and-video-studio-tour-566211"
+        },
+        {
+          "title": "Pitchfork interview: Alan Braxe and DJ Falcon",
+          "url": "https://pitchfork.com/thepitch/alan-braxe-dj-falcon-french-house-pioneers-interview/"
+        },
+        {
+          "title": "Stardust anniversary: reported album offer",
+          "url": "https://stereogum.com/2001605/stardust-reunite-for-music-sounds-better-with-you-20th-anniversary/news"
+        }
+      ]
+    },
+    "t-q11-05c9251c9b3144a8": {
+      "prompt": "Why did René Laennec invent the stethoscope?",
+      "choices": [
+        "To listen to the lungs better",
+        "To spy on potential communists",
+        "To distance himself from patients",
+        "He was nearly deaf"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "To avoid placing his ear directly on a woman's chest"
+        }
+      },
+      "reason": "Laennec's motivation in the documented encounter was to avoid inappropriate direct ear-to-chest contact, not general avoidance of patients.",
+      "sources": [
+        {
+          "title": "Science Museum: Laennec's stethoscope",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co90986/laennecs-stethoscope"
+        },
+        {
+          "title": "Smithsonian: monaural stethoscope",
+          "url": "https://americanhistory.si.edu/collections/object/nmah_1416429"
+        }
+      ]
+    },
+    "t-q13-198ccd81677af20f": {
+      "prompt": "Phineas and Ferb are...",
+      "choices": [
+        "Brothers",
+        "Friends",
+        "Cousins",
+        "Step-brothers"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which choice most precisely describes Phineas and Ferb's family relationship?"
+      },
+      "reason": "Disney identifies them as stepbrothers. Asking for the precise family relationship removes the ambiguity of the broader true descriptions brothers and friends.",
+      "sources": [
+        {
+          "title": "Disney: Phineas and Ferb series",
+          "url": "https://shows.disney.com/phineas-and-ferb"
+        },
+        {
+          "title": "The Walt Disney Company: Phineas and Ferb cast",
+          "url": "https://thewaltdisneycompany.com/news/phineas-and-ferb-cast-disney/"
+        }
+      ]
+    },
+    "t-q14-cb5727c2f71c761b": {
+      "prompt": "In 1931, who became the first British driver to be knighted?",
+      "choices": [
+        "Henry Segrave",
+        "Richard Seaman",
+        "Stirling Moss",
+        "Malcolm Campbell"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which British land-speed record holder was knighted in 1931?"
+      },
+      "reason": "Campbell was knighted in 1931, but was not the first British driver knighted: Henry Segrave had received his knighthood in 1929.",
+      "sources": [
+        {
+          "title": "Science Museum Group: Malcolm Campbell",
+          "url": "https://collection.sciencemuseumgroup.org.uk/people/ap24314/campbell-malcolm"
+        },
+        {
+          "title": "National Motor Museum: Sir Henry Segrave",
+          "url": "https://nationalmotormuseum.org.uk/news/sir-henry-segrave-the-loss-of-a-hero/"
+        }
+      ]
+    },
+    "t-q5-7c710b7e759502ec": {
+      "prompt": "From what country do spring rolls come?",
+      "choices": [
+        "Vietnam",
+        "China",
+        "Singapore",
+        "Indonesia"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which country is especially associated with gỏi cuốn, fresh rice-paper rolls?"
+      },
+      "reason": "Spring rolls exist in several cuisines, so generic origin does not uniquely identify Vietnam. Gỏi cuốn is the specific Vietnamese fresh-roll dish.",
+      "sources": [
+        {
+          "title": "Vietnam Tourism: Vietnamese rolls",
+          "url": "https://vietnam.travel/node/780"
+        },
+        {
+          "title": "Vietnam Tourism: eating locally in Ho Chi Minh City",
+          "url": "https://vietnam.travel/things-to-do/eating-local-hcmc/"
+        }
+      ]
+    },
+    "t-q6-24a23a37b6c7e98b": {
+      "prompt": "Which of these is a category in plant classification?",
+      "choices": [
+        "Unit",
+        "Colony",
+        "Tribe",
+        "Family"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which taxonomic rank in plant classification usually has a scientific name ending in '-aceae'?"
+      },
+      "reason": "Both family and tribe are valid plant-classification ranks. The usual -aceae ending uniquely identifies family among these options.",
+      "sources": [
+        {
+          "title": "International Code of Nomenclature: Article 18, family names",
+          "url": "https://www.iapt-taxon.org/nomen/pages/main/art_18.html"
+        },
+        {
+          "title": "International Code of Nomenclature: Article 19, tribes",
+          "url": "https://www.iapt-taxon.org/nomen/pages/main/art_19.html"
+        }
+      ]
+    },
+    "t-q8-e8b6f29f6654ba13": {
+      "prompt": "Which sport is not part of the Special Olympics?",
+      "choices": [
+        "Badminton",
+        "Figure skating",
+        "Gymnastics",
+        "Surfing"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "As of November 2026, which sport is absent from Special Olympics International's official sports list?"
+      },
+      "reason": "Local Special Olympics programs, including Rhode Island, offer surfing. Restricting the question to the international official-sports list makes the keyed exclusion accurate.",
+      "sources": [
+        {
+          "title": "Special Olympics International: sports offered",
+          "url": "https://www.specialolympics.org/what-we-do/sports/sports-offered"
+        },
+        {
+          "title": "Special Olympics Rhode Island: sports offered",
+          "url": "https://www.specialolympicsri.org/sports/sports-offered"
+        }
+      ]
+    },
+    "t-q11-6b593f61c462e9f0": {
+      "prompt": "In how many movies does Voldemort appear in his physical form as an adult?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "In how many Harry Potter films does Ralph Fiennes play Voldemort in newly filmed scenes?",
+        "answer": 1
+      },
+      "reason": "The adult-physical-form wording is ambiguous about earlier actors and reused footage. Fiennes newly performed the role in Goblet of Fire, Order of the Phoenix and both Deathly Hallows films: four.",
+      "sources": [
+        {
+          "title": "Harry Potter official: Ralph Fiennes as Voldemort",
+          "url": "https://www.harrypotter.com/features/actors-of-the-wizarding-world-part-three-the-household-names"
+        },
+        {
+          "title": "British Council: Order of the Phoenix cast",
+          "url": "https://filmsandfestivals.britishcouncil.org/projects/harry-potter-and-the-order-of-the-phoenix"
+        },
+        {
+          "title": "Ralph Fiennes film appearances",
+          "url": "https://www.cinemablend.com/news/2468634/ralph-fiennes-doesnt-want-anyone-else-playing-voldemort-in-fantastic-beasts"
+        }
+      ]
+    },
+    "t-q12-de9edf87c9f1e3b5": {
+      "prompt": "Which of these games is not a popular shooter game?",
+      "choices": [
+        "Doom",
+        "Quake",
+        "Unreal",
+        "Shadowman"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which of these games is primarily a third-person action-adventure rather than a first-person shooter?"
+      },
+      "reason": "Shadow Man includes shooting, while popularity is subjective. Its third-person perspective and action-adventure structure distinguish it from Doom, Quake and Unreal.",
+      "sources": [
+        {
+          "title": "Nightdive Studios: Shadow Man Remastered",
+          "url": "https://nightdivestudios.com/shadow-man-remastered/"
+        },
+        {
+          "title": "PCGamingWiki: original Shadow Man",
+          "url": "https://www.pcgamingwiki.com/wiki/Shadow_Man"
+        }
+      ]
+    },
+    "t-q13-2aa086f0b7fff290": {
+      "prompt": "Which of those birthday coincidences of the Kivotos students in Blue Archive are not true?",
+      "choices": [
+        "Yuuka Hayase is born on the Pi Day",
+        "Saori Joumae is born on the WW1 Ending Day",
+        "Koyuki Kurosaki is born on the Valentine's Day",
+        "Nagisa Kirifuji is born on the US Independence Day"
+      ],
+      "answer": 1,
+      "correction": {
+        "choice": {
+          "index": 1,
+          "text": "Saori Joumae's birthday is on Armistice Day (11 November)"
+        }
+      },
+      "reason": "The intended date is Armistice Day, November 11; calling it simply the WWI ending day obscures the later peace treaties. Saori's actual birthday is September 3, so this remains the false match.",
+      "sources": [
+        {
+          "title": "Blue Archive Utils: Saori profile",
+          "url": "https://blue-utils.me/student/saori?lang=en"
+        },
+        {
+          "title": "Game8: Yuuka profile",
+          "url": "https://game8.jp/blue-archive/643735"
+        },
+        {
+          "title": "Game8: Koyuki profile",
+          "url": "https://game8.jp/blue-archive/643579"
+        },
+        {
+          "title": "Game8: Nagisa profile",
+          "url": "https://game8.jp/blue-archive/643625"
+        },
+        {
+          "title": "National WWI Museum: November 11, 1918",
+          "url": "https://www.theworldwar.org/learn/about-wwi/nov-11-1918"
+        }
+      ]
+    },
+    "t-q5-0ea71ac9d62287f0": {
+      "prompt": "Who plays \"Papillon\" in William J. Schaffner's film?",
+      "choices": [
+        "Steve McQueen",
+        "Robert Redford",
+        "Paul Newman",
+        "Clint Eastwood"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Who plays the title role in Franklin J. Schaffner's 1973 film Papillon?"
+      },
+      "reason": "The original stem names William J. Schaffner, but the film was directed by Franklin J. Schaffner. The date also distinguishes the later remake.",
+      "sources": [
+        {
+          "title": "AFI Catalog: Papillon",
+          "url": "https://catalog.afi.com/Film/55041-PAPILLON"
+        },
+        {
+          "title": "Triumph: The Great Escape motorcycle ridden by Steve McQueen",
+          "url": "https://www.triumphmotorcycles.com/for-the-ride/news/brand/120-anniversary-silverstone-2022-08-09"
+        },
+        {
+          "title": "Triumph: Bud Ekins and the motorcycle jump",
+          "url": "https://www.triumphmotorcycles.co.uk/our-story/cultural-icons/bud-ekins"
+        }
+      ]
+    },
+    "t-q7-ee9a9457583ee579": {
+      "prompt": "In World War II, what was \"Enigma\"?",
+      "choices": [
+        "Japanese aircraft",
+        "Russian tank",
+        "Invasion of Italy",
+        "German code"
+      ],
+      "answer": 3,
+      "correction": {
+        "choice": {
+          "index": 3,
+          "text": "German cipher machine"
+        }
+      },
+      "reason": "Enigma was a cipher machine and encryption system, not merely a single German code.",
+      "sources": [
+        {
+          "title": "Bletchley Park collection: Enigma",
+          "url": "https://artsandculture.google.com/story/7gUxRIPFAxsA8A?hl=en-GB"
+        }
+      ]
+    },
+    "t-q9-e015683d748fafdd": {
+      "prompt": "Which Greek god did Kratos not face in the \"God of War\" game series?",
+      "choices": [
+        "Hades",
+        "Zeus",
+        "Dionysos",
+        "Hermes"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which Greek god is not a boss Kratos fights in God of War III?"
+      },
+      "reason": "Specifying the title and boss encounters makes the negative claim concrete; Hades, Zeus and Hermes are fights in that game, while Dionysos is not.",
+      "sources": [
+        {
+          "title": "PlayStation: God of War III Remastered",
+          "url": "https://www.playstation.com/en-us/games/god-of-war-iii-remastered/"
+        },
+        {
+          "title": "God of War III trophy walkthrough",
+          "url": "https://www.playstationtrophies.org/forum/topic/173706-god-of-war-iii-trophy-guide-and-road-map/"
+        },
+        {
+          "title": "Santa Monica Studio producer: Hades battle",
+          "url": "https://blog.playstation.com/archive/2015/05/19/new-god-of-war-iii-remastered-trailer-shows-off-full-1080p60fps-gameplay/"
+        },
+        {
+          "title": "Metropolitan Museum: Dionysos, god of wine",
+          "url": "https://www.metmuseum.org/art/collection/search/248106"
+        }
+      ]
+    },
+    "t-q11-ba2e5ba1682d878e": {
+      "prompt": "In which year did the first mascot appear in the Olympic Games?",
+      "choices": [
+        "1908",
+        "1928",
+        "1948",
+        "1968"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "In which year did Schuss, an unofficial Olympic mascot, appear at the Winter Games?"
+      },
+      "reason": "The keyed 1968 date concerns unofficial Schuss at Grenoble. The first official Olympic mascot was Waldi in 1972, so the distinction must be explicit.",
+      "sources": [
+        {
+          "title": "Olympic Review: Olympic mascots",
+          "url": "https://library.olympics.com/Default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=173524&skipWatermark=true"
+        },
+        {
+          "title": "Paris 2024 organizing committee: mascot press kit",
+          "url": "https://www.swissparalympic.ch/wp-content/uploads/2022/11/Paris-2024-Press-Kit-The-Mascots-of-Paris-2024.pdf"
+        },
+        {
+          "title": "Olympedia: Olympic mascots",
+          "url": "https://www.olympedia.org/definitions/124"
+        }
+      ]
+    },
+    "t-q13-bdd8e867931a1887": {
+      "prompt": "Which of these characters is not part of the Foxhound group in the first game \"Metal Gear Solid\"?",
+      "choices": [
+        "Vulcan Raven",
+        "Psychomantis",
+        "Miss Fortune",
+        "Decoy Octopus"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "Fortune"
+        }
+      },
+      "reason": "Konami names the MGS2 Dead Cell character Fortune, not Miss Fortune. The corrected choice still identifies the character outside the original FOXHOUND team.",
+      "sources": [
+        {
+          "title": "Konami: Fortune character profile",
+          "url": "https://www.konami.com/mg/archive/mgs2/english/chara/chara_fortune.html"
+        },
+        {
+          "title": "Konami MGS2 manual: Dead Cell",
+          "url": "https://metalgear.konami.net/manual/mc1/mgs2/pc/en/page24.html"
+        },
+        {
+          "title": "Konami Metal Gear history: MGS characters",
+          "url": "https://www.konami.com/mg/history/jp/ja/mgs"
+        }
+      ]
+    },
+    "t-q5-dc45524db6dd89b2": {
+      "prompt": "Which female American hip-hop group originally included Cheryl James, Sandra Denton, and Deidra Roper?",
+      "choices": [
+        "Salt-N-Pepa",
+        "Ketchup-N-Mustard",
+        "Fish-N-Chips",
+        "Mac-N-Cheese"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which female American hip-hop group is known for the lineup of Cheryl James, Sandra Denton, and Deidra Roper?"
+      },
+      "reason": "Deidra Roper was not the original DJ; Latoya Hanson previously used the Spinderella name. The revised prompt identifies the famous lineup without misstating its formation.",
+      "sources": [
+        {
+          "title": "Cheryl James — Official biography",
+          "url": "https://www.saltsongs.com/about"
+        },
+        {
+          "title": "DJ Spinderella — Official biography",
+          "url": "https://www.spinderellaent.com/about"
+        },
+        {
+          "title": "Rock Hall — Salt-N-Pepa",
+          "url": "https://rockhall.com/inductees/salt-n-pepa/"
+        },
+        {
+          "title": "Billboard, 2 July 1988 — Contemporary report identifying Hanson as the former DJ",
+          "url": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-02.pdf"
+        }
+      ]
+    },
+    "t-q7-9b064e6b00d863fb": {
+      "prompt": "Earlier this year, which food was granted protected status by the EU?",
+      "choices": [
+        "Eccles cake",
+        "Cornish pasty",
+        "Lincolnshire sausage",
+        "Red Leicester"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which of these foods was granted protected geographical indication status by the EU in 2011?"
+      },
+      "reason": "The award dates to 2011; the relative phrase Earlier this year becomes false in a 2026 challenge.",
+      "sources": [
+        {
+          "title": "UK Government — Cornish pasty registration",
+          "url": "https://www.gov.uk/protected-food-drink-names/cornish-pasty"
+        },
+        {
+          "title": "UK Government — 2011 protection announcement",
+          "url": "https://www.gov.uk/government/news/cornish-pasties-can-t-be-pirated"
+        },
+        {
+          "title": "Cornish Pasty Association — Protection announcement",
+          "url": "https://cornishpastyassociation.co.uk/2011/02/cornwall-celebrates-protection-for-its-famous-pasties/"
+        }
+      ]
+    },
+    "t-q10-d6b4fc8bd8eda0b6": {
+      "prompt": "Which Nobel Prize in Literature winner wrote the script for Lifeboat?",
+      "choices": [
+        "John Steinbeck",
+        "Thomas Mann",
+        "William Faulkner",
+        "Ernest Hemingway"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which Nobel Prize in Literature winner wrote the original story for Lifeboat?"
+      },
+      "reason": "Steinbeck supplied the original story; Jo Swerling received the screenplay credit.",
+      "sources": [
+        {
+          "title": "AFI — Lifeboat credits and production history",
+          "url": "https://catalog.afi.com/Film/24046-LIFEBOAT"
+        },
+        {
+          "title": "MoMA — Lifeboat credits",
+          "url": "https://www.moma.org/interactives/exhibitions/1999/hitchcock/film_listings2.html"
+        }
+      ]
+    },
+    "t-q7-871b031ac378c6fd": {
+      "prompt": "Which of these works was not allowed to be officially adapted into a video game?",
+      "choices": [
+        "Black Jack",
+        "That Time I Got Reincarnated as a Slime",
+        "Initial D",
+        "Hajime no Ippo"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which of these manga was adapted into Sega’s 2006 Nintendo DS game subtitled “Hi no Tori Hen”?"
+      },
+      "reason": "The original claim that Black Jack could not officially be adapted is contradicted by Sega’s released game and Tezuka Productions’ interview with its producer. The revised prompt preserves the subject and correct choice while asking a documented fact.",
+      "sources": [
+        {
+          "title": "Sega — Nintendo DS release catalogue",
+          "url": "https://www.sega.jp/game/ds/?page=3"
+        },
+        {
+          "title": "Tezuka Productions — Interview with the game’s producer",
+          "url": "https://tezukaosamu.net/jp/dir/mushi/200610/topix01.html"
+        },
+        {
+          "title": "Tezuka Productions — Black Jack manga",
+          "url": "https://tezukaosamu.net/en/manga/438.html"
+        }
+      ]
+    },
+    "t-q11-d8f84547ea133576": {
+      "prompt": "Who is the all-time best striker in the history of Brazil's team, the \"Seleção Brasileira de Futebol\"?",
+      "choices": [
+        "Neymar",
+        "Zico",
+        "Ronaldo",
+        "Pelé"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Who overtook Pelé as Brazil’s leading scorer in men’s senior internationals against other national teams in September 2023?",
+        "answer": 0
+      },
+      "reason": "Best striker is subjective, while the apparent former scoring-record answer is outdated. Neymar surpassed Pelé’s 77 goals in senior internationals against national teams in September 2023. The narrow historical prompt avoids broader totals that include matches against clubs and representative selections.",
+      "sources": [
+        {
+          "title": "Brazilian Football Confederation — Neymar, 79-goal leading scorer",
+          "url": "https://www.cbf.com.br/selecao-brasileira/noticias/convocacoes-selecao-masculina/a/neymar-completa-33-anos"
+        },
+        {
+          "title": "Globo Esporte — Contemporary report and distinction between counting methods",
+          "url": "https://ge.globo.com/futebol/selecao-brasileira/noticia/2023/09/08/neymar-supera-pele-e-se-torna-o-maior-artilheiro-da-selecao-brasileira-nas-contas-da-fifa.ghtml"
+        },
+        {
+          "title": "FIFA — Neymar overtakes Pelé against Bolivia, September 2023",
+          "url": "https://www.fifa.com/pt/news/articles/brasil-bolivia-eliminatorias-sul-americanas-copa-do-mundo-2026-resumo"
+        }
+      ]
+    },
+    "t-q9-a35c20653160bc2c": {
+      "prompt": "When was Rome founded?",
+      "choices": [
+        "5th century BCE",
+        "8th century BCE",
+        "2nd century BCE",
+        "1st century BCE"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In which century was Rome traditionally said to have been founded?"
+      },
+      "reason": "The 753 BCE date is a traditional or legendary foundation date, not a precisely established archaeological founding event.",
+      "sources": [
+        "https://whc.unesco.org/en/list/91/",
+        "https://www.turismoroma.it/en/page/rome-nutshell"
+      ]
+    },
+    "t-q12-951893848dc1e75d": {
+      "prompt": "What major historical event marked the construction of the Great Wall of China?",
+      "choices": [
+        "Start of the Ming dynasty",
+        "Battle of Gaixia",
+        "Chinese civil war",
+        "Xiongnu invasions"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which northern threat did Qin-era fortifications, later associated with the Great Wall, help defend against?"
+      },
+      "reason": "The Great Wall developed across centuries. Scope to Qin northern defenses against the Xiongnu instead of implying one event caused the entire construction.",
+      "sources": [
+        "https://whc.unesco.org/en/list/438",
+        "https://www.iranicaonline.org/articles/xiongnu/"
+      ]
+    },
+    "t-q13-9f399c57e3775faf": {
+      "prompt": "Ancient Egyptians believed that the human soul was comprised of how many parts?",
+      "choices": [
+        "4",
+        "9",
+        "12",
+        "13"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In a commonly cited account of ancient Egyptian beliefs, the person consisted of how many parts, including the body, name and shadow?"
+      },
+      "reason": "Nine is a common modern summary; ancient Egyptian concepts and enumerations varied. Qualify the model rather than asserting one universal fixed soul count.",
+      "sources": [
+        "https://www.worldhistory.org/article/1023/the-soul-in-ancient-egypt/",
+        "https://book-of-the-dead.fitzmuseum.cam.ac.uk/explore/book-of-the-dead/the-soul-in-ancient-egypt"
+      ]
+    },
+    "t-q14-4570354725ce1607": {
+      "prompt": "Which country has the largest reserve of freshwater in the world?",
+      "choices": [
+        "Canada",
+        "Russia",
+        "Brazil",
+        "The United States"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which country has the world's largest renewable internal freshwater resources?"
+      },
+      "reason": "Brazil leads for renewable internal freshwater flows. Unqualified freshwater reserves could mean water stocks, lakes, groundwater or ice and is ambiguous.",
+      "sources": [
+        "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2021.727051/full",
+        "https://data.worldbank.org/indicator/ER.H2O.INTR.K3?locations=BR&view=chart",
+        "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/ER.H2O.INTR.K3"
+      ]
+    },
+    "t-q3-1d139a10275c4bd6": {
+      "prompt": "What substance does Daedalus use to glue wings to his back and that of his son Icarus?",
+      "choices": [
+        "Saliva",
+        "Wax",
+        "Maple syrup",
+        "Glue"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In the myth of Daedalus and Icarus, what substance helps hold the feathers of their wings together?"
+      },
+      "reason": "Wax binds feathers; the source wording inaccurately says it glues complete wings directly onto their backs.",
+      "sources": [
+        "https://art.thewalters.org/object/57.371/",
+        "https://www.loc.gov/exhibits/dreamofflight/dream-dream.html",
+        "https://wellcomecollection.org/works/j66nepcs"
+      ]
+    },
+    "t-q7-699a4abe27d40f16": {
+      "prompt": "Which Asian state is not considered economically as part of the \"Four Asian Tigers\"?",
+      "choices": [
+        "Hong Kong",
+        "Singapore",
+        "China",
+        "Taiwan"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these is not one of the economies traditionally known as the Four Asian Tigers?",
+        "choice": {
+          "index": 2,
+          "text": "Mainland China"
+        }
+      },
+      "reason": "The grouping refers to economies, not four sovereign states. Specify mainland China so the China distractor does not ambiguously include Hong Kong.",
+      "sources": [
+        "https://www.newyorkfed.org/newsevents/speeches/1996/sp961203",
+        "https://www.frbsf.org/research-and-insights/publications/economic-letter/1997/08/banking-system-developments-in-the-four-asian-tigers/"
+      ]
+    },
+    "t-q12-73c9fd86911c1b6f": {
+      "prompt": "In horseback riding, what goes under the saddle to protect the horse?",
+      "choices": [
+        "A towel",
+        "A rug",
+        "An ice pack",
+        "Foam"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "What purpose-made piece of tack is placed beneath a saddle to help prevent rubbing?",
+        "choice": {
+          "index": 1,
+          "text": "A saddle pad"
+        }
+      },
+      "reason": "The standard item is a saddle pad/numnah/saddlecloth, not a generic horse rug. Specific tack wording distinguishes the item from its possible foam material.",
+      "sources": [
+        "https://www.lander.edu/athletics/documents/equestrian-center/Grooming_and_tacking_rules-2021.pdf",
+        "https://www.bhs.org.uk/bhs-professional-qualifications-and-careers/bhs-qualifications-and-stages/stage-2/stage-2-care-syllabus/"
+      ]
+    },
+    "t-q9-c82c7a14e2ce9a9a": {
+      "prompt": "Which team did Red Bull acquire in 2005 to enter Formula 1?",
+      "choices": [
+        "Williams Racing",
+        "Minardi",
+        "Toyota F1 Team",
+        "Jaguar Racing"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which Formula 1 team did Red Bull buy in 2004 before making its racing debut in 2005?"
+      },
+      "reason": "Jaguar was acquired in November 2004 before Red Bull Racing debuted in 2005. The original 2005 acquisition date instead matches the separate Minardi purchase and creates a misleading competing option.",
+      "sources": [
+        "https://www.sportcal.com/pressreleases/ford-secures-sale-of-jaguar-racing-team-to-red-bull/",
+        "https://www.autosport.com/f1/news/the-full-statement-by-red-bull-5328276/5328276/"
+      ]
     }
   }
 }

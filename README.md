@@ -285,8 +285,9 @@ catalog rather than the generated JSON.
 Optional custom replies live in `data/triviaire/friend-replies.json`. The catalog
 covers questions 1–10 of challenge #49 (23 October 2026) and questions 1–11 of
 challenges #52–#56 (26–30 October 2026), plus questions 3–14 of challenges #59–#63
-(2–6 November 2026), #66–#70 (9–13 November 2026), and #73–#87
-(16–30 November 2026). All 365 covered questions have both reply variants.
+(2–6 November 2026), #66–#70 (9–13 November 2026), #73–#87
+(16–30 November 2026), and #107–#118 (20–31 December 2026).
+All 509 covered questions have both reply variants.
 Replies remain available whenever those questions appear again.
 
 Copy the stable question ID and its exact **original, unshuffled** `prompt`,
