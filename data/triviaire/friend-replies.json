@@ -7126,6 +7126,2358 @@
         "answer": "Yaoundé is its political capital, while Douala is the big port and commercial centre. I remember the country by keeping those two cities together.",
         "hint": "I don't know but Douala is the major port and commercial centre in the same country. That pairing helps me more than the capital's name alone."
       }
+    },
+    "t-q3-ea9dbe51fc871cb8": {
+      "prompt": "What term describes a simplified contact language that develops between groups without a shared language?",
+      "choices": [
+        "Eegle",
+        "Pidgin",
+        "Storck",
+        "Thrushe"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's the practical shared language people develop when they don't speak each other's language. Trade is one setting where that can happen.",
+        "hint": "I don't know but I remember a word that sounds like a common city bird, with a different spelling. It's often associated with trading communities."
+      }
+    },
+    "t-q4-80a1513991e976d6": {
+      "prompt": "What is the name of the actress playing Debra Morgan in the series \"Dexter\"?",
+      "choices": [
+        "Charisma Carpenter",
+        "Jennifer Carpenter",
+        "Olivia Carpenter",
+        "John Carpenter"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "I recognise her from The Exorcism of Emily Rose too. In Dexter, she plays the detective sister of Michael C. Hall's character.",
+        "hint": "I don't know but the actress was also in The Exorcism of Emily Rose. That horror film is where I recognise her face from."
+      }
+    },
+    "t-q5-2fd34f805d08bc42": {
+      "prompt": "What is the name of Ratchet's home planet in the \"Ratchet & Clank\" game series?",
+      "choices": [
+        "Veldin",
+        "Yavin",
+        "Loomy",
+        "Voltaria"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the planet Ratchet calls home when Clank crash-lands at the start of their story. Home here means where he's living, not necessarily his birthplace.",
+        "hint": "I don't know but Yavin is a Star Wars name. I'm picturing the dusty planet where Ratchet meets a little robot after a spaceship crashes."
+      }
+    },
+    "t-q6-3612a4981041a476": {
+      "prompt": "Which of these is a soft gentle breeze?",
+      "choices": [
+        "Zodiac",
+        "Zeppelin",
+        "Zinfandel",
+        "Zephyr"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It's a lovely old word for a gentle breeze. The connection is to the west wind, which is how I keep it straight.",
+        "hint": "I don't know but the word comes from the ancient Greek name for the west wind. It has a much gentler feel than a storm."
+      }
+    },
+    "t-q7-94b4a36bb5da8c03": {
+      "prompt": "Known for their song “The Final Countdown,” the band Europe came from what country?",
+      "choices": [
+        "Germany",
+        "Sweden",
+        "Spain",
+        "Canada"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "They started out near Stockholm before that huge keyboard riff went worldwide. The English lyrics can make their home country less obvious than you'd expect.",
+        "hint": "I don't know but Joey Tempest's band got together in a suburb outside Stockholm. I remember that city connection more clearly than the country's name."
+      }
+    },
+    "t-q8-259279a567bd1ff2": {
+      "prompt": "Which rapper does Shakira sing with on her 2006 track “Hips Don’t Lie”?",
+      "choices": [
+        "Usher",
+        "Busta Rhymes",
+        "Wyclef Jean",
+        "Maluma"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I recognise his voice from the Fugees. He's the guest performer on that track, and he also helped write and produce it.",
+        "hint": "I don't know but the guest was in the Fugees alongside Lauryn Hill and Pras. That group connection is the thing I remember about him."
+      }
+    },
+    "t-q9-afc4baa932856157": {
+      "prompt": "If the goddess Nekhbet is associated with Upper Egypt, who is associated with Lower Egypt?",
+      "choices": [
+        "Ouadjet",
+        "Bastet",
+        "Sekhmet",
+        "Mast"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the goddess usually written Wadjet in English. I remember her as the cobra paired with Nekhbet's vulture, representing the two parts of Egypt.",
+        "hint": "I don't know but Lower Egypt's protector is the cobra goddess, often shown beside a vulture. The snake is the detail I'd use to narrow it down."
+      }
+    },
+    "t-q10-374d7187e7a31478": {
+      "prompt": "Which of these was a former occupation of Whoopi Goldberg?",
+      "choices": [
+        "Slaughterhouse secretary",
+        "Library exterminator",
+        "Mortuary beautician",
+        "Synagogue janitor"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "She talked about going to beauty school and doing hair and makeup in a funeral parlour. It's an unusual job, but she described it herself.",
+        "hint": "I don't know but she trained in cosmetology before becoming famous. So I'd look for work that would use hairdressing and makeup skills in an unexpected setting."
+      }
+    },
+    "t-q11-505fa550cbfec476": {
+      "prompt": "What term describes the Nazi mass shootings of Jews by mobile killing units, especially in occupied eastern Europe?",
+      "choices": [
+        "The Deportation",
+        "The Porajmos",
+        "Operation Gomorrah",
+        "The Holocaust by bullets"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That term refers to the mass shootings, particularly in occupied eastern Europe. They happened alongside other Nazi killing methods, rather than forming a neatly separate phase.",
+        "hint": "I don't know but I remember the Einsatzgruppen and the massacre at Babyn Yar. Those were mass shootings near communities, rather than deportations to distant camps."
+      }
+    },
+    "t-q12-d3120032f9dbab6e": {
+      "prompt": "What code name was used for the Allied invasion of Normandy in 1944?",
+      "choices": [
+        "Overlord",
+        "Barbarossa",
+        "Pirate",
+        "Torch"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That was the overall Normandy operation. Neptune was the initial assault phase, so those two names sometimes get mixed together when people talk about D-Day.",
+        "hint": "I don't know but Torch was the Allied landing in North Africa. I'd rule that one out; the Normandy campaign had a different code name."
+      }
+    },
+    "t-q13-a835501131ec6a8e": {
+      "prompt": "Which of these is a paste made from ground sesame seeds?",
+      "choices": [
+        "Tapenade",
+        "Hummus",
+        "Tahini",
+        "Mezze"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the sesame paste you stir into hummus. Hummus itself is mainly chickpeas, so the ingredient and the finished dip aren't quite the same thing.",
+        "hint": "I don't know but hummus starts with chickpeas, then you add a nutty sesame paste. The question is asking for that ingredient rather than the finished hummus."
+      }
+    },
+    "t-q14-8e28702314c08132": {
+      "prompt": "Which actress was among the original eight demonstration stars unveiled for Hollywood's Walk of Fame in 1958?",
+      "choices": [
+        "James Dean",
+        "Joanne Woodward",
+        "Doris Day",
+        "Charlie Chaplin"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She was among the eight demonstration stars unveiled in 1958. The often-repeated story that she alone received the very first star isn't accurate.",
+        "hint": "I don't know but I'm thinking of Paul Newman's wife, who also had a major acting career herself. That narrows down the actresses here."
+      }
+    },
+    "t-q3-3b6a2c8120945cdf": {
+      "prompt": "Which of these is a narrow piece of land projecting into the sea?",
+      "choices": [
+        "Coat",
+        "Cloak",
+        "Cape",
+        "Caftan"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's a headland sticking out into the water. The clothing meaning is probably the distraction here, since all four options sound like things you could wear.",
+        "hint": "I don't know but the geographical word also means something worn over your shoulders without sleeves. I picture a superhero wearing one of those."
+      }
+    },
+    "t-q4-0cbfaf088d0ac8a0": {
+      "prompt": "Which Australian artist made a comeback in 2001 with the song “Can’t Get You Out of My Head”?",
+      "choices": [
+        "Kylie Minogue",
+        "Dannii Minogue",
+        "Delta Goodrem",
+        "Missy Higgins"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That was the big single from Fever. I connect her with the Neighbours character Charlene as well, long before that sleek dance-pop era.",
+        "hint": "I don't know but the singer played Charlene in Neighbours, opposite Jason Donovan. I remember that soap connection from before her international pop hits."
+      }
+    },
+    "t-q5-2c45e1d3185eb7aa": {
+      "prompt": "Which of these Toms is not the name of a Hollywood actor?",
+      "choices": [
+        "Tom Hanks",
+        "Tom Wolfe",
+        "Tom Selleck",
+        "Tom Berenger"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He's the writer of The Right Stuff and The Bonfire of the Vanities. I'm thinking of the author in the white suit, rather than a movie star.",
+        "hint": "I don't know but one of those Toms was a novelist and journalist famous for wearing white suits. The Right Stuff was one of his books."
+      }
+    },
+    "t-q6-5f112cb5b56072a6": {
+      "prompt": "What is the name of Agatha Christie's sleuth who lives in the village of St. Mary Mead?",
+      "choices": [
+        "Mrs. Markle",
+        "Miss Marple",
+        "Lady Mardle",
+        "Mistress Marble"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She looks like an ordinary village neighbour, but she notices everything. Her knitting and interest in village gossip help people underestimate her.",
+        "hint": "I don't know but she's the elderly woman who knits, gardens and spots patterns in people's behaviour. Her first name is Jane, if that helps."
+      }
+    },
+    "t-q7-1cabdc28948b7897": {
+      "prompt": "Which Roman numeral represents the number 500?",
+      "choices": [
+        "C",
+        "D",
+        "M",
+        "L"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That symbol is five hundred. I keep it separate from L, which is only fifty, and M, which is a full thousand.",
+        "hint": "I don't know but C is a hundred and M is a thousand. L is fifty, so those three are values I can rule out."
+      }
+    },
+    "t-q8-49fbf9cdd43b0b59": {
+      "prompt": "The Escorial is a palace near which capital city?",
+      "choices": [
+        "Moscow",
+        "Madrid",
+        "Vienna",
+        "Rome"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's the huge palace-and-monastery complex outside the Spanish capital. Philip II had it built, and that royal connection is how I place it.",
+        "hint": "I don't know but it's Philip II's palace and monastery in Spain, near the Sierra de Guadarrama. That should point you toward the right capital."
+      }
+    },
+    "t-q9-27ef8e60cba71c62": {
+      "prompt": "Which game in the \"Tenchu\" series was released exclusively on Xbox 360?",
+      "choices": [
+        "Tenchu 2",
+        "Tenchu 3",
+        "Tenchu : Stealth Assassin",
+        "Tenchu Z"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's the one where you customise your own ninja and can tackle missions in co-op. Those features make me think of the Xbox 360 entry.",
+        "hint": "I don't know but I remember an entry with customisable ninjas and up to four people sneaking through missions together. That was the Xbox Live one."
+      }
+    },
+    "t-q10-b3d423ed4645ee54": {
+      "prompt": "What is Castor Troy's brother's name in the film Face/Off?",
+      "choices": [
+        "Pollux Troy",
+        "Rookie",
+        "Champion",
+        "Boss"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Alessandro Nivola plays him, while Cage initially plays Castor. He's the brother Archer tries to get information from after taking on Castor's face.",
+        "hint": "I don't know but Alessandro Nivola plays the younger brother. The two brothers share a surname, so look for a character name rather than a nickname."
+      }
+    },
+    "t-q11-15b2d6502c3af8b1": {
+      "prompt": "As the saying goes, what shouldn’t you count before they hatch?",
+      "choices": [
+        "Chickens",
+        "Turkeys",
+        "Penguins",
+        "Turtles"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The saying is about treating something uncertain as if it's already yours. Eggs don't guarantee a whole flock, just as plans don't guarantee success.",
+        "hint": "I don't know but I picture a hen sitting on her eggs. It's warning you not to assume every egg will turn into a live bird."
+      }
+    },
+    "t-q12-c400374e71f5468c": {
+      "prompt": "For which film did the filmmaker Stanley Kubrick use a lens originally designed for NASA?",
+      "choices": [
+        "Doctor Strangelove",
+        "2001: A Space Odyssey",
+        "Shining",
+        "Barry Lyndon"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He wanted those candlelit scenes to look as though candles really were lighting them. The unusually fast Zeiss lens let him film in that tiny amount of light.",
+        "hint": "I don't know but the lens was used for candlelit interiors in a period drama. The NASA connection makes the space film a tempting distraction."
+      }
+    },
+    "t-q13-e576bbe4c27866cb": {
+      "prompt": "Which wood is traditionally used to make tenpin bowling pins?",
+      "choices": [
+        "Yew",
+        "Sycamore",
+        "Maple",
+        "Poplar"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The wood inside traditional pins has to stand up to repeated impacts. Manufacturers use hard rock maple, even though the outside usually has a protective coating.",
+        "hint": "I don't know but it's the hardwood whose sugary sap gets boiled down into syrup. I remember that link more easily than the bowling equipment detail."
+      }
+    },
+    "t-q14-c5be1b80655fec9b": {
+      "prompt": "To which of these actors' names would you add 'de Cuffe' to give their full name at birth?",
+      "choices": [
+        "Alec Guinness",
+        "Laurence Olivier",
+        "John Gielgud",
+        "Ralph Richardson"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That extra surname appears in his birth name, though he didn't use it professionally. He's also the actor who played the original Obi-Wan Kenobi.",
+        "hint": "I don't know but the actor played the older Obi-Wan Kenobi in the original Star Wars films. I'm picturing Luke's first Jedi mentor."
+      }
+    },
+    "t-q3-78c524e8e328a8f1": {
+      "prompt": "Which direction is directly opposite West-South-West on a compass?",
+      "choices": [
+        "South-South-East",
+        "East-North-East",
+        "North-North-East",
+        "South-South-West"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "A half-turn reverses both parts of the direction: west becomes east and south becomes north. It still sits closer to east than to north.",
+        "hint": "I don't know but you can turn the compass halfway round and reverse each part of the name. Keep the stronger east-west part in front."
+      }
+    },
+    "t-q4-ebf210dd96b5d704": {
+      "prompt": "For how long is Eddie Murphy released from prison in the title of a 1982 film?",
+      "choices": [
+        "12 Weeks",
+        "72 Days",
+        "48 Hours",
+        "24 Minutes"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Nick Nolte's cop gets Murphy's convict out for two days to help catch the killers. The title is that very short deadline they're working against.",
+        "hint": "I don't know but it's the buddy film with Nick Nolte as the cop and Murphy as a convict. His temporary release lasts only a couple of days."
+      }
+    },
+    "t-q5-833b94a5472c4c49": {
+      "prompt": "Which wrestler held the Intercontinental Championship from June 1987 to August 1988?",
+      "choices": [
+        "Apollo Crews",
+        "The Miz",
+        "Chris Jericho",
+        "The Honky Tonk Man"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He's the Elvis-like wrestler with the guitar and slicked-back hair. That long reign ended when the Ultimate Warrior beat him at SummerSlam in 1988.",
+        "hint": "I don't know but I picture the wrestler dressed like Elvis, carrying a guitar, with Jimmy Hart as his manager. That image is my best clue."
+      }
+    },
+    "t-q6-116eba198647cdb6": {
+      "prompt": "What American agency first developed GPS technology?",
+      "choices": [
+        "CIA",
+        "Department of Defense",
+        "Ministry of Tourism",
+        "National Parks Service"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It grew out of military satellite-navigation work, before becoming something we all use for directions. That's why the defence organisation fits better than the civilian options.",
+        "hint": "I don't know but the early work involved military navigation, including helping submarines navigate. I'd connect it with the armed forces rather than tourism or national parks."
+      }
+    },
+    "t-q7-4baba27045f260c7": {
+      "prompt": "How many Apollo missions used a lunar rover?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The rovers went on Apollo 15, 16 and 17. Those later crews could drive much farther from the landing site than the earlier walking missions.",
+        "hint": "I don't know but the first crew to drive a rover was Apollo 15. They kept using it on the remaining landings, ending with Apollo 17."
+      }
+    },
+    "t-q8-6f6149d8f0b0eda8": {
+      "prompt": "How many official languages are listed in South Africa's Constitution after the 2023 amendment adding South African Sign Language?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The extra one is South African Sign Language, recognised in the 2023 constitutional amendment. The old eleven-language answer leaves that official language out.",
+        "hint": "I don't know but the familiar old total was eleven. South African Sign Language was then added to the Constitution, so that old total needs updating."
+      }
+    },
+    "t-q9-78e896aeb7c23095": {
+      "prompt": "Which of these is a horror novel by Stephen King?",
+      "choices": [
+        "The Turn of the Screw",
+        "Salem's Lot",
+        "American Psycho",
+        "Hellraiser"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's the one where writer Ben Mears returns to his hometown and finds vampires taking over. That small-town horror setup is what I remember.",
+        "hint": "I don't know but I'm thinking of vampires spreading through a small New England town, with a writer called Ben Mears trying to stop them."
+      }
+    },
+    "t-q10-e1193ac26e6790a8": {
+      "prompt": "Which toy is said to take its name from a bakery in Connecticut?",
+      "choices": [
+        "Hula hoop",
+        "Frisbee",
+        "Yo-yo",
+        "Lego"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The story comes from students tossing the bakery's empty pie tins around. The plastic toy borrowed the company name, with a slightly different spelling.",
+        "hint": "I don't know but the bakery connection is through empty pie tins that students threw to each other. Think about which toy would fly like one."
+      }
+    },
+    "t-q11-ab38dfd289b71385": {
+      "prompt": "What is the official language of Andorra?",
+      "choices": [
+        "The Basque",
+        "The Spanish woman",
+        "Catalan",
+        "Andorran"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the country's official language, even though Spanish and French are widely used there too. Being between those two neighbours doesn't make their languages official.",
+        "hint": "I don't know but it's also the local language around Barcelona. Andorra sits between France and Spain, yet its official language isn't simply either neighbour's main language."
+      }
+    },
+    "t-q12-40ba7f65b6d4c8d2": {
+      "prompt": "Which actor directed the Arnold Schwarzenegger film \"The Running Man\"?",
+      "choices": [
+        "James Garner",
+        "Tom Selleck",
+        "Peter Falk",
+        "Paul Michael Glaser"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He played Starsky on television before directing that Schwarzenegger film. That's the connection I remember: one half of the famous detective duo behind the camera.",
+        "hint": "I don't know but the director was the actor who played Starsky, opposite David Soul as Hutch. That television role should help identify him."
+      }
+    },
+    "t-q13-3b559b009f15b3e4": {
+      "prompt": "What is the unit of measurement for the intensity of an electric current?",
+      "choices": [
+        "A volt",
+        "A watt",
+        "A current",
+        "An amp"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's short for ampere. It measures how much electric charge passes a point each second; voltage and power are different things with different units.",
+        "hint": "I don't know but volts measure potential difference, while watts measure power. Those are familiar electrical units, but neither one measures the current itself."
+      }
+    },
+    "t-q14-c7c72e17b79a2446": {
+      "prompt": "Which game contains a hidden demo of Sly 2: Band of Thieves?",
+      "choices": [
+        "Spyro : A Hero's Tail",
+        "Ratchet & Clank 3",
+        "Crash Twinsanity",
+        "Jak 3"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The original PS2 game has a hidden Sly 2 demo accessed from its title screen. I remember it as a little bonus connecting those PlayStation series.",
+        "hint": "I don't know but the host game stars a Lombax and his small robot companion. A button combination at the title screen reveals the hidden demo."
+      }
+    },
+    "t-q3-416b720f5f5fd4db": {
+      "prompt": "Which group was the central target of the Nazi genocide known as the Holocaust?",
+      "choices": [
+        "Jews",
+        "Catholics",
+        "Buddhists",
+        "Protestants"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The Nazis targeted people they classified as Jewish, including people who didn't practise Judaism. It was persecution based on their racial ideology, not just religious observance.",
+        "hint": "I don't know but the yellow Star of David badges come to mind. They were used to single people out and facilitate persecution and deportation."
+      }
+    },
+    "t-q4-99cd55292c011bf3": {
+      "prompt": "To which English group do we owe the 1983 single “Relax”?",
+      "choices": [
+        "Frankie Goes to Disneyworld",
+        "Frankie Goes to Mars",
+        "Frankie Goes to Prison",
+        "Frankie Goes to Hollywood"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That's Holly Johnson's band. Trevor Horn produced the single, and it became one of those huge eighties records with a really recognisable sound.",
+        "hint": "I don't know but Holly Johnson was the lead singer. The same band recorded Two Tribes and The Power of Love, if those ring a bell."
+      }
+    },
+    "t-q5-26471d00356dab82": {
+      "prompt": "Which of these actors plays a doomed camp counsellor in the original 1980 film Friday the 13th?",
+      "choices": [
+        "Kevin Bacon",
+        "Johnny Depp",
+        "George Clooney",
+        "Kevin Costner"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He plays Jack in the original film, before becoming the star of Footloose. It's an early role, and his character doesn't survive the camp's killings.",
+        "hint": "I don't know but the actor later played the dancing teenager in the original Footloose. This camp-horror role came a few years before that breakthrough."
+      }
+    },
+    "t-q6-e531b345ba59efd5": {
+      "prompt": "Which of these is a common meat accompaniment to a ploughman's lunch?",
+      "choices": [
+        "Bread",
+        "Cheese",
+        "Ham",
+        "Pickle"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "I think of slices served beside the cheese, bread and pickles. Plenty of ploughman's lunches include it; there's no rule that the plate must be meat-free.",
+        "hint": "I don't know but I picture a cold pub lunch with bread, cheese and pickles. The extra meat is usually sliced, cured pork."
+      }
+    },
+    "t-q7-77db4f45a0cbdda7": {
+      "prompt": "In which British city is the Victoria and Albert Museum located?",
+      "choices": [
+        "Bath",
+        "London",
+        "Manchester",
+        "Birmingham"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Its main building is on Cromwell Road in South Kensington. If you're using the Underground, the South Kensington stop puts you very close.",
+        "hint": "I don't know but I remember the South Kensington address and the Underground station of the same name. That neighbourhood is the clue I'd use."
+      }
+    },
+    "t-q8-5d9345659651957f": {
+      "prompt": "Which of these was Hideo Kojima's 1987 directorial debut?",
+      "choices": [
+        "Metal Gear",
+        "Snatcher",
+        "Policenauts",
+        "Metal Gear Solid 3: Snake Eater"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It's the original MSX2 game, long before the three-dimensional PlayStation entry. The idea was to sneak past enemies, rather than charge in and fight everyone.",
+        "hint": "I don't know but his early stealth game was partly inspired by The Great Escape. It came out on the MSX2, before the PlayStation existed."
+      }
+    },
+    "t-q9-3ded235aee734ce8": {
+      "prompt": "Which of these rivers flows in a generally northwards direction?",
+      "choices": [
+        "Volga",
+        "Rhône",
+        "Mississippi",
+        "Nile"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It runs through Egypt toward the Mediterranean. Northward is still downhill here; rivers follow the land's slope, not a rule that they must head south.",
+        "hint": "I don't know but I'm picturing the river passing Cairo and spreading into a delta on the Mediterranean coast. That puts its mouth to the north."
+      }
+    },
+    "t-q10-2620be1cb2c73325": {
+      "prompt": "What was Hitchcock's first film made in Hollywood?",
+      "choices": [
+        "\"The Man Who Knew Too Much \"",
+        "\"Rebecca\"",
+        "\"Shadow of a Doubt\"",
+        "\"Jamaica Inn\""
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the one with Joan Fontaine and Laurence Olivier at Manderley. Although the story is set in England, Hitchcock made it after moving to Hollywood.",
+        "hint": "I don't know but I'm thinking of Manderley, the grand house overshadowed by the memory of its owner's first wife. Joan Fontaine plays the new wife."
+      }
+    },
+    "t-q11-cdc9e57d1496afa2": {
+      "prompt": "On which ship does Tintin embark in the English-language edition of The Shooting Star?",
+      "choices": [
+        "The Twilight",
+        "The Aurora",
+        "The Zenith",
+        "The Dawn"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the official English name; in French it's L'Aurore. Haddock commands the ship as Tintin and the scientists race toward the meteorite in the Arctic.",
+        "hint": "I don't know but it's a polar research ship whose English name also describes the northern lights. Captain Haddock is in command of it."
+      }
+    },
+    "t-q12-9ed7f5257a978dc8": {
+      "prompt": "What is the name of Heracles' brother?",
+      "choices": [
+        "Eurystheus",
+        "Linos",
+        "Iphicles",
+        "Amphitryon"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "They're twins with the same mother, Alcmene, but different fathers. Heracles is Zeus's son, while his mortal half-brother is the son of Amphitryon.",
+        "hint": "I don't know but the brother shares Heracles' mother, Alcmene. Amphitryon is his father, so that name belongs to the older generation rather than the brother."
+      }
+    },
+    "t-q13-7eb67737a225725d": {
+      "prompt": "Which martial-arts star presented The Myth at the 2005 Toronto International Film Festival?",
+      "choices": [
+        "Chuck Norris",
+        "Keanu Reeves",
+        "Jackie Chan",
+        "Bruce Willis"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He took The Myth to Toronto that year. It's the adventure where he plays an archaeologist whose dreams connect him to an ancient general.",
+        "hint": "I don't know but the actor is the Hong Kong star of Police Story and Rush Hour. He's known for mixing martial arts with comedy."
+      }
+    },
+    "t-q14-cebc29a292fb3aef": {
+      "prompt": "From what city does the band Imagine Dragons come?",
+      "choices": [
+        "Los Angeles",
+        "New York",
+        "London",
+        "Las Vegas"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "I link them with Dan Reynolds and the Nevada music scene. Night Visions, with Radioactive on it, was the album that brought their big breakthrough.",
+        "hint": "I don't know but they're a Nevada band. I associate their hometown with the Strip, all those casinos and the bright hotel signs."
+      }
+    },
+    "t-q3-cdf56f843184c648": {
+      "prompt": "Which ringtone character topped the UK chart with a dance version of “Axel F” in 2005?",
+      "choices": [
+        "“Crazy Rabbit”",
+        "“Crazy Dog”",
+        "“Crazy Cat”",
+        "“Crazy Frog”"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The ringtone character’s version of “Axel F” topped the UK chart in 2005. The tune itself comes from Beverly Hills Cop.",
+        "hint": "I don't know but I remember the character making engine noises in a crash helmet. The tune itself was borrowed from Beverly Hills Cop."
+      }
+    },
+    "t-q4-1ec97b6e084a7f4d": {
+      "prompt": "The funny bone is located in which part of the human body?",
+      "choices": [
+        "Head",
+        "Foot",
+        "Arm",
+        "Leg"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That tingling spot is at the elbow, where the ulnar nerve sits close to the surface. Despite the nickname, it’s a nerve being bumped.",
+        "hint": "I don't know but I remember knocking it sends a strange tingling feeling toward the little finger. That points to the limb connected to your hand."
+      }
+    },
+    "t-q5-a7c75ed180fed858": {
+      "prompt": "Havana is the capital of which country?",
+      "choices": [
+        "Haiti",
+        "Cuba",
+        "Mexico",
+        "Puerto Rico"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Havana sits on the island’s northwestern coast and is its capital. The old city’s Spanish fortifications are part of a UNESCO World Heritage site.",
+        "hint": "I don't know but I remember the Malecón seafront and old Spanish forts. I’m picturing the Caribbean island capital associated with those landmarks."
+      }
+    },
+    "t-q6-7268fc311710bc2b": {
+      "prompt": "What is Black Manta's job?",
+      "choices": [
+        "Oceanographer",
+        "Sailor",
+        "Fisherman",
+        "Pirate"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He’s an underwater criminal and mercenary who repeatedly clashes with Aquaman. So the seagoing outlaw description fits him better than an ordinary marine profession.",
+        "hint": "I don't know but I remember him fighting Aquaman with advanced underwater equipment. He’s a ruthless criminal at sea, which rules out the respectable occupations."
+      }
+    },
+    "t-q7-ec504722c315c94a": {
+      "prompt": "Which of these volcanoes is Japan's highest mountain?",
+      "choices": [
+        "Jade Mountain",
+        "Mount Fuji",
+        "K2",
+        "Mount Apo"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It rises to 3,776 metres and is an active volcano, despite its long quiet spell. It’s the iconic peak featured in Hokusai’s prints.",
+        "hint": "I don't know but I remember Hokusai making a famous series of views of that mountain. That link to Japanese woodblock prints is what sticks."
+      }
+    },
+    "t-q8-d81c7fb2f38a2c0c": {
+      "prompt": "Which of these people was alive in the year 1900?",
+      "choices": [
+        "Mother Teresa",
+        "Yuri Gagarin",
+        "Giacomo Puccini",
+        "Charles Dickens"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He lived from 1858 to 1924, so 1900 falls squarely within his lifetime. His opera Tosca actually had its first performance that year.",
+        "hint": "I don't know but I remember Tosca premiering around the turn of the twentieth century. Its composer belongs to that era, rather than the space age."
+      }
+    },
+    "t-q9-4bcf5550b6a2acf8": {
+      "prompt": "In which state was pop star Britney Spears born?",
+      "choices": [
+        "Alabama",
+        "Missouri",
+        "Mississippi",
+        "Illinois"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "She was born in McComb, then grew up in Louisiana. That distinction matters here: the question asks for her birthplace, rather than where she was raised.",
+        "hint": "I don't know but I remember McComb as her birthplace. She grew up in Louisiana, so the childhood hometown can throw you off."
+      }
+    },
+    "t-q10-104163e6e1a1d9fc": {
+      "prompt": "How many holes are normally played in a full round of golf?",
+      "choices": [
+        "6",
+        "9",
+        "18",
+        "22"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That’s the usual full round, commonly split into a front nine and a back nine. Shorter rounds exist, so it isn’t a maximum course size.",
+        "hint": "I don't know but I remember golfers talking about the front nine and the back nine. Add those two stretches together for a full round."
+      }
+    },
+    "t-q11-3a5d3b1f377802cf": {
+      "prompt": "Which video game series shares a Retro Brawler Bundle with the Japanese series “Kunio-kun”?",
+      "choices": [
+        "Streets of Rage",
+        "Double Dragon",
+        "Golden Axe",
+        "Growl"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The collection pairs its first three games with Kunio-kun titles. They’re separate brawler series brought together in one package, which explains the connection.",
+        "hint": "I don't know but I remember brothers Billy and Jimmy Lee fighting their way through the streets. That pair is the connection I’d follow."
+      }
+    },
+    "t-q12-8a49c27756f00ca6": {
+      "prompt": "Which Tintin adventure, first serialized in 1930–31, is set in a then-Belgian colony?",
+      "choices": [
+        "\"Tintin in America\"",
+        "\"Tintin in the Congo\"",
+        "\"The Crab with the Golden Claws\"",
+        "\"The Blue Lotus\""
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That adventure first appeared in 1930–31 and reflects Belgium’s colonial outlook at the time. Its African setting is the link to the former Belgian colony.",
+        "hint": "I don't know but I remember this being one of the very early adventures, set in central Africa. The colonial setting is the useful clue."
+      }
+    },
+    "t-q13-a845f950ddedaf50": {
+      "prompt": "In the Tom Hanks film \"Cast Away,\" which courier company's plane crashes?",
+      "choices": [
+        "FedEx",
+        "uShip",
+        "DHL",
+        "UPS"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Chuck Noland works for the delivery company as a systems engineer. His crash strands him on the island and turns his tightly scheduled life upside down.",
+        "hint": "I don't know but I picture the company’s purple-and-orange parcels washing ashore. They’re tied to Chuck’s delivery job, before his life becomes about survival."
+      }
+    },
+    "t-q14-55404b0d8bc8d168": {
+      "prompt": "Which special Dreamcast edition was sold in a bundle with NFL 2K and NBA 2K?",
+      "choices": [
+        "Super Black",
+        "Black Sega Sports Edition",
+        "Regulation 7",
+        "Metallic Silver"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The collector’s package paired a black console and matching controller with NBA 2K and NFL 2K. Its themed branding made it easy to recognise.",
+        "hint": "I don't know but I remember a black console with a branded badge on top. That logo matters more than the colour alone."
+      }
+    },
+    "t-q3-f764a6926a595a86": {
+      "prompt": "What is the first name of the famous inventor da Vinci?",
+      "choices": [
+        "Leonardo",
+        "Michelangelo",
+        "Raphael",
+        "Donatello"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He’s the same Renaissance artist who painted the Mona Lisa and The Last Supper. The inventions and engineering sketches belong to that wide-ranging career.",
+        "hint": "I don't know but I remember him painting the Mona Lisa as well as filling notebooks with inventions. That painter-inventor combination is the clue I’d use."
+      }
+    },
+    "t-q4-4a440ee01035aebc": {
+      "prompt": "Which musical instrument is Bill Clinton famously associated with?",
+      "choices": [
+        "Banjo",
+        "Flute",
+        "Saxophone",
+        "Harmonica"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He played it on The Arsenio Hall Show during the 1992 campaign, wearing dark glasses. That television appearance is the image I remember.",
+        "hint": "I don't know but I picture him in sunglasses, blowing into a shiny jazz instrument with a curved bell. It definitely wasn’t something with strings."
+      }
+    },
+    "t-q5-6947e1d7bd0a9748": {
+      "prompt": "Which game from the “Banjo-Kazooie” series originally released on Xbox 360 centres on building vehicles?",
+      "choices": [
+        "Banjo-Kazooie : Nuts & Bolts",
+        "Banjo-Tooie",
+        "Banjo-Threeie",
+        "Yooka-Laylee"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "This is the one built around making vehicles for the challenges. The bear-and-bird partnership stays, but assembling your own contraptions becomes central to the gameplay.",
+        "hint": "I don't know but I remember this entry revolving around homemade vehicles. The subtitle sounds like small metal pieces you’d find in a workshop."
+      }
+    },
+    "t-q6-4cc44c6d18bf72f1": {
+      "prompt": "In the manga \"Basilisk”, what is Akeginu's power?",
+      "choices": [
+        "She can summon butterflies",
+        "She can control her blood and make it come out of her body",
+        "She has poison breath",
+        "Her stare cancels out the skills of the other ninjas"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She releases blood through her skin to make a blinding mist. That gives her a way to conceal herself and interfere with an opponent’s vision.",
+        "hint": "I don't know but I remember a red mist coming from her own body, like a smokescreen. The trick obscures vision rather than cancelling ninja powers."
+      }
+    },
+    "t-q7-007cb572f14e2fe8": {
+      "prompt": "What profession does the hero of \"Rear Window\" have?",
+      "choices": [
+        "Race car driver",
+        "Photographer",
+        "Filmmaker",
+        "Scrap dealer"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He makes his living taking photographs, but a broken leg confines him to his apartment. His habit of looking closely then turns toward the neighbours.",
+        "hint": "I don't know but I remember his broken leg keeping him away from assignments. His camera equipment becomes useful for watching the courtyard."
+      }
+    },
+    "t-q8-6ade18b223d9172d": {
+      "prompt": "Which of these pronouns is in the first person nominative plural?",
+      "choices": [
+        "They",
+        "Us",
+        "We",
+        "Them"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It’s the subject form for a group that includes the speaker. “Us” is the matching object form, which is why it doesn’t fit here.",
+        "hint": "I don't know but I think of saying “my friends and I” before a verb. The plural replacement has to work as that subject."
+      }
+    },
+    "t-q9-98e55711cc421a52": {
+      "prompt": "How many times has Céline Dion competed as a contestant at the Eurovision Song Contest?",
+      "choices": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Her competitive appearance was the 1988 contest, which she won for Switzerland. Returning to perform the following year was a guest appearance, so that doesn’t add another entry.",
+        "hint": "I don't know but I remember her Swiss victory and then an opening performance the next year. Those weren’t both entries competing for votes."
+      }
+    },
+    "t-q10-6e04f9a3f18cefbc": {
+      "prompt": "Complete the title of the \"Evita\" song \"Another Suitcase in Another ...\" what?",
+      "choices": [
+        "Hold",
+        "Hall",
+        "Hotel room",
+        "Lobby"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It’s the number Perón’s mistress sings in the stage musical after Eva sends her away. The title captures that feeling of being displaced again.",
+        "hint": "I don't know but I remember the last word rhyming with “fall.” It’s a simple word for an indoor passageway, rather than a particular room."
+      }
+    },
+    "t-q11-f24392cec534910a": {
+      "prompt": "In 2021, which one of these spacecrafts holds the record for the farthest landing from Earth?",
+      "choices": [
+        "The Huygens probe",
+        "The Viking 2 probe",
+        "The Surveyor probe",
+        "The Juno probe"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It landed on Titan, Saturn’s largest moon, in 2005 after travelling with Cassini. That touchdown was much farther away than any Moon or Mars landing.",
+        "hint": "I don't know but I remember a probe dropping through thick haze onto Saturn’s big moon. The mission travelled there attached to the Cassini spacecraft."
+      }
+    },
+    "t-q12-0aa6fa83dbab1a43": {
+      "prompt": "In the film ‘Juno’, what is Juno’s surname?",
+      "choices": [
+        "MacGuff",
+        "Loring",
+        "Thunderson",
+        "Bleeker"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That’s the surname she shares with her dad, Mac. Bleeker is the boy’s surname, while Loring belongs to the couple considering adoption.",
+        "hint": "I don't know but I remember her dad going by Mac. Her family name starts with the same sound, which might help place it."
+      }
+    },
+    "t-q13-4dc1fb60d045d706": {
+      "prompt": "Which actress starred as Pierce Brosnan's partner in 'Remington Steele'?",
+      "choices": [
+        "Marilu Henner",
+        "Maud Adams",
+        "Stefanie Powers",
+        "Stephanie Zimbalist"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "She plays Laura Holt, the detective with a fictional male boss. Brosnan’s character turns up and assumes that identity, becoming her partner in the process.",
+        "hint": "I don't know but I remember she’s the daughter of actor Efrem Zimbalist Jr. That acting-family surname is the connection that might jog your memory."
+      }
+    },
+    "t-q14-dd87063f4d692c51": {
+      "prompt": "What is the name of the series that Juni likes in the movie ‘Spy Kids’?",
+      "choices": [
+        "Floop’s Fooglies",
+        "Gloop’s Googlies",
+        "Kloop’s Kooglies",
+        "Ploop’s Pooglies"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It’s the strange children’s programme hosted by Fegan Floop, played by Alan Cumming. Juni’s enthusiasm for it becomes important when the spy adventure reaches Floop’s world.",
+        "hint": "I don't know but I remember Alan Cumming playing the colourful TV host. The programme’s title repeats his surname and the name of those odd creatures."
+      }
+    },
+    "t-q3-a78d4f1e7bbb3b34": {
+      "prompt": "Which city hosted the Summer Olympics in 1936?",
+      "choices": [
+        "Berlin",
+        "New Delhi",
+        "Antwerp",
+        "Seville"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Those were the Games where Jesse Owens won four gold medals in Nazi Germany. The host city became inseparable from that sporting and political story.",
+        "hint": "I don't know but I remember Jesse Owens winning four golds in front of the Nazi regime. That puts the host in Germany."
+      }
+    },
+    "t-q4-ec0756c1766dd123": {
+      "prompt": "What is the name of Indiana Jones' father in \"The Last Crusade\" ?",
+      "choices": [
+        "Henry",
+        "Bob",
+        "Terry",
+        "Monty"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Sean Connery plays Professor Jones, Senior, whose search for the Holy Grail draws Indy into the adventure. Father and son actually share that first name.",
+        "hint": "I don't know but I remember Sean Connery’s character calling Indy “Junior.” That matters because father and son share a first name, despite Indy’s nickname."
+      }
+    },
+    "t-q5-92e9ea003002094e": {
+      "prompt": "Which car manufacturer is featured on the covers of the four main console games in the “Project Gotham Racing” series?",
+      "choices": [
+        "Mercedes",
+        "Lamborghini",
+        "Ferrari",
+        "Dodge Viper"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The cover cars change from game to game, but the maker stays the same: F50, Enzo, F430 and 599 GTB Fiorano are all its models.",
+        "hint": "I don't know but I remember the prancing-horse badge on those red supercars. One of the covers shows an Enzo, which helps identify the maker."
+      }
+    },
+    "t-q6-dfeef53435a19fc1": {
+      "prompt": "Who does Jolyon Wagg work for?",
+      "choices": [
+        "Carreidas aircraft manufacturers",
+        "Rock Bottom Insurance Agency",
+        "Autocart car repair company",
+        "Cutt’s butcher shop"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He’s the insurance salesman who keeps turning up in Captain Haddock’s life. That bargain-sounding company name is the detail that sticks in my memory.",
+        "hint": "I don't know but I remember him being an insurance salesman, always eager to talk business. That rules out the aircraft, car-repair and butcher connections."
+      }
+    },
+    "t-q7-b539dc8e6919fd5c": {
+      "prompt": "What is the Italian name for the city of Naples?",
+      "choices": [
+        "Napa",
+        "Napoli",
+        "Naporino",
+        "Napoletta"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That’s the city’s Italian name, also used by its football club. Naples is the English version, so both names refer to the same place.",
+        "hint": "I don't know but I remember the local football club using the city’s Italian name. It’s the same name you’d see after S.S.C."
+      }
+    },
+    "t-q8-065de9a686cf1837": {
+      "prompt": "What are Thomson & Thompson called in French?",
+      "choices": [
+        "Boule et Bill",
+        "Dupond et Dupont",
+        "Asterix et Obelix",
+        "Blake et Mortimer"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Their French surnames sound alike but finish with different letters. That mirrors the tiny spelling difference between their English names and fits their confusingly similar appearances.",
+        "hint": "I don't know but I remember the two French names sounding identical, with only the final letter changing. The pair’s moustaches are another way to distinguish them."
+      }
+    },
+    "t-q9-285e5363a70c9cd4": {
+      "prompt": "Which historical figure is traditionally associated with saying “The die is cast” as he committed to crossing a river with his army?",
+      "choices": [
+        "Alexander the Great",
+        "William the Conqueror",
+        "Julius Caesar",
+        "Napoleon Bonaparte"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The saying is traditionally linked to his crossing of the Rubicon with his army in 49 BC. It marked a decision that led into civil war.",
+        "hint": "I don't know but I remember the river being the Rubicon, on the edge of Roman Italy. Crossing it was a challenge to the Senate."
+      }
+    },
+    "t-q10-7e2d0a1f1da3de79": {
+      "prompt": "How many Earth years pass between two passages of Halley's comet?",
+      "choices": [
+        "About 66 years old",
+        "Approximately 71 years old",
+        "About 76 years old",
+        "Approximately 81 years old"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Its orbit takes roughly seventy-six years, though the exact interval varies. The last return was in 1986, and the next is expected in 2061.",
+        "hint": "I don't know but I remember its last visit in 1986 and its next expected one in 2061. That puts the gap around three-quarters of a century."
+      }
+    },
+    "t-q11-80f1e0ecb1f88058": {
+      "prompt": "When he was younger, comedian Kevin Hart wanted to become...",
+      "choices": [
+        "... an astronaut.",
+        "...a mover.",
+        "...an airline pilot.",
+        "...a basketball player."
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He’s talked about dreaming of playing professionally, then attending a camp with Kobe Bryant. Seeing that level of talent made him rethink how realistic it was.",
+        "hint": "I don't know but I remember him telling a story about going to camp with Kobe Bryant. That shared childhood activity is the clue I’d follow."
+      }
+    },
+    "t-q12-207a48e6a9b9c82c": {
+      "prompt": "Which film musical features the song \"Second-Hand Rose\"?",
+      "choices": [
+        "Sweet Charity",
+        "Funny Face",
+        "Funny Girl",
+        "Carousel"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The film follows Fanny Brice, played by Barbra Streisand, and includes the song among its numbers. That performer-and-character pairing is what gives it away.",
+        "hint": "I don't know but I associate it with Barbra Streisand playing Fanny Brice. That takes me toward the musical about a Ziegfeld Follies performer."
+      }
+    },
+    "t-q13-b349db71de46282d": {
+      "prompt": "What are the national film awards of France called?",
+      "choices": [
+        "Napoleon",
+        "Charles",
+        "César",
+        "Guillaume"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "They’re France’s major national film awards, named after the sculptor who created the trophy. Its shape comes from one of his distinctive compressions.",
+        "hint": "I don't know but I remember the award taking its name from the sculptor behind the trophy. It wasn’t named after a king or emperor."
+      }
+    },
+    "t-q14-f66ac0c11715a0e0": {
+      "prompt": "Of which of the following is Saint Nicholas not the patron saint?",
+      "choices": [
+        "Russia",
+        "Aberdeen",
+        "Pawnbrokers",
+        "Watchmakers"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "That craft is traditionally linked with Saint Eligius, the goldsmith bishop. Nicholas is associated with generosity and gift-giving, including the legends behind pawnbrokers’ symbols.",
+        "hint": "I don't know but I remember Saint Eligius being connected with fine metalwork and jewellery. That points me toward a precision craft, rather than a place."
+      }
+    },
+    "t-q3-994a248a9cb499d4": {
+      "prompt": "Who is the creator of the animated series \"The Simpsons\"?",
+      "choices": [
+        "Matt Groening",
+        "Seth MacFarlane",
+        "Dan Harmon",
+        "Raphael Bob-Waksberg"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He created the Simpson family and also created Futurama. His earlier comic strip, Life in Hell, is another useful link to the same cartoonist.",
+        "hint": "I don't know but I remember the same cartoonist being behind Futurama and the comic Life in Hell. That combination is what points me toward him."
+      }
+    },
+    "t-q4-c2f81391f80a222f": {
+      "prompt": "What was the first name of Lucille Ball's on-screen husband on the sitcom \"I Love Lucy\"?",
+      "choices": [
+        "Micky",
+        "Ricky",
+        "Nicky",
+        "Dicky"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Desi Arnaz plays the bandleader married to Lucy Ricardo. Their son is given the same name, with “Little” added to tell them apart.",
+        "hint": "I don't know but I remember their son being called “Little” followed by his dad’s name. Desi Arnaz played the father, whose surname was Ricardo."
+      }
+    },
+    "t-q5-8f43718c115a1b42": {
+      "prompt": "What country has never won a World Cup in women's soccer?",
+      "choices": [
+        "Germany",
+        "Norway",
+        "Japan",
+        "France"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Through the 2023 tournament, France had never taken the title. Germany, Norway and Japan had all won it, so they don’t fit.",
+        "hint": "I don't know but I remember Japan winning in 2011, Norway in 1995, and Germany twice. The remaining country has had success without lifting this trophy."
+      }
+    },
+    "t-q6-9d5c0cd62c7c0209": {
+      "prompt": "What is the name of the pact signed between Germany and the Soviet Union in 1939?",
+      "choices": [
+        "Warsaw Pact",
+        "Moscow-Berlin Pact",
+        "German-Soviet pact",
+        "Tehran Pact"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It’s also called the Molotov–Ribbentrop Pact, after the foreign ministers who signed it. The public non-aggression agreement had a secret protocol dividing spheres of influence.",
+        "hint": "I don't know but I remember Molotov and Ribbentrop signing it just before the invasion of Poland. It was a non-aggression deal, not the later Cold War alliance."
+      }
+    },
+    "t-q7-48179a71d17e4daa": {
+      "prompt": "What is the name of the special-issue comic book that came out to celebrate 50 years of the Smurfs?",
+      "choices": [
+        "It Came from Outer Smurf",
+        "The Flute Smurfers",
+        "The Birthday of Papa Smurf",
+        "The Smurfs and the Booglooboo"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It was created for the 2008 anniversary and looks back to the Smurfs’ original musical adventure. The story works as a prequel to that first encounter.",
+        "hint": "I don't know but I remember it going back to Johan and Peewit and the enchanted instrument from the Smurfs’ very first adventure."
+      }
+    },
+    "t-q8-89833fe24e704347": {
+      "prompt": "What is the name of the online activist group known for using the stylized Guy Fawkes mask as a symbol?",
+      "choices": [
+        "Continuous",
+        "Anonymous",
+        "Notorious",
+        "Autonomous"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The mask became a recognizable symbol for the loose online activist collective. It hides individual identity, which fits the idea behind the group’s name.",
+        "hint": "I don't know but I remember the mask from V for Vendetta. The group’s name suggests people acting together without revealing their individual identities."
+      }
+    },
+    "t-q9-ddb7823adaceac93": {
+      "prompt": "Who gave birth to a baby boy named Sean Preston on September 14, 2005?",
+      "choices": [
+        "Christina Aguilera",
+        "Britney Spears",
+        "Jennifer Lopez",
+        "Pink"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He was her first son with Kevin Federline. The September 2005 birth came before their younger son, Jayden James, arrived the following year.",
+        "hint": "I don't know but I remember Kevin Federline being the baby’s father. His mother was the pop star behind “Toxic” and “…Baby One More Time.”"
+      }
+    },
+    "t-q10-126e9565967b63d2": {
+      "prompt": "Who was the last wife of Henry VIII?",
+      "choices": [
+        "Catherine Howard",
+        "Catherine Parr",
+        "Anne of Cleves",
+        "Anne Boleyn"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She was his sixth wife and was still married to him when he died. She later married Thomas Seymour, so her story continued after Henry.",
+        "hint": "I don't know but I remember the last wife surviving the king and then marrying Thomas Seymour. She also published books, which makes her stand out."
+      }
+    },
+    "t-q11-ea08d4571b4dae33": {
+      "prompt": "The city of Petra was carved from what kind of rock?",
+      "choices": [
+        "Sandstone",
+        "Granite",
+        "Marble",
+        "Limestone"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "The Nabataeans carved the facades directly into the rose-red cliffs. That layered rock helped give Petra its distinctive colours and its famous rock-cut architecture.",
+        "hint": "I don't know but I remember those rose-red cliffs being made from sediment built up in layers. I’d think of compacted grains rather than cooling magma."
+      }
+    },
+    "t-q12-b3eb02668ddd4974": {
+      "prompt": "After the United Kingdom left in January 2020, how many countries made up the European Union?",
+      "choices": [
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The UK’s departure reduced the membership by one at the end of January 2020. The remaining member states continued as that smaller group.",
+        "hint": "I don't know but I remember the EU having twenty-eight members before Brexit. For the post-departure total, I’d subtract the country that left."
+      }
+    },
+    "t-q13-3da4ed605d3e5a0a": {
+      "prompt": "What is the medical term for an ear infection?",
+      "choices": [
+        "Mumps",
+        "Otitis",
+        "Rheumatism",
+        "Edema"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The term covers inflammation or infection of the ear. Adding “media” specifies the middle ear, while “externa” refers to the outer ear and ear canal.",
+        "hint": "I don't know but I remember the ending “-itis” meaning inflammation. The beginning needs to refer to the ear, like the start of “otoscope.”"
+      }
+    },
+    "t-q14-9e9b91725d31b2d4": {
+      "prompt": "How many toothpicks can Raymond count in a blink of an eye in \"Rain Man\" ?",
+      "choices": [
+        "146",
+        "246",
+        "316",
+        "426"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The box held 250, and four stayed inside after the spill. Subtract those and you get his count, which the waitress’s comment confirms.",
+        "hint": "I don't know but I remember him repeating eighty-two three times before giving the total. I’d multiply that little count, rather than guess the whole pile."
+      }
+    },
+    "t-q3-ddf6334dcadc6048": {
+      "prompt": "Gunpowder, invented in 9th-century China, revolutionized what field?",
+      "choices": [
+        "Cosmetics",
+        "Magic",
+        "Cooking",
+        "War"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "Cannons, guns and explosive projectiles changed how armies fought and attacked fortifications. That's the connection I'd make, even though it also gave us fireworks.",
+        "hint": "I don't know but think about what cannons did to castle walls. That explosive powder changed the weapons people could use against each other."
+      }
+    },
+    "t-q4-f2ac103c2c2c9c7c": {
+      "prompt": "What is the original name of Superman in the Richard Donner film?",
+      "choices": [
+        "Mat-El",
+        "Kal-El",
+        "Jum-El",
+        "Ech-El"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's his Kryptonian birth name, before the Kents raise him as Clark. The family ending connects him to his father, Jor-El, played by Marlon Brando.",
+        "hint": "I don't know but his father's name is Jor-El, and he keeps that family ending. I remember his own name starting with a K."
+      }
+    },
+    "t-q5-7f8a163e64469f44": {
+      "prompt": "What manga takes place in the country of Clow?",
+      "choices": [
+        "Tsubasa: Reservoir Chronicle",
+        "Seven Deadly Sins",
+        "Gate",
+        "Red Eyes Sword"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's where Sakura and Syaoran's journey begins. After she loses her memories, he travels between worlds with Kurogane, Fai and Mokona to recover them.",
+        "hint": "I don't know but I remember Syaoran trying to recover Sakura's lost memories. A warrior called Kurogane and a magician called Fai travel with him."
+      }
+    },
+    "t-q6-a0645d8e2694d886": {
+      "prompt": "In what year do the events take place in the manga \"Akira\"?",
+      "choices": [
+        "2009",
+        "2019",
+        "2029",
+        "2039"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The manga opens in a rebuilt Neo-Tokyo after a catastrophe. That year was still a distant future when Otomo began the series in the eighties.",
+        "hint": "I don't know but I remember the setting being in the late 2010s. Neo-Tokyo has already been rebuilt after the destruction of the old city."
+      }
+    },
+    "t-q7-c0e2c8f853bd73ea": {
+      "prompt": "Who is the protagonist of the game \"inFamous: Second Son\"?",
+      "choices": [
+        "Cole MacGrath",
+        "Zeke Dunbar",
+        "Delsin Rowe",
+        "Abigail Walker"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He's the young man whose newly discovered powers take him into a locked-down Seattle. His older brother Reggie comes along on that journey.",
+        "hint": "I don't know but I remember the hero having an older brother called Reggie and wearing a beanie. His first power involves smoke."
+      }
+    },
+    "t-q8-51a3a332e7ebcefd": {
+      "prompt": "Which metal was commonly added to tin as a cheap bulking agent in historical pewter?",
+      "choices": [
+        "Copper",
+        "Lead",
+        "Silver",
+        "Iron"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It was an inexpensive addition to tin in the historical alloy called lay metal. Pewter recipes varied, so I'd pay attention to the cheap bulking role.",
+        "hint": "I don't know but I remember worries about a toxic metal in antique drinking vessels. Think of the metal also associated with old water pipes."
+      }
+    },
+    "t-q9-ff248dc45a8a6ca7": {
+      "prompt": "What group had a number one hit in 1961 with \"Will You Love Me Tomorrow\"?",
+      "choices": [
+        "The Supremes",
+        "The Shirelles",
+        "The Ronettes",
+        "The Marvelettes"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "They took the Gerry Goffin and Carole King song to the top of the US chart. Shirley Owens's voice is the one I remember.",
+        "hint": "I don't know but I remember Shirley Owens singing with the group. They also recorded Mama Said and Dedicated to the One I Love."
+      }
+    },
+    "t-q10-946608463fce83b0": {
+      "prompt": "What year does the present in The Terminator correspond to?",
+      "choices": [
+        "1982",
+        "1983",
+        "1984",
+        "1985"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the year Kyle Reese and the Terminator arrive from 2029 to find Sarah Connor. The film's release year is the useful connection here.",
+        "hint": "I don't know but I remember it being set in the same year the original film came out. Think of that early Arnold Schwarzenegger breakthrough."
+      }
+    },
+    "t-q11-6b5cdc3d0dd6f9d4": {
+      "prompt": "Who beat Greg \"The Hammer\" Valentine at Wrestlemania 1 via countout?",
+      "choices": [
+        "Tito Santana",
+        "The Honky Tonk Man",
+        "Junkyard Dog",
+        "Andre the Giant"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He won the match, but Valentine kept the Intercontinental Championship because the result was a count-out. Winning the bout didn't automatically mean winning the belt.",
+        "hint": "I don't know but I picture a crowd favourite wearing a collar and chains. He had a big powerslam he called the Thump."
+      }
+    },
+    "t-q12-0c1e94cbcaba8645": {
+      "prompt": "In Aquaman's post-Crisis origin, why was he abandoned as a baby on Mercy Reef?",
+      "choices": [
+        "Because he cannot breathe underwater",
+        "Because he is an illegitimate child",
+        "Because his blond hair is a sign of a bad omen",
+        "Because he was born sick"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The Atlanteans took his colouring as the curse of Kordax. That superstition led them to abandon him, despite his being Queen Atlanna's son.",
+        "hint": "I don't know but I remember a superstition called the curse of Kordax. The fear came from an unusual feature of the baby's appearance."
+      }
+    },
+    "t-q13-31c1e93a16410277": {
+      "prompt": "Ellan Vannin is the traditional name for which island?",
+      "choices": [
+        "Jersey",
+        "Isle of Man",
+        "Lindisfarne",
+        "Lundy"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's the island's name in Manx Gaelic, also shortened to Mannin. The language belongs to the same Celtic family as Irish and Scottish Gaelic.",
+        "hint": "I don't know but the name is Manx Gaelic. I'd think of the island in the Irish Sea with its own Celtic language."
+      }
+    },
+    "t-q14-1f9f0639798d7679": {
+      "prompt": "What year did the first WWE Survivor Series take place?",
+      "choices": [
+        "1985",
+        "1987",
+        "1989",
+        "1991"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The first one was held on Thanksgiving Day, built around team elimination matches. André the Giant was the sole survivor of the main event.",
+        "hint": "I don't know but it began later in the same year as Hogan versus André at WrestleMania III. That famous matchup might help you date it."
+      }
+    },
+    "t-q3-ee8979d8f33b24d1": {
+      "prompt": "Which of these was the official bodyguard of the Roman emperors?",
+      "choices": [
+        "Grenadier Guard",
+        "Welsh Guard",
+        "Irish Guard",
+        "Praetorian Guard"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The emperor kept these elite troops close as his personal guards. Their access to him could give them a powerful role in Roman politics.",
+        "hint": "I don't know but the Irish, Welsh and Grenadier names make me think of British regiments. I'd look for the one with a Latin-sounding name."
+      }
+    },
+    "t-q4-6f92c40150880a3f": {
+      "prompt": "Which god of Roman mythology is often depicted as a small winged boy?",
+      "choices": [
+        "Mars",
+        "Saturn",
+        "Cupid",
+        "Vulcan"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He's the little archer associated with love, often alongside his mother Venus. The bow and arrows are usually the giveaway in paintings.",
+        "hint": "I don't know but I picture a little archer on Valentine's cards, making people fall in love. Mars is the one I'd associate with war."
+      }
+    },
+    "t-q5-76d34e9625f132c0": {
+      "prompt": "Which of these titles was given to the kings of ancient Egypt?",
+      "choices": [
+        "Emir",
+        "Pharaoh",
+        "Ayatollah",
+        "Sheikh"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The title comes from words meaning 'great house,' originally the royal palace. That's the title I associate with rulers such as Tutankhamun and Ramesses.",
+        "hint": "I don't know but I associate that title with Tutankhamun, pyramids and royal tombs. Emir and sheikh make me think of a different historical setting."
+      }
+    },
+    "t-q6-842d3b8a2421eb61": {
+      "prompt": "Which chemical element has the symbol Sn?",
+      "choices": [
+        "Selenium",
+        "Tungsten",
+        "Tin",
+        "Silicon"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The symbol comes from the Latin stannum. It's the metal used with copper to make bronze, and its name also turns up on food cans.",
+        "hint": "I don't know but I remember Sn comes from Latin rather than its English name. Think of the metal mixed with copper to make bronze."
+      }
+    },
+    "t-q7-e83c93730b50d272": {
+      "prompt": "During which war is the film \"The Deer Hunter\" set?",
+      "choices": [
+        "Vietnam War",
+        "Korean War",
+        "World War I",
+        "World War II"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It follows steelworker friends from Pennsylvania into that conflict in Southeast Asia. The war and its aftermath tear through the lives they left behind.",
+        "hint": "I don't know but I remember American soldiers, Southeast Asia and the fall of Saigon. That puts it well after the two world wars."
+      }
+    },
+    "t-q8-397734f3ff69d425": {
+      "prompt": "The disgraced cricketer Hansie Cronje is a former captain of which international team?",
+      "choices": [
+        "South Africa",
+        "New Zealand",
+        "Sri Lanka",
+        "Australia"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He captained the side during the 1990s, before the match-fixing scandal ended his career. I connect him with the team's green and gold kit.",
+        "hint": "I don't know but I remember him leading the Proteas in green and gold. That nickname should help you place the national team."
+      }
+    },
+    "t-q9-859ab5449e26dac6": {
+      "prompt": "What WWE Hall of Famer starred in the cult classic film \"They Live\"?",
+      "choices": [
+        "Hulk Hogan",
+        "Macho Man Randy Savage",
+        "Rowdy Roddy Piper",
+        "Ted DiBiase"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He plays the drifter who discovers aliens hiding behind ordinary faces. The special sunglasses reveal what's really going on around him.",
+        "hint": "I don't know but I'm picturing the wrestler who wore a kilt and entered to bagpipes. He had plenty of famous clashes with Hulk Hogan."
+      }
+    },
+    "t-q10-217766ce42b16fa3": {
+      "prompt": "Who received his first Oscar nomination for his role in the 2005 film \"Cinderella Man\"?",
+      "choices": [
+        "Russell Crowe",
+        "Paddy Considine",
+        "Paul Giamatti",
+        "Colin Farrell"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He plays Joe Gould, the manager in Russell Crowe's boxing comeback story. The nomination was for supporting actor at the 2006 ceremony.",
+        "hint": "I don't know but I remember the lead actor from Sideways, playing the boxer's manager here. Russell Crowe is the fighter, so I'd rule him out."
+      }
+    },
+    "t-q11-0b2afa9eba997a4d": {
+      "prompt": "Which of the following peoples is largely to be found in the Atlas Mountain region of Morocco and Algeria?",
+      "choices": [
+        "Berber",
+        "Ashanti",
+        "Bedouin",
+        "Tuareg"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "They're also known as Amazigh, with communities across North Africa, including the Atlas Mountains. The Tuareg are related, but more associated with the Sahara.",
+        "hint": "I don't know but I associate the Atlas villages with Amazigh languages. The Tuareg option makes me think more of desert communities in the Sahara."
+      }
+    },
+    "t-q12-8a25dd583a8e9623": {
+      "prompt": "In 2008, which English trip hop band released its third album entitled “Third”?",
+      "choices": [
+        "Portishead",
+        "Lamb",
+        "Hooverphonic",
+        "The XX"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It's the Bristol band with Beth Gibbons singing. They returned with that album after a long gap following their self-titled second record.",
+        "hint": "I don't know but I remember Beth Gibbons's voice and their earlier album Dummy. Think of the Bristol group behind Glory Box."
+      }
+    },
+    "t-q13-9dd8deb288fbd6a2": {
+      "prompt": "In \"Jaws\", what type of shark does a fisherman catch before Brody eliminates the real killer?",
+      "choices": [
+        "A basking shark",
+        "A tiger shark",
+        "A great white shark",
+        "a mako shark"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The town celebrates catching it, but Hooper says its bite is too small to match the attacks. The dangerous great white is still out there.",
+        "hint": "I don't know but Hooper rules out the captured animal by its bite size. Its name makes me think of a striped big cat."
+      }
+    },
+    "t-q14-7e53fd587b7747e8": {
+      "prompt": "In \"The Gauntlet\", which vehicle does Clint Eastwood use to enter Phoenix?",
+      "choices": [
+        "An ambulance",
+        "A bus",
+        "A school bus",
+        "A heavy truck"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Shockley takes over a passenger vehicle and adds steel plates for protection. The final drive through the police gunfire is the scene I remember.",
+        "hint": "I don't know but I picture rows of passenger seats and steel plating around the driver's seat. It isn't a yellow vehicle carrying children."
+      }
+    },
+    "t-q3-c38923700a5d9b94": {
+      "prompt": "What fruit is the basis for guacamole?",
+      "choices": [
+        "Oranges",
+        "Pineapples",
+        "Avocados",
+        "Tomatoes"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Their soft green flesh gives the dip its creamy base. Lime, onion, salt and other ingredients add flavour, but they're the fruit doing the main work.",
+        "hint": "I don't know but I picture dark, bumpy skin, pale green flesh and one large stone in the middle. Tomatoes can be added, but aren't the base."
+      }
+    },
+    "t-q4-3efd5fdebad32393": {
+      "prompt": "In the United States, what is a presidential pardon?",
+      "choices": [
+        "A presidential fart",
+        "An act of forgiveness for a federal offense",
+        "An official excuse for being late",
+        "A declaration of peace"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's presidential forgiveness of a federal offense. A pardon can remove penalties and certain legal restrictions, but it doesn't declare the person innocent.",
+        "hint": "I don't know but I remember Gerald Ford doing this for Richard Nixon after Watergate. It concerns criminal responsibility, even when there hasn't been a conviction."
+      }
+    },
+    "t-q5-cfad9e4744f2c8cf": {
+      "prompt": "Who is the director of the movie \"Batman & Robin\" released in 1997?",
+      "choices": [
+        "Tim Burton",
+        "Joel Schumacher",
+        "Christopher Nolan",
+        "Richard Donner"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He's the director of both this film and Batman Forever. George Clooney takes over the cape here, with Schwarzenegger playing Mr Freeze.",
+        "hint": "I don't know but it was the same director as Batman Forever, with Val Kilmer. Tim Burton made the earlier films, before this brighter-looking pair."
+      }
+    },
+    "t-q6-d852e3db6e461698": {
+      "prompt": "Who has won the most NBA MVPs over their career as of 2021?",
+      "choices": [
+        "Michael Jordan",
+        "Kareem Abdul-Jabbar",
+        "Bill Russel",
+        "LeBron James"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He won six regular-season MVP awards during his years with Milwaukee and Los Angeles. Those are separate from the awards given for the NBA Finals.",
+        "hint": "I don't know but I'm thinking of the towering centre with the skyhook. He played for Milwaukee before the Lakers, across the 1970s and 1980s."
+      }
+    },
+    "t-q7-15f9098fd0f0a9ed": {
+      "prompt": "Which “Beetlejuice” actress plays Moira Rose in the series “Schitt’s Creek”?",
+      "choices": [
+        "Scarlett O’Hara",
+        "Catherine Deneuve",
+        "Catherine O’Hara",
+        "Glenn Close"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "She also plays Delia in Beetlejuice and Kevin's mum in Home Alone. Moira's elaborate wigs and dramatic delivery make the role especially memorable.",
+        "hint": "I don't know but think of Kevin's frantic mum in Home Alone. She also worked with Eugene Levy on SCTV long before the Rose family."
+      }
+    },
+    "t-q8-bc3d60dcf0e6cc2c": {
+      "prompt": "What former bare-knuckle boxer was the original leader of the WWE faction, the Nexus?",
+      "choices": [
+        "Heath Slater",
+        "Justin Gabriel",
+        "Wade Barrett",
+        "Bray Wyatt"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He led the NXT newcomers who stormed onto Raw in 2010. The black-and-yellow armbands and attacks on John Cena are what stick with me.",
+        "hint": "I don't know but I remember an English wrestler who later used a 'Bad News' persona. He'd announce that he had bad news for people."
+      }
+    },
+    "t-q9-21a903798a5aa811": {
+      "prompt": "Drew, Ethel, John, and Lionel all belong to which acting dynasty?",
+      "choices": [
+        "Huston",
+        "Barrymore",
+        "Fonda",
+        "Redgrave"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "John, Ethel and Lionel were siblings, and Drew is John's granddaughter. The family connection stretches from the theatre into generations of Hollywood films.",
+        "hint": "I don't know but Drew was the little girl in E.T., and Lionel played Mr Potter in It's a Wonderful Life. Those roles might jog your memory."
+      }
+    },
+    "t-q10-2a02ae5728c555b7": {
+      "prompt": "The name of rap star L L Cool J is an abbreviation for \"Ladies Love Cool ...\" who?",
+      "choices": [
+        "Joe",
+        "Jeff",
+        "Jazz",
+        "James"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He was born with that first name, followed by Todd Smith. The stage name turns it into a boast about his appeal to women.",
+        "hint": "I don't know but it uses his real first name, not a nickname. Think of the first name shared by Bond and Captain Kirk."
+      }
+    },
+    "t-q11-988a8ecd32cd000d": {
+      "prompt": "How many \"laws\" are there in soccer?",
+      "choices": [
+        "8",
+        "11",
+        "17",
+        "23"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The rulebook has a separate law for things like offside, fouls and corner kicks. The final numbered law deals with the corner kick.",
+        "hint": "I don't know but there are more laws than players on one team. I remember offside is number eleven, and several numbered sections follow it."
+      }
+    },
+    "t-q12-3f8068c7ec3a36ca": {
+      "prompt": "What does Edward first sculpture in the Boggs family shrub in \"Edward Scissorhands\"?",
+      "choices": [
+        "A cat",
+        "A bird",
+        "A dinosaur",
+        "A butterfly"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He clips the hedge into a long-necked prehistoric creature. It's an early sign that those frightening-looking blades can make something surprisingly delicate and imaginative.",
+        "hint": "I don't know but I remember a long neck rising above the green hedge. Think of a prehistoric creature rather than a pet or insect."
+      }
+    },
+    "t-q13-7e0b2a01c85233ce": {
+      "prompt": "In the 1966 TV series, where is the secret button that opens the access to the Batcave located?",
+      "choices": [
+        "In a bust of William Shakespeare",
+        "Under the black king on a chessboard",
+        "Under a white key on a piano",
+        "In the library, behind a \"Dracula\" book"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Bruce lifts the bust's hinged head to reach a hidden switch. That opens the bookcase hiding the poles down to the cave.",
+        "hint": "I don't know but Bruce reaches for a small statue of a famous English playwright. It's the head that lifts, rather than a book being pulled."
+      }
+    },
+    "t-q14-470c48ebd96616ae": {
+      "prompt": "Using the King James wording of Exodus 20 and Westminster (Reformed) numbering, how many of the Ten Commandments do not begin with 'Thou shalt not'?",
+      "choices": [
+        "None",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "With the King James wording, count the opening command about other gods, plus remembering the Sabbath and honouring your parents. The opening wording is the trick.",
+        "hint": "I don't know but two tell you to do something: remember the Sabbath and honour your parents. Check how the opening command is phrased too."
+      }
+    },
+    "t-q3-3503668235feb4ab": {
+      "prompt": "In the 2017 movie \"Wonder Woman,\" which action would put an end to the war, according to Diana Prince?",
+      "choices": [
+        "A peace treaty",
+        "Taking Berlin",
+        "Killing Ares",
+        "Putting a woman in power"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's Diana's initial theory: the god of war is behind humanity's fighting. Her discovery that people also choose cruelty complicates that idea.",
+        "hint": "I don't know but she thinks a Greek god is driving the conflict. She believes the problem has a single supernatural cause she can confront."
+      }
+    },
+    "t-q4-b19450cf9ff187d5": {
+      "prompt": "What is the name of the money paid when a footballer moves from one club to another?",
+      "choices": [
+        "Postage tax",
+        "Delivery cost",
+        "Transfer fee",
+        "Purchase order"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's money agreed between clubs for a player still under contract. The player's wages are separate, and an out-of-contract move may involve no such payment.",
+        "hint": "I don't know but this payment goes from one club to another, not into the player's pay packet. Players out of contract can move without it."
+      }
+    },
+    "t-q5-5bdb0662c3a80661": {
+      "prompt": "When was the first Harry Potter movie released?",
+      "choices": [
+        "1998",
+        "1999",
+        "2000",
+        "2001"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It arrived in cinemas in November, with Daniel Radcliffe, Rupert Grint and Emma Watson as the young trio. Chris Columbus directed their first outing.",
+        "hint": "I don't know but it reached cinemas around the same time as The Fellowship of the Ring. That was just after the turn of the millennium."
+      }
+    },
+    "t-q6-0e176c8b5660c927": {
+      "prompt": "Who was the president of Mexico between 2006 and 2012?",
+      "choices": [
+        "Felipe Calderón",
+        "Vicente Fox",
+        "Ernesto Zedillo",
+        "Luis Echeverría"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He followed Vicente Fox and served a six-year term, before Enrique Peña Nieto took over. Both he and Fox came from the PAN party.",
+        "hint": "I don't know but it was the PAN politician who succeeded Vicente Fox. Enrique Peña Nieto came after him, so look between those two presidencies."
+      }
+    },
+    "t-q7-1f38e566f55cdd0b": {
+      "prompt": "What actor plays Gargamel in the Raja Gosnell’s 2011 “The Smurfs” movie?",
+      "choices": [
+        "Frank Welker",
+        "Hank Welker",
+        "Franck Azaria",
+        "Hank Azaria"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "He plays Gargamel in live action under the make-up, rather than just supplying a cartoon voice. You may also recognise his voice work from The Simpsons.",
+        "hint": "I don't know but I connect him with The Simpsons, where he voices Moe and Chief Wiggum. The voice-acting clue is what helps me."
+      }
+    },
+    "t-q8-eca1eb839bb5a688": {
+      "prompt": "Who wrote the novel \"Our Mutual Friend\"?",
+      "choices": [
+        "Thomas Hardy",
+        "George Eliot",
+        "Charles Dickens",
+        "Jane Austen"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It was his last completed novel, with inheritance, money and the Thames running through the story. The unfinished Edwin Drood came afterwards.",
+        "hint": "I don't know but I'm thinking of the author behind Oliver Twist and Bleak House. London, poverty and social climbing are familiar territory for him."
+      }
+    },
+    "t-q9-e8cd0a1ec949b153": {
+      "prompt": "What actor played the part of Jim Rockford on \"The Rockford Files\"?",
+      "choices": [
+        "Darren McGavin",
+        "Peter Graves",
+        "James Garner",
+        "Robert Wagner"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He brought the same easygoing charm he'd shown in Maverick to a Los Angeles private detective. The role won him an Emmy in the 1970s.",
+        "hint": "I don't know but I'm picturing Bret Maverick from the old western series. He had that relaxed, slightly roguish manner even when playing a private detective."
+      }
+    },
+    "t-q10-b89b81aa4d9544d9": {
+      "prompt": "What year was the first MLB All-Star game held?",
+      "choices": [
+        "1925",
+        "1933",
+        "1940",
+        "1949"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It was staged at Chicago's Comiskey Park during the city's World's Fair. Babe Ruth hit a home run in the American League's win.",
+        "hint": "I don't know but I remember Chicago's World's Fair and Babe Ruth still playing. Think of the Great Depression, well before the Second World War."
+      }
+    },
+    "t-q11-53f19e91637b3d9c": {
+      "prompt": "What natural disasters does the Egyptian god Geb cause?",
+      "choices": [
+        "Cyclones",
+        "Floods",
+        "Earthquakes",
+        "Droughts"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Geb is the earth god, and his laughter was said to make the ground shake. That connection is what makes the disaster fit.",
+        "hint": "I don't know but Geb represents the earth itself. I remember a story about his laughter making the ground move, rather than anything involving weather."
+      }
+    },
+    "t-q12-e66dca9745635a54": {
+      "prompt": "Which Egyptian gods were honoured during the Festival of the Divine Union?",
+      "choices": [
+        "Osiris and Isis",
+        "Horus and Hathor",
+        "Geb and Nut",
+        "Ptah and Sekhmet"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The celebration brought her image from Dendera to his temple at Edfu. It marked their reunion, rather than the better-known story of Osiris and Isis.",
+        "hint": "I don't know but I remember a goddess travelling by boat from Dendera to Edfu. Think of the cow-eared goddess and the falcon god."
+      }
+    },
+    "t-q13-43fde9d98cff3a8a": {
+      "prompt": "Which of these cities used to be in East Germany?",
+      "choices": [
+        "Dresden",
+        "Frankfurt am Main",
+        "Hamburg",
+        "Munich"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "It lies in Saxony, in the former German Democratic Republic. The rebuilt Frauenkirche and the city's position on the Elbe are what I associate with it.",
+        "hint": "I don't know but I'm thinking of Saxony and the city with the rebuilt Frauenkirche. Munich is in Bavaria, and Hamburg lies much further northwest."
+      }
+    },
+    "t-q14-fd64f34f1422dd3a": {
+      "prompt": "What is the actual firearm which Yume Kuchinashi has in Blue Archive?",
+      "choices": [
+        "Shotgun",
+        "Minigun",
+        "Handgun",
+        "Assault Rifle"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Yume's weapon is a compact pistol, later kept by Hoshino along with her shield. It's easy to mix it up with Hoshino's larger gun.",
+        "hint": "I don't know but I picture the small sidearm associated with her shield. It looks portable enough for one hand, rather than a long-barrelled shoulder weapon."
+      }
+    },
+    "t-q3-44f8c39b56ce6bb8": {
+      "prompt": "Which of these is a group of islands north-east of Borneo?",
+      "choices": [
+        "Charlesines",
+        "Andrewines",
+        "Edwardines",
+        "Philippines"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The archipelago includes Luzon, the Visayas and Mindanao, with Manila on Luzon. Its southern islands sit close to northern Borneo across the sea.",
+        "hint": "I don't know but I'm thinking of Manila, Cebu and Luzon. It's the island country whose names often show a long history of Spanish influence."
+      }
+    },
+    "t-q4-84808358f01a5844": {
+      "prompt": "What is the most common form of NASCAR circuit?",
+      "choices": [
+        "Oval",
+        "Square",
+        "Triangular",
+        "Trapezoidal"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That layout is the familiar NASCAR pattern: long straights linked by sweeping turns. There are road courses and unusual shapes too, so it isn't universal.",
+        "hint": "I don't know but I picture long straights joined by sweeping banked turns, with drivers mostly turning left. Square corners don't fit that racing image."
+      }
+    },
+    "t-q5-e48e6d99347161b2": {
+      "prompt": "Which Tintin adventure marks the appearance of Captain Haddock?",
+      "choices": [
+        "\"The Secret of the Unicorn\"",
+        "\"The Crab with the Golden Claws\"",
+        "\"The Black Island\"",
+        "\"Destination Moon\""
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Tintin meets him aboard the Karaboudjan while investigating a smuggling operation. The captain then becomes one of the series' most familiar companions.",
+        "hint": "I don't know but their meeting involves a cargo ship, smuggling and tins of seafood. It's earlier than the adventure about the model sailing ship."
+      }
+    },
+    "t-q6-5173fa35fdfd442f": {
+      "prompt": "Yogi Berra had a 19-year career in which sport?",
+      "choices": [
+        "Baseball",
+        "Basketball",
+        "Football",
+        "Hockey"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "He was a catcher, mainly for the New York Yankees, and won ten World Series titles as a player. The mitt is the giveaway.",
+        "hint": "I don't know but I picture a catcher in pinstripes behind home plate. He was a Yankees legend, which should put you in the right sport."
+      }
+    },
+    "t-q7-7c82cd638a66c4b1": {
+      "prompt": "Which novel by Jane Austen was adapted for the cinema in 2005, in a film starring Keira Knightley?",
+      "choices": [
+        "Sense and Sensibility",
+        "Pride and Prejudice",
+        "Atonement",
+        "Emma"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She plays Elizabeth Bennet opposite Matthew Macfadyen's Mr Darcy. That pairing, rather than the film's period costumes alone, is the easiest way to place it.",
+        "hint": "I don't know but I remember Elizabeth Bennet and Mr Darcy, with Matthew Macfadyen opposite her. Atonement came later and wasn't based on Jane Austen."
+      }
+    },
+    "t-q8-a7345b05f38e5b28": {
+      "prompt": "What Roman emperor serves as the principal antagonist in the film Gladiator?",
+      "choices": [
+        "Tiberius",
+        "Commodus",
+        "Nero",
+        "Diocletian"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He is played by Joaquin Phoenix, opposite Russell Crowe's Maximus. In the film, jealousy and his hunger for power drive their rivalry.",
+        "hint": "I don't know but it's Joaquin Phoenix's character, presented as Marcus Aurelius's son. Think of the emperor obsessed with winning the crowd's approval."
+      }
+    },
+    "t-q9-e04128e3885215f3": {
+      "prompt": "From which city do Robin and Jane depart in the movie \"Boys on the Side\"?",
+      "choices": [
+        "Los Angeles",
+        "Boston",
+        "New York City",
+        "Philadelphia"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "The trip starts there, with Jane joining Robin for a drive towards California. Their journey takes them through Pittsburgh before the story settles in Tucson.",
+        "hint": "I don't know but their starting point is on the East Coast, before Pittsburgh. Think of the city with five boroughs, rather than their western destination."
+      }
+    },
+    "t-q10-fe722bb7ec031131": {
+      "prompt": "What link exists between \"Vertigo\" and \"Diabolique\" by HG Clouzot?",
+      "choices": [
+        "The same actor",
+        "The same composer",
+        "The same authors",
+        "The same production company"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Both films adapt novels by the French writing duo Pierre Boileau and Thomas Narcejac. That's the connection, even though the directors and screenwriters differ.",
+        "hint": "I don't know but I remember a French crime-writing partnership behind the source books. One film is Hitchcock's, while Clouzot directed the other."
+      }
+    },
+    "t-q11-328a2e3ea4b59eea": {
+      "prompt": "In F1, when was the steering wheel gear change technology introduced?",
+      "choices": [
+        "1969",
+        "1989",
+        "1999",
+        "2009"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "Ferrari raced the paddle-shift 640 that season, with Nigel Mansell winning its debut in Brazil. Drivers could change gears without reaching for a separate lever.",
+        "hint": "I don't know but I connect it with Nigel Mansell joining Ferrari and winning in Brazil. It was near the end of the 1980s."
+      }
+    },
+    "t-q12-6628b63613365b27": {
+      "prompt": "What trilogy of movies based on novels featured actor Thomas Brodie-Sangster?",
+      "choices": [
+        "The Hunger Games",
+        "Percy Jackson",
+        "The Maze Runner",
+        "Lord of the Rings"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "He plays Newt in the films adapted from James Dashner's books. The boys' life in the Glade is the setting I associate with him.",
+        "hint": "I don't know but I remember him as Newt, alongside Dylan O'Brien's Thomas. Think of the teenagers trapped in the Glade, trying to find a way out."
+      }
+    },
+    "t-q13-b1c11cd8720d0f2a": {
+      "prompt": "Which Greek philosopher's name is commonly given to the theorem that an angle inscribed in a semicircle is a right angle?",
+      "choices": [
+        "Pythagoras",
+        "Archimedes",
+        "Thales",
+        "Aristotle"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "That's the thinker from Miletus. His name is attached to the right-angle result for a triangle drawn with a circle's diameter as one side.",
+        "hint": "I don't know but I'm thinking of the early philosopher from Miletus, also associated with the idea that water underlies everything. He's earlier than Aristotle."
+      }
+    },
+    "t-q14-cd452025a550bebb": {
+      "prompt": "What manga has the highest sales worldwide?",
+      "choices": [
+        "One Piece",
+        "Dragon Ball",
+        "Naruto",
+        "Pokémon"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "Eiichiro Oda's pirate series passed 600 million copies in circulation in March 2026. Luffy and the Straw Hat crew have a huge worldwide following.",
+        "hint": "I don't know but I'm thinking of Eiichiro Oda's long-running pirate story, with Luffy and the Straw Hat crew. That association is the clue I'd use."
+      }
+    },
+    "t-q3-93b63d2316509891": {
+      "prompt": "Which of these is not one of the sea or storm powers associated with Aquaman's Trident of Poseidon?",
+      "choices": [
+        "Ice",
+        "Wind",
+        "Lightning",
+        "Fire"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "The trident's familiar powers cover the sea, ice and storm weather, including lightning. Flame attacks are the odd one out in that particular set.",
+        "hint": "I don't know but I remember the trident calling down lightning and freezing water. That lets us rule out two of the options."
+      }
+    },
+    "t-q4-81d1625b5ced9ed6": {
+      "prompt": "What character is a white rabbit who is part of the Cherryton gardening club in \"Beastars\"?",
+      "choices": [
+        "Haru",
+        "Louis",
+        "Juno",
+        "Jack"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "She's the small rabbit at the centre of Legoshi's romantic feelings. Her confident, direct manner contrasts with how shy and awkward the big wolf is.",
+        "hint": "I don't know but I remember Legoshi falling for a small herbivore who works among the flowers. The size difference between them really stands out."
+      }
+    },
+    "t-q5-b054834fcd5880ae": {
+      "prompt": "Which of these characters is not part of the \"Gotham City Sirens\" trio?",
+      "choices": [
+        "Harley Quinn",
+        "Zatanna",
+        "Poison Ivy",
+        "Catwoman"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "She's the magician who speaks spells backwards. The original Sirens are the other three: Harley Quinn, Poison Ivy and Catwoman, teaming up in Gotham.",
+        "hint": "I don't know but one of those women is a stage magician who casts spells backwards. That magical background makes her stand apart from the trio."
+      }
+    },
+    "t-q6-6bc3df8fa05860a7": {
+      "prompt": "Under IFAB Law 3, what is the minimum number of players a team needs, excluding permitted temporary absences, for an 11-a-side match to continue?",
+      "choices": [
+        "4",
+        "7",
+        "9",
+        "11"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "That's the normal minimum in eleven-a-side football. With fewer players available, a match cannot continue; the rules make separate exceptions for permitted temporary absences.",
+        "hint": "I don't know but a team starting with eleven can lose four players to red cards and still meet the minimum. One more would stop it."
+      }
+    },
+    "t-q7-2fa1335887a95925": {
+      "prompt": "What is the name of a reading desk in a church?",
+      "choices": [
+        "Cassock",
+        "Vestry",
+        "Lectern",
+        "Font"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the stand that holds the book for readings, often a Bible. A font is used for baptism, while a vestry is a room.",
+        "hint": "I don't know but I picture a big eagle with a Bible resting across its wings. It's a piece of church furniture."
+      }
+    },
+    "t-q8-e17bd56e218a9c24": {
+      "prompt": "A deficiency of which vitamin can cause rickets?",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3,
+      "friendReply": {
+        "answer": "It helps the body absorb calcium, so a shortage can leave growing bones poorly mineralised. That's a common cause of rickets, though there are others.",
+        "hint": "I don't know but it's often called the sunshine vitamin. Our skin can make it after exposure to sunlight, which is the clue I'd use."
+      }
+    },
+    "t-q9-2296f0e378adb87a": {
+      "prompt": "Which of these films reports strange events in the Morningside Cemetery?",
+      "choices": [
+        "\"Phantasm\"",
+        "\"Tales from the Crypt\"",
+        "\"From Beyond the Grave\"",
+        "The Omen"
+      ],
+      "answer": 0,
+      "friendReply": {
+        "answer": "That's the one with the Tall Man running the mortuary and those deadly flying silver spheres. Morningside is where Mike notices something terribly wrong.",
+        "hint": "I don't know but I'm picturing a sinister funeral director called the Tall Man and those flying silver balls. That should narrow the horror films."
+      }
+    },
+    "t-q10-8f1b06803d972874": {
+      "prompt": "What are studied and collected by a vexillologist?",
+      "choices": [
+        "Feathers",
+        "Flags",
+        "Wine corks",
+        "Dictionaries"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "The field looks at their designs, history and symbolism. Collecting examples can be part of someone's interest, but the study goes well beyond collecting.",
+        "hint": "I don't know but I remember the Latin word vexillum referring to a standard. Think of cloth symbols representing countries, organisations or military units."
+      }
+    },
+    "t-q11-5b0fdadd703198b7": {
+      "prompt": "Which of the following was a Smurf-themed cereal sold in the USA?",
+      "choices": [
+        "Smurf’s",
+        "Smurf Corn Flakes",
+        "Smurf Berry Crunch",
+        "Kellogg’s Smurf Flakes"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "Post sold a red-and-blue, fruit-flavoured cereal under that name. I remember it as part of the Smurfs cartoon merchandising that filled the eighties.",
+        "hint": "I don't know but I remember brightly coloured, fruit-flavoured pieces from Post. It wasn't a plain cornflake cereal, and the maker wasn't Kellogg's."
+      }
+    },
+    "t-q12-530cbb37dbcb83bf": {
+      "prompt": "For whom did Paul McCartney write “Maybe I’m Amazed”, released on his 1970 debut solo album?",
+      "choices": [
+        "John Lennon",
+        "Linda McCartney",
+        "Nancy Shevell",
+        "Heather McCartney"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "He wrote it about the woman who helped him through the breakup of the Beatles. Their relationship is the heart of that first solo album's song.",
+        "hint": "I don't know but she was the photographer he married in 1969, and she later joined him in Wings. That's who I'd think of."
+      }
+    },
+    "t-q13-081ca7a91b903337": {
+      "prompt": "Which Satoshi Kon film is echoed by the bathtub shot in Requiem for a Dream?",
+      "choices": [
+        "Millennium Actress",
+        "Perfect Blue",
+        "Tokyo Godfathers",
+        "Paprika"
+      ],
+      "answer": 1,
+      "friendReply": {
+        "answer": "It's the psychological thriller about Mima, a pop idol trying to become an actress. That particular bathtub image is the connection between the two films.",
+        "hint": "I don't know but I remember a pop idol named Mima changing careers to acting, then struggling to separate reality from performance. It's a psychological thriller."
+      }
+    },
+    "t-q14-f1b8ff44f4cd1508": {
+      "prompt": "To whom did zoologists give the name \"aeshna grandis\"?",
+      "choices": [
+        "Stick insect",
+        "Praying mantis",
+        "Dragonfly",
+        "Locust"
+      ],
+      "answer": 2,
+      "friendReply": {
+        "answer": "It's the brown hawker, a large flying insect with amber-tinted wings. It hunts other insects in the air, often around ponds and lakes.",
+        "hint": "I don't know but I remember the brown hawker patrolling over freshwater, with amber-coloured wings. Think of an insect whose young develop underwater."
+      }
     }
   }
 }

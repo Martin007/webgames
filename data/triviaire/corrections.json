@@ -1557,6 +1557,940 @@
         "https://www.sportcal.com/pressreleases/ford-secures-sale-of-jaguar-racing-team-to-red-bull/",
         "https://www.autosport.com/f1/news/the-full-statement-by-red-bull-5328276/5328276/"
       ]
+    },
+    "t-q3-ea9dbe51fc871cb8": {
+      "prompt": "What name is given to a language that is made up of two or more other dialects?",
+      "choices": [
+        "Eegle",
+        "Pidgin",
+        "Storck",
+        "Thrushe"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "What term describes a simplified contact language that develops between groups without a shared language?"
+      },
+      "reason": "A pidgin is a contact language used between groups without a shared language; simply mixing two dialects is not a sufficient definition.",
+      "sources": [
+        {
+          "title": "Cambridge Dictionary: pidgin",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pidgin"
+        }
+      ]
+    },
+    "t-q11-505fa550cbfec476": {
+      "prompt": "Which of these events is considered the first phase of the Holocaust, in which Nazi mobile killing units shot Jewish victims en masse?",
+      "choices": [
+        "The Deportation",
+        "The Porajmos",
+        "Operation Gomorrah",
+        "The Holocaust by bullets"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "What term describes the Nazi mass shootings of Jews by mobile killing units, especially in occupied eastern Europe?"
+      },
+      "reason": "Mass shootings were not a neatly bounded first phase: persecution preceded them and shootings continued alongside other killing methods.",
+      "sources": [
+        {
+          "title": "USHMM: Einsatzgruppen overview",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/einsatzgruppen"
+        },
+        {
+          "title": "National WWII Museum: The Holocaust by Bullets",
+          "url": "https://www.nationalww2museum.org/war/articles/otto-ohlendorf-holocaust"
+        }
+      ]
+    },
+    "t-q13-a835501131ec6a8e": {
+      "prompt": "Which is a dip made from sesame seeds?",
+      "choices": [
+        "Tapenade",
+        "Hummus",
+        "Tahini",
+        "Mezze"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these is a paste made from ground sesame seeds?"
+      },
+      "reason": "Tahini is sesame paste; hummus is also a dip containing sesame paste, making the original dip wording less precise.",
+      "sources": [
+        {
+          "title": "Good Food: How to make hummus",
+          "url": "https://www.bbcgoodfood.com/howto/guide/how-make-hummus"
+        }
+      ]
+    },
+    "t-q14-8e28702314c08132": {
+      "prompt": "Who was the first star on Hollywood's Walk of Fame?",
+      "choices": [
+        "James Dean",
+        "Joanne Woodward",
+        "Doris Day",
+        "Charlie Chaplin"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which actress was among the original eight demonstration stars unveiled for Hollywood's Walk of Fame in 1958?"
+      },
+      "reason": "The Walk of Fame's official history identifies eight demonstration stars in 1958, including Woodward, and Stanley Kramer as the first permanent star laid in 1960. Woodward was not uniquely first.",
+      "sources": [
+        {
+          "title": "Hollywood Walk of Fame: official history",
+          "url": "https://walkoffame.com/history/"
+        },
+        {
+          "title": "Hollywood Walk of Fame: Joanne Woodward",
+          "url": "https://walkoffame.com/joanne-woodward/"
+        }
+      ]
+    },
+    "t-q10-b3d423ed4645ee54": {
+      "prompt": "In the movie \"Face/Off\", what name does Nicolas Cage give to his brother?",
+      "choices": [
+        "Chick",
+        "Rookie",
+        "Champion",
+        "Boss"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "What is Castor Troy's brother's name in the film Face/Off?",
+        "choice": {
+          "index": 0,
+          "text": "Pollux Troy"
+        }
+      },
+      "reason": "The keyed Chick appears to translate the French-dub nickname poussin, rather than a verified English name. The replacement asks the documented character-name fact, confirmed by the studio cast listing, at the same answer index.",
+      "sources": [
+        {
+          "title": "Paramount Pictures: Face/Off cast",
+          "url": "https://www.paramountpictures.com/movies/faceoff"
+        },
+        {
+          "title": "AFI Catalog: Face/Off",
+          "url": "https://catalog.afi.com/Catalog/moviedetails/60724"
+        },
+        {
+          "title": "Rotten Tomatoes: Face/Off synopsis and cast",
+          "url": "https://www.rottentomatoes.com/m/faceoff"
+        }
+      ]
+    },
+    "t-q13-e576bbe4c27866cb": {
+      "prompt": "What wood were tenpin bowling pins originally made of?",
+      "choices": [
+        "Yew",
+        "Sycamore",
+        "Maple",
+        "Poplar"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which wood is traditionally used to make tenpin bowling pins?"
+      },
+      "reason": "The manufacturer documents hard rock maple in bowling pins, but this does not establish that every earliest tenpin used that wood. Scope the question to traditional use.",
+      "sources": [
+        {
+          "title": "Brunswick: bowling pins",
+          "url": "https://brunswickbowling.com/bowling-centers/equipment-parts-supplies/center-maintenance/pins"
+        },
+        {
+          "title": "US Forest Service: sugar maple",
+          "url": "https://research.fs.usda.gov/silvics/sugar-maple"
+        }
+      ]
+    },
+    "t-q5-833b94a5472c4c49": {
+      "prompt": "What WWE wrestler has the longest Intercontinental Championship reign at 454 days?",
+      "choices": [
+        "Apollo Crews",
+        "The Miz",
+        "Chris Jericho",
+        "The Honky Tonk Man"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which wrestler held the Intercontinental Championship from June 1987 to August 1988?"
+      },
+      "reason": "Honky Tonk Man's reign is a historical fact, but the longest-reign claim is obsolete. WWE's own pages also differ between 453 and 454 days, so the dates establish the intended answer without an unstable record claim or disputed day count.",
+      "sources": [
+        {
+          "title": "WWE: Intercontinental Championship history",
+          "url": "https://www.wwe.com/titlehistory/intercontinental-championship"
+        },
+        {
+          "title": "WWE: The Honky Tonk Man biography",
+          "url": "https://www.wwe.com/superstars/honky-tonk-man"
+        }
+      ]
+    },
+    "t-q8-6f6149d8f0b0eda8": {
+      "prompt": "How many official languages are spoken in South Africa?",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "How many official languages are listed in South Africa's Constitution after the 2023 amendment adding South African Sign Language?",
+        "choice": {
+          "index": 3,
+          "text": "12"
+        }
+      },
+      "reason": "The 2023 constitutional amendment adds South African Sign Language as the twelfth official language. The old total eleven is outdated; spoken also wrongly excludes a signed language from the intended total.",
+      "sources": [
+        {
+          "title": "South African Government: Constitution Eighteenth Amendment Act 3 of 2023",
+          "url": "https://www.gov.za/documents/constitutional-amendments/constitution-eighteenth-amendment-act-3-2023-english-sesotho-27"
+        },
+        {
+          "title": "South African Government: sign language as twelfth official language",
+          "url": "https://www.gov.za/speeches/president-cyril-ramaphosa-enact-sign-language-12th-official-langauge"
+        }
+      ]
+    },
+    "t-q11-ab38dfd289b71385": {
+      "prompt": "What is the official language of Andorra?",
+      "choices": [
+        "The Basque",
+        "The Spanish woman",
+        "Sorry, there is no text provided in French to translate into Catalan or English. Please provide the text to be translated.",
+        "Andorran"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "Catalan"
+        }
+      },
+      "reason": "The keyed option is an accidental translation-system apology instead of an answer. Andorra's Constitution and language law identify Catalan as its official language.",
+      "sources": [
+        {
+          "title": "Andorran legal portal: Law 6/2024 on the official language",
+          "url": "https://www.portaljuridicandorra.ad/L2024006"
+        },
+        {
+          "title": "Government of Catalonia: legal framework of Catalan",
+          "url": "https://llengua.gencat.cat/en/el-catala/marc-legal/"
+        },
+        {
+          "title": "Andorra la Vella tourist office: official language",
+          "url": "https://www.turismeandorralavella.com/en/information/"
+        }
+      ]
+    },
+    "t-q14-c7c72e17b79a2446": {
+      "prompt": "Which game contains a hidden demo version of Sly Raccoon?",
+      "choices": [
+        "Spyro : A Hero's Tail",
+        "Ratchet & Clank 3",
+        "Crash Twinsanity",
+        "Jak 3"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which game contains a hidden demo of Sly 2: Band of Thieves?"
+      },
+      "reason": "The demo in Ratchet & Clank 3 is Sly 2: Band of Thieves, not the original game released as Sly Raccoon.",
+      "sources": [
+        {
+          "title": "GamesRadar/PLAY: best PlayStation demos",
+          "url": "https://www.gamesradar.com/the-best-playstation-demos-of-all-time-and-what-made-them-special/"
+        },
+        {
+          "title": "VGFacts: Ratchet & Clank Up Your Arsenal",
+          "url": "https://www.vgfacts.com/game/ratchetclankupyourarsenal/?dir=2&sortby=2"
+        },
+        {
+          "title": "PlayStation Blog: Ratchet and Clank introduction",
+          "url": "https://blog.playstation.com/?p=587"
+        }
+      ]
+    },
+    "t-q3-416b720f5f5fd4db": {
+      "prompt": "Which religious community faced massive deportation to Nazi concentration camps?",
+      "choices": [
+        "Jews",
+        "Catholics",
+        "Buddhists",
+        "Protestants"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which group was the central target of the Nazi genocide known as the Holocaust?"
+      },
+      "reason": "Several religious communities experienced deportation, while Nazi anti-Jewish persecution targeted ancestry rather than only religious practice. The narrower genocide question makes the intended answer unambiguous.",
+      "sources": [
+        {
+          "title": "USHMM: Introduction to the Holocaust",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust"
+        },
+        {
+          "title": "USHMM: Jewish badge during the Nazi era",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/jewish-badge-during-the-nazi-era"
+        }
+      ]
+    },
+    "t-q5-26471d00356dab82": {
+      "prompt": "Which of these famous actors has a sinister ending in \"Friday the 13th Part 2\"?",
+      "choices": [
+        "Kevin Bacon",
+        "Johnny Depp",
+        "George Clooney",
+        "Kevin Costner"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which of these actors plays a doomed camp counsellor in the original 1980 film Friday the 13th?"
+      },
+      "reason": "Kevin Bacon plays Jack in the original Friday the 13th (1980), not Friday the 13th Part 2.",
+      "sources": [
+        {
+          "title": "AFI Catalog: Friday the 13th (1980)",
+          "url": "https://catalog.afi.com/Film/56417-FRIDAY-THE13TH"
+        },
+        {
+          "title": "Paramount: Footloose (1984)",
+          "url": "https://www.paramount.com/movies/footloose"
+        }
+      ]
+    },
+    "t-q6-e531b345ba59efd5": {
+      "prompt": "Which of these is not a traditional ingredient of a ploughman's lunch?",
+      "choices": [
+        "Bread",
+        "Cheese",
+        "Ham",
+        "Pickle"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which of these is a common meat accompaniment to a ploughman's lunch?"
+      },
+      "reason": "Ham is regularly included in ploughman's lunches, so calling it categorically non-traditional is ambiguous. Ask which option is the meat accompaniment while retaining the intended key.",
+      "sources": [
+        {
+          "title": "SBS Food: Matthew Evans' ploughman's lunch",
+          "url": "https://www.sbs.com.au/food/recipe/ploughmans-lunch/0590ieb2w"
+        },
+        {
+          "title": "Good Food: ploughman's sandwich",
+          "url": "https://www.bbcgoodfood.com/recipes/ploughmans-sandwich"
+        }
+      ]
+    },
+    "t-q8-5d9345659651957f": {
+      "prompt": "What was the first game that Hideo Kojima wrote?",
+      "choices": [
+        "Metal Gear",
+        "Snatcher",
+        "Policenauts",
+        "Metal Gear Solid 3: Snake Eater"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which of these was Hideo Kojima's 1987 directorial debut?"
+      },
+      "reason": "The publisher of Kojima's own book documents Metal Gear as his 1987 directorial debut. This is more precise than first game he wrote, which may encompass earlier unreleased work or assistant contributions.",
+      "sources": [
+        {
+          "title": "VIZ: Hideo Kojima author biography",
+          "url": "https://www.viz.com/the-creative-gene"
+        },
+        {
+          "title": "PlayStation: Kojima reflects on 25 years of Metal Gear",
+          "url": "https://blog.playstation.com/2012/07/23/hideo-kojima-reflects-on-25-years-of-metal-gear/"
+        }
+      ]
+    },
+    "t-q11-cdc9e57d1496afa2": {
+      "prompt": "On which ship does Tintin embark in \"The Shooting Star\"?",
+      "choices": [
+        "The Twilight",
+        "The Aurora",
+        "The Zenith",
+        "The Dawn"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "On which ship does Tintin embark in the English-language edition of The Shooting Star?",
+        "answer": 1
+      },
+      "reason": "The official English Tintin website and Hergé Museum call the vessel Aurora. The original key The Dawn is a literal translation of French L'Aurore rather than the name used in the English edition.",
+      "sources": [
+        {
+          "title": "Tintin official site: The Shooting Star",
+          "url": "https://www.tintin.com/en/albums/the-shooting-star"
+        },
+        {
+          "title": "Hergé Museum: model of the Aurora",
+          "url": "https://www.tintin.com/en/news/5976/new-model-of-the-aurora-on-display-at-the-herge-museum"
+        }
+      ]
+    },
+    "t-q13-7eb67737a225725d": {
+      "prompt": "At a film festival in the fall of 2005, who said his characters are forbidden to die on screen?",
+      "choices": [
+        "Chuck Norris",
+        "Keanu Reeves",
+        "Jackie Chan",
+        "Bruce Willis"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which martial-arts star presented The Myth at the 2005 Toronto International Film Festival?"
+      },
+      "reason": "The alleged autumn 2005 prohibition-on-screen-death quotation could not be verified. The film producer and contemporary premiere photographs establish the same actor, festival and year without the unsupported quotation.",
+      "sources": [
+        {
+          "title": "Emperor Motion Pictures: The Myth",
+          "url": "https://www.emp.hk/en/production/all/the-myth"
+        },
+        {
+          "title": "UPI: The Myth premiere at Toronto, 15 September 2005",
+          "url": "https://www.upi.com/News_Photos/view/upi/6bcec00b74485ee05a40b150428d5c1d/TORONTO-INTERNATIONAL-FILM-FESTIVAL-2005/"
+        },
+        {
+          "title": "Jackie Chan: official filmography",
+          "url": "https://www.jackiechan.com/filmography.htm"
+        },
+        {
+          "title": "Contemporary Toronto premiere report: The Myth",
+          "url": "https://editorial.rottentomatoes.com/article/toronto-film-fest-world-premiere-of-the-myth-starring-jackie-chan/"
+        }
+      ]
+    },
+    "t-q3-cdf56f843184c648": {
+      "prompt": "Which annoying ringtone set charts and clubs on fire with a dance remix by Axel F in 2005?",
+      "choices": [
+        "“Crazy Rabbit”",
+        "“Crazy Dog”",
+        "“Crazy Cat”",
+        "“Crazy Frog”"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which ringtone character topped the UK chart with a dance version of “Axel F” in 2005?"
+      },
+      "reason": "Axel F is the track title, not the artist who made the remix.",
+      "sources": [
+        {
+          "title": "Official Charts: Axel F by Crazy Frog",
+          "url": "https://www.officialcharts.com/songs/crazy-frog-axel-f/"
+        },
+        {
+          "title": "The Guardian: Frog ringtone beats Coldplay",
+          "url": "https://www.theguardian.com/technology/2005/may/30/arts.mobilephones"
+        }
+      ]
+    },
+    "t-q7-ec504722c315c94a": {
+      "prompt": "Which of these is a dormant volcano and Japan's highest mountain?",
+      "choices": [
+        "Jade Mountain",
+        "Mount Fuji",
+        "K2",
+        "Mount Apo"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which of these volcanoes is Japan's highest mountain?"
+      },
+      "reason": "Official Japanese sources classify Fuji as active; remove the potentially misleading dormant label.",
+      "sources": [
+        {
+          "title": "Japan National Parks: Fuji-Hakone-Izu",
+          "url": "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/explore/"
+        },
+        {
+          "title": "Japan Meteorological Agency: Fuji eruption history",
+          "url": "https://ds.data.jma.go.jp/svd/vois/data/tokyo/314_Fujisan/314_history.html"
+        }
+      ]
+    },
+    "t-q10-104163e6e1a1d9fc": {
+      "prompt": "What is the maximum amount of holes a golf course can have?",
+      "choices": [
+        "6",
+        "9",
+        "18",
+        "22"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "How many holes are normally played in a full round of golf?"
+      },
+      "reason": "Eighteen is the conventional full round, not a maximum number of holes a golf course may contain.",
+      "sources": [
+        {
+          "title": "USGA: Rule 5, Playing the Round",
+          "url": "https://www.usga.org/content/usga/home-page/custom-search-pages/rules/2019-golf-rules-and-interpretations/fr-rule-5.html"
+        },
+        {
+          "title": "USGA: Rules and clarifications",
+          "url": "https://www.usga.org/rules/rules-and-clarifications/rules-and-clarifications.html"
+        }
+      ]
+    },
+    "t-q11-3a5d3b1f377802cf": {
+      "prompt": "Which of these is an integral part of the Japanese video game series “Kunio-kun”?",
+      "choices": [
+        "Streets of Rage",
+        "Double Dragon",
+        "Golden Axe",
+        "Growl"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which video game series shares a Retro Brawler Bundle with the Japanese series “Kunio-kun”?"
+      },
+      "reason": "The publisher lists these as separate series brought together in a collection, not Double Dragon as an integral Kunio-kun game.",
+      "sources": [
+        {
+          "title": "Arc System Works: Retro Brawler Bundle",
+          "url": "https://www.arcsystemworks.com/game/double-dragon-kunio-kun-retro-brawler-bundle/"
+        },
+        {
+          "title": "Arc System Works: Double Dragon series history",
+          "url": "https://www.arcsystemworks.jp/ddrev/en/series.php"
+        }
+      ]
+    },
+    "t-q12-8a49c27756f00ca6": {
+      "prompt": "After \"The Blue Oranges\", which Tintin adventure should have been adapted to the screen?",
+      "choices": [
+        "\"Tintin in America\"",
+        "\"Tintin in the Congo\"",
+        "\"The Crab with the Golden Claws\"",
+        "\"The Blue Lotus\""
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which Tintin adventure, first serialized in 1930–31, is set in a then-Belgian colony?"
+      },
+      "reason": "The proposed film premise could not be reliably substantiated and is at odds with actor Jean-Pierre Talbot recalling an India-set third-film idea. Replace with official album publication and setting facts while preserving the answer.",
+      "sources": [
+        {
+          "title": "Tintin official: Tintin in the Congo",
+          "url": "https://www.tintin.com/en/albums/tintin-in-the-congo"
+        },
+        {
+          "title": "Jean-Pierre Talbot interview: unmade third film",
+          "url": "https://www.bulletproofaction.com/2026/01/19/a-conversation-with-jean-pierre-talbot/"
+        }
+      ]
+    },
+    "t-q14-55404b0d8bc8d168": {
+      "prompt": "Which Sega Dreamcast variation does Kurome Ankokuboshi represent in Hyperdimension Neptunia series?",
+      "choices": [
+        "Super Black",
+        "Black Sega Sports Edition",
+        "Regulation 7",
+        "Metallic Silver"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which special Dreamcast edition was sold in a bundle with NFL 2K and NBA 2K?"
+      },
+      "reason": "The Kurome-to-console association is only documented in fan references. Replace that unverified canon premise with Sega’s documented collector’s bundle, preserving the same keyed hardware option.",
+      "sources": [
+        {
+          "title": "GameSpot: Sega releases Dreamcast Sports Package, quoting Sega's marketing director",
+          "url": "https://www.gamespot.com/articles/sega-releases-dreamcast-sports-package/1100-2627404/"
+        },
+        {
+          "title": "Consolevariations: Sega Dreamcast Sports Pack",
+          "url": "https://consolevariations.com/collectibles/sega-dreamcast-sports-pack-console"
+        }
+      ]
+    },
+    "t-q5-6947e1d7bd0a9748": {
+      "prompt": "Which game from the \"Banjo-Kazooie\" series was released on Xbox 360?",
+      "choices": [
+        "Banjo-Kazooie : Nuts & Bolts",
+        "Banjo-Tooie",
+        "Banjo-Threeie",
+        "Yooka-Laylee"
+      ],
+      "answer": 0,
+      "correction": {
+        "prompt": "Which game from the “Banjo-Kazooie” series originally released on Xbox 360 centres on building vehicles?"
+      },
+      "reason": "Banjo-Tooie was also released on Xbox 360, so the original stem has two true options. The vehicle-building qualifier uniquely identifies the intended game.",
+      "sources": [
+        {
+          "title": "Xbox Wire: Nuts & Bolts demo",
+          "url": "https://news.xbox.com/en-us/2008/10/29/demo-banjo-kazooie-n-amp-b-demo/?ver=3.7.1"
+        },
+        {
+          "title": "Xbox Wire: Banjo-Tooie Xbox Live Arcade release",
+          "url": "https://news.xbox.com/en-us/2009/04/29/aracde-banjo-tooie/"
+        }
+      ]
+    },
+    "t-q9-98e55711cc421a52": {
+      "prompt": "How many times has Celine Dion taken part in the Eurovision Song Contest?",
+      "choices": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "How many times has Céline Dion competed as a contestant at the Eurovision Song Contest?"
+      },
+      "reason": "Taken part is ambiguous because she returned as a guest performer in 1989. Specify competitive entries to preserve the intended answer of one.",
+      "sources": [
+        {
+          "title": "Eurovision official: Céline Dion, Dublin1988",
+          "url": "https://www.eurovision.com/eurovision-song-contest/dublin-1988/participants/celine-dion/"
+        },
+        {
+          "title": "Eurovision official: Lausanne1989",
+          "url": "https://www.eurovision.com/eurovision-song-contest/lausanne-1989/"
+        }
+      ]
+    },
+    "t-q5-92e9ea003002094e": {
+      "prompt": "Which car model is featured on every cover of each \"Project Gotham Racing\" game?",
+      "choices": [
+        "Mercedes",
+        "Lamborghini",
+        "Ferrari",
+        "Dodge Viper"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which car manufacturer is featured on the covers of the four main console games in the “Project Gotham Racing” series?"
+      },
+      "reason": "Ferrari is a manufacturer rather than one model; the four console covers feature different models from that maker.",
+      "sources": [
+        {
+          "title": "GameSpot: First look at Project Gotham Racing3, earlier cover cars",
+          "url": "https://www.gamespot.com/articles/first-look-at-project-gotham-racing-3/1100-6122119/"
+        },
+        {
+          "title": "Project Gotham Racing series reference and cover descriptions",
+          "url": "https://en.wikipedia.org/wiki/Project_Gotham_Racing"
+        }
+      ]
+    },
+    "t-q9-285e5363a70c9cd4": {
+      "prompt": "Which historical figure famously declared, after crossing a stretch of water, \"The die is cast\"?",
+      "choices": [
+        "Alexander the Great",
+        "William the Conqueror",
+        "Julius Caesar",
+        "Napoleon Bonaparte"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which historical figure is traditionally associated with saying “The die is cast” as he committed to crossing a river with his army?"
+      },
+      "reason": "The ancient account places the saying as Caesar commits to crossing, before he actually crosses, not after. Traditional-attribution wording also avoids treating reported dialogue as a contemporary recording.",
+      "sources": [
+        {
+          "title": "Suetonius: Life of Julius Caesar, chapters31–33",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius%2A.html"
+        },
+        {
+          "title": "Suetonius: chapter32, Rolfe translation",
+          "url": "https://lexundria.com/suet_jul/32/r"
+        }
+      ]
+    },
+    "t-q13-b349db71de46282d": {
+      "prompt": "What are the national film awards of France called?",
+      "choices": [
+        "Napoleon",
+        "Charles",
+        "CÃ©sar",
+        "Guillaume"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "César"
+        }
+      },
+      "reason": "Repair the garbled character encoding in the intended award name, without changing its answer position.",
+      "sources": [
+        {
+          "title": "Académie des César: Academy history and trophy",
+          "url": "https://www.academie-cinema.org/lacademie/histoire/"
+        },
+        {
+          "title": "Académie des César: Official rules",
+          "url": "https://www.academie-cinema.org/lacademie/reglement/reglement-complet/"
+        }
+      ]
+    },
+    "t-q12-b3eb02668ddd4974": {
+      "prompt": "As of 2020, how many countries make up the European Union?",
+      "choices": [
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "After the United Kingdom left in January 2020, how many countries made up the European Union?"
+      },
+      "reason": "The EU had 28 members at the start of 2020 and 27 after the UK left. Specify the point in 2020 intended by the question.",
+      "sources": [
+        {
+          "title": "Eurostat: Publishing statistics after the UK left the EU",
+          "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/-/wdn-20200201-1"
+        },
+        {
+          "title": "Council of the EU: Withdrawal agreement timeline",
+          "url": "https://www.consilium.europa.eu/en/policies/the-eu-uk-withdrawal-agreement/timeline-eu-uk-withdrawal-agreement/"
+        }
+      ]
+    },
+    "t-q4-3efd5fdebad32393": {
+      "prompt": "What is a presidential pardon?",
+      "choices": [
+        "A presidential fart",
+        "An exemption of a convicted person",
+        "An official excuse for being late",
+        "A declaration of peace"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "In the United States, what is a presidential pardon?",
+        "choice": {
+          "index": 1,
+          "text": "An act of forgiveness for a federal offense"
+        }
+      },
+      "reason": "A pardon is presidential forgiveness, not an undefined exemption restricted to convicted people. DOJ confirms it can precede conviction and does not signify innocence or erase the conviction. Scope to US federal law for a clear definition.",
+      "sources": [
+        "https://www.justice.gov/pardon/frequently-asked-questions",
+        "https://www.fordlibrarymuseum.gov/digital-research-room/library-collections/topic-guides/nixon-pardon"
+      ]
+    },
+    "t-q13-43fde9d98cff3a8a": {
+      "prompt": "Which of these cities used to be in East Germany?",
+      "choices": [
+        "Dresden",
+        "Frankfurt",
+        "Hamburg",
+        "Munich"
+      ],
+      "answer": 0,
+      "correction": {
+        "choice": {
+          "index": 1,
+          "text": "Frankfurt am Main"
+        }
+      },
+      "reason": "Unqualified Frankfurt could mean Frankfurt (Oder), which was also in East Germany. Specify the intended western city without changing option position or keyed Dresden.",
+      "sources": [
+        "https://germanhistorydocs.org/en/a-new-germany-1990-2023/the-frauenkirche-in-dresden-before-and-after-reconstruction-1985-2012",
+        "https://www.frankfurt-oder.de/Verwaltung-Stadtpolitik/Verwaltung/B%C3%BCrger-und-Unternehmensservice-A-Z/Aufbau-nach-dem-Krieg.php?object=tx%2C2616.5378.1"
+      ]
+    },
+    "t-q13-b1c11cd8720d0f2a": {
+      "prompt": "Which Greek philosopher and mathematician proved that the sum of the interior angles of any triangle is 180 degrees?",
+      "choices": [
+        "Pythagoras",
+        "Archimedes",
+        "Thales",
+        "Aristotle"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Which Greek philosopher's name is commonly given to the theorem that an angle inscribed in a semicircle is a right angle?"
+      },
+      "reason": "The original confidently attributes a proof of the general 180-degree triangle result to Thales, although ancient attribution is uncertain and no proof of his survives. Ask about the conventional name of the semicircle theorem instead, keeping the keyed philosopher and option positions.",
+      "sources": [
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Thales/",
+        "https://users.math.msu.edu/users/magyarp/Math254H-2016/Thales.pdf",
+        "https://amsi.org.au/teacher_modules/Circle_Geometry.html"
+      ]
+    },
+    "t-q14-470c48ebd96616ae": {
+      "prompt": "How many of the Ten Commandments do not begin with the words \"Thou shalt not...\"?",
+      "choices": [
+        "None",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "Using the King James wording of Exodus 20 and Westminster (Reformed) numbering, how many of the Ten Commandments do not begin with 'Thou shalt not'?"
+      },
+      "reason": "The count depends on both the English translation and the division into ten commandments. With King James wording and the Westminster/Reformed numbering, the first begins 'Thou shalt have no', the fourth 'Remember', and the fifth 'Honour'. Specify both conventions rather than treating this as universal across traditions.",
+      "sources": [
+        "https://www.biblegateway.com/passage/?search=Exodus%2020&version=KJV",
+        "https://opc.org/sc.html"
+      ]
+    },
+    "t-q7-c0e2c8f853bd73ea": {
+      "prompt": "Who is the protagonist of the game \"inFamous: Second Son\"?",
+      "choices": [
+        "Cole MacGrath",
+        "Zeke Dunbar",
+        "Deslin Rowe",
+        "Abigail Walker"
+      ],
+      "answer": 2,
+      "correction": {
+        "choice": {
+          "index": 2,
+          "text": "Delsin Rowe"
+        }
+      },
+      "reason": "The protagonist is Delsin Rowe; the source choice transposes letters as Deslin.",
+      "sources": [
+        "https://www.playstation.com/en-us/games/infamous-second-son/",
+        "https://blog.playstation.com/archive/2013/02/21/infamous-second-son-announced-for-playstation-4",
+        "https://blog.playstation.com/archive/2013/06/11/infamous-second-son-watch-the-new-trailer/",
+        "https://blog.playstation.com/archive/2013/10/17/infamous-second-son-box-art-revealed-special-editions-detailed"
+      ]
+    },
+    "t-q8-51a3a332e7ebcefd": {
+      "prompt": "Traditionally, pewter was a blend of tin and which other metal?",
+      "choices": [
+        "Copper",
+        "Lead",
+        "Silver",
+        "Iron"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which metal was commonly added to tin as a cheap bulking agent in historical pewter?"
+      },
+      "reason": "Both copper and lead were used in historical pewter. The low-cost bulking role distinguishes lead from copper used in other alloy recipes.",
+      "sources": [
+        "https://www.pewtersociety.org/about-pewter/metal",
+        "https://pewtersociety.org/pewter-society/faq",
+        "https://pewterers.org.uk/pewter/"
+      ]
+    },
+    "t-q12-0c1e94cbcaba8645": {
+      "prompt": "In the very first Aquaman story, why was Aquaman abandoned as a child on Mercy Reef?",
+      "choices": [
+        "Because he cannot breathe underwater",
+        "Because he is an illegitimate child",
+        "Because his blond hair is a sign of a bad omen",
+        "Because he was born sick"
+      ],
+      "answer": 2,
+      "correction": {
+        "prompt": "In Aquaman's post-Crisis origin, why was he abandoned as a baby on Mercy Reef?"
+      },
+      "reason": "Mercy Reef and the curse of Kordax belong to the post-Crisis origin retelling, not the character's first 1941 story. Scope to the continuity documented in the 1989 origin collection.",
+      "sources": [
+        "https://www.dc.com/graphic-novels/aquaman-1989/aquaman-the-legend-of-aquaman",
+        "https://dc.fandom.com/wiki/Mercy_Reef"
+      ]
+    },
+    "t-q3-93b63d2316509891": {
+      "prompt": "Which element can Aquaman not command with his trident?",
+      "choices": [
+        "Ice",
+        "Wind",
+        "Lightning",
+        "Fire"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "Which of these is not one of the sea or storm powers associated with Aquaman's Trident of Poseidon?"
+      },
+      "reason": "Aquaman has wielded different tridents across continuities. Specify the Trident of Poseidon and its sea/storm powers, which include wind, ice and lightning, instead of asserting a blanket limitation for every version.",
+      "sources": [
+        "https://dc.fandom.com/wiki/Trident_of_Poseidon",
+        "https://www.sideshow.com/blog/aquaman-super-power-play-by-play/"
+      ]
+    },
+    "t-q6-6bc3df8fa05860a7": {
+      "prompt": "According to FIFA guidelines, what is the minimum number of players that a team must have on the field for the match to go on?",
+      "choices": [
+        "4",
+        "7",
+        "9",
+        "11"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Under IFAB Law 3, what is the minimum number of players a team needs, excluding permitted temporary absences, for an 11-a-side match to continue?"
+      },
+      "reason": "Identify eleven-a-side football and account for the explicit 2026/27 exceptions for temporary dismissals and specified off-field protocols. The general minimum remains seven.",
+      "sources": [
+        "https://www.theifab.com/laws/latest/the-players/",
+        "https://www.theifab.com/law-changes/latest/"
+      ]
+    },
+    "t-q8-e17bd56e218a9c24": {
+      "prompt": "Rickets is a disease caused by the deficiency of which vitamin?",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3,
+      "correction": {
+        "prompt": "A deficiency of which vitamin can cause rickets?"
+      },
+      "reason": "Vitamin D deficiency can cause rickets, but calcium deficiency and other causes also exist. Avoid implying one exclusive cause.",
+      "sources": [
+        "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+        "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+        "https://ods.od.nih.gov/factsheets/Vitamind-HealthProfessional/"
+      ]
+    },
+    "t-q12-530cbb37dbcb83bf": {
+      "prompt": "For whom did Paul McCartney write “Maybe I’m Amazed” in 1970?",
+      "choices": [
+        "John Lennon",
+        "Linda McCartney",
+        "Nancy Shevell",
+        "Heather McCartney"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "For whom did Paul McCartney write “Maybe I’m Amazed”, released on his 1970 debut solo album?"
+      },
+      "reason": "The 1970 date is the album release. McCartney traces the song to the end of the 1960s, when he and Linda first lived together, so avoid dating its composition specifically to 1970.",
+      "sources": [
+        "https://www.paulmccartney.com/discography/singles/maybe-im-amazed-live",
+        "https://www.paulmccartney.com/discography/albums/mccartney",
+        "https://www.paulmccartney.com/discography/albums/wild-life",
+        "https://www.the-paulmccartney-project.com/1969/03/paul-mccartney-marries-linda-eastman/"
+      ]
+    },
+    "t-q13-081ca7a91b903337": {
+      "prompt": "Which Japanese film by Satoshi Kon was the film ‘Requiem for a Dream’ strongly inspired by?",
+      "choices": [
+        "Millennium Actress",
+        "Perfect Blue",
+        "Tokyo Godfathers",
+        "Paprika"
+      ],
+      "answer": 1,
+      "correction": {
+        "prompt": "Which Satoshi Kon film is echoed by the bathtub shot in Requiem for a Dream?"
+      },
+      "reason": "Narrow the broad influence claim to the specific shot-level homage discussed by both filmmakers. The stories themselves are different; the original wording overstates the extent of inspiration.",
+      "sources": [
+        "https://gkids.com/films/perfect-blue/",
+        "https://madhouse.co.jp/english/works/movie_perfectblue/",
+        "https://comicbook.com/anime/news/best-anime-satoshi-kon-plagarism-hollywood/",
+        "https://aftermath.site/darren-aronofsky-satoshi-kon-perfect-blue-black-swan-requiem-for-a-dream-homage-anime/"
+      ]
     }
   }
 }
